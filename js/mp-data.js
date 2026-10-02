@@ -67,7 +67,7 @@ website: "#"
 
     image: "images/Dennis Tachum.jpeg",
     email: "tachumdennis658@gmail.com",
-    phone: "0534506415",
+    phone: "0534806415",
     website: "#"
 },
 
