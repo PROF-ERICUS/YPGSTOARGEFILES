@@ -1,0 +1,2327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Registered MPs - Youth Parliament Ghana
+    </title>
+
+
+    <style>
+
+        /* =========================================================
+           RESET
+        ========================================================= */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        /* =========================================================
+           ROOT
+        ========================================================= */
+
+        :root {
+            --primary: #0b5d3b;
+            --secondary: #d4af37;
+            --dark: #17221c;
+            --light: #f5f7f6;
+            --border: #dcdcdc;
+            --text: #222;
+            --muted: #666;
+        }
+
+
+        /* =========================================================
+           BODY
+        ========================================================= */
+
+        body {
+
+            font-family:
+                Arial,
+                Helvetica,
+                sans-serif;
+
+            background: var(--light);
+
+            color: var(--text);
+
+            padding: 30px;
+        }
+
+
+        /* =========================================================
+           PAGE CONTAINER
+        ========================================================= */
+
+        .page-container {
+
+            position: relative;
+
+            overflow: hidden;
+
+            max-width: 1400px;
+
+            margin: auto;
+
+            background: #ffffff;
+
+            padding: 30px;
+
+            border-radius: 12px;
+
+            box-shadow:
+                0 5px 25px rgba(0, 0, 0, 0.08);
+        }
+
+
+        /* =========================================================
+           REAL WATERMARK
+           
+           IMPORTANT:
+           This is an actual image, not a background-image.
+           It is therefore much more reliable when printing.
+        ========================================================= */
+
+        .watermark-logo {
+
+            position: absolute;
+
+            top: 50%;
+
+            left: 50%;
+
+            width: 560px;
+
+            height: 560px;
+
+            transform:
+                translate(-50%, -50%);
+
+            object-fit: contain;
+
+            opacity: 0.075;
+
+            pointer-events: none;
+
+            user-select: none;
+
+            z-index: 0;
+        }
+
+
+        /* =========================================================
+           PAGE CONTENT ABOVE WATERMARK
+        ========================================================= */
+
+        .page-content {
+
+            position: relative;
+
+            z-index: 2;
+        }
+
+
+        /* =========================================================
+           HEADER
+        ========================================================= */
+
+        .header {
+
+            display: flex;
+
+            flex-direction: column;
+
+            align-items: center;
+
+            justify-content: center;
+
+            text-align: center;
+
+            border-bottom:
+                3px solid var(--primary);
+
+            padding-bottom: 20px;
+
+            margin-bottom: 25px;
+        }
+
+
+        /* =========================================================
+           TOP LOGO
+        ========================================================= */
+
+        .top-logo {
+
+            width: 100px;
+
+            height: 100px;
+
+            object-fit: contain;
+
+            display: block;
+
+            margin:
+                0 auto 10px auto;
+        }
+
+
+        /* =========================================================
+           HEADER TEXT
+        ========================================================= */
+
+        .header-text {
+
+            text-align: center;
+        }
+
+
+        .header-text h1 {
+
+            font-size: 28px;
+
+            color: var(--primary);
+
+            margin-bottom: 5px;
+
+            text-transform: uppercase;
+
+            font-weight: 800;
+        }
+
+
+        .header-text h2 {
+
+            font-size: 18px;
+
+            color: var(--dark);
+
+            font-weight: 600;
+        }
+
+
+        .header-text p {
+
+            margin-top: 5px;
+
+            font-size: 13px;
+
+            color: var(--muted);
+        }
+
+
+        /* =========================================================
+           CONTROLS
+        ========================================================= */
+
+        .controls {
+
+            display: flex;
+
+            justify-content:
+                space-between;
+
+            align-items: center;
+
+            gap: 15px;
+
+            margin-bottom: 20px;
+
+            flex-wrap: wrap;
+        }
+
+
+        .search-box {
+
+            flex: 1;
+
+            min-width: 280px;
+        }
+
+
+        .search-box input {
+
+            width: 100%;
+
+            padding:
+                12px 15px;
+
+            border:
+                1px solid var(--border);
+
+            border-radius: 7px;
+
+            font-size: 14px;
+
+            outline: none;
+        }
+
+
+        .search-box input:focus {
+
+            border-color:
+                var(--primary);
+        }
+
+
+        .buttons {
+
+            display: flex;
+
+            gap: 10px;
+        }
+
+
+        button {
+
+            border: none;
+
+            padding:
+                12px 18px;
+
+            border-radius: 7px;
+
+            cursor: pointer;
+
+            font-size: 14px;
+
+            font-weight: 600;
+        }
+
+
+        .print-btn {
+
+            background:
+                var(--primary);
+
+            color: white;
+        }
+
+
+        .print-btn:hover {
+
+            opacity: 0.9;
+        }
+
+
+        .refresh-btn {
+
+            background: #eeeeee;
+
+            color: #333;
+        }
+
+
+        .refresh-btn:hover {
+
+            background: #dddddd;
+        }
+
+
+        /* =========================================================
+           SUMMARY
+        ========================================================= */
+
+        .summary {
+
+            display: flex;
+
+            justify-content:
+                space-between;
+
+            align-items: center;
+
+            margin-bottom: 15px;
+
+            padding:
+                12px 15px;
+
+            background:
+                #f3f7f5;
+
+            border-left:
+                4px solid var(--primary);
+
+            border-radius: 5px;
+        }
+
+
+        .summary strong {
+
+            color:
+                var(--primary);
+        }
+
+
+        .date {
+
+            font-size: 13px;
+
+            color:
+                var(--muted);
+        }
+
+
+        /* =========================================================
+           TABLE
+        ========================================================= */
+
+        .table-container {
+
+            width: 100%;
+
+            overflow-x: auto;
+        }
+
+
+        table {
+
+            width: 100%;
+
+            border-collapse:
+                collapse;
+
+            min-width: 1100px;
+        }
+
+
+        thead th {
+
+            background:
+                var(--primary);
+
+            color: white;
+
+            padding:
+                12px 10px;
+
+            font-size: 13px;
+
+            text-align: left;
+
+            border:
+                1px solid #08462e;
+
+            white-space:
+                nowrap;
+        }
+
+
+        tbody td {
+
+            padding: 10px;
+
+            border:
+                1px solid var(--border);
+
+            font-size: 13px;
+
+            vertical-align:
+                middle;
+        }
+
+
+        tbody tr:nth-child(even) {
+
+            background:
+                #f8faf9;
+        }
+
+
+        tbody tr:hover {
+
+            background:
+                #eef5f1;
+        }
+
+
+        /* =========================================================
+           COLUMNS
+        ========================================================= */
+
+        .number {
+
+            text-align: center;
+
+            font-weight: bold;
+
+            width: 70px;
+        }
+
+
+        .name {
+
+            font-weight: 700;
+
+            color:
+                var(--primary);
+
+            min-width: 220px;
+        }
+
+
+        .phone {
+
+            white-space:
+                nowrap;
+
+            min-width: 130px;
+        }
+
+
+        .position {
+
+            min-width: 180px;
+        }
+
+
+        /* =========================================================
+           STATUS
+        ========================================================= */
+
+        .status {
+
+            text-align: center;
+
+            font-weight: 700;
+
+            text-transform:
+                uppercase;
+
+            white-space:
+                nowrap;
+
+            padding:
+                6px 10px;
+        }
+
+
+        .status-active {
+
+            color:
+                #0b5d3b;
+
+            background:
+                #e9f6ef;
+        }
+
+
+        .status-revoked {
+
+            color:
+                #b00020;
+
+            background:
+                #fdebed;
+        }
+
+
+        .status-unknown {
+
+            color:
+                #777;
+
+            background:
+                #f1f1f1;
+        }
+
+
+        /* =========================================================
+           EMPTY
+        ========================================================= */
+
+        .empty {
+
+            text-align: center;
+
+            padding: 40px;
+
+            color:
+                var(--muted);
+
+            display: none;
+        }
+
+
+        /* =========================================================
+           FOOTER
+        ========================================================= */
+
+        .footer {
+
+            margin-top: 25px;
+
+            padding-top: 15px;
+
+            border-top:
+                1px solid var(--border);
+
+            text-align: center;
+
+            color:
+                var(--muted);
+
+            font-size: 12px;
+        }
+
+
+        /* =========================================================
+           MOBILE
+        ========================================================= */
+
+        @media (max-width: 768px) {
+
+            body {
+
+                padding: 10px;
+            }
+
+
+            .page-container {
+
+                padding: 15px;
+
+                border-radius: 8px;
+            }
+
+
+            .watermark-logo {
+
+                width: 350px;
+
+                height: 350px;
+
+                opacity: 0.06;
+            }
+
+
+            .top-logo {
+
+                width: 80px;
+
+                height: 80px;
+            }
+
+
+            .header-text h1 {
+
+                font-size: 21px;
+            }
+
+
+            .header-text h2 {
+
+                font-size: 15px;
+            }
+
+
+            .controls {
+
+                flex-direction:
+                    column;
+
+                align-items:
+                    stretch;
+            }
+
+
+            .search-box {
+
+                min-width: 100%;
+            }
+
+
+            .buttons {
+
+                width: 100%;
+            }
+
+
+            .buttons button {
+
+                flex: 1;
+            }
+
+
+            .summary {
+
+                flex-direction:
+                    column;
+
+                align-items:
+                    flex-start;
+
+                gap: 5px;
+            }
+
+        }
+
+        /* =========================================================
+   RESPONSIVE SCREEN DESIGN
+========================================================= */
+
+/* Large screens */
+@media (min-width: 1200px) {
+
+    body {
+        padding: 30px;
+    }
+
+    .page-container {
+        max-width: 1400px;
+        padding: 30px;
+    }
+
+    .header-text h1 {
+        font-size: 28px;
+    }
+
+    .header-text h2 {
+        font-size: 18px;
+    }
+
+    .watermark-logo,
+    .page-container::before {
+        width: 560px;
+        height: 560px;
+    }
+}
+
+
+/* Desktop / Laptop */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    body {
+        padding: 20px;
+    }
+
+    .page-container {
+        max-width: 1100px;
+        padding: 25px;
+    }
+
+    .header-text h1 {
+        font-size: 26px;
+    }
+
+    .header-text h2 {
+        font-size: 17px;
+    }
+
+    table {
+        font-size: 13px;
+    }
+
+    th,
+    td {
+        padding: 9px 8px;
+    }
+}
+
+
+/* Tablets */
+@media (min-width: 769px) and (max-width: 991px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .page-container {
+        width: 100%;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .header {
+        gap: 15px;
+    }
+
+    .top-logo {
+        width: 85px;
+        height: 85px;
+    }
+
+    .header-text h1 {
+        font-size: 23px;
+    }
+
+    .header-text h2 {
+        font-size: 16px;
+    }
+
+    .header-text p {
+        font-size: 12px;
+    }
+
+    .controls {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .search-box {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .buttons {
+        width: 100%;
+        display: flex;
+    }
+
+    .buttons button {
+        flex: 1;
+    }
+
+    .summary {
+        flex-wrap: wrap;
+    }
+
+    .table-container {
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    table {
+        min-width: 800px;
+    }
+
+    .watermark-logo,
+    .page-container::before {
+        width: 430px;
+        height: 430px;
+    }
+}
+
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    body {
+        padding: 8px;
+        overflow-x: hidden;
+    }
+
+    .page-container {
+        width: 100%;
+        max-width: 100%;
+        padding: 15px;
+        margin: 0;
+        border-radius: 8px;
+    }
+
+    .header {
+        flex-direction: column;
+        text-align: center;
+        gap: 8px;
+        padding-bottom: 15px;
+        margin-bottom: 18px;
+    }
+
+    .top-logo,
+    .logo {
+        width: 75px;
+        height: 75px;
+    }
+
+    .header-text {
+        width: 100%;
+    }
+
+    .header-text h1 {
+        font-size: clamp(19px, 5vw, 24px);
+        line-height: 1.2;
+    }
+
+    .header-text h2 {
+        font-size: clamp(14px, 4vw, 17px);
+        line-height: 1.3;
+    }
+
+    .header-text p {
+        font-size: 11px;
+        line-height: 1.4;
+    }
+
+    .controls {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+
+    .search-box {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .search-box input {
+        width: 100%;
+        min-height: 45px;
+        font-size: 14px;
+    }
+
+    .buttons {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .buttons button {
+        width: 100%;
+        min-height: 44px;
+    }
+
+    .summary {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .table-container {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        border-radius: 6px;
+    }
+
+    table {
+        width: 100%;
+        min-width: 850px;
+        border-collapse: collapse;
+    }
+
+    th,
+    td {
+        font-size: 11px;
+        padding: 7px 6px;
+        white-space: nowrap;
+    }
+
+    .number {
+        width: 45px;
+        min-width: 45px;
+    }
+
+    .name {
+        min-width: 180px;
+    }
+
+    .phone {
+        min-width: 120px;
+    }
+
+    .position {
+        min-width: 160px;
+    }
+
+    .footer {
+        font-size: 10px;
+        margin-top: 15px;
+        padding-top: 10px;
+    }
+
+    .watermark-logo,
+    .page-container::before {
+        width: 330px;
+        height: 330px;
+    }
+}
+
+
+/* Small phones */
+@media (max-width: 480px) {
+
+    body {
+        padding: 5px;
+    }
+
+    .page-container {
+        padding: 10px;
+        border-radius: 6px;
+    }
+
+    .top-logo,
+    .logo {
+        width: 65px;
+        height: 65px;
+    }
+
+    .header {
+        padding-bottom: 12px;
+        margin-bottom: 15px;
+    }
+
+    .header-text h1 {
+        font-size: 19px;
+    }
+
+    .header-text h2 {
+        font-size: 14px;
+    }
+
+    .header-text p {
+        font-size: 10px;
+    }
+
+    .search-box input {
+        font-size: 13px;
+        padding: 10px;
+    }
+
+    .buttons button {
+        font-size: 13px;
+        min-height: 42px;
+    }
+
+    .summary {
+        font-size: 11px;
+        padding: 8px;
+    }
+
+    table {
+        min-width: 800px;
+    }
+
+    th,
+    td {
+        font-size: 10px;
+        padding: 6px 5px;
+    }
+
+    .watermark-logo,
+    .page-container::before {
+        width: 270px;
+        height: 270px;
+    }
+}
+
+
+/* Very small phones */
+@media (max-width: 360px) {
+
+    body {
+        padding: 3px;
+    }
+
+    .page-container {
+        padding: 8px;
+    }
+
+    .top-logo,
+    .logo {
+        width: 55px;
+        height: 55px;
+    }
+
+    .header-text h1 {
+        font-size: 17px;
+    }
+
+    .header-text h2 {
+        font-size: 13px;
+    }
+
+    .header-text p {
+        font-size: 9px;
+    }
+
+    .buttons button {
+        font-size: 12px;
+    }
+
+    .watermark-logo,
+    .page-container::before {
+        width: 230px;
+        height: 230px;
+    }
+}
+
+
+/* =========================================================
+   PRINT / SAVE AS PDF
+========================================================= */
+
+@media print {
+
+    @page {
+        size: A4 landscape;
+        margin: 8mm;
+    }
+
+    html,
+    body {
+        width: 100%;
+        min-width: 0;
+        margin: 0 !important;
+        padding: 0 !important;
+        background: #ffffff !important;
+        color: #000000 !important;
+    }
+
+    body {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
+
+    .page-container {
+        position: relative !important;
+        width: 100% !important;
+        max-width: none !important;
+        min-width: 0 !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+
+        background: #ffffff !important;
+        border: none !important;
+        border-radius: 0 !important;
+        box-shadow: none !important;
+
+        overflow: visible !important;
+    }
+
+    /* Hide everything that should not appear on paper */
+    .controls,
+    .refresh-btn,
+    .print-btn,
+    button {
+        display: none !important;
+    }
+
+    /* Header */
+    .header {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+
+        margin-bottom: 8px !important;
+        padding-bottom: 8px !important;
+
+        border-bottom: 2px solid #0b5d3b !important;
+
+        page-break-after: avoid !important;
+        break-after: avoid !important;
+    }
+
+    .top-logo,
+    .logo {
+        width: 70px !important;
+        height: 70px !important;
+        margin: 0 auto 5px auto !important;
+    }
+
+    .header-text h1 {
+        font-size: 20px !important;
+        margin-bottom: 3px !important;
+    }
+
+    .header-text h2 {
+        font-size: 13px !important;
+    }
+
+    .header-text p {
+        font-size: 9px !important;
+        margin-top: 3px !important;
+    }
+
+    /* Summary */
+    .summary {
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+
+        padding: 5px 8px !important;
+        margin-bottom: 6px !important;
+
+        font-size: 9px !important;
+
+        page-break-after: avoid !important;
+        break-after: avoid !important;
+    }
+
+    /* Table */
+    .table-container {
+        width: 100% !important;
+        max-width: none !important;
+
+        overflow: visible !important;
+
+        page-break-inside: auto !important;
+        break-inside: auto !important;
+    }
+
+    table {
+        width: 100% !important;
+        min-width: 0 !important;
+
+        border-collapse: collapse !important;
+        table-layout: auto !important;
+
+        page-break-inside: auto !important;
+        break-inside: auto !important;
+    }
+
+    thead {
+        display: table-header-group !important;
+    }
+
+    tbody {
+        display: table-row-group !important;
+    }
+
+    tr {
+        page-break-inside: avoid !important;
+        break-inside: avoid !important;
+        page-break-after: auto !important;
+    }
+
+    th {
+        padding: 5px 4px !important;
+        font-size: 8px !important;
+
+        white-space: nowrap !important;
+
+        background: #0b5d3b !important;
+        color: #ffffff !important;
+
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
+
+    td {
+        padding: 4px !important;
+        font-size: 7.5px !important;
+
+        white-space: normal !important;
+        word-break: normal !important;
+    }
+
+    .number {
+        width: 35px !important;
+        min-width: 35px !important;
+    }
+
+    .name {
+        min-width: 0 !important;
+        width: 23% !important;
+    }
+
+    .phone {
+        min-width: 0 !important;
+        width: 13% !important;
+    }
+
+    .position {
+        min-width: 0 !important;
+        width: 17% !important;
+    }
+
+    /* Footer */
+    .footer {
+        margin-top: 7px !important;
+        padding-top: 5px !important;
+        font-size: 7px !important;
+
+        page-break-before: avoid !important;
+    }
+
+    /* =====================================================
+       PRINT WATERMARK
+    ===================================================== */
+
+    .page-container::before {
+        content: "" !important;
+
+        position: fixed !important;
+
+        top: 50% !important;
+        left: 50% !important;
+
+        width: 430px !important;
+        height: 430px !important;
+
+        transform: translate(-50%, -50%) !important;
+
+        background-image: url("images/logo.png") !important;
+        background-repeat: no-repeat !important;
+        background-position: center !important;
+        background-size: contain !important;
+
+        opacity: 0.065 !important;
+
+        pointer-events: none !important;
+
+        z-index: 0 !important;
+
+        display: block !important;
+        visibility: visible !important;
+    }
+
+    .page-container > * {
+        position: relative !important;
+        z-index: 2 !important;
+    }
+
+    /* Prevent blank horizontal overflow */
+    * {
+        max-width: 100%;
+    }
+}
+
+
+        /* =========================================================
+           PRINT / PDF
+        ========================================================= */
+
+        @media print {
+
+            @page {
+
+                size: A4 landscape;
+
+                margin: 10mm;
+            }
+
+
+            html,
+            body {
+
+                width: 100%;
+
+                background: #ffffff !important;
+
+                padding: 0;
+
+                margin: 0;
+            }
+
+
+            .page-container {
+
+                width: 100%;
+
+                max-width: none;
+
+                padding: 0;
+
+                margin: 0;
+
+                background:
+                    #ffffff !important;
+
+                box-shadow: none;
+
+                border-radius: 0;
+
+                overflow: visible;
+            }
+
+
+            /* =====================================================
+               WATERMARK IN PDF
+
+               REAL IMAGE - NOT CSS BACKGROUND
+            ===================================================== */
+
+            .watermark-logo {
+
+                display: block !important;
+
+                position: absolute !important;
+
+                top: 50% !important;
+
+                left: 50% !important;
+
+                width: 500px !important;
+
+                height: 500px !important;
+
+                transform:
+                    translate(-50%, -50%) !important;
+
+                object-fit: contain !important;
+
+                opacity: 0.10 !important;
+
+                z-index: 0 !important;
+
+                visibility: visible !important;
+            }
+
+
+            .page-content {
+
+                position: relative;
+
+                z-index: 2;
+            }
+
+
+            /* =====================================================
+               HIDE CONTROLS
+            ===================================================== */
+
+            .controls {
+
+                display: none !important;
+            }
+
+
+            /* =====================================================
+               HEADER
+            ===================================================== */
+
+            .header {
+
+                margin-bottom: 12px;
+
+                padding-bottom: 10px;
+            }
+
+
+            .top-logo {
+
+                width: 85px;
+
+                height: 85px;
+
+                margin-bottom: 6px;
+            }
+
+
+            .header-text h1 {
+
+                font-size: 22px;
+            }
+
+
+            .header-text h2 {
+
+                font-size: 15px;
+            }
+
+
+            .header-text p {
+
+                font-size: 10px;
+            }
+
+
+            /* =====================================================
+               SUMMARY
+            ===================================================== */
+
+            .summary {
+
+                padding:
+                    6px 10px;
+
+                margin-bottom: 8px;
+
+                font-size: 11px;
+
+                background:
+                    #f3f7f5 !important;
+            }
+
+
+            .date {
+
+                font-size: 10px;
+            }
+
+
+            /* =====================================================
+               TABLE
+            ===================================================== */
+
+            table {
+
+                min-width: 0;
+
+                width: 100%;
+
+                page-break-inside:
+                    auto;
+            }
+
+
+            thead {
+
+                display:
+                    table-header-group;
+            }
+
+
+            tbody tr {
+
+                page-break-inside:
+                    avoid;
+
+                page-break-after:
+                    auto;
+            }
+
+
+            thead th {
+
+                padding:
+                    7px 6px;
+
+                font-size: 9px;
+            }
+
+
+            tbody td {
+
+                padding: 6px;
+
+                font-size: 8.5px;
+
+                background:
+                    rgba(255,255,255,0.88);
+            }
+
+
+            .number {
+
+                width: 45px;
+            }
+
+
+            .name {
+
+                min-width: 0;
+            }
+
+
+            .phone {
+
+                min-width: 0;
+            }
+
+
+            .position {
+
+                min-width: 0;
+            }
+
+
+            .status {
+
+                min-width: 60px;
+            }
+
+
+            .footer {
+
+                margin-top: 10px;
+
+                padding-top: 5px;
+
+                font-size: 9px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <div class="page-container">
+
+
+        <!-- =====================================================
+             REAL YPG WATERMARK
+             
+             IMPORTANT:
+             Keep this image INSIDE page-container.
+        ====================================================== -->
+
+        <img
+            src="images/YPG-LOGO.png"
+            alt=""
+            class="watermark-logo"
+            aria-hidden="true"
+        >
+
+
+        <!-- =====================================================
+             ALL PAGE CONTENT
+        ====================================================== -->
+
+        <div class="page-content">
+
+
+            <!-- =================================================
+                 HEADER
+            ================================================== -->
+
+            <div class="header">
+
+                <img
+                    src="images/YPG-LOGO.png"
+                    alt="Youth Parliament Ghana Logo"
+                    class="top-logo"
+                    onerror="
+                        this.style.display='none';
+                    "
+                >
+
+
+                <div class="header-text">
+
+                    <h1>
+                        YOUTH PARLIAMENT GHANA
+                    </h1>
+
+
+                    <h2>
+                        REGISTERED MEMBERS OF PARLIAMENT
+                    </h2>
+
+
+                    <p>
+                        Official Active Members Directory
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 CONTROLS
+            ================================================== -->
+
+            <div class="controls">
+
+
+                <div class="search-box">
+
+                    <input
+                        type="text"
+                        id="searchInput"
+                        placeholder="Search by name, phone, constituency, region, position or status..."
+                    >
+
+                </div>
+
+
+                <div class="buttons">
+
+                    <button
+                        class="refresh-btn"
+                        onclick="loadMembers()"
+                    >
+                        Refresh
+                    </button>
+
+
+                    <button
+                        class="print-btn"
+                        onclick="printPDF()"
+                    >
+                        Print / Save as PDF
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 SUMMARY
+            ================================================== -->
+
+            <div class="summary">
+
+
+                <div>
+
+                    Total Active MPs:
+
+                    <strong id="totalMembers">
+                        0
+                    </strong>
+
+                </div>
+
+
+                <div class="date">
+
+                    Generated:
+
+                    <span id="generatedDate">
+                        -
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 TABLE
+            ================================================== -->
+
+            <div class="table-container">
+
+
+                <table>
+
+
+                    <thead>
+
+                        <tr>
+
+                            <th>
+                                No.
+                            </th>
+
+                            <th>
+                                Name
+                            </th>
+
+                            <th>
+                                Phone Number
+                            </th>
+
+                            <th>
+                                Constituency
+                            </th>
+
+                            <th>
+                                Region
+                            </th>
+
+                            <th>
+                                Position
+                            </th>
+
+                            <th>
+                                Status
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody
+                        id="membersTableBody"
+                    >
+                    </tbody>
+
+
+                </table>
+
+
+                <div
+                    class="empty"
+                    id="emptyState"
+                >
+                    No active members found.
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 FOOTER
+            ================================================== -->
+
+            <div class="footer">
+
+                Youth Parliament Ghana —
+                Official Members Directory
+
+                <br>
+
+                This document contains the currently active
+                registered Members of Parliament.
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================================================
+         MP DATA
+    ========================================================== -->
+
+    <script src="js/mp-data.js"></script>
+
+
+    <script>
+
+
+        /* =====================================================
+           VARIABLES
+        ====================================================== */
+
+        let allMPs = [];
+
+        let activeMPs = [];
+
+        let displayedMPs = [];
+
+
+        /* =====================================================
+           LOAD MEMBERS
+        ====================================================== */
+
+        function loadMembers() {
+
+            try {
+
+
+                if (
+                    typeof mpData === "undefined" ||
+                    !Array.isArray(mpData)
+                ) {
+
+                    throw new Error(
+                        "mpData was not found or is not an array."
+                    );
+
+                }
+
+
+                allMPs = mpData;
+
+
+                /*
+                 * ONLY ACTIVE MPs
+                 */
+
+                activeMPs =
+                    allMPs.filter(
+                        function(mp) {
+
+                            const status =
+                                String(
+                                    mp.status || ""
+                                )
+                                .trim()
+                                .toLowerCase();
+
+
+                            return (
+                                status === "active"
+                            );
+
+                        }
+                    );
+
+
+                displayedMPs =
+                    [...activeMPs];
+
+
+                document.getElementById(
+                    "totalMembers"
+                ).textContent =
+                    activeMPs.length;
+
+
+                updateGeneratedDate();
+
+
+                renderTable(
+                    displayedMPs
+                );
+
+            }
+
+
+            catch (error) {
+
+                console.error(
+                    "Error loading MP data:",
+                    error
+                );
+
+
+                document.getElementById(
+                    "membersTableBody"
+                ).innerHTML = "";
+
+
+                const emptyState =
+                    document.getElementById(
+                        "emptyState"
+                    );
+
+
+                emptyState.style.display =
+                    "block";
+
+
+                emptyState.textContent =
+                    "Unable to load MP data. Please check js/mp-data.js.";
+
+            }
+
+        }
+
+
+        /* =====================================================
+           RENDER TABLE
+        ====================================================== */
+
+        function renderTable(members) {
+
+
+            const tableBody =
+                document.getElementById(
+                    "membersTableBody"
+                );
+
+
+            const emptyState =
+                document.getElementById(
+                    "emptyState"
+                );
+
+
+            tableBody.innerHTML = "";
+
+
+            if (
+                !members ||
+                members.length === 0
+            ) {
+
+                emptyState.style.display =
+                    "block";
+
+                return;
+
+            }
+
+
+            emptyState.style.display =
+                "none";
+
+
+            members.forEach(
+                function(mp, index) {
+
+
+                    const row =
+                        document.createElement(
+                            "tr"
+                        );
+
+
+                    /* =========================================
+                       NUMBER
+                    ========================================== */
+
+                    const numberCell =
+                        document.createElement(
+                            "td"
+                        );
+
+
+                    numberCell.className =
+                        "number";
+
+
+                    const mpNumber =
+                        String(
+                            mp.id || ""
+                        )
+                        .replace(
+                            /^mp/i,
+                            ""
+                        )
+                        .trim();
+
+
+                    numberCell.textContent =
+                        mpNumber ||
+                        String(index + 1)
+                            .padStart(3, "0");
+
+
+                    row.appendChild(
+                        numberCell
+                    );
+
+
+                    /* =========================================
+                       NAME
+                    ========================================== */
+
+                    const nameCell =
+                        document.createElement(
+                            "td"
+                        );
+
+
+                    nameCell.className =
+                        "name";
+
+
+                    nameCell.textContent =
+                        String(
+                            mp.name || "-"
+                        )
+                        .toUpperCase();
+
+
+                    row.appendChild(
+                        nameCell
+                    );
+
+
+                    /* =========================================
+                       PHONE
+                    ========================================== */
+
+                    const phoneCell =
+                        document.createElement(
+                            "td"
+                        );
+
+
+                    phoneCell.className =
+                        "phone";
+
+
+                    phoneCell.textContent =
+                        mp.phone || "-";
+
+
+                    row.appendChild(
+                        phoneCell
+                    );
+
+
+                    /* =========================================
+                       CONSTITUENCY
+                    ========================================== */
+
+                    const constituencyCell =
+                        document.createElement(
+                            "td"
+                        );
+
+
+                    constituencyCell.textContent =
+                        mp.constituency || "-";
+
+
+                    row.appendChild(
+                        constituencyCell
+                    );
+
+
+                    /* =========================================
+                       REGION
+                    ========================================== */
+
+                    const regionCell =
+                        document.createElement(
+                            "td"
+                        );
+
+
+                    regionCell.textContent =
+                        mp.region || "-";
+
+
+                    row.appendChild(
+                        regionCell
+                    );
+
+
+                    /* =========================================
+                       POSITION
+                    ========================================== */
+
+                    const positionCell =
+                        document.createElement(
+                            "td"
+                        );
+
+
+                    positionCell.className =
+                        "position";
+
+
+                    positionCell.textContent =
+                        mp.position || "-";
+
+
+                    row.appendChild(
+                        positionCell
+                    );
+
+
+                    /* =========================================
+                       STATUS
+                    ========================================== */
+
+                    const statusCell =
+                        document.createElement(
+                            "td"
+                        );
+
+
+                    statusCell.className =
+                        "status";
+
+
+                    const status =
+                        String(
+                            mp.status || "unknown"
+                        )
+                        .trim()
+                        .toLowerCase();
+
+
+                    statusCell.textContent =
+                        status.toUpperCase();
+
+
+                    if (
+                        status === "active"
+                    ) {
+
+                        statusCell.classList.add(
+                            "status-active"
+                        );
+
+                    }
+
+                    else if (
+                        status === "revoked"
+                    ) {
+
+                        statusCell.classList.add(
+                            "status-revoked"
+                        );
+
+                    }
+
+                    else {
+
+                        statusCell.classList.add(
+                            "status-unknown"
+                        );
+
+                    }
+
+
+                    row.appendChild(
+                        statusCell
+                    );
+
+
+                    tableBody.appendChild(
+                        row
+                    );
+
+                }
+            );
+
+        }
+
+
+        /* =====================================================
+           SEARCH
+        ====================================================== */
+
+        function searchMembers() {
+
+
+            const searchInput =
+                document.getElementById(
+                    "searchInput"
+                );
+
+
+            const searchTerm =
+                String(
+                    searchInput.value || ""
+                )
+                .trim()
+                .toLowerCase();
+
+
+            if (!searchTerm) {
+
+                displayedMPs =
+                    [...activeMPs];
+
+
+                renderTable(
+                    displayedMPs
+                );
+
+                return;
+
+            }
+
+
+            displayedMPs =
+                activeMPs.filter(
+                    function(mp) {
+
+
+                        const searchableText =
+                            [
+
+                                mp.id,
+
+                                mp.name,
+
+                                mp.phone,
+
+                                mp.constituency,
+
+                                mp.region,
+
+                                mp.position,
+
+                                mp.status
+
+                            ]
+
+                            .map(
+                                function(value) {
+
+                                    return String(
+                                        value || ""
+                                    )
+                                    .toLowerCase();
+
+                                }
+                            )
+
+                            .join(" ");
+
+
+                        return searchableText
+                            .includes(
+                                searchTerm
+                            );
+
+                    }
+                );
+
+
+            renderTable(
+                displayedMPs
+            );
+
+        }
+
+
+        /* =====================================================
+           PRINT
+        ====================================================== */
+
+        function printPDF() {
+
+            window.print();
+
+        }
+
+
+        /* =====================================================
+           GENERATED DATE
+        ====================================================== */
+
+        function updateGeneratedDate() {
+
+
+            const now =
+                new Date();
+
+
+            const formattedDate =
+                now.toLocaleDateString(
+                    "en-GH",
+                    {
+                        day: "2-digit",
+                        month: "long",
+                        year: "numeric"
+                    }
+                );
+
+
+            document.getElementById(
+                "generatedDate"
+            ).textContent =
+                formattedDate;
+
+        }
+
+
+        /* =====================================================
+           SEARCH EVENT
+        ====================================================== */
+
+        document
+            .getElementById(
+                "searchInput"
+            )
+            .addEventListener(
+                "input",
+                searchMembers
+            );
+
+
+        /* =====================================================
+           INITIALIZE
+        ====================================================== */
+
+        document.addEventListener(
+            "DOMContentLoaded",
+            function() {
+
+                loadMembers();
+
+            }
+        );
+
+
+    </script>
+
+
+</body>
+
+</html>
