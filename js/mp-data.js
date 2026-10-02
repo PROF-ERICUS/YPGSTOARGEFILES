@@ -6045,6 +6045,214 @@ parliament: "Youth Parliament Ghana",
     linkedin: "Perpetual Ntim-Donkor",
     tiktok: "Akan Constituency Youth Parliament"
 },
+  {
+    id: "mp111",
+    name: "YAHAYA ADAM",
+    position: "Member of Parliament",
+    constituency: "Savelugu constituency",
+    region: "NORTHERN",
+    parliament: "Youth Parliament Ghana",
+    status: "active",
+
+    education:
+        "Knutsford University, Accra — BSc Nursing (Final Year) — 2026 In View; Bimbilla Senior High School — General Agric Science — WASSCE — 2020; Adibo R/C Junior High School — Basic Education — BECE — 2016.",
+
+    profession:
+        "Student",
+
+    experience:
+        "White Hall President — Knutsford University (2024/2025); Course Representative — BSc Nursing (2025 to date); General Secretary — Red Cross Society, Bimbilla SHS; Executive Member — DASA & GMSA, Bimbilla SHS; Health Prefect — Adibo R/C JHS (2016); General Prefect — Kpachiyili R/C Primary.",
+
+    biography:
+        "YAHAYA ADAM is a dedicated youth leader and final year BSc Nursing student at Knutsford University, Accra, proudly representing Savelugu Constituency in the Youth Parliament Ghana. As the first born of eight children, he has learned leadership, responsibility and mentorship from an early age, qualities that continue to shape his service to his peers and his community. His leadership journey started early. He served as General Prefect at Kpachiyili R/C Primary School and as Health Prefect at Adibo R/C Junior High School in 2016. At Bimbilla Senior High School in 2020, where he studied General Agric Science, he served as General Secretary of the Red Cross Society, Executive Member of DASA and Active Member of GMSA. At the university level, he served as White Hall President (2024/2025) and currently serves as Course Representative for his BSc Nursing class (2025 to date).",
+
+    seminars:
+        "SHE LEADS Summit '24 — Certificate of Participation — 11th Oct 2024; Okponglo Community Health Screening 2024 — Volunteer Health Screener & Health Educator; Accra Arts & Health Festival 2026 — Academic Symposium.",
+
+    image: "images/adam.jpeg",
+
+    email: "yahayaadam.5623@gmail.com",
+    phone: "0547055893 / 0200114401",
+    website: "#",
+
+    facebook: "https://www.facebook.com/share/1Eq9tLGNak/",
+    twitter: "https://x.com/YahayaAdam5623",
+    instagram: "https://www.instagram.com/honorable_officialgh?stkn=azhtdnV2dmk0NzR4",
+    linkedin: "https://www.linkedin.com/in/yahaya-adam-960331304?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+    tiktok: "#"
+},
+{
+    id: "mp112",
+    name: "BISMARK BOADU",
+    position: "Member of Parliament",
+    constituency: "AKUAPEM NORTH (AKROPONG) constituency",
+    region: "EASTERN",
+    parliament: "PARLIAMENT OF GHANA",
+    status: "active",
+
+    education:
+        "University of Cape Coast, Ghana — B.Sc Actuarial Science — Degree — Level 300",
+
+    profession:
+        "Student",
+
+    experience:
+        "National Deputy Chairperson for Actuarial Science Ghana, 2025/2026; NSMQ Contestant — SHS Chapter; Senior Boys' Prefect — SHS Chapter",
+
+    biography:
+        "BISMARK BOADU is a dynamic leader, youth advocate, and Youth Member of Parliament for the Akuapem North Constituency. Driven by a passion for community transformation, he is dedicated to building an environment where young people are equipped with the skills, resources, and institutional support needed to reach their highest potential. With a background in Actuarial Science and business, he recognizes that effective youth governance relies on strategic influence rather than direct legislative power. Bismark's platform champions collaboration over empty promises. He is committed to working in close alignment with the sitting Member of Parliament to bridge the gap between local youth and national decision-making. By transforming the office into a direct, responsive pipeline for young voices, he seeks to ensure that the constituency's priorities are translated into concrete policy actions rooted in strict accountability and real socio-economic results. Bismark believes that by empowering the youth of Akuapem North with viable opportunities and a genuine seat at the decision-making table, we will forge a capable, resilient generation ready to drive national growth.",
+
+    vision:
+        "I envision an Akuapem North where every young person is equipped, supported, and empowered to fulfill their true potential. As a Youth MP, I know that true progress requires collaboration, not just campaign promises. That is why my strategy centers on a robust partnership with our sitting MP to translate urgent needs into concrete action. This collaborative approach moves us away from hollow commitments and toward a culture of transparency, accountability, and real results.",
+
+    plans:
+        "Promote youth empowerment, skills development, active inclusion, community development, accountability, infrastructure development and collaboration with the sitting Member of Parliament to address the needs of young people in the Akuapem North Constituency.",
+
+    contribution:
+        "Youth empowerment, education, community development, infrastructure research, youth participation, accountability, leadership and opportunities for young people to contribute meaningfully to the development of Ghana.",
+
+    currentActivities:
+        "Member of Parliament for the Akuapem North Constituency — Parliament of Ghana; Conducting research with his team on roads, bridges and other infrastructure projects that will enhance community development.",
+
+    leadershipExperience:
+        "National Deputy Chairperson for Actuarial Science Ghana — 2025/2026; NSMQ Contestant — SHS Chapter; Senior Boys' Prefect — SHS Chapter; Member of Parliament — Akuapem North Constituency, Parliament of Ghana.",
+
+    professionalExperience:
+        "Student of B.Sc Actuarial Science at the University of Cape Coast; Background in Actuarial Science and business; Youth leader and governance advocate.",
+
+    focusAreas:
+        "YOUTH EMPOWERMENT • EDUCATION • COMMUNITY DEVELOPMENT • INFRASTRUCTURE • YOUTH GOVERNANCE • ACCOUNTABILITY • LEADERSHIP • SKILLS DEVELOPMENT",
+
+    slogan:
+        "Empowering the youth through collaboration, accountability and real results.",
+
+    image: "images/boadu.jpeg",
+
+    email: "bismarkboadu01@gmail.com",
+    phone: "0532909722 / 056019464",
+    website: "LinkedIn",
+
+    facebook: "Hon. B.B",
+    twitter: "Hon. B.B",
+    instagram: "Hon. B.B",
+    linkedin: "https://www.linkedin.com/in/boadu-bismark-20b4682b7?utm_source=share_via&utm_content=profile&utm_medium=member_ios",
+    tiktok: "Akuapem North Youth Parliament"
+},
+{
+    id: "mp113",
+    name: "NGMENBARAA JOSEPH",
+    position: "Member of Parliament",
+    constituency: "Nadowli Kaleo constituency",
+    region: "Upper West",
+    parliament: "Youth Parliament Ghana",
+    status: "active",
+
+    education:
+        "Sunyani Technical University — Degree in Electrical and Electronics Engineering — 2026 to 2029; Wa Technical Institute — Electrical Engineering Technology — completed in 2025; Naro D/A JHS — BECE — completed in 2022; Naro D/A Primary School.",
+
+    profession:
+        "Electrical Power System Engineer",
+
+    experience:
+        "Compound Overseer — Class Four; Senior Prefect — Class Six; Belly Boy — JHS One; Senior Prefect — JHS Two; Senior Prefect — JHS Three; Utilities Prefect — SHS Three; Union President — SHS Three; Preaching Coordinator — SHS Three.",
+
+    biography:
+        "NGMENBARAA JOSEPH was born on 21st August 2001 to Mr Peter Clever Dong and Mrs Juliana Ngmenbaraa. He hails from Naro under the Nadowli Kaleo Constituency in the Upper West Region of Ghana. He started his education at Naro D/A Primary School in 2016 and proceeded to Naro D/A JHS, where he completed his BECE in 2022. He later attended Wa Technical Institute, where he studied Electrical Engineering Technology and completed in 2025. In 2026, he proceeded to Sunyani Technical University, where he is currently pursuing a degree in Electrical and Electronics Engineering. He is a Christian by religion.",
+
+    vision:
+        "To contribute to youth development, education, technical skills and meaningful leadership within the Nadowli Kaleo Constituency.",
+
+    plans:
+        "Promote youth participation, education, technical development, leadership, community development and opportunities that empower young people to contribute meaningfully to their communities.",
+
+    contribution:
+        "Youth representation, education, technical skills development, electrical and engineering development, leadership and community development.",
+
+    currentActivities:
+        "Member of Parliament for the Nadowli Kaleo Constituency — Parliament of Ghana; Student of Electrical and Electronics Engineering at Sunyani Technical University.",
+
+    leadershipExperience:
+        "Compound Overseer — Class Four; Senior Prefect — Class Six; Senior Prefect — JHS Two; Senior Prefect — JHS Three; Utilities Prefect — SHS Three; Union President — SHS Three; Preaching Coordinator — SHS Three.",
+
+    professionalExperience:
+        "Electrical Engineering Technology graduate from Wa Technical Institute; Student of Electrical and Electronics Engineering at Sunyani Technical University.",
+
+    focusAreas:
+        "Youth empowerment • Education • Technical development • Electrical engineering • Leadership • Community development • Youth participation",
+
+    slogan:
+        "Empowering youth through knowledge, leadership and technical excellence.",
+
+    image: "images/ngmenbaraa.jpeg",
+
+    email: "ngmenbaraaj@gmail.com",
+    phone: "#",
+    website: "Facebook",
+
+    facebook: "https://www.facebook.com/share/1BqKhcXpsS/",
+    twitter: "#",
+    instagram: "#",
+    linkedin: "#",
+    tiktok: "#"
+},
+{
+    id: "mp114",
+    name: "NATHAN DANKWAH YEBOAH",
+    position: "Member of Parliament",
+    constituency: "Ofoase Ayirebi constituency",
+    region: "Eastern",
+    parliament: "Youth Parliament Ghana",
+    status: "active",
+
+    education:
+        "Ghana Communication Technology University — BSc Computer Science — Degree — 4th year",
+
+    profession:
+        "Computer Science Student",
+
+    experience:
+        "President — Pope John Old Boys Association (GCTU Chapter); Cadet Senior Ensign — Pope John Senior High School; Youth Alive Club President — Pope John Senior High School; Committee Leader — Head of State Award Scheme (Duke of Edinburgh's International Award); Gold Award Holder — Head of State Award Scheme; IT and Software Experience — Ecobank Ghana, St. Joseph Hospital, ZYNUH TECH and Gados IT Solutions",
+
+    biography:
+        "NATHAN DANKWAH YEBOAH is a Youth Member of Parliament for Ofoase Ayirebi Constituency in the Eastern Region under the Youth Parliament of Ghana and a Computer Science undergraduate at Ghana Communication Technology University (GCTU) with core expertise in web development, cybersecurity, data engineering and corporate IT support. A Gold Award Holder and committee leader in the Head of State Award Scheme (Duke of Edinburgh's International Award), he serves as President of the Pope John Old Boys Association (GCTU Chapter) and has a proven track record of student leadership, including roles as Cadet Senior Ensign and Youth Alive Club President at Pope John Senior High School. Alongside his parliamentary representation and community development initiatives, he brings hands-on technical experience from IT and software roles at Ecobank Ghana, St. Joseph Hospital, ZYNUH TECH and Gados IT Solutions, supported by certifications in CompTIA Security+, Cloud Computing, Data Analytics and API Security.",
+
+    vision:
+        "To contribute to youth development, technology, community development and effective youth representation through leadership, innovation and meaningful participation.",
+
+    plans:
+        "Promote youth participation, technology education, digital skills, cybersecurity awareness, community development and opportunities that empower young people to contribute meaningfully to society.",
+
+    contribution:
+        "Youth representation, technology, computer science, cybersecurity, web development, data engineering, student leadership, community development and digital skills.",
+
+    currentActivities:
+        "Member of Parliament for the Ofoase Ayirebi Constituency — Youth Parliament Ghana; President — Pope John Old Boys Association (GCTU Chapter); Computer Science undergraduate at Ghana Communication Technology University.",
+
+    leadershipExperience:
+        "President — Pope John Old Boys Association (GCTU Chapter); Cadet Senior Ensign — Pope John Senior High School; Youth Alive Club President — Pope John Senior High School; Committee Leader — Head of State Award Scheme; Member of Parliament — Ofoase Ayirebi Constituency, Youth Parliament Ghana.",
+
+    professionalExperience:
+        "IT and software experience at Ecobank Ghana, St. Joseph Hospital, ZYNUH TECH and Gados IT Solutions; Experience in web development, cybersecurity, data engineering and corporate IT support.",
+
+    focusAreas:
+        "Youth Empowerment • Technology • Computer Science • Cybersecurity • Web Development • Data Engineering • Digital Skills • Community Development • Youth Leadership",
+
+    slogan:
+        "Empowering youth through technology, leadership and meaningful representation.",
+
+    image: "images/nathan.jpeg",
+
+    email: "nathandankwah05@gmail.com",
+    phone: "0204081704",
+    website: "#",
+
+    facebook: "https://www.facebook.com/share/1K3iYwDpR5/?mibextid=wwXIfr",
+    twitter: "#",
+    instagram: "#",
+    linkedin: "https://www.linkedin.com/in/nathan-dankwah-404877367?utm_source=share_via&utm_content=profile&utm_medium=member_ios",
+    tiktok: "#"
+},
+
 
 
 
