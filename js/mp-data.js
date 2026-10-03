@@ -6252,8 +6252,346 @@ parliament: "Youth Parliament Ghana",
     linkedin: "https://www.linkedin.com/in/nathan-dankwah-404877367?utm_source=share_via&utm_content=profile&utm_medium=member_ios",
     tiktok: "#"
 },
+  {
+    id: "mp115",
+    name: "ROSELINE AUDREY MAWUFE­MOR DZAKPASU",
+    position: "Member of Parliament",
+    constituency: "Sekondi",
+    region: "Western",
+    parliament: "Youth Parliament Ghana",
+    status: "active",
 
+    education:
+        "Christian Service University, Kumasi — Bachelor of Science in Midwifery — 2024 to Present; Mfantsiman Girls' Senior High School — General Science — WASSCE — 2020 to 2023; Seventh-day Adventist School — Basic Education — BECE — 2019 to 2020; Tessark International School — Basic Education — 2007 to 2018.",
 
+    profession:
+        "Entrepreneur and Student",
 
+    experience:
+        "Deputy Chairperson — SRC Organizing Committee, Christian Service University; Founder — Audrey Imports & Supply; Organizer/Lead — Flow With Confidence, Christian Service University; Youth Member of Parliament-Elect — Sekondi Constituency, Youth Parliament of Ghana; SRC Women’s Commissioner; Chief Welfare Officer — Christian Service University; NAMSA Most Influential Student.",
+
+    biography:
+        "ROSELINE AUDREY MAWU­FEMOR DZAKPASU is a Ghanaian student leader, youth advocate, entrepreneur and community development practitioner. She is pursuing a BSc. in Midwifery at Christian Service University (CSU), Kumasi, where she serves as SRC Women’s Commissioner and Chief Welfare Officer. Her leadership experience includes serving as Deputy Chairperson of the SRC Organizing Committee and leading student-focused initiatives such as the Breast Cancer Webinar. She was also honoured as NAMSA Most Influential Student. In 2026, she was elected Youth Member of Parliament-Elect for the Sekondi Constituency, Youth Parliament of Ghana, advancing her commitment to youth representation and civic engagement. She is also the Founder of Audrey Imports & Supply, with interests in entrepreneurship and youth economic empowerment. Her leadership is anchored in service, integrity, youth empowerment, health advocacy and community development.",
+
+    vision:
+        "To promote youth representation, health advocacy, empowerment, integrity and community development while creating meaningful opportunities for young people to participate in leadership and civic engagement.",
+
+    plans:
+        "Promote youth empowerment, health awareness, student welfare, civic engagement, entrepreneurship, community development and opportunities that support the growth and development of young people.",
+
+    contribution:
+        "Youth representation, health advocacy, student welfare, entrepreneurship, youth empowerment, community development, civic engagement and leadership.",
+
+    currentActivities:
+        "Youth Member of Parliament-Elect for the Sekondi Constituency — Youth Parliament of Ghana; SRC Women’s Commissioner — Christian Service University; Chief Welfare Officer — Christian Service University; Founder — Audrey Imports & Supply; Student of Midwifery.",
+
+    leadershipExperience:
+        "SRC Women’s Commissioner — Christian Service University; Chief Welfare Officer — Christian Service University; Deputy Chairperson — SRC Organizing Committee, Christian Service University; Organizer/Lead — Flow With Confidence, Christian Service University; Youth Member of Parliament-Elect — Sekondi Constituency, Youth Parliament of Ghana.",
+
+    professionalExperience:
+        "Founder — Audrey Imports & Supply; Entrepreneur; Student of Bachelor of Science in Midwifery at Christian Service University; Community development practitioner and youth advocate.",
+
+    focusAreas:
+        "YOUTH EMPOWERMENT • HEALTH ADVOCACY • EDUCATION • STUDENT WELFARE • ENTREPRENEURSHIP • COMMUNITY DEVELOPMENT • CIVIC ENGAGEMENT • LEADERSHIP",
+
+    slogan:
+        "Service, integrity and empowerment for meaningful youth representation.",
+
+    image: "images/audrey.jpeg",
+
+    email: "officeoftheyouthmpsekondi@gmail.com",
+    phone: "0502847667",
+    website: "#",
+
+    facebook: "#",
+    twitter: "#",
+    instagram: "#",
+    linkedin: "#",
+    tiktok: "#"
+},
+{
+    id: "mp116",
+    name: "BERTHA DEDE PADITEY",
+    position: "Member of Parliament",
+    constituency: "Upper Manya Krobo constituency",
+    region: "Eastern",
+    parliament: "Youth Parliament Ghana",
+    status: "active",
+
+    education:
+        "St. Michael’s Nursing and Midwifery Training College — General Nursing — Diploma in Nursing — 2021 to 2024",
+
+    profession:
+        "Nursing",
+
+    experience:
+        "President — Pax Romana; Financial Secretary — Rotational Nurses and Midwives Association",
+
+    biography:
+        "BERTHA DEDE PADITEY is a Ghanaian professional nurse and youth leader from the Upper Manya Krobo Constituency in the Eastern Region. She is passionate about healthcare, youth development, community service and leadership, with a particular interest in contributing to initiatives that promote the wellbeing and development of young people and communities. She received her professional nursing education at St. Michael’s Nursing and Midwifery Training College, where she pursued a Diploma in General Nursing from 2021 to 2024. Her training in nursing has provided her with practical knowledge and experience in patient care, health promotion and community health. Beyond her professional training, Bertha has demonstrated leadership and organisational involvement through her participation in student and professional associations. Her previous leadership experience includes serving as President of Pax Romana and Financial Secretary of the Rotational Nurses and Midwives Association, roles through which she developed experience in leadership, financial administration, coordination and representing the interests of colleagues. As a young professional in nursing, Bertha brings together healthcare experience and youth leadership. In her capacity as a Youth Member of Parliament, she provides a platform through which she can engage with issues affecting young people and participate in discussions on governance, development and civic responsibility. Her background in nursing, combined with her leadership and community-oriented interests, reflects her commitment to using her skills and experience to contribute meaningfully to society.",
+
+    vision:
+        "To contribute to healthcare, youth development, community service and leadership while promoting the wellbeing and development of young people and communities.",
+
+    plans:
+        "Promote youth development, healthcare awareness, community service, leadership, civic responsibility and initiatives that improve the wellbeing of young people and communities.",
+
+    contribution:
+        "Healthcare, youth development, community service, nursing, leadership, youth representation and civic responsibility.",
+
+    currentActivities:
+        "Youth Member of Parliament for the Upper Manya Krobo Constituency — Parliament of Ghana; Professional Nurse.",
+
+    leadershipExperience:
+        "President — Pax Romana; Financial Secretary — Rotational Nurses and Midwives Association; Youth Member of Parliament — Upper Manya Krobo Constituency, Parliament of Ghana.",
+
+    professionalExperience:
+        "Professional Nurse; Diploma in General Nursing from St. Michael’s Nursing and Midwifery Training College; Experience in patient care, health promotion and community health.",
+
+    focusAreas:
+        "HEALTHCARE • YOUTH DEVELOPMENT • COMMUNITY SERVICE • LEADERSHIP • HEALTH PROMOTION • YOUTH REPRESENTATION • CIVIC RESPONSIBILITY",
+
+    slogan:
+        "Serving with care, leadership and commitment to youth development.",
+
+    image: "images/Dede.jpeg",
+
+    email: "Paditey.bertha2020@gmail.com",
+    phone: "0242408903",
+    website: "#",
+
+    facebook: "Bertha Paditey",
+    twitter: "#",
+    instagram: "Bertha Dede Paditey",
+    linkedin: "#",
+    tiktok: "#"
+},
+{
+    id: "mp118",
+    name: "EMMANUEL ANTWI",
+    position: "Member of Parliament",
+    constituency: "Berekum West constituency",
+    region: "Bono",
+    parliament: "Youth Parliament Ghana",
+    status: "active",
+
+    education:
+        "Sunyani Technical University — Bachelor of Pharmacy Technology — Level 400 — 2024 to Present; St. Hubert Minor Seminary SHS — 2019 to 2022; St. Mary’s International JHS — 2017 to 2019; St. Mary’s Primary School — 2009 to 2017.",
+
+    profession:
+        "Pharmacy Technology Student, Public Relations and Communications",
+
+    experience:
+        "Senior Staff Prefect — St. Hubert Minor Seminary SHS; Compound Overseer Committee Member — St. Mary’s Preparatory School; Editorial Board Committee Member — Sunyani Technical University; Old Students Association WhatsApp Administrator; Public Relations Officer (PRO) — Sunyani Technical University SRC; Youth Member of Parliament Elect — Berekum West Constituency, Youth Parliament Ghana.",
+
+    biography:
+        "EMMANUEL ANTWI is a young Ghanaian leader, communicator and student pursuing a Bachelor of Pharmacy Technology at Sunyani Technical University. He currently serves as the Youth Member of Parliament Elect for the Berekum West Constituency under Youth Parliament Ghana and as the Public Relations Officer of the Sunyani Technical University Students’ Representative Council (SRC). He has experience in public relations, media and content creation, graphic design, digital communication and youth mobilization. He is passionate about youth development, civic participation, education and creating opportunities for young people to contribute meaningfully to their communities and Ghana’s development.",
+
+    vision:
+        "To promote meaningful youth participation in community and national development by creating platforms where young people can be heard, informed and empowered.",
+
+    plans:
+        "Contribute to initiatives that promote education, employment, entrepreneurship, leadership development and civic participation among young people in the Berekum West Constituency, while strengthening collaboration between young people, community leaders, institutions and other stakeholders.",
+
+    contribution:
+        "Youth development, civic participation, education, employment, entrepreneurship, leadership development, public relations, communication and community mobilization.",
+
+    currentActivities:
+        "Youth Member of Parliament Elect — Berekum West Constituency, Youth Parliament Ghana; Public Relations Officer — Sunyani Technical University SRC; Bachelor of Pharmacy Technology student at Sunyani Technical University.",
+
+    leadershipExperience:
+        "Youth Member of Parliament Elect — Berekum West Constituency, Youth Parliament Ghana; Public Relations Officer — Sunyani Technical University SRC; Senior Staff Prefect — St. Hubert Minor Seminary SHS; Compound Overseer Committee Member — St. Mary’s Preparatory School; Editorial Board Committee Member — Sunyani Technical University; Old Students Association WhatsApp Administrator.",
+
+    professionalExperience:
+        "Public relations, communication, media and content creation, graphic design, social media management, digital communication, leadership and team coordination.",
+
+    focusAreas:
+        "YOUTH DEVELOPMENT • CIVIC PARTICIPATION • EDUCATION • EMPLOYMENT • ENTREPRENEURSHIP • PUBLIC RELATIONS • DIGITAL COMMUNICATION • COMMUNITY MOBILIZATION • LEADERSHIP",
+
+    slogan:
+        "Empowering young people to be heard, informed and involved.",
+
+    image: "images/antwi.jpeg",
+
+    email: "antwi4084@gmail.com",
+    phone: "0541540896",
+    website: "#",
+
+    facebook: "Don Nuel",
+    twitter: "Don Nuel",
+    instagram: "Don Nuel",
+    linkedin: "#",
+    tiktok: "Don Nuel"
+},
+{
+    id: "mp119",
+    name: "LYDIA NKETIA MARFO",
+    position: "Member of Parliament",
+    constituency: "Awutu Senya East",
+    region: "Central",
+    parliament: "Youth Parliament Ghana",
+    status: "active",
+
+    education:
+        "University of Cape Coast (UCC) — BSc Population and Health — Level 300 — 2024 to Present.",
+
+    profession:
+        "Youth Advocate and Entrepreneur",
+
+    experience:
+        "Deputy Chaplaincy Prefect — Department of Population and Health, University of Cape Coast; Youth Advocate — Community Youth Development Initiatives; Entrepreneur.",
+
+    biography:
+        "LYDIA NKETIA MARFO is a passionate youth advocate, entrepreneur and student leader currently serving as the Youth Member of Parliament for the Awutu Senya East Constituency in the Youth Parliament of Ghana. She is a Level 300 student at the University of Cape Coast (UCC), studying Population and Health. Driven by a commitment to youth empowerment, community development and public health advocacy, she is dedicated to amplifying the voices of young people in her constituency and championing initiatives that promote health, education and leadership. She previously served as the Deputy Chaplaincy Prefect of her department at the University of Cape Coast, where she demonstrated leadership, spiritual guidance and service to her peers. As an entrepreneur and youth advocate, she continues to inspire young women to pursue leadership and create positive change in their communities.",
+
+    vision:
+        "To empower young people, promote community development and contribute to initiatives that advance health, education and responsible youth leadership.",
+
+    plans:
+        "Promote youth empowerment, public health awareness, education, leadership development and community development initiatives that create meaningful opportunities for young people in the Awutu Senya East Constituency.",
+
+    contribution:
+        "Youth empowerment, public health advocacy, education, community development, entrepreneurship, youth leadership and women's leadership.",
+
+    currentActivities:
+        "Youth Member of Parliament — Awutu Senya East Constituency, Youth Parliament of Ghana; Level 300 student of Population and Health at the University of Cape Coast; Youth Advocate and Entrepreneur.",
+
+    leadershipExperience:
+        "Youth Member of Parliament — Awutu Senya East Constituency, Youth Parliament of Ghana; Deputy Chaplaincy Prefect — Department of Population and Health, University of Cape Coast; Youth Advocate — Community Youth Development Initiatives.",
+
+    professionalExperience:
+        "Youth advocacy, entrepreneurship, community youth development and student leadership.",
+
+    focusAreas:
+        "YOUTH EMPOWERMENT • PUBLIC HEALTH • EDUCATION • COMMUNITY DEVELOPMENT • YOUTH LEADERSHIP • ENTREPRENEURSHIP • WOMEN'S LEADERSHIP",
+
+    slogan:
+        "Empowering young people and creating positive change in our communities.",
+
+    image: "images/lydia.jpeg",
+
+    email: "Lydianketiamarfo2005@gmail.com",
+    phone: "0257582715",
+    website: "#",
+
+    facebook: "https://www.facebook.com/share/1Bn9VbdGt5/",
+    twitter: "#",
+    instagram: "#",
+    linkedin: "https://www.linkedin.com/help/linkedin/",
+    tiktok: "#"
+},
+{
+    id: "mp120",
+    name: "BISMARK OWUSU",
+    position: "Member of Parliament",
+    constituency: "Kwadaso constituency",
+    region: "Ashanti",
+    parliament: "Youth Parliament of Ghana",
+    status: "active",
+
+    education:
+        "Kwame Nkrumah University of Science and Technology (KNUST) — BSc. Medical Imaging — Final Year.",
+
+    profession:
+        "Student, Healthcare Advocate and Youth Representative",
+
+    experience:
+        "President — Federation of Ghana Medical Imaging Students’ Associations (FEGMISA); President — Association of Diagnostic Medical Imaging Students (ADMI-KNUST); President — Faculty of Allied Health Sciences, KNUST; Board Member — Faculty of Allied Health Sciences, KNUST; Committee Member — KNUST @ 75 Faculty of Allied Health Sciences Committee; President — Western Coastal Zone, FEGMISA; Academic Committee Member — ADMI-KNUST; Academic Committee Member — HESA-KNUST; Peer Academic Mentor; Volunteer — KNUST Fresher’s Safe Arrival and Settling Team; Member — KNUST @ 75 Community Impact Project; NSMQ Trainer — Toase Senior High School.",
+
+    biography:
+    "BISMARK OWUSU is a Ghanaian student leader, healthcare advocate and youth representative. He hails from Tepa Asuhyiae and currently resides in Tanoso within the Kwadaso Constituency. He is the firstborn of seven boys and has built his educational and leadership journey around hard work, humility, resilience, discipline and service. He completed his Junior High School education at Prempeh College Basic Experimental 'A' before proceeding to Toase Senior High School. In 2021, he represented Toase Senior High School as a contestant in the National Science and Maths Quiz (NSMQ), and in 2022 he returned as a trainer for the school's NSMQ team, supporting the academic development of younger students. After completing Senior High School, Bismark faced financial challenges in pursuing tertiary education. In 2023, a benefactor recognised his determination and commitment to hard work and offered to sponsor his tertiary education, enabling him to begin his studies at the Kwame Nkrumah University of Science and Technology (KNUST). He is currently in his final year pursuing a BSc. in Medical Imaging. During his second year at KNUST, he was awarded an MTN Scholarship in recognition of his academic performance and intellectual ability. He continues to benefit from the scholarship as an MTN Scholar. Bismark has also served as a Peer Academic Mentor, supporting fellow students in their academic development. His leadership experience includes serving as President of the Federation of Ghana Medical Imaging Students’ Associations (FEGMISA), President of the Association of Diagnostic Medical Imaging Students (ADMI-KNUST), President of the Faculty of Allied Health Sciences at KNUST, Board Member of the Faculty of Allied Health Sciences, President of the Western Coastal Zone of FEGMISA, and serving on academic and institutional committees. He has also contributed to community engagement through the KNUST Fresher’s Safe Arrival and Settling Team and the KNUST @ 75 Community Impact Project. As the Youth Member of Parliament for the Kwadaso Constituency under the Youth Parliament of Ghana, he is committed to listening to young people and contributing to initiatives that support education, mentorship, skills development, employability, entrepreneurship, healthcare, civic participation and youth development. His professional interests include diagnostic sonography, healthcare leadership, medical imaging research, health advocacy and health policy. He hopes to become a highly skilled medical imaging professional and healthcare leader who contributes to healthcare development in Ghana and across Africa while creating opportunities for young people.",
+    vision:
+        "To contribute to a Kwadaso Constituency where young people are heard, supported, empowered and equipped with the knowledge, skills, opportunities and confidence to shape their own futures and contribute positively to their communities.",
+
+    plans:
+        "Promote education, mentorship, skills development, career guidance, employability, entrepreneurship, healthcare awareness, civic participation and personal development opportunities for young people in the Kwadaso Constituency.",
+
+    contribution:
+        "Youth representation, healthcare advocacy, medical imaging education, academic mentorship, student leadership, professional development, community engagement, youth empowerment and opportunity creation.",
+
+    currentActivities:
+        "Youth Member of Parliament — Kwadaso Constituency, Youth Parliament of Ghana; President — Federation of Ghana Medical Imaging Students’ Associations (FEGMISA); BSc. Medical Imaging student at KNUST; Peer Academic Mentor; MTN Scholar.",
+
+    leadershipExperience:
+        "President — Federation of Ghana Medical Imaging Students’ Associations (FEGMISA); President — Association of Diagnostic Medical Imaging Students (ADMI-KNUST); President — Faculty of Allied Health Sciences, KNUST; Board Member — Faculty of Allied Health Sciences, KNUST; President — Western Coastal Zone, FEGMISA; Committee Member — KNUST @ 75 Faculty of Allied Health Sciences Committee; Academic Committee Member — ADMI-KNUST; Academic Committee Member — HESA-KNUST.",
+
+    professionalExperience:
+        "Medical imaging student leadership, healthcare advocacy, academic mentorship, student representation, professional development, community engagement and youth leadership.",
+
+    focusAreas:
+        "DIAGNOSTIC SONOGRAPHY • MEDICAL IMAGING • HEALTHCARE LEADERSHIP • HEALTH ADVOCACY • HEALTH POLICY • EDUCATION • ACADEMIC MENTORSHIP • YOUTH EMPOWERMENT • PROFESSIONAL DEVELOPMENT",
+
+    slogan:
+        "Listening, learning and creating opportunities for the youth of Kwadaso.",
+
+    image: "images/bismark.jpeg",
+
+    email: "bismarkowusu2807@gmail.com",
+    phone: "0552361281",
+    website: "#",
+
+    facebook: "https://www.facebook.com/share/1JBA2u2e",
+    twitter: "#",
+    instagram: "https://www.instagram.com/iambismark_?stkn=MTEzbThrbHgzM2loZQ%3D%3D&utm_source=qr",
+    linkedin: "https://www.linkedin.com/in/bismark-owusu-944a66366",
+    tiktok: "#"
+},
+{
+    id: "mp121",
+    name: "SPENCER ABDUL-FATAW ODOOM",
+    position: "Member of Parliament",
+    constituency: "Ekumfi Constituency",
+    region: "Central",
+    parliament: "Youth Parliament Ghana",
+    status: "active",
+
+    education:
+        "University of Education, Winneba — Bachelor of Business Administration (Accounting) — January 2022 to September 2025; Enyan Main Senior High School — W.A.S.S.C.E. (Business) — September 2018 to September 2021; Islamic Junior High School (Ekumfi Immuna) — B.E.C.E. — January 2015 to June 2018.",
+
+    profession:
+        "Business Administration and Accounting",
+
+    experience:
+        "Financial Secretary — GRIDCo National Service Personnel — January 2026 to October 2026; Financial Secretary — Tema Metropolitan National Service Personnel — April 2026 to March 2027; Auditor General — Greater Accra National Service Personnel — July 2026 to May 2027; Minister of Finance — Youth Parliament — September 2026 to September 2030.",
+
+    biography:
+        "SPENCER ABDUL-FATAW ODOOM is a dynamic and coachable individual dedicated to working with professional competence, an ability to learn and a commitment to overcoming challenges. He possesses analytical thinking, problem-solving skills and the drive to see tasks through to completion. He is committed to working in a team to achieve stated objectives. He holds a Bachelor of Business Administration in Accounting from the University of Education, Winneba and has gained experience through national service and financial leadership roles. He serves as a Youth Member of Parliament representing the Ekumfi Constituency and has also served as Minister of Finance under the Youth Parliament.",
+
+    vision:
+        "To contribute to effective financial leadership, accountability, professional development and responsible management of resources within the Youth Parliament.",
+
+    plans:
+        "Promote financial accountability, responsible resource management, teamwork, professional competence, analytical problem-solving and initiatives that support the effective development of young people.",
+
+    contribution:
+        "Financial management, accountability, youth leadership, professional development, teamwork, analytical thinking and responsible resource management.",
+
+    currentActivities:
+        "Youth Member of Parliament — Ekumfi Constituency, Youth Parliament of Ghana; Financial Secretary — GRIDCo National Service Personnel; Financial Secretary — Tema Metropolitan National Service Personnel; Auditor General — Greater Accra National Service Personnel.",
+
+    leadershipExperience:
+        "Youth Member of Parliament — Ekumfi Constituency, Youth Parliament of Ghana; Financial Secretary — GRIDCo National Service Personnel; Financial Secretary — Tema Metropolitan National Service Personnel; Auditor General — Greater Accra National Service Personnel; Minister of Finance — Youth Parliament.",
+
+    professionalExperience:
+        "Bachelor of Business Administration (Accounting) graduate from the University of Education, Winneba; Experience in financial administration, auditing, accounting and national service leadership.",
+
+    focusAreas:
+        "Financial management • Accountability • Youth leadership • Professional development • Teamwork • Responsible resource management • Analytical thinking",
+
+    slogan:
+        "Professional competence, accountability and responsible financial leadership.",
+
+    image: "images/spencer.jpeg",
+
+    email: "spen.abdulfatawodoom@gmail.com",
+    phone: "0535995443",
+    website: "#",
+
+    facebook: "#",
+    twitter: "#",
+    instagram: "#",
+    linkedin: "#",
+    tiktok: "#"
+},
 
 ];
