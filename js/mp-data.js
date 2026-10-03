@@ -6366,6 +6366,63 @@ parliament: "Youth Parliament Ghana",
     linkedin: "#",
     tiktok: "#"
 },
+  {
+    id: "mp117",
+    name: "GEORGE OPUNI ACHEAMPONG",
+    position: "Member of Parliament",
+    constituency: "Bosome Freho Constituency",
+    region: "Ashanti",
+    parliament: "Youth Parliament Ghana",
+    status: "active",
+
+    education:
+        "HND Automotive Engineering — Kumasi Technical University (KsTU), currently at Level 300; Science Student; National Science & Maths Quiz (NSMQ) — 2024 Batch.",
+
+    profession:
+        "Automotive Engineering Student / Aspiring Automotive Engineer",
+
+    experience:
+        "Youth Member of Parliament — Bosome Freho Constituency, Youth Parliament Ghana; Course Representative — Kumasi Technical University; Student Leadership and Youth Engagement — Kumasi Technical University; Youth Leadership and Community Engagement — Bosome Freho Constituency; Youth Development and Advocacy Activities — Youth Parliament Ghana; Science and Mathematics Engagement — NSMQ 2024 Batch; STEM and Technical Education Interests — Engineering, technology and innovation; Automotive Engineering Training and Practical Experience — Kumasi Technical University.",
+
+    biography:
+        "GEORGE OPUNI ACHEAMPONG is a young Ghanaian leader, student and Youth Member of Parliament representing the Bosome Freho Constituency in the Youth Parliament Ghana. He is passionate about youth development, education, leadership, STEM education, community participation, skills development and creating meaningful opportunities for young people. He has a strong academic background in science and technology and was part of the 2024 Batch of the National Science & Maths Quiz (NSMQ), an experience that strengthened his interest in science, technology, engineering and mathematics. His participation in science-related activities has contributed to his passion for STEM education, innovation, critical thinking, problem-solving and the use of technology to address challenges facing young people and communities. He is currently pursuing an HND in Automotive Engineering at Kumasi Technical University (KsTU). His academic and technical training has strengthened his interest in engineering, automotive technology, innovation, practical skills development and technical education. Beyond academics, he has demonstrated leadership among his peers and has served as a Course Representative, helping communicate students' concerns, support coordination between students and academic authorities and contribute to a positive learning environment. As a youth leader and Youth Member of Parliament, he is committed to representing the interests and concerns of young people in the Bosome Freho Constituency while promoting education, skills development, STEM participation, youth leadership, community engagement and opportunities for young people to contribute to community and national development.",
+
+    vision:
+        "To promote education, technical and skills development, STEM participation, youth leadership, innovation and community engagement while creating meaningful opportunities for young people to contribute to community and national development.",
+
+    plans:
+        "Promote education and skills development, encourage STEM participation, support youth leadership, strengthen community engagement and create platforms through which young people can contribute to community and national development.",
+
+    contribution:
+        "Youth development, education, STEM education, science and mathematics, engineering and technology, automotive engineering, innovation, youth leadership, community development and youth participation in national development.",
+
+    currentActivities:
+        "Youth Member of Parliament — Bosome Freho Constituency, Youth Parliament Ghana; HND Automotive Engineering Student — Kumasi Technical University; Course Representative — Kumasi Technical University; Youth leadership and community engagement activities.",
+
+    leadershipExperience:
+        "Youth Member of Parliament — Bosome Freho Constituency, Youth Parliament Ghana; Course Representative — Kumasi Technical University; Student Leadership and Youth Engagement — Kumasi Technical University; Youth Leadership and Community Engagement — Bosome Freho Constituency; Youth Development and Advocacy Activities — Youth Parliament Ghana.",
+
+    professionalExperience:
+        "HND Automotive Engineering student at Kumasi Technical University; Automotive engineering training and practical experience; Science and Mathematics engagement through the NSMQ 2024 Batch; STEM and technical education interests in engineering, technology and innovation.",
+
+    focusAreas:
+        "Youth development • Education and skills development • STEM education • Science and mathematics • Engineering and technology • Automotive engineering • Innovation and entrepreneurship • Youth leadership • Community development • Youth participation in national development",
+
+    slogan:
+        "Education, innovation, technical skills and youth participation for a stronger future.",
+
+    image: "images/opuni.jpeg",
+
+    email: "opunigeorge2006@gmail.com",
+    phone: "0257152286 / 0509811728",
+    website: "#",
+
+    facebook: "https://www.fb.com/l/6lp1kJRRR",
+    twitter: "https://x.com/opunigeorge2006?s=09",
+    instagram: "https://www.instagram.com/wizkidintelligence?stkn=MXh1azQ1MHEyY3A5Yw==",
+    linkedin: "#",
+    tiktok: "#"
+},
 {
     id: "mp118",
     name: "EMMANUEL ANTWI",
