@@ -2325,58 +2325,58 @@ parliament: "Youth Parliament Ghana",
 },
 {
     id: "mp046",
-    name: "KWEGYIR VALERIE AMOASIWA",
+    name: "AZENGA JANET ADOKUMAH",
     position: "Member of Parliament",
-    constituency: "Anyaa Sowutuom constituency",
-    region: "Greater Accra",
-    parliament: "Parliament of Ghana",
-    status: "revoked",
+    constituency: "Bolgatanga East Constituency",
+    region: "Upper East",
+    parliament: "Youth Parliament Ghana",
+    status: "active",
 
     education:
-        "Kwame Nkrumah University of Science and Technology (KNUST) — BSc Agricultural Biotechnology, 2026. Pentecost Senior High School — General Science, WASSCE, 2022. Nichobeth Preparatory School — BECE, 2019.",
+        "BSc. Development Planning — Kwame Nkrumah University of Science and Technology (KNUST), Class of 2027; General Arts — Navrongo Senior High School, completed 2022; Kambosigo Junior High School, completed 2019. Mastercard Foundation Scholar at KNUST.",
 
     profession:
-        "Agricultural Biotechnologist",
+        "Development Planning Student / Youth Leader",
 
     experience:
-        "Compound Prefect — Nichobeth Preparatory School, 2018/19. Prep Prefect — Pentecost Senior High School, 2021/22. Deputy Health Commissioner — CANARSA, 2023/24. Deputy PRO — CANARSA, 2024/25. Head of Sanitation and Health — FASA, 2024/25. Sponsorship Committee Chairperson — CANARSA, 2025/26.",
+        "Youth Member of Parliament — Bolgatanga East Constituency; Youth Leadership and Community Engagement.",
 
     biography:
-        "KWEGYIR VALERIE AMOASIWA is a graduate of Kwame Nkrumah University of Science and Technology (KNUST) with a BSc in Agricultural Biotechnology. She is a dedicated young leader with a strong background in student leadership and community service, having served in various capacities including health, sanitation, communication and sponsorship roles. She is an alumna of Pentecost Senior High School and Nichobeth Preparatory School. She is currently a graduate preparing for her National Service Scheme (NSS) and is recognized for her discipline, leadership and passion for community health and youth advocacy.",
+        "AZENGA JANET ADOKUMAH is the Youth Member of Parliament for the Bolgatanga East Constituency and a passionate youth leader committed to Leadership, Service and Development. Born on 12th October, 2003, Hon. Azenga hails from Kambosigo in the Bolgatanga East Constituency of the Upper East Region. She had her basic education at Kambosigo Junior High School, completing in 2019, and proceeded to Navrongo Senior High School where she pursued General Arts and completed in 2022. She is currently a student at the Kwame Nkrumah University of Science and Technology (KNUST), where she is pursuing a BSc. in Development Planning, with expected completion in 2027. She is also a proud Mastercard Foundation Scholar at KNUST. As a young leader, she is committed to Leadership, Service and Development and seeks to contribute meaningfully to youth representation and community development.",
 
     vision:
-        "To promote youth advocacy, community health, sanitation, leadership and meaningful community service.",
+        "To promote leadership, service and development while creating meaningful opportunities for young people to participate in community and national development.",
 
     plans:
-        "Support initiatives focused on youth advocacy, community health, sanitation, education, leadership, community service and opportunities for young people.",
+        "Promote youth participation and leadership; support community development initiatives; encourage education and personal development among young people; and contribute to meaningful youth representation and service.",
 
     contribution:
-        "Contributes through student leadership, community health and sanitation activities, youth advocacy, communication, sponsorship coordination and community service.",
+        "Youth leadership, youth representation, education, development planning, community development and public service.",
 
     currentActivities:
-        "Currently a graduate of KNUST preparing for National Service Scheme (NSS) and serving as Member of Parliament for Anyaa Sowutuom.",
+        "Member of Parliament — Bolgatanga East Constituency, Youth Parliament Ghana; BSc. Development Planning student at Kwame Nkrumah University of Science and Technology; Mastercard Foundation Scholar at KNUST.",
 
     leadershipExperience:
-        "Member of Parliament — Anyaa Sowutuom. Compound Prefect — Nichobeth Preparatory School. Prep Prefect — Pentecost Senior High School. Deputy Health Commissioner — CANARSA. Deputy PRO — CANARSA. Head of Sanitation and Health — FASA. Sponsorship Committee Chairperson — CANARSA.",
+        "Youth Member of Parliament — Bolgatanga East Constituency; Youth leadership and community engagement activities.",
 
     professionalExperience:
-        "Agricultural Biotechnologist and graduate with experience in student leadership, community health, sanitation, communication, sponsorship coordination and youth advocacy.",
+        "BSc. Development Planning student at Kwame Nkrumah University of Science and Technology; Youth leadership and community development experience.",
 
     focusAreas:
-        "Agricultural Biotechnology • Youth Advocacy • Community Health • Sanitation • Leadership • Education • Community Service",
+        "Youth leadership • Youth representation • Education • Development planning • Community development • Public service • Leadership • Service",
 
     slogan:
-        "Leadership • Service • Youth Advocacy",
+        "Leadership, Service and Development.",
 
-    image: "images/valerie.jpeg",
+    image: "images/azenga.jpeg",
 
-    email: "Kwegyirvalerie92@gmail.com",
-    phone: "0550447676",
+    email: "#",
+    phone: "#",
     website: "#",
 
-    facebook: "Ridicul gh",
-    twitter: "https://x.com/kwegyirvalerie?s=11",
-    instagram: "https://www.instagram.com/ridiculgh",
+    facebook: "#",
+    twitter: "#",
+    instagram: "#",
     linkedin: "#",
     tiktok: "#"
 },
