@@ -303,7 +303,7 @@ website: "#"
     parliament: "Youth Parliament Ghana",
     committee: "Information to be updated",
      // Profile access status
-    status: "active",
+    status: "revoked",
 
     education:
         "University of Ghana — Currently pursuing a Bachelor of Education. Also engaged in theological studies.",
