@@ -6650,5 +6650,518 @@ parliament: "Youth Parliament Ghana",
     linkedin: "#",
     tiktok: "#"
 },
+  {
+    id: "mp122",
+    name: "FRANCIS HARRY CHINTOH",
+    position: "Member of Parliament",
+    constituency: "Effutu Constituency",
+    region: "Central",
+    parliament: "Youth Parliament Ghana",
+    status: "active",
+
+    education:
+        "B.Sc. Geomatics Engineering — University of Mines and Technology (UMaT), Tarkwa; St. Augustine’s College, Cape Coast — Secondary Education; Ebenezer Memorial Educational Centre (EMEC), Winneba — Basic Education.",
+
+    profession:
+        "Geomatics Engineering Student / Youth Leader",
+
+    experience:
+        "Youth Member of Parliament Elect — Effutu Constituency, Youth Parliament Ghana; APSU Convener — 2025 Year Group; House Prefect — St. Luke’s House, St. Augustine’s College; Head Boy — Ebenezer Memorial Educational Centre, Winneba; Civic Education and Youth Development — School outreach and youth engagement activities; Executive Organisation — Leadership and coordination of a seven-member constituency executive team.",
+
+    biography:
+        "FRANCIS HARRY CHINTOH is a young Ghanaian leader, student and Youth Member of Parliament representing the Effutu Constituency in the Youth Parliament Ghana. He is currently pursuing a B.Sc. in Geomatics Engineering at the University of Mines and Technology (UMaT), Tarkwa. He completed his secondary education at St. Augustine’s College, Cape Coast, and his basic education at Ebenezer Memorial Educational Centre (EMEC), Winneba, the community in which he was formed and which he now seeks to serve. His leadership experience began at an early stage, having served as Head Boy at Ebenezer Memorial Educational Centre at both Junior High School and Upper Primary levels, where he took responsibility for student governance, mentorship and peer organisation. He later served as House Prefect of St. Luke’s House at St. Augustine’s College, with responsibilities for house discipline, welfare and student organisation. He currently serves as APSU Convener for the 2025 Year Group, coordinating communication, organisation and year-group programmes. As Youth Member of Parliament Elect for the Effutu Constituency, he seeks to represent young people while working with the Member of Parliament, the Municipal Chief Executive and the Traditional Council to advance practical youth development initiatives. His flagship undertaking focuses on civic education and the protection of young people through school visits addressing academic seriousness, teenage pregnancy, sexually transmitted infections and drug abuse, alongside the distribution of basic learning materials. His action plan also focuses on youth employment and skills placement, effective use of libraries and ICT centres, geospatial and land awareness, keeping girls in school, and connecting tertiary students with young people in their communities. Through his leadership, he seeks to move youth representation from speeches to practical engagement in schools and communities, while promoting accountability, institutional partnership, education, skills development and responsible citizenship.",
+
+    vision:
+        "To raise a generation of Effutu youth who stay in school, keep their bodies and minds free from early pregnancy and drug abuse, and find honest work through partnership with leadership, so that the young who are coming after us are safer than we were.",
+
+    plans:
+        "Promote civic education in primary and junior high schools; provide guidance on academic seriousness, teenage pregnancy, sexually transmitted infections and drug abuse; distribute basic learning materials; work with the Member of Parliament and Municipal Chief Executive to identify job and skills opportunities; improve the use of libraries and ICT centres; promote geospatial and land awareness among senior high students; support initiatives that help girls remain in school; and connect tertiary students with schools and communities through vacation mentoring.",
+
+    contribution:
+        "Youth development, civic education, education, protection of young people, prevention of teenage pregnancy, health awareness, drug abuse prevention, employment and skills development, ICT and library utilisation, geospatial education, girls’ education, community engagement and democratic participation.",
+
+    currentActivities:
+        "Youth Member of Parliament Elect — Effutu Constituency, Youth Parliament Ghana; APSU Convener — 2025 Year Group; Civic Education and Protection of the Young school outreach; Engagement with the Member of Parliament and Municipal Chief Executive on youth programmes; Coordination of a seven-member constituency executive team.",
+
+    leadershipExperience:
+        "Youth Member of Parliament Elect — Effutu Constituency, Youth Parliament Ghana; APSU Convener — 2025 Year Group; House Prefect — St. Luke’s House, St. Augustine’s College; Head Boy — Ebenezer Memorial Educational Centre, Winneba.",
+
+    professionalExperience:
+        "B.Sc. Geomatics Engineering student at the University of Mines and Technology (UMaT), Tarkwa; Youth leadership and community engagement; Civic education and school outreach; Student organisation and executive coordination; Youth development and institutional partnership.",
+
+    focusAreas:
+        "Civic education • Education and academic development • Youth protection • Teenage pregnancy prevention • Health awareness • Drug abuse prevention • Jobs and skills development • Libraries and ICT centres • Geomatics and land awareness • Girls’ education • Youth leadership • Community development • Democratic participation",
+
+    slogan:
+        "From speeches to school compounds; from youth asking alone to youth working with authority.",
+
+    image: "images/chintoh.jpeg",
+
+    email: "chintohfrancisharry@gmail.com",
+    phone: "0257765048 / 0508930314",
+    website: "#",
+
+    facebook: "#",
+    twitter: "#",
+    instagram: "#",
+    linkedin: "#",
+    tiktok: "#"
+},
+{
+    id: "mp123",
+    name: "SAMUEL OTOO",
+    position: "Member of Parliament",
+    constituency: "Asikuma Odoben Brakwa Constituency",
+    region: "Central",
+    parliament: "Parliament of Ghana",
+    status: "active",
+
+    education:
+        "BSc. Biological Sciences — Kwame Nkrumah University of Science and Technology (KNUST), Degree, 2026.",
+
+    profession:
+        "Biological Scientist / Field Operations Personnel / National Service Personnel",
+
+    experience:
+        "Youth Member of Parliament Elect — Asikuma Odoben Brakwa Constituency; Constituency Youth Leadership and Executive Coordination — Asikuma Odoben Brakwa; National Service Personnel — Complete Farmer Ghana Limited, Head Office, Airport West, Accra; President — Breman Kuntanase Salvation Army Basic School Old Student Association (2023–Present); President — Compassion International Ghana, KNUST Chapter (2025–2026); Organizing Secretary — Compassion International Ghana, KNUST Chapter (2024–2025); Member — Biological Sciences Students Association, KNUST Academic Board; Member — Biological Sciences Students Association, KNUST Library Committee.",
+
+    biography:
+        "SAMUEL OTOO is a youth leader, advocate and community development enthusiast from the Asikuma Odoben Brakwa Constituency in the Central Region of Ghana. He currently serves as the Youth MP-elect for the Asikuma Odoben Brakwa Constituency, where he leads the Constituency Executive team in championing youth participation, development and civic engagement. In this role, he has been actively involved in engaging key stakeholders, including the District Chief Executive and constituency leadership, to advance youth-focused initiatives. Professionally, he serves as a National Service Personnel at Complete Farmer Ghana Limited Head Office, Airport West, Accra, an agritech company working in Africa's agricultural value chains through technology. His professional experience reflects his interest in agriculture, innovation, environmental sustainability and youth employment. A native of Asikuma Odoben Brakwa, Samuel Otoo is passionate about community development, youth empowerment and bridging the gap between young people and leadership opportunities in Ghana. He is a youth development advocate, social worker, environmental sustainability advocate and youth leader known for his commitment, humility and dedication to service.",
+
+    vision:
+        "To promote youth participation, community development, empowerment, environmental sustainability and meaningful opportunities that connect young people with leadership, employment and development initiatives.",
+
+    plans:
+        "Champion youth participation and civic engagement in Asikuma Odoben Brakwa; strengthen collaboration with constituency and district leadership; promote youth development and employment opportunities; support agricultural and technology-driven initiatives; encourage environmental sustainability; and create stronger links between young people and leadership opportunities.",
+
+    contribution:
+        "Youth development, youth empowerment, civic engagement, community development, agriculture and agritech, environmental sustainability, youth employment, social development and leadership.",
+
+    currentActivities:
+        "Youth Member of Parliament Elect — Asikuma Odoben Brakwa Constituency; Leadership of the Constituency Executive team; Youth development and civic engagement activities; National Service Personnel — Complete Farmer Ghana Limited, Head Office, Airport West, Accra.",
+
+    leadershipExperience:
+        "Youth Member of Parliament Elect — Asikuma Odoben Brakwa Constituency; President — Breman Kuntanase Salvation Army Basic School Old Student Association; President — Compassion International Ghana, KNUST Chapter; Organizing Secretary — Compassion International Ghana, KNUST Chapter; Member — Biological Sciences Students Association, KNUST Academic Board; Member — Biological Sciences Students Association, KNUST Library Committee.",
+
+    professionalExperience:
+        "National Service Personnel and Field Operations Personnel — Complete Farmer Ghana Limited, Head Office, Airport West, Accra; BSc. Biological Sciences graduate — Kwame Nkrumah University of Science and Technology; Experience in youth development, community engagement, social work and environmental sustainability.",
+
+    focusAreas:
+        "Youth development • Youth empowerment • Civic engagement • Community development • Agriculture and agritech • Youth employment • Environmental sustainability • Social development • Leadership • Community participation",
+
+    slogan:
+        "Empowering young people, strengthening communities and connecting youth with opportunities.",
+
+    image: "images/otoo.jpeg",
+
+    email: "Kotoosamuel047@gmail.com",
+    phone: "0545587907",
+    website: "#",
+
+    facebook: "#",
+    twitter: "#",
+    instagram: "#",
+    linkedin: "#",
+    tiktok: "#"
+},
+{
+    id: "mp124",
+    name: "DUAGIB ADRASS YENDUKUA",
+    position: "Member of Parliament",
+    constituency: "Garu Constituency",
+    region: "Upper East",
+    parliament: "Youth Parliament Ghana",
+    status: "active",
+
+    education:
+        "Bachelor’s degree in Pharmacy — University of Health and Allied Sciences (UHAS), currently pursuing; St. Hubert Seminary and Senior High School — Secondary Education; Fr. Morin Memorial Junior High School; Fr. Morin Memorial Primary School; Garu Presby Primary School.",
+
+    profession:
+        "Student / Aspiring Healthcare Professional",
+
+    experience:
+        "Member of Parliament — Garu Constituency, Youth Parliament Ghana; Vice Senior Prefect — Fr. Morin Memorial Junior High School; Secretary — Electoral Commission, Ghana Pharmaceutical Students Association (GPSA-UHAS); Youth Leadership and Community Service — Educational and community activities.",
+
+    biography:
+        "DUAGIB ADRASS YENDUKUA was born on 4 April 2005 in Garu, Ghana, to Mr. Abdulai Jacob Duagib and Mrs. Duagib Lucy Laal. He is a young Ghanaian student, emerging leader, youth advocate and aspiring public servant whose journey is shaped by education, leadership, service and a strong desire to contribute to the development of his community and Ghana as a whole. Hon. Duagib began his educational journey at Garu Presby Primary School before continuing at Fr. Morin Memorial Primary School. He proceeded to Fr. Morin Memorial Junior High School, where he developed an interest in leadership, responsibility and service to others. He later attended St. Hubert Seminary and Senior High School, where he completed his secondary education and further strengthened his academic, moral and leadership foundations. He is currently pursuing a Bachelor’s degree in Pharmacy at the University of Health and Allied Sciences (UHAS), preparing for a profession dedicated to healthcare and the wellbeing of people. Throughout his educational and community life, he has demonstrated leadership and service, including serving as Vice Senior Prefect at Fr. Morin Memorial Junior High School and Secretary of the Electoral Commission of the Ghana Pharmaceutical Students Association at UHAS. These experiences have helped him develop skills in leadership, representation, teamwork, communication, organisation and community engagement.",
+
+    vision:
+        "To contribute to the development of Garu and Ghana by promoting youth leadership, education, service, healthcare awareness and meaningful participation of young people in community and national development.",
+
+    plans:
+        "Promote youth participation, education and leadership; encourage community service; support healthcare awareness and responsible citizenship; strengthen youth representation; and contribute to initiatives that improve opportunities and wellbeing for young people in the Garu Constituency.",
+
+    contribution:
+        "Youth leadership, youth advocacy, education, healthcare awareness, community service, student leadership, civic participation and youth development.",
+
+    currentActivities:
+        "Member of Parliament — Garu Constituency, Youth Parliament Ghana; Bachelor’s degree in Pharmacy student — University of Health and Allied Sciences; Youth advocacy and community engagement activities.",
+
+    leadershipExperience:
+        "Member of Parliament — Garu Constituency, Youth Parliament Ghana; Vice Senior Prefect — Fr. Morin Memorial Junior High School; Secretary — Electoral Commission, Ghana Pharmaceutical Students Association (GPSA-UHAS); Youth leadership and community service activities.",
+
+    professionalExperience:
+        "Pharmacy student at the University of Health and Allied Sciences (UHAS); Emerging healthcare professional; Student leadership and community engagement experience.",
+
+    focusAreas:
+        "Youth development • Education • Youth leadership • Healthcare awareness • Community service • Civic participation • Student leadership • Youth advocacy • Community development",
+
+    slogan:
+        "Leadership, service and education for a healthier and stronger community.",
+
+    image: "images/DUAGIB.jpeg",
+
+    email: "adrass842@gmail.com",
+    phone: "+233 59 785 7688",
+    website: "#",
+
+    facebook: "#",
+    twitter: "https://x.com/duagib01",
+    instagram: "https://www.instagram.com/adrass_duagib",
+    linkedin: "#",
+    tiktok: "#"
+},
+{
+    id: "mp125",
+    name: "JAMAL FRINJEI SULEMANA",
+    position: "Member of Parliament",
+    constituency: "Chereponi Constituency",
+    region: "North East",
+    parliament: "Youth Parliament Ghana",
+    status: "active",
+
+    education:
+        "Bachelor’s degree in Forensic Science — University for Development Studies (UDS), currently at Level 400; General Science — Osei Tutu Senior High School; Junior High School — Emmanuel Foundation School, Chiraa; Basic Education — NJA Demonstration School; Primary Education — Nambiema D/A Primary School, Chereponi.",
+
+    profession:
+        "Forensic Science Student",
+
+    experience:
+        "Member of Parliament — Chereponi Constituency, Youth Parliament Ghana; President — Forensic Science Students Association, University for Development Studies; Director of Membership and Welfare — Invibuntu Foundation; Deputy Chairperson — National Association of Bioscience Students (NABSS); Chief Imam — Osei Tutu Senior High School; Prep Prefect — Emmanuel Foundation School, Chiraa.",
+
+    biography:
+        "JAMAL FRINJEI SULEMANA was born in Chereponi in the North East Region of Ghana. He is a Level 400 Forensic Science student at the University for Development Studies (UDS), with a strong interest in leadership, public service, youth development and community advancement. He began his early education at Nambiema D/A Primary School in Chereponi and later transferred in Basic 5 to NJA Demonstration School. He continued his Junior High School education at Emmanuel Foundation School in Chiraa, where he served as Prep Prefect. He attended Osei Tutu Senior High School, where he pursued General Science and served as the Chief Imam, taking on a leadership role within the school community. At the University for Development Studies, he is currently pursuing a Bachelor’s degree in Forensic Science and serves as President of the Forensic Science Students Association, UDS, representing students and promoting their academic and professional interests. His leadership experience also includes serving as Deputy Chairperson of the National Association of Bioscience Students (NABSS). He currently serves as Director of Membership and Welfare at Invibuntu Foundation, contributing to membership engagement and welfare-related activities. As a Member of Parliament of Youth Parliament Ghana, he is committed to youth representation, leadership, community development and public service. His experiences in student leadership, youth engagement and community-oriented work continue to shape his approach to service and representation.",
+
+    vision:
+        "To promote youth representation, leadership, education, community development and public service while creating meaningful opportunities for young people in the Chereponi Constituency.",
+
+    plans:
+        "Promote youth participation and leadership; strengthen student and youth engagement; support education and professional development; encourage community development initiatives; promote welfare and inclusion; and create opportunities for young people to contribute meaningfully to the development of Chereponi and Ghana.",
+
+    contribution:
+        "Youth development, student leadership, forensic science, education, public service, community development, youth representation, membership engagement and welfare.",
+
+    currentActivities:
+        "Member of Parliament — Chereponi Constituency, Youth Parliament Ghana; President — Forensic Science Students Association, UDS; Director of Membership and Welfare — Invibuntu Foundation; Forensic Science Student — University for Development Studies.",
+
+    leadershipExperience:
+        "Member of Parliament — Chereponi Constituency, Youth Parliament Ghana; President — Forensic Science Students Association, UDS; Director of Membership and Welfare — Invibuntu Foundation; Deputy Chairperson — National Association of Bioscience Students; Chief Imam — Osei Tutu Senior High School; Prep Prefect — Emmanuel Foundation School, Chiraa.",
+
+    professionalExperience:
+        "Level 400 Forensic Science student at the University for Development Studies; Student leadership and representation; Membership and welfare coordination at Invibuntu Foundation; Youth and community engagement.",
+
+    focusAreas:
+        "Youth development • Youth leadership • Education • Forensic science • Student representation • Public service • Community development • Membership and welfare • Youth participation • Professional development",
+
+    slogan:
+        "Leadership, service and representation for the advancement of Chereponi youth.",
+
+    image: "images/jamal-frinjei-sulemana.jpeg",
+
+    email: "sulemanajamal5@gmail.com",
+    phone: "0542278351",
+    website: "#",
+
+    facebook: "#",
+    twitter: "#",
+    instagram: "https://www.instagram.com/Frinjei6",
+    linkedin: "#",
+    tiktok: "#"
+},
+{
+    id: "mp126",
+    name: "BOATENG EVA ANNOR",
+    position: "Member of Parliament",
+    constituency: "Korle Klottey Constituency",
+    region: "Greater Accra",
+    parliament: "Youth Parliament Ghana",
+    status: "active",
+
+    education:
+        "General Art — Manya Krobo Senior High School, Certificate, 2026.",
+
+    profession:
+        "Not provided",
+
+    experience:
+        "Member of Parliament — Korle Klottey Constituency; Girls' Prefect — Osu Manhean JHS; Head Girl — Manya Krobo Senior High School.",
+
+    biography:
+        "BOATENG EVA ANNOR is a young Ghanaian leader and Member of Parliament representing the Korle Klottey Constituency. She has demonstrated leadership through her educational journey, serving as Girls' Prefect at Osu Manhean JHS and Head Girl at Manya Krobo Senior High School. Her leadership experience has provided her with opportunities to develop skills in representation, organisation, communication and student leadership. She seeks to contribute to youth representation and community development through her role in the Parliament of Ghana.",
+
+    vision:
+        "To promote responsible youth leadership, representation, education and community development while contributing meaningfully to the development of the Korle Klottey Constituency and Ghana.",
+
+    plans:
+        "Promote youth participation, education, responsible leadership and community engagement while creating opportunities for young people to contribute to development.",
+
+    contribution:
+        "Youth leadership, education, student representation, community engagement and youth participation.",
+
+    currentActivities:
+        "Member of Parliament — Korle Klottey Constituency, Parliament of Ghana.",
+
+    leadershipExperience:
+        "Member of Parliament — Korle Klottey Constituency; Girls' Prefect — Osu Manhean JHS; Head Girl — Manya Krobo Senior High School.",
+
+    professionalExperience:
+        "No current professional position provided.",
+
+    focusAreas:
+        "Youth leadership • Education • Student representation • Community development • Youth participation • Responsible leadership",
+
+    slogan:
+        "Leadership, representation and service for a stronger community.",
+
+    image: "images/eva.jpeg",
+
+    email: "evvaboateng@gmail.com",
+    phone: "0543010168",
+    website: "#",
+
+    facebook: "#",
+    twitter: "#",
+    instagram: "#",
+    linkedin: "#",
+    tiktok: "#"
+},
+{
+    id: "mp127",
+    name: "AKWASI QUANSAH",
+    position: "Member of Parliament",
+    constituency: "Assin Central Constituency",
+    region: "Central",
+    parliament: "Youth Parliament Ghana",
+    status: "active",
+
+    education:
+        "Graduate of Medical Laboratory Science — University of Cape Coast (UCC).",
+
+    profession:
+        "Medical Laboratory Scientist",
+
+    experience:
+        "Youth Member of Parliament Elect — Assin Central Constituency, Youth Parliament Ghana; Youth Leadership — Youth development and representation; Community Service — Community-focused initiatives and stakeholder engagement; Research and Volunteer Work — Research, volunteer activities and youth engagement; Skills Development Support — Working with stakeholders to connect young people who were unable to enter Senior High School with practical skills training including dressmaking, tailoring and pastry making.",
+
+    biography:
+        "AKWASI QUANSAH is a young Ghanaian leader and graduate of Medical Laboratory Science from the University of Cape Coast. He serves as the Youth Member of Parliament Elect for the Assin Central Constituency under the Youth Parliament Ghana. His background includes youth leadership, community service, research, volunteer work and stakeholder engagement. He is currently working with stakeholders to support young people who were unable to enter Senior High School by connecting them to practical skills training opportunities such as dressmaking, tailoring and pastry making. His leadership approach focuses on creating meaningful opportunities for young people through education, practical skills development, mentorship and community engagement. He intends to work towards securing a youth centre for Assin Central where young people can access skills training, mentorship, guidance and opportunities for personal and professional development. He also seeks to encourage young people to take education seriously and believes that meaningful opportunities for learning and development can help reduce drug abuse and fraudulent activities among young people in the constituency.",
+
+    vision:
+        "To help secure a youth centre for Assin Central where young people can access skills training, mentorship, guidance and opportunities for personal and professional development.",
+
+    plans:
+        "Work with stakeholders to expand practical skills training opportunities for young people; pursue the development of a youth centre for Assin Central; promote education and mentorship; provide guidance and development opportunities; and support initiatives that help young people become productive and responsible members of society.",
+
+    contribution:
+        "Youth development, education, practical skills training, mentorship, community service, stakeholder engagement, youth leadership, research, volunteerism and opportunities for young people.",
+
+    currentActivities:
+        "Youth Member of Parliament Elect — Assin Central Constituency, Youth Parliament Ghana; Stakeholder engagement to support young people who were unable to enter Senior High School; Connecting young people with practical skills training including dressmaking, tailoring and pastry making.",
+
+    leadershipExperience:
+        "Youth Member of Parliament Elect — Assin Central Constituency, Youth Parliament Ghana; Youth leadership and representation; Community service; Volunteer work; Stakeholder engagement; Youth development initiatives.",
+
+    professionalExperience:
+        "Graduate of Medical Laboratory Science from the University of Cape Coast; Experience in research, volunteer work, community service, youth leadership and stakeholder engagement.",
+
+    focusAreas:
+        "Youth development • Education • Skills development • Practical vocational training • Mentorship • Youth leadership • Community service • Stakeholder engagement • Youth empowerment • Personal and professional development",
+
+    slogan:
+        "Education, practical skills and opportunities for empowered young people.",
+
+    image: "images/akwasi-quansah.jpeg",
+
+    email: "#",
+    phone: "#",
+    website: "#",
+
+    facebook: "#",
+    twitter: "#",
+    instagram: "#",
+    linkedin: "#",
+    tiktok: "#"
+},
+{
+    id: "mp128",
+    name: "ENOCK OSARFO",
+    position: "Member of Parliament",
+    constituency: "Asante-Akim North Constituency",
+    region: "Ashanti",
+    parliament: "Youth Parliament Ghana",
+    status: "active",
+
+    education:
+        "Doctor of Medical Laboratory Science — University for Development Studies (UDS), currently pursuing, Year Two.",
+
+    profession:
+        "Medical Laboratory Science Student / Aspiring Scientific Researcher",
+
+    experience:
+        "Member of Parliament — Asante-Akim North Constituency, Youth Parliament Ghana; Boys' Prefect — M/A Saviour Basic School (2018–2019); Young Parliamentarian — World Vision Ghana-supported youth parliament initiative; Church Youth Leader; Science and Mathematics Teacher — El-Elyon Learning Center; Participant in community service and clean-up activities; Ghana Scholarship Secretariat — Scholarship beneficiary.",
+
+    biography:
+        "HON. ENOCK OSARFO is a young leader, youth advocate and student with a strong interest in leadership, education, scientific research and community development. He currently serves as the Member of Parliament for the youth of the Asante-Akim North Constituency under the Youth Parliament Ghana. His leadership journey began during his basic school education at M/A Saviour Basic School, where he served as Boys' Prefect from 2018 to 2019. During his Junior High School education, he also represented his school as a Young Parliamentarian through a youth parliament initiative supported by World Vision Ghana. In this role, he participated in debates on issues affecting children and received training in leadership, advocacy and civic participation. The young parliamentarians were addressed as Honourables, an experience that contributed to his early interest in public leadership and service. His passion for working with young people has continued beyond his early school years. He has served as a Church Youth Leader, where he is involved in teaching the Scriptures and guiding young people. Following his Senior High School education at Prempeh College, he worked as a Science and Mathematics Teacher at El-Elyon Learning Center, a private school. This experience strengthened his communication, public-speaking, leadership and interpersonal skills. Hon. Osarfo has also participated in community clean-up exercises and other community activities, reflecting his commitment to community service and development. He is a beneficiary of the Ghana Scholarship Secretariat, which supports his academic journey. Academically, Hon. Osarfo is currently pursuing a Doctor of Medical Laboratory Science (DMLS) at the University for Development Studies (UDS) and is in Year Two. He has a strong interest in scientific research and intends to pursue further education to the PhD level, with particular interest in bioinformatics and scientific research. He aspires to combine his background in medical laboratory science with research and technology while continuing to contribute to youth development, leadership, education and community service. Through his academic pursuits, leadership experiences and commitment to young people, Hon. Enock Osarfo seeks to develop himself as a responsible leader and contribute meaningfully to the development of his community and society.",
+
+    vision:
+        "To develop as a responsible leader who combines education, scientific research, technology and youth development to contribute meaningfully to the development of Asante-Akim North and Ghana.",
+
+    plans:
+        "Promote youth development, education, scientific research and community service; encourage young people to pursue academic and leadership opportunities; support civic participation; and use knowledge in medical laboratory science, research and technology to contribute to community and national development.",
+
+    contribution:
+        "Youth development, education, scientific research, medical laboratory science, bioinformatics, technology, leadership, civic participation, community service and youth advocacy.",
+
+    currentActivities:
+        "Member of Parliament — Asante-Akim North Constituency, Youth Parliament Ghana; Doctor of Medical Laboratory Science student — University for Development Studies, Year Two; Church youth leadership activities; Youth development and community service activities.",
+
+    leadershipExperience:
+        "Member of Parliament — Asante-Akim North Constituency, Youth Parliament Ghana; Boys' Prefect — M/A Saviour Basic School (2018–2019); Young Parliamentarian — World Vision Ghana-supported youth parliament initiative; Church Youth Leader; Science and Mathematics Teacher — El-Elyon Learning Center; Participant in community service and clean-up activities.",
+
+    professionalExperience:
+        "Doctor of Medical Laboratory Science student at the University for Development Studies, currently in Year Two; Science and Mathematics Teacher at El-Elyon Learning Center; Experience in youth leadership, public speaking, communication, community service and scientific research interests.",
+
+    focusAreas:
+        "Youth development • Education • Scientific research • Medical laboratory science • Bioinformatics • Technology • Youth leadership • Civic participation • Community service • Public speaking • Community development",
+
+    slogan:
+        "Education, scientific research and responsible leadership for meaningful community development.",
+
+    image: "images/osarfo.jpeg",
+
+    email: "osarfoenock872@gmail.com",
+    phone: "0546481407",
+    website: "#",
+
+    facebook: "#",
+    twitter: "#",
+    instagram: "#",
+    linkedin: "#",
+    tiktok: "#"
+},
+{
+    id: "mp129",
+    name: "EMMANUEL YEBOAH",
+    position: "Member of Parliament",
+    constituency: "Ejisu Constituency",
+    region: "Ashanti",
+    parliament: "Youth Parliament Ghana",
+    status: "active",
+
+    education:
+        "B.Sc. Laboratory Technology — University of Cape Coast (UCC), with training in laboratory science, environmental science, microbiology, molecular biology and laboratory instrumentation.",
+
+    profession:
+        "Scientist / Teaching Assistant / Laboratory Technology Professional",
+
+    experience:
+        "Youth Member of Parliament — Ejisu Constituency, Youth Parliament Ghana; Teaching Assistant — Department of Laboratory Technology, University of Cape Coast, supporting students during electronics and instrumentation practical sessions; Industrial Intern — Intertek Minerals, with exposure to laboratory analysis, quality control and industrial laboratory practices; President — College of Agriculture and Natural Sciences Students Association of Ghana (CANSSAG-UCC), 2024/2025; Secretary for Diaspora Security — UCC Students’ Representative Council (SRC), 2025; Deputy Welfare Chairman — Laboratory Technology Students’ Association (LABSTAG-UCC), 2023/2024.",
+
+    biography:
+        "EMMANUEL YEBOAH is a scientist, educator and youth leader passionate about youth development, education, scientific innovation and national development. He holds a B.Sc. in Laboratory Technology from the University of Cape Coast (UCC), with training in laboratory science, environmental science, microbiology, molecular biology and laboratory instrumentation. He currently serves as a Teaching Assistant at the Department of Laboratory Technology at the University of Cape Coast, where he supports students during electronics and instrumentation practical sessions. He also gained industrial experience through an internship at Intertek Minerals, where he was exposed to laboratory analysis, quality control and industrial laboratory practices. His leadership experience includes serving as President of the College of Agriculture and Natural Sciences Students Association of Ghana (CANSSAG-UCC) for the 2024/2025 period, Secretary for Diaspora Security of the UCC Students’ Representative Council (SRC) in 2025, and Deputy Welfare Chairman of the Laboratory Technology Students’ Association (LABSTAG-UCC) from 2023 to 2024. As a Youth Member of Parliament representing the Ejisu Constituency, he is committed to representing young people, promoting their welfare and development, and contributing meaningfully to national development through effective leadership and service.",
+
+    vision:
+        "To promote youth development, education, scientific innovation and effective leadership while creating opportunities that improve the welfare and development of young people in the Ejisu Constituency.",
+
+    plans:
+        "Promote education and scientific innovation; advocate for youth welfare and development; encourage skills and professional development; support opportunities for young people; and use leadership, scientific knowledge and service to contribute to community and national development.",
+
+    contribution:
+        "Youth development, education, scientific innovation, laboratory science, student leadership, youth welfare, teaching, professional development and national development.",
+
+    currentActivities:
+        "Youth Member of Parliament — Ejisu Constituency, Youth Parliament Ghana; Teaching Assistant — Department of Laboratory Technology, University of Cape Coast; Youth leadership and representation activities.",
+
+    leadershipExperience:
+        "Youth Member of Parliament — Ejisu Constituency, Youth Parliament Ghana; President — College of Agriculture and Natural Sciences Students Association of Ghana (CANSSAG-UCC), 2024/2025; Secretary for Diaspora Security — UCC Students’ Representative Council (SRC), 2025; Deputy Welfare Chairman — Laboratory Technology Students’ Association (LABSTAG-UCC), 2023/2024.",
+
+    professionalExperience:
+        "Teaching Assistant at the Department of Laboratory Technology, University of Cape Coast; Industrial internship at Intertek Minerals with exposure to laboratory analysis, quality control and industrial laboratory practices; B.Sc. Laboratory Technology graduate from the University of Cape Coast.",
+
+    focusAreas:
+        "Youth development • Education • Scientific innovation • Laboratory science • Environmental science • Microbiology • Molecular biology • Laboratory instrumentation • Youth welfare • Student leadership • Professional development",
+
+    slogan:
+        "Science, education and effective leadership for youth development and national progress.",
+
+    image: "images/yeboah.jpeg",
+
+    email: "emmanuel.yeboah014@stu.ucc.edu.gh",
+    phone: "+233557609423",
+    website: "#",
+
+    facebook: "#",
+    twitter: "#",
+    instagram: "#",
+    linkedin: "#",
+    tiktok: "Gentel_Officer"
+},
+{
+    id: "mp130",
+    name: "DEMAS WINPANG ABUGRI",
+    position: "Member of Parliament",
+    constituency: "Ahafo Ano South East Constituency",
+    region: "Ashanti Region",
+    parliament: "Youth Parliament Ghana",
+    status: "active",
+
+    education:
+        "Doctor of Medical Laboratory Sciences (DMLS) — University of Health and Allied Sciences (UHAS), Undergraduate, 2024–2030; General Science — Toase Senior High School, WASSCE, 2019–2022.",
+
+    profession:
+        "Student Leader | Youth Development Advocate | Social Entrepreneur",
+
+    experience:
+        "Member of Parliament — Ahafo Ano South East Constituency, Youth Parliament Ghana; Founder and Executive Director — Achievers Network Foundation; Public Relations Officer — MELSSA-UHAS; Head of Tertiary Institutions — Better Dream Foundation Ghana; Class Secretary — Student leadership and organisational activities; Hostel/Floor Representative — Student leadership and welfare activities; Youth Development and Community Engagement — Education, mentorship, advocacy, digital skills, public health and community development initiatives.",
+
+    biography:
+        "DEMAS WINPANG ABUGRI is a Ghanaian student leader, youth development advocate, social entrepreneur and public health enthusiast committed to youth empowerment, leadership development, education and community development. He is currently pursuing a Doctor of Medical Laboratory Sciences (DMLS) at the University of Health and Allied Sciences (UHAS). He has demonstrated leadership through various student and youth-focused roles and initiatives, with a particular interest in creating opportunities for young people through education, mentorship, advocacy, digital skills and leadership development. Demas is the Founder and Executive Director of Achievers Network Foundation, a youth-focused organisation committed to raising a generation of purpose through education, mentorship, leadership development, capacity building, digital skills, youth advocacy and community development. Through Achievers Network Foundation, he has initiated and supported programmes focused on student development, career guidance, leadership, mentorship and youth empowerment. He has also been involved in initiatives addressing education, public health, menstrual hygiene and community development. At the University of Health and Allied Sciences, Demas serves as the Public Relations Officer of MELSSA-UHAS, where he has been involved in student engagement, communication, publicity and advocacy activities. His leadership experience also includes serving as a class secretary, hostel/floor representative and other student leadership and organisational roles. He is passionate about strengthening youth participation in leadership, governance and national development.",
+
+    vision:
+        "To empower young people through education, mentorship, leadership development, digital skills, advocacy and community development while strengthening youth participation in leadership, governance and national development.",
+
+    plans:
+        "Promote education, mentorship and career guidance; strengthen youth leadership and participation; support digital skills and capacity building; advocate for youth welfare and public health; promote community development initiatives; and create opportunities that equip young people with the knowledge and skills needed for personal and professional development.",
+
+    contribution:
+        "Youth empowerment, education, mentorship, leadership development, digital skills, youth advocacy, public health, menstrual hygiene, social entrepreneurship, community development and youth participation in governance.",
+
+    currentActivities:
+        "Member of Parliament — Ahafo Ano South East Constituency, Youth Parliament Ghana; Doctor of Medical Laboratory Sciences student — University of Health and Allied Sciences; Founder and Executive Director — Achievers Network Foundation; Public Relations Officer — MELSSA-UHAS.",
+
+    leadershipExperience:
+        "Member of Parliament — Ahafo Ano South East Constituency, Youth Parliament Ghana; Founder and Executive Director — Achievers Network Foundation; Public Relations Officer — MELSSA-UHAS; Head of Tertiary Institutions — Better Dream Foundation Ghana; Class Secretary; Hostel/Floor Representative; Student leadership and youth development activities.",
+
+    professionalExperience:
+        "Doctor of Medical Laboratory Sciences student at the University of Health and Allied Sciences; Founder and Executive Director of Achievers Network Foundation; Public Relations Officer of MELSSA-UHAS; Head of Tertiary Institutions at Better Dream Foundation Ghana; Youth development and social entrepreneurship experience.",
+
+    focusAreas:
+        "Youth empowerment • Education • Mentorship • Leadership development • Digital skills • Youth advocacy • Public health • Menstrual hygiene • Social entrepreneurship • Community development • Youth participation • Governance",
+
+    slogan:
+        "Empowering young people through education, leadership, skills and purposeful service.",
+
+    image: "images/demas-abugri.jpeg",
+
+    email: "demabugri@gmail.com",
+    phone: "0593399323",
+    website: "#",
+
+    facebook: "#",
+    twitter: "#",
+    instagram: "#",
+    linkedin: "#",
+    tiktok: "#"
+},
 
 ];
