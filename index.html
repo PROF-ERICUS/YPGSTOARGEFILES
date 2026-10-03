@@ -3024,6 +3024,277 @@
     }
 
 }
+/* =========================================================
+   CONSTITUENCY REGISTRY LINKS / STAT CARDS
+========================================================= */
+
+.stat-card {
+    display: block;
+    width: 100%;
+
+    text-decoration: none;
+    color: inherit;
+
+    appearance: none;
+    border: 1px solid var(--border);
+    background: var(--white);
+
+    border-radius: var(--radius);
+
+    padding: 18px;
+
+    box-shadow: var(--shadow-sm);
+
+    cursor: pointer;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
+
+    text-align: left;
+}
+
+
+/* Remove normal link styling */
+
+.stat-card:link,
+.stat-card:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/* Hover */
+
+.stat-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 10px 25px rgba(16, 24, 40, 0.10);
+
+    text-decoration: none;
+}
+
+
+/* Active */
+
+.stat-card:active {
+    transform: translateY(-1px);
+}
+
+
+/* Keyboard accessibility */
+
+.stat-card:focus-visible {
+    outline: 3px solid rgba(11, 93, 59, 0.20);
+    outline-offset: 3px;
+}
+
+
+/* =========================================================
+   INDIVIDUAL CARD COLORS
+========================================================= */
+
+.stat-all {
+    border-top: 4px solid var(--blue);
+}
+
+.stat-all:hover {
+    border-color: var(--blue);
+}
+
+
+.stat-recorded {
+    border-top: 4px solid var(--ypg-green);
+}
+
+.stat-recorded:hover {
+    border-color: var(--ypg-green);
+}
+
+
+.stat-vacant {
+    border-top: 4px solid var(--orange);
+}
+
+.stat-vacant:hover {
+    border-color: var(--orange);
+}
+
+
+.stat-revoked {
+    border-top: 4px solid var(--red);
+}
+
+.stat-revoked:hover {
+    border-color: var(--red);
+}
+
+
+.stat-regions {
+    border-top: 4px solid var(--purple);
+}
+
+.stat-regions:hover {
+    border-color: var(--purple);
+}
+
+
+.stat-recorded-total {
+    border-top: 4px solid #344054;
+}
+
+.stat-recorded-total:hover {
+    border-color: #344054;
+}
+
+
+/* =========================================================
+   STAT CONTENT
+========================================================= */
+
+.stat-label {
+    display: block;
+
+    font-size: 12px;
+
+    color: var(--muted);
+
+    font-weight: 700;
+
+    margin-bottom: 8px;
+}
+
+
+.stat-number {
+    display: block;
+
+    font-size: 29px;
+
+    line-height: 1;
+
+    font-weight: 850;
+
+    color: var(--dark);
+}
+
+
+.stat-note {
+    display: block;
+
+    margin-top: 9px;
+
+    font-size: 11px;
+
+    color: var(--muted);
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .stat-card {
+        padding: 14px;
+    }
+
+    .stat-number {
+        font-size: 24px;
+    }
+
+    .stat-label {
+        font-size: 11px;
+    }
+
+    .stat-note {
+        font-size: 10px;
+    }
+
+}
+/* =========================================================
+   NAVIGATION BUTTONS
+========================================================= */
+
+.constituency-btn,
+.back-btn {
+
+    height: 44px;
+
+    padding: 0 16px;
+
+    border-radius: 8px;
+
+    font-size: 11px;
+
+    font-weight: 750;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        background 0.2s ease;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 5px;
+}
+
+
+/* CONSTITUENCY BUTTON */
+
+.constituency-btn {
+
+    border: 1px solid #7043a6;
+
+    background: #f5effb;
+
+    color: #7043a6;
+}
+
+
+/* BACK BUTTON */
+
+.back-btn {
+
+    border: 1px solid #d5dcd8;
+
+    background: #ffffff;
+
+    color: #526059;
+}
+
+
+/* HOVER */
+
+.constituency-btn:hover,
+.back-btn:hover {
+
+    transform: translateY(-1px);
+
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.08);
+
+}
+
+
+/* ICON */
+
+.constituency-btn span,
+.back-btn span {
+
+    font-size: 14px;
+
+    margin-right: 2px;
+
+}
 
     </style>
 
@@ -3063,7 +3334,7 @@
                 <div class="logo-wrapper">
 
                     <img
-                        src="YPG-LOGO.png"
+                        src="images/YPG-LOGO.png"
                         alt="Youth Parliament Ghana Logo"
                         class="top-logo"
                         onerror="this.style.display='none';"
@@ -3142,26 +3413,39 @@
 
             <div class="action-buttons">
 
-                <button
-                    type="button"
-                    class="refresh-btn"
-                    onclick="loadMembers()"
-                >
-                    <span>↻</span>
-                    Refresh
-                </button>
+    <!-- CONSTITUENCY PAGE -->
+    <button
+        type="button"
+        class="constituency-btn"
+        onclick="goToConstituencyPage()"
+    >
+        <span>▦</span>
+        Constituencies
+    </button>
 
 
-                <button
-                    type="button"
-                    class="print-btn"
-                    onclick="printPDF()"
-                >
-                    <span>▣</span>
-                    Print / Save PDF
-                </button>
+    <!-- REFRESH -->
+    <button
+        type="button"
+        class="refresh-btn"
+        onclick="loadMembers()"
+    >
+        <span>↻</span>
+        Refresh
+    </button>
 
-            </div>
+
+    <!-- PRINT -->
+    <button
+        type="button"
+        class="print-btn"
+        onclick="printPDF()"
+    >
+        <span>▣</span>
+        Print / Save PDF
+    </button>
+
+</div>
 
         </section>
 
@@ -3309,95 +3593,70 @@
 
             <!-- RECORDED -->
 
-            <div class="stat-card recorded-card">
+            <a
+    href="constituency-registry.html?status=recorded"
+    class="stat-card"
+>
+    <span class="stat-label">
+        Recorded
+    </span>
 
-                <div class="stat-card-top">
+    <span
+        class="stat-number"
+        id="recordedPositions"
+    >
+        0
+    </span>
 
-                    <div class="stat-icon recorded-icon">
-                        ✓
-                    </div>
-
-                    <div class="stat-title">
-                        Recorded
-                    </div>
-
-                </div>
-
-                <div
-                    class="stat-number"
-                    id="recordedPositions"
-                >
-                    0
-                </div>
-
-                <div class="stat-label">
-                    Registered YPG MPs
-                </div>
-
-            </div>
-
-
+    <span class="stat-note">
+        Recorded constituencies
+    </span>
+</a>
 
             <!-- VACANT -->
 
-            <div class="stat-card vacant-card">
+           <a
+    href="constituency-registry.html?status=vacant"
+    class="stat-card"
+>
+    <span class="stat-label">
+        Vacant
+    </span>
 
-                <div class="stat-card-top">
+    <span
+        class="stat-number"
+        id="vacantPositions"
+    >
+        0
+    </span>
 
-                    <div class="stat-icon vacant-icon">
-                        !
-                    </div>
-
-                    <div class="stat-title">
-                        Vacant
-                    </div>
-
-                </div>
-
-                <div
-                    class="stat-number"
-                    id="vacantPositions"
-                >
-                    0
-                </div>
-
-                <div class="stat-label">
-                    Positions Awaiting Registration
-                </div>
-
-            </div>
-
+    <span class="stat-note">
+        Vacant constituencies
+    </span>
+</a>
 
 
             <!-- REVOKED -->
 
-            <div class="stat-card revoked-card">
+            <a
+    href="constituency-registry.html?status=revoked"
+    class="stat-card"
+>
+    <span class="stat-label">
+        Revoked
+    </span>
 
-                <div class="stat-card-top">
+    <span
+        class="stat-number"
+        id="revokedPositions"
+    >
+        0
+    </span>
 
-                    <div class="stat-icon revoked-icon">
-                        ×
-                    </div>
-
-                    <div class="stat-title">
-                        Revoked
-                    </div>
-
-                </div>
-
-                <div
-                    class="stat-number"
-                    id="revokedPositions"
-                >
-                    0
-                </div>
-
-                <div class="stat-label">
-                    Revoked MP Records
-                </div>
-
-            </div>
-
+    <span class="stat-note">
+        Revoked records
+    </span>
+</a>
         </section>
 
 
@@ -3553,9 +3812,12 @@
     ========================================================== -->
 
     <script src="js/mp-data.js"></script>
+    
+    
 
 
-    <script>
+
+<script>
 
 /* =========================================================
    YOUTH PARLIAMENT GHANA
@@ -3593,7 +3855,194 @@ let currentSearchTerm = "";
 
 
 /* =========================================================
-   LOAD MEMBERS FROM mpData
+   NORMALIZE STATUS
+========================================================= */
+
+function normalizeStatus(status) {
+
+    return String(status || "")
+        .trim()
+        .toLowerCase();
+
+}
+
+
+/* =========================================================
+   NORMALIZE GENERAL TEXT
+========================================================= */
+
+function normalizeName(value) {
+
+    return String(value || "")
+        .normalize("NFKD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .trim()
+        .toLowerCase()
+        .replace(/\s+/g, " ")
+        .replace(/[–—]/g, "-");
+
+}
+
+
+/* =========================================================
+   NORMALIZE CONSTITUENCY NAME
+========================================================= */
+
+function normalizeConstituencyName(value) {
+
+    return String(value || "")
+        .normalize("NFKD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .toLowerCase()
+
+        /* Remove the word constituency */
+        .replace(
+            /\b(constituency|constituencies)\b/g,
+            ""
+        )
+
+        /* Convert punctuation to spaces */
+        .replace(
+            /[^a-z0-9\s]/g,
+            " "
+        )
+
+        /* Remove extra spaces */
+        .replace(
+            /\s+/g,
+            " "
+        )
+
+        .trim();
+
+}
+
+
+/* =========================================================
+   CONSTITUENCY ALIASES
+========================================================= */
+
+/*
+ * IMPORTANT
+ *
+ * Members may type:
+ *
+ * Ayawaso West
+ * Ayawaso West Constituency
+ * Ayawaso West Wuogon
+ * Ayawaso West Wuogon Constituency
+ *
+ * All four represent the same constituency.
+ */
+
+const CONSTITUENCY_ALIASES = {
+
+    "ayawaso west":
+        "ayawaso west wuogon",
+
+    "ayawaso west constituency":
+        "ayawaso west wuogon",
+
+    "ayawaso west wuogon":
+        "ayawaso west wuogon",
+
+    "ayawaso west wuogon constituency":
+        "ayawaso west wuogon"
+
+};
+
+
+/* =========================================================
+   CANONICAL CONSTITUENCY
+========================================================= */
+
+function canonicalConstituency(value) {
+
+    const normalized =
+        normalizeConstituencyName(value);
+
+    if (!normalized) {
+
+        return "";
+
+    }
+
+    return (
+        CONSTITUENCY_ALIASES[normalized] ||
+        normalized
+    );
+
+}
+
+
+/* =========================================================
+   CONSTITUENCY MATCHING
+========================================================= */
+
+/*
+ * This is now the ONLY matching method
+ * used by the system.
+ *
+ * Example:
+ *
+ * Ayawaso West
+ * =
+ * Ayawaso West Constituency
+ * =
+ * Ayawaso West Wuogon
+ * =
+ * Ayawaso West Wuogon Constituency
+ */
+
+function constituencyNamesMatch(
+    name1,
+    name2
+) {
+
+    const a =
+        canonicalConstituency(name1);
+
+    const b =
+        canonicalConstituency(name2);
+
+    if (!a || !b) {
+
+        return false;
+
+    }
+
+    return a === b;
+
+}
+
+
+/* =========================================================
+   GET CONSTITUENCY DATA
+========================================================= */
+
+function getConstituencyData() {
+
+    /*
+     * Use the official constituency
+     * universe when available.
+     */
+
+    if (
+        typeof constituencyData !== "undefined" &&
+        Array.isArray(constituencyData)
+    ) {
+
+        return constituencyData;
+
+    }
+
+    return [];
+
+}
+
+
+/* =========================================================
+   LOAD MEMBERS
 ========================================================= */
 
 function loadMembers() {
@@ -3601,7 +4050,7 @@ function loadMembers() {
     try {
 
         /*
-         * Check whether mpData exists
+         * Check mpData
          */
 
         if (
@@ -3617,55 +4066,51 @@ function loadMembers() {
 
 
         /*
-         * IMPORTANT:
-         *
-         * mpData remains the source of all
-         * registered MP/member records.
+         * Keep mpData as the source
+         * of registered members.
          */
 
         allMPs = [...mpData];
 
 
         /*
-         * ACTIVE / RECORDED MPs
+         * ACTIVE MEMBERS
          */
 
-        activeMPs = allMPs.filter(
-            function(mp) {
+        activeMPs =
+            allMPs.filter(
+                function(mp) {
 
-                const status =
-                    normalizeStatus(mp.status);
+                    return (
+                        normalizeStatus(
+                            mp.status
+                        ) === "active"
+                    );
 
-                return status === "active";
-
-            }
-        );
+                }
+            );
 
 
         /*
-         * REVOKED MPs
+         * REVOKED MEMBERS
          */
 
-        revokedMPs = allMPs.filter(
-            function(mp) {
+        revokedMPs =
+            allMPs.filter(
+                function(mp) {
 
-                const status =
-                    normalizeStatus(mp.status);
+                    return (
+                        normalizeStatus(
+                            mp.status
+                        ) === "revoked"
+                    );
 
-                return status === "revoked";
-
-            }
-        );
+                }
+            );
 
 
         /*
          * BUILD VACANCIES
-         *
-         * If constituencyData exists,
-         * use it.
-         *
-         * Otherwise calculate vacancies
-         * from the 276 positions.
          */
 
         vacantPositions =
@@ -3697,11 +4142,27 @@ function loadMembers() {
 
 
         /*
-         * UPDATE GENERATED DATE
+         * UPDATE DATE
          */
 
         updateGeneratedDate();
 
+
+        /*
+         * UPDATE TOTAL RECORDS
+         */
+
+        const totalMembers =
+            document.getElementById(
+                "totalMembers"
+            );
+
+        if (totalMembers) {
+
+            totalMembers.textContent =
+                allMPs.length;
+
+        }
 
     }
 
@@ -3712,80 +4173,11 @@ function loadMembers() {
             error
         );
 
-
         showLoadingError(
             error.message
         );
 
     }
-
-}
-
-
-/* =========================================================
-   NORMALIZE STATUS
-========================================================= */
-
-function normalizeStatus(status) {
-
-    return String(
-        status || ""
-    )
-    .trim()
-    .toLowerCase();
-
-}
-
-
-/* =========================================================
-   NORMALIZE TEXT
-========================================================= */
-
-function normalizeName(value) {
-
-    return String(
-        value || ""
-    )
-    .trim()
-    .toLowerCase()
-    .replace(
-        /\s+/g,
-        " "
-    )
-    .replace(
-        /[–—]/g,
-        "-"
-    );
-
-}
-
-
-/* =========================================================
-   GET CONSTITUENCY DATA
-========================================================= */
-
-function getConstituencyData() {
-
-    /*
-     * If constituencyData has been loaded
-     * from another JavaScript file, use it.
-     */
-
-    if (
-        typeof constituencyData !== "undefined" &&
-        Array.isArray(constituencyData)
-    ) {
-
-        return constituencyData;
-
-    }
-
-
-    /*
-     * Otherwise return an empty array.
-     */
-
-    return [];
 
 }
 
@@ -3804,7 +4196,7 @@ function getRecordedConstituencies() {
         function(mp) {
 
             const constituency =
-                normalizeName(
+                canonicalConstituency(
                     mp.constituency
                 );
 
@@ -3827,26 +4219,19 @@ function getRecordedConstituencies() {
 
 
 /* =========================================================
-   FIND ACTIVE MP BY CONSTITUENCY
+   FIND ACTIVE MP
 ========================================================= */
 
 function findActiveMP(
     constituency
 ) {
 
-    const target =
-        normalizeName(
-            constituency
-        );
-
-
     return activeMPs.find(
         function(mp) {
 
-            return (
-                normalizeName(
-                    mp.constituency
-                ) === target
+            return constituencyNamesMatch(
+                mp.constituency,
+                constituency
             );
 
         }
@@ -3856,30 +4241,61 @@ function findActiveMP(
 
 
 /* =========================================================
-   FIND REVOKED MP BY CONSTITUENCY
+   FIND REVOKED MP
 ========================================================= */
 
 function findRevokedMP(
     constituency
 ) {
 
-    const target =
-        normalizeName(
-            constituency
-        );
-
-
     return revokedMPs.find(
         function(mp) {
 
-            return (
-                normalizeName(
-                    mp.constituency
-                ) === target
+            return constituencyNamesMatch(
+                mp.constituency,
+                constituency
             );
 
         }
     );
+
+}
+
+
+/* =========================================================
+   FIND MEMBER
+========================================================= */
+
+function findMember(
+    constituency
+) {
+
+    /*
+     * ACTIVE MEMBER FIRST
+     */
+
+    const activeMember =
+        findActiveMP(
+            constituency
+        );
+
+    if (activeMember) {
+
+        return activeMember;
+
+    }
+
+
+    /*
+     * REVOKED MEMBER SECOND
+     */
+
+    const revokedMember =
+        findRevokedMP(
+            constituency
+        );
+
+    return revokedMember || null;
 
 }
 
@@ -3899,8 +4315,7 @@ function getVacantPositions() {
 
 
     /*
-     * IF THE OFFICIAL CONSTITUENCY
-     * LIST IS AVAILABLE
+     * OFFICIAL CONSTITUENCY LIST
      */
 
     if (
@@ -3911,7 +4326,7 @@ function getVacantPositions() {
             function(position) {
 
                 const constituency =
-                    normalizeName(
+                    canonicalConstituency(
                         position.constituency
                     );
 
@@ -3928,10 +4343,6 @@ function getVacantPositions() {
 
     /*
      * FALLBACK
-     *
-     * If the 276 constituency list has not
-     * yet been loaded, calculate the number
-     * of vacancies from 276.
      */
 
     const vacancyCount =
@@ -3942,14 +4353,6 @@ function getVacantPositions() {
         );
 
 
-    /*
-     * We cannot create names for unknown
-     * vacant constituencies.
-     *
-     * Therefore create vacancy placeholders
-     * only for counting purposes.
-     */
-
     return Array.from(
         {
             length: vacancyCount
@@ -3957,16 +4360,51 @@ function getVacantPositions() {
         function() {
 
             return {
+
                 constituency:
                     "Vacant Position",
+
                 region:
                     "-",
+
                 status:
                     "vacant"
+
             };
 
         }
     );
+
+}
+
+
+/* =========================================================
+   COUNT VACANCIES FROM OFFICIAL UNIVERSE
+========================================================= */
+
+function vacancyCountFromUniverse(
+    constituencyList
+) {
+
+    const recorded =
+        getRecordedConstituencies();
+
+
+    return constituencyList.filter(
+        function(position) {
+
+            const constituency =
+                canonicalConstituency(
+                    position.constituency
+                );
+
+
+            return !recorded.has(
+                constituency
+            );
+
+        }
+    ).length;
 
 }
 
@@ -3982,8 +4420,7 @@ function buildPositionList() {
 
 
     /*
-     * IF THE 276 CONSTITUENCY LIST
-     * IS AVAILABLE
+     * OFFICIAL 276 CONSTITUENCY LIST
      */
 
     if (
@@ -4017,6 +4454,11 @@ function buildPositionList() {
 
                         id:
                             activeMP.id || "-",
+
+                        /*
+                         * ALWAYS DISPLAY OFFICIAL
+                         * CONSTITUENCY NAME
+                         */
 
                         constituency:
                             position.constituency,
@@ -4062,6 +4504,11 @@ function buildPositionList() {
 
                         id:
                             revokedMP.id || "-",
+
+                        /*
+                         * ALWAYS DISPLAY OFFICIAL
+                         * CONSTITUENCY NAME
+                         */
 
                         constituency:
                             position.constituency,
@@ -4139,10 +4586,6 @@ function buildPositionList() {
     /*
      * =============================================
      * FALLBACK
-     *
-     * No constituencyData loaded.
-     *
-     * Show actual mpData records only.
      * =============================================
      */
 
@@ -4193,186 +4636,94 @@ function buildPositionList() {
 
 }
 
-
 /* =========================================================
    UPDATE DASHBOARD
 ========================================================= */
 
 function updateDashboard() {
 
-    /*
-     * TOTAL MP POSITIONS
-     */
-
-    const totalMPElement =
-        document.getElementById(
-            "totalMPPositions"
-        );
-
-
-    if (totalMPElement) {
-
-        totalMPElement.textContent =
-            TOTAL_MP_POSITIONS;
-
-    }
-
-
-    /*
-     * TOTAL REGIONS
-     */
-
-    const totalRegionsElement =
-        document.getElementById(
-            "totalRegions"
-        );
-
-
-    if (totalRegionsElement) {
-
-        totalRegionsElement.textContent =
-            TOTAL_REGIONS;
-
-    }
-
-
-    /*
-     * TOTAL CONSTITUENCIES
-     */
-
-    const totalConstituenciesElement =
-        document.getElementById(
-            "totalConstituencies"
-        );
-
-
-    if (totalConstituenciesElement) {
-
-        totalConstituenciesElement.textContent =
-            TOTAL_CONSTITUENCIES;
-
-    }
-
-
-    /*
-     * RECORDED POSITIONS
-     *
-     * Count unique constituencies rather
-     * than simply counting records.
-     */
-
     const recordedConstituencies =
         getRecordedConstituencies();
 
 
-    const recordedElement =
-        document.getElementById(
-            "recordedPositions"
+    /* =====================================================
+       TOTAL MP POSITIONS
+    ===================================================== */
+
+    document.getElementById(
+        "totalMPPositions"
+    ).textContent =
+        TOTAL_MP_POSITIONS;
+
+
+    /* =====================================================
+       TOTAL REGIONS
+    ===================================================== */
+
+    document.getElementById(
+        "totalRegions"
+    ).textContent =
+        TOTAL_REGIONS;
+
+
+    /* =====================================================
+       TOTAL CONSTITUENCIES
+       
+       ALWAYS USE THE OFFICIAL 276 POSITIONS
+    ===================================================== */
+
+    document.getElementById(
+        "totalConstituencies"
+    ).textContent =
+        TOTAL_MP_POSITIONS;
+
+
+    /* =====================================================
+       RECORDED POSITIONS
+
+       Only UNIQUE ACTIVE constituencies count.
+    ===================================================== */
+
+    const recordedCount =
+        recordedConstituencies.size;
+
+
+    document.getElementById(
+        "recordedPositions"
+    ).textContent =
+        recordedCount;
+
+
+    /* =====================================================
+       VACANT POSITIONS
+
+       276 - recorded constituencies
+    ===================================================== */
+
+    const vacantCount =
+        Math.max(
+            TOTAL_MP_POSITIONS -
+            recordedCount,
+            0
         );
 
 
-    if (recordedElement) {
-
-        recordedElement.textContent =
-            recordedConstituencies.size;
-
-    }
+    document.getElementById(
+        "vacantPositions"
+    ).textContent =
+        vacantCount;
 
 
-    /*
-     * VACANT POSITIONS
-     */
+    /* =====================================================
+       REVOKED POSITIONS
+    ===================================================== */
 
-    const constituencyList =
-        getConstituencyData();
-
-
-    let vacancyCount;
-
-
-    if (
-        constituencyList.length > 0
-    ) {
-
-        vacancyCount =
-            vacancyCountFromUniverse(
-                constituencyList
-            );
-
-    }
-
-    else {
-
-        vacancyCount =
-            Math.max(
-                TOTAL_MP_POSITIONS -
-                recordedConstituencies.size,
-                0
-            );
-
-    }
-
-
-    const vacantElement =
-        document.getElementById(
-            "vacantPositions"
-        );
-
-
-    if (vacantElement) {
-
-        vacantElement.textContent =
-            vacancyCount;
-
-    }
-
-
-    /*
-     * REVOKED POSITIONS
-     */
-
-    const revokedElement =
-        document.getElementById(
-            "revokedPositions"
-        );
-
-
-    if (revokedElement) {
-
-        revokedElement.textContent =
-            revokedMPs.length;
-
-    }
+    document.getElementById(
+        "revokedPositions"
+    ).textContent =
+        revokedMPs.length;
 
 }
-
-
-/* =========================================================
-   COUNT VACANCIES FROM OFFICIAL UNIVERSE
-========================================================= */
-
-function vacancyCountFromUniverse(
-    constituencyList
-) {
-
-    const recorded =
-        getRecordedConstituencies();
-
-
-    return constituencyList.filter(
-        function(position) {
-
-            return !recorded.has(
-                normalizeName(
-                    position.constituency
-                )
-            );
-
-        }
-    ).length;
-
-}
-
 
 /* =========================================================
    RENDER TABLE
@@ -4449,7 +4800,7 @@ function renderTable(
 
 
     /*
-     * CREATE TABLE ROWS
+     * CREATE ROWS
      */
 
     positions.forEach(
@@ -4462,9 +4813,7 @@ function renderTable(
 
 
             /*
-             * =========================================
              * NUMBER
-             * =========================================
              */
 
             const numberCell =
@@ -4472,14 +4821,9 @@ function renderTable(
                     "td"
                 );
 
-
             numberCell.className =
                 "number";
 
-
-            /*
-             * Use MP ID number if available.
-             */
 
             let mpNumber =
                 String(
@@ -4516,16 +4860,13 @@ function renderTable(
 
 
             /*
-             * =========================================
              * CONSTITUENCY
-             * =========================================
              */
 
             const constituencyCell =
                 document.createElement(
                     "td"
                 );
-
 
             constituencyCell.className =
                 "constituency";
@@ -4542,16 +4883,13 @@ function renderTable(
 
 
             /*
-             * =========================================
              * REGION
-             * =========================================
              */
 
             const regionCell =
                 document.createElement(
                     "td"
                 );
-
 
             regionCell.className =
                 "region";
@@ -4568,16 +4906,13 @@ function renderTable(
 
 
             /*
-             * =========================================
              * NAME
-             * =========================================
              */
 
             const nameCell =
                 document.createElement(
                     "td"
                 );
-
 
             nameCell.className =
                 "name";
@@ -4609,16 +4944,13 @@ function renderTable(
 
 
             /*
-             * =========================================
              * PHONE
-             * =========================================
              */
 
             const phoneCell =
                 document.createElement(
                     "td"
                 );
-
 
             phoneCell.className =
                 "phone";
@@ -4635,16 +4967,13 @@ function renderTable(
 
 
             /*
-             * =========================================
              * POSITION
-             * =========================================
              */
 
             const positionCell =
                 document.createElement(
                     "td"
                 );
-
 
             positionCell.className =
                 "position";
@@ -4661,16 +4990,13 @@ function renderTable(
 
 
             /*
-             * =========================================
              * STATUS
-             * =========================================
              */
 
             const statusCell =
                 document.createElement(
                     "td"
                 );
-
 
             statusCell.className =
                 "status";
@@ -4750,7 +5076,7 @@ function renderTable(
 
 
             /*
-             * ADD ROW TO TABLE
+             * ADD ROW
              */
 
             tableBody.appendChild(
@@ -4783,7 +5109,7 @@ function searchMembers() {
 
 
     /*
-     * GET SEARCH TERM
+     * SEARCH TERM
      */
 
     currentSearchTerm =
@@ -4793,7 +5119,7 @@ function searchMembers() {
 
 
     /*
-     * REBUILD ALL POSITIONS
+     * REBUILD POSITIONS
      */
 
     const allPositions =
@@ -4814,14 +5140,13 @@ function searchMembers() {
             displayedPositions
         );
 
-
         return;
 
     }
 
 
     /*
-     * FILTER RESULTS
+     * FILTER
      */
 
     displayedPositions =
@@ -4866,7 +5191,7 @@ function searchMembers() {
 
 
     /*
-     * RENDER RESULTS
+     * RENDER
      */
 
     renderTable(
@@ -4890,12 +5215,14 @@ function clearSearch() {
 
     if (searchInput) {
 
-        searchInput.value = "";
+        searchInput.value =
+            "";
 
     }
 
 
-    currentSearchTerm = "";
+    currentSearchTerm =
+        "";
 
 
     displayedPositions =
@@ -4910,7 +5237,7 @@ function clearSearch() {
 
 
 /* =========================================================
-   PRINT PAGE
+   PRINT
 ========================================================= */
 
 function printPDF() {
@@ -4947,6 +5274,7 @@ function updateGeneratedDate() {
         now.toLocaleDateString(
             "en-GH",
             {
+
                 day:
                     "2-digit",
 
@@ -4955,6 +5283,7 @@ function updateGeneratedDate() {
 
                 year:
                     "numeric"
+
             }
         );
 
@@ -4987,7 +5316,8 @@ function showLoadingError(
 
     if (tableBody) {
 
-        tableBody.innerHTML = "";
+        tableBody.innerHTML =
+            "";
 
     }
 
@@ -5015,10 +5345,6 @@ function showLoadingError(
 ========================================================= */
 
 function refreshMPDashboard() {
-
-    /*
-     * Reload current mpData
-     */
 
     loadMembers();
 
@@ -5165,7 +5491,6 @@ else {
 
 /* =========================================================
    GLOBAL FUNCTIONS
-   Makes functions accessible from HTML buttons
 ========================================================= */
 
 window.loadMembers =
@@ -5195,9 +5520,66 @@ window.renderTable =
 window.getDashboardSummary =
     getDashboardSummary;
 
+window.findActiveMP =
+    findActiveMP;
 
-    </script>
+window.findRevokedMP =
+    findRevokedMP;
 
+window.findMember =
+    findMember;
+
+window.getRecordedConstituencies =
+    getRecordedConstituencies;
+
+window.canonicalConstituency =
+    canonicalConstituency;
+
+window.constituencyNamesMatch =
+    constituencyNamesMatch;
+
+
+/* =========================================================
+   END
+========================================================= */
+
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+/*
+ * GO TO CONSTITUENCY PAGE
+ */
+
+function goToConstituencyPage() {
+
+    window.location.href =
+        "constituency-registry.html";
+
+}
+
+
+/*
+ * GO BACK
+ */
+
+function goBack() {
+
+    if (window.history.length > 1) {
+
+        window.history.back();
+
+    } else {
+
+        window.location.href =
+            "print-mps.html";
+
+    }
+
+}
+
+</script>
 
 </body>
 
