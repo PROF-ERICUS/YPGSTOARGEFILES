@@ -2042,7 +2042,7 @@ parliament: "Youth Parliament Ghana",
     constituency: "Okaikwei North Constituency",
     region: "Greater Accra",
     parliament: "Youth Parliament Ghana",
-     status: "revoked",
+     status: "active",
 
     education:
         "University of Cape Coast — BSc Nursing, Level 300. College of Accountancy — Senior High School, completed 2021.",
@@ -7161,6 +7161,376 @@ parliament: "Youth Parliament Ghana",
     twitter: "#",
     instagram: "#",
     linkedin: "#",
+    tiktok: "#"
+},
+  
+{
+    id: "mp131",
+    name: "MICHAEL NYAMEKYE",
+    position: "Member of Parliament",
+    constituency: "Manso Nkwanta",
+    region: "Ashanti",
+    parliament: "Youth Parliament Ghana",
+    status: "active",
+
+    education:
+        "BSc Physician Assistantship — Presbyterian University, Ghana, 2024; WASSCE — St. Hubert Minor Seminary Senior High School, 2018; Basic Education Certificate — Suame Methodist Junior High School, 2015.",
+
+    profession:
+        "Physician Assistant",
+
+    experience:
+        "Youth Member of Parliament — Manso Nkwanta Constituency, Youth Parliament Ghana; SRC President — Presbyterian University, Ghana, Asante Akyem Campus; Vice President — Physician Assistant Students Association of Ghana (PASAG), Local Chapter; Financial Secretary — SRC Department, Presbyterian University, Ghana; Hostel Representative — Ebenezer Hostel, Presbyterian University, Ghana; Vice President — Assemblies of God Campus Ministry, Presbyterian University, Ghana; President — NASPA, Wassa Amenfi West Municipal; Western Regional Vice President — National Service Personnel Association (NASPA); Physician Assistant — Clinical/Healthcare Practice; Sunday School Mentor/Teacher — Assemblies of God Ghana.",
+
+    biography:
+        "MICHAEL NYAMEKYE is a Ghanaian Physician Assistant, youth leader and community advocate with a strong interest in healthcare, youth development, governance and community service. He holds a Bachelor of Science in Physician Assistantship from Presbyterian University, Ghana, where he distinguished himself through academic excellence and student leadership. During his time at the university, he served as President of the Students’ Representative Council (SRC) of the Asante Akyem Campus and held other leadership positions, contributing to student welfare, academic support and institutional development. Professionally, Hon. Nyamekye is a Physician Assistant with clinical experience across various areas of healthcare. He has also participated in health screening, health education and community development initiatives. Beyond healthcare, he has demonstrated a commitment to youth leadership and public service through his involvement in the National Service Personnel Association (NASPA), where he has served in leadership at both municipal and regional levels. As a Youth Member of Parliament for the Manso Nkwanta Constituency, he seeks to provide effective representation for young people, amplify their concerns, promote evidence-based discussions and contribute to practical initiatives that advance youth development and community wellbeing. His leadership approach is centred on service, integrity, accountability, collaboration and meaningful impact.",
+
+    vision:
+        "To provide effective youth representation while promoting healthcare, youth development, community wellbeing, accountable leadership and meaningful community service.",
+
+    plans:
+        "Promote youth development and wellbeing; encourage health education and community health initiatives; amplify the concerns of young people; support evidence-based discussions; promote leadership, accountability and collaboration; and contribute to practical initiatives that improve community wellbeing.",
+
+    contribution:
+        "Healthcare, health education, youth development, youth representation, community service, governance, student leadership and community wellbeing.",
+
+    currentActivities:
+        "Youth Member of Parliament — Manso Nkwanta Constituency, Youth Parliament Ghana; Physician Assistant — Clinical/Healthcare Practice; Youth leadership and community development activities.",
+
+    leadershipExperience:
+        "Youth Member of Parliament — Manso Nkwanta Constituency, Youth Parliament Ghana; SRC President — Presbyterian University, Ghana, Asante Akyem Campus; Vice President — Physician Assistant Students Association of Ghana (PASAG), Local Chapter; Financial Secretary — SRC Department, Presbyterian University, Ghana; Hostel Representative — Ebenezer Hostel; Vice President — Assemblies of God Campus Ministry; President — NASPA, Wassa Amenfi West Municipal; Western Regional Vice President — NASPA; Sunday School Mentor/Teacher — Assemblies of God Ghana.",
+
+    professionalExperience:
+        "Physician Assistant with clinical and healthcare practice experience; health screening and health education activities; youth leadership and public-service experience through NASPA and student leadership roles.",
+
+    focusAreas:
+        "Healthcare • Youth development • Health education • Community wellbeing • Youth representation • Governance • Community service • Leadership • Accountability • Student welfare",
+
+    slogan:
+        "Service, integrity, accountability and meaningful impact.",
+
+    image: "images/michael-nyamekye.jpeg",
+
+    email: "michaelnyamekye421@gmail.com",
+    phone: "0556283132",
+    website: "#",
+
+    facebook: "Michael Nyamekye",
+    twitter: "Michael Nyamekye",
+    instagram: "Michael Nyamekye",
+    linkedin: "Michael Nyamekye",
+    tiktok: "#"
+},
+{
+    id: "mp132",
+    name: "LORD KOJO NANEVI",
+    position: "Member of Parliament",
+    constituency: "Anlo Constituency",
+    region: "Volta",
+    parliament: "Youth Parliament Ghana",
+    status: "active",
+
+    education:
+        "Agribusiness — University of Cape Coast.",
+
+    profession:
+        "Agribusiness Professional / Governance Practitioner / Researcher / Development Advocate",
+
+    experience:
+        "Youth Member of Parliament — Anlo Constituency, Youth Parliament Ghana; Speaker — CANSSAG Senate Council; Deputy Majority Leader — UCC Parliamentary Board; Minority Leader — 7th Casely Hayford Parliament, University of Cape Coast; Deputy Chairperson — UCC Youngsters; Chairperson — UCC SRC Research Committee; National Research Chairperson — National Union of Ghana Students (NUGS); Judicial Chairperson — Agribusiness Students’ Association of UCC; Head — LNUGS-UCC Research Committee; Member — 6th Casely Hayford Parliamentary Council; Member — Casely Hayford Judicial Board; Member — ABSAG National Vetting Committee; President — Old Students’ Association of Hohoe E.P. Senior High School; Research and professional experience — Agri-Impact Limited and Nditsi Bonu Engineering; Electoral administration experience — Keta Electoral Commission and Ho Central Electoral Area.",
+
+    biography:
+        "HON. LORD KOJO NANEVI is a distinguished young leader, governance practitioner, agribusiness professional, researcher, humanitarian and development advocate with extensive experience in parliamentary leadership, student governance, research, electoral administration and youth development. He has served in several significant leadership capacities, including Deputy Majority Leader of the UCC Parliamentary Board, Minority Leader of the 7th Casely Hayford Parliament at the University of Cape Coast, Deputy Chairperson of UCC Youngsters, Chairperson of the UCC SRC Research Committee, National Research Chairperson of the National Union of Ghana Students (NUGS), and currently serves as Speaker of the CANSSAG Senate Council. His leadership record is complemented by a strong commitment to humanitarian service and social intervention. Beyond titles and institutional responsibilities, Hon. Nanevi has demonstrated a passion for supporting vulnerable individuals and creating opportunities for people facing economic and social difficulties. His humanitarian interests include supporting students facing financial constraints, contributing towards students’ fees, assisting deserving students with scholarship opportunities, providing relief and support to the poor and needy, and extending practical assistance to individuals and families in difficult circumstances. His philosophy of leadership is anchored in the conviction that leadership must translate into tangible impact in the lives of ordinary people. For him, public service is not merely about occupying positions; it is about using one's influence, networks, resources and opportunities to uplift others, especially those who may otherwise be left behind. Professionally, he has gained valuable experience through his work with Agri-Impact Limited and Nditsi Bonu Engineering, with responsibilities spanning research, agricultural analysis, documentation, administration, project reporting, stakeholder communication and operational coordination. His leadership experience also includes serving as Judicial Chairperson of the Agribusiness Students’ Association of UCC, Head of the LNUGS-UCC Research Committee, Member of the 6th Casely Hayford Parliamentary Council, Member of the Casely Hayford Judicial Board and Member of the ABSAG National Vetting Committee. He has further acquired practical exposure to electoral administration through his work with the Keta Electoral Commission and the Ho Central Electoral Area, while currently serving as President of the Old Students’ Association of Hohoe E.P. Senior High School. With an academic background in Agribusiness from the University of Cape Coast, Hon. Lord Kojo Nanevi combines leadership, governance, research, professional competence, humanitarian service and youth advocacy in his pursuit of meaningful development. His leadership philosophy is simple: leadership should not only be measured by the positions one occupies, but by the lives one touches, the opportunities one creates and the people one lifts along the way.",
+
+    vision:
+        "To use leadership, governance, research, professional networks and humanitarian service to create opportunities, support vulnerable people and contribute to meaningful youth and community development.",
+
+    plans:
+        "Promote youth development and meaningful participation in governance; support students facing financial difficulties; contribute to scholarship and educational opportunities; strengthen research and evidence-based leadership; support vulnerable individuals and communities; and promote development through agribusiness, humanitarian service and community engagement.",
+
+    contribution:
+        "Youth leadership, governance, research, agribusiness, humanitarian service, student support, scholarships, electoral administration, community development and youth advocacy.",
+
+    currentActivities:
+        "Youth Member of Parliament — Anlo Constituency, Youth Parliament Ghana; Speaker — CANSSAG Senate Council; President — Old Students’ Association of Hohoe E.P. Senior High School; Leadership, research, humanitarian and youth development activities.",
+
+    leadershipExperience:
+        "Youth Member of Parliament — Anlo Constituency, Youth Parliament Ghana; Speaker — CANSSAG Senate Council; Deputy Majority Leader — UCC Parliamentary Board; Minority Leader — 7th Casely Hayford Parliament, University of Cape Coast; Deputy Chairperson — UCC Youngsters; Chairperson — UCC SRC Research Committee; National Research Chairperson — NUGS; Judicial Chairperson — Agribusiness Students’ Association of UCC; Head — LNUGS-UCC Research Committee; Member — 6th Casely Hayford Parliamentary Council; Member — Casely Hayford Judicial Board; Member — ABSAG National Vetting Committee; President — Old Students’ Association of Hohoe E.P. Senior High School.",
+
+    professionalExperience:
+        "Agribusiness and research experience with Agri-Impact Limited; professional experience with Nditsi Bonu Engineering involving research, agricultural analysis, documentation, administration, project reporting, stakeholder communication and operational coordination; electoral administration exposure through the Keta Electoral Commission and Ho Central Electoral Area.",
+
+    focusAreas:
+        "Youth development • Governance • Agribusiness • Research • Humanitarian service • Student support • Education • Scholarships • Electoral administration • Community development • Youth advocacy • Leadership",
+
+    slogan:
+        "Leadership is measured by the lives we touch, the opportunities we create and the people we lift.",
+
+    image: "images/lord.jpeg",
+
+    email: "#",
+    phone: "#",
+    website: "#",
+
+    facebook: "#",
+    twitter: "#",
+    instagram: "#",
+    linkedin: "#",
+    tiktok: "#"
+},
+{
+    id: "mp133",
+    name: "SAEED HAWAWU",
+    position: "Member of Parliament",
+    constituency: "Suame Constituency",
+    region: "Ashanti",
+    parliament: "Youth Parliament Ghana",
+    status: "active",
+
+    education:
+        "Bachelor of Laws (LLB) — Central University, Kumasi Campus, 2026; Bachelor of Science (BSc) in Business Administration (Logistics & Supply Chain Management) — Kwame Nkrumah University of Science and Technology (KNUST), 2020.",
+
+    profession:
+        "Supply Chain Specialist & Legal Practitioner in Training",
+
+    experience:
+        "Member of Parliament — Suame Constituency, Youth Parliament Ghana; Chief Development Officer — Global Youth Connect Foundation; 2nd Deputy Speaker — Tafo Youth Parliament; Procurement Intern — Electricity Company of Ghana (ECG); Stores & Accounts Intern — National Health Insurance Scheme (NHIS); Sales Intern — MTN Ghana; Sales & Accounts Intern — Seisal Motors; Social Media Manager — CastingAfrica Inc.; Dining Hall Prefect — Tweneboa Kodua Senior High School; Youth Representative for Unemployed Youth — National Youth Parliament.",
+
+    biography:
+        "SAEED HAWAWU is a Ghanaian civic leader, legal scholar and advocate dedicated to grassroots governance, youth empowerment and economic development in the Ashanti Region. Born on 14th May 1996, he has built a multifaceted career bridging public administration, legal advocacy, business operations and youth development in Ghana. He holds a Bachelor of Laws (LLB) from Central University, Kumasi Campus, and a Bachelor of Science in Business Administration with a specialization in Logistics and Supply Chain Management from Kwame Nkrumah University of Science and Technology (KNUST). He has also received practical training and certifications in software development, digital marketing and mobile application development. Professionally, Saeed serves as Chief Development Officer of Global Youth Connect Foundation, where he contributes to institutional growth, strategic partnerships and youth empowerment programmes. His corporate and administrative experience includes roles in sales, procurement, accounting and inventory management with organizations including Seisal Motors, MTN Ghana, the National Health Insurance Scheme and the Electricity Company of Ghana. He is also active in agricultural entrepreneurship and software development and has received recognition from Women’s Haven for mobile application innovation. Within Youth Parliament Ghana, he serves as the Member of Parliament for the Suame Constituency and as a youth liaison to local government authorities. His leadership experience also includes serving as a Youth Representative for Unemployed Youth under the National Youth Parliament and as 2nd Deputy Speaker of the Tafo Youth Parliament. He has coordinated grassroots development initiatives submitted to the Suame Municipal Assembly, including IP CCTV technical skills training, backyard aquaculture models, voluntary blood donation drives and public health education. He is also involved in youth and civic engagement through Enactus KNUST, Youth Connect and the Mohkari Foundation. Through educational outreach across Senior High Schools, he mentors young people in civic responsibility, leadership and the arts.",
+
+    vision:
+        "To strengthen grassroots governance, empower young people, promote economic development and create practical opportunities that contribute to the advancement of the Suame Constituency and the wider Ashanti Region.",
+
+    plans:
+        "Promote youth empowerment and civic participation; support practical skills development and entrepreneurship; encourage grassroots development initiatives; promote public health education and community engagement; support technology-driven solutions; and strengthen collaboration between young people, local authorities and development organisations.",
+
+    contribution:
+        "Youth empowerment, grassroots governance, economic development, civic education, entrepreneurship, technology, public health education, community development, legal advocacy and leadership.",
+
+    currentActivities:
+        "Member of Parliament — Suame Constituency, Youth Parliament Ghana; Chief Development Officer — Global Youth Connect Foundation; Legal Practitioner in Training; Youth empowerment, civic engagement and grassroots development initiatives.",
+
+    leadershipExperience:
+        "Member of Parliament — Suame Constituency, Youth Parliament Ghana; Youth Representative for Unemployed Youth — National Youth Parliament; 2nd Deputy Speaker — Tafo Youth Parliament; Chief Development Officer — Global Youth Connect Foundation; Class Representative — KNUST; Dining Hall Prefect — Tweneboa Kodua Senior High School; Youth and civic leadership activities through Enactus KNUST, Youth Connect and the Mohkari Foundation.",
+
+    professionalExperience:
+        "Chief Development Officer at Global Youth Connect Foundation; Procurement Intern at Electricity Company of Ghana (ECG); Stores and Accounts Intern at National Health Insurance Scheme (NHIS); Sales Intern at MTN Ghana; Sales and Accounts Intern at Seisal Motors; Social Media Manager at CastingAfrica Inc.; Supply chain and business administration experience; Legal training at Central University.",
+
+    focusAreas:
+        "Grassroots governance • Youth empowerment • Economic development • Civic participation • Entrepreneurship • Technology • Public health • Community development • Legal advocacy • Supply chain management • Leadership",
+
+    slogan:
+        "Empowering youth, strengthening communities and advancing grassroots development.",
+
+    image: "images/hawawu.jpeg",
+
+    email: "saeedhawawu@gmail.com",
+    phone: "0541652506 / 0501598398",
+    website: "#",
+
+    facebook: "https://www.facebook.com/share/1DS4z25kTL/?mibextid=wwXIfr",
+    twitter: "https://x.com/khookilyonz?s=11",
+    instagram: "#",
+    linkedin: "#",
+    tiktok: "#"
+},
+{
+    id: "mp134",
+    name: "OSEI-SARPONG MARTHA MANDY",
+    position: "Member of Parliament",
+    constituency: "Asante Akim Central Constituency",
+    region: "Ashanti",
+    parliament: "Youth Parliament Ghana",
+    status: "active",
+
+    education:
+        "Nutrition — Kwame Nkrumah University of Science and Technology (KNUST), Bachelor's Degree in Progress, currently in Third Year; Secondary Education — St. Louis Senior High School; Basic Education — Westminster Comprehensive School.",
+
+    profession:
+        "Student",
+
+    experience:
+        "Youth Member of Parliament — Asante Akim Central Constituency, Youth Parliament of Ghana; Senior Girls’ Prefect — Westminster Comprehensive School; Class Representative — St. Louis Senior High School.",
+
+    biography:
+        "HON. OSEI-SARPONG MARTHA MANDY is a Youth Member of Parliament representing the Asante Akim Central Constituency in the Ashanti Region under the Youth Parliament of Ghana. She is currently a third-year student at the Kwame Nkrumah University of Science and Technology (KNUST), where she is pursuing her academic and professional interests in the field of nutrition. Her leadership journey began at the junior high school level, where she served as the Senior Girls’ Prefect of Westminster Comprehensive School and developed strong leadership, communication, responsibility and organizational skills. At St. Louis Senior High School, she also served as a Class Representative, an experience that strengthened her ability to represent the interests of her peers, communicate effectively and work collaboratively with others. As a Youth Member of Parliament for Asante Akim Central Constituency, she seeks to contribute to youth representation, constructive parliamentary debate, community development and initiatives that create meaningful opportunities for young people. She is particularly passionate about youth empowerment, public health, nutrition, education, entrepreneurship and agribusiness, and seeks to use her position to advocate for practical interventions that can improve the lives and opportunities of young people within her constituency and Ghana as a whole.",
+
+    vision:
+        "To promote youth empowerment, public health, nutrition, education and community development while creating meaningful opportunities for young people.",
+
+    plans:
+        "Promote youth empowerment and representation; advocate for public health and nutrition awareness; support education and entrepreneurship initiatives; encourage agribusiness opportunities; and contribute to constructive parliamentary debate and community development.",
+
+    contribution:
+        "Youth representation, youth empowerment, public health, nutrition, education, entrepreneurship, agribusiness and community development.",
+
+    currentActivities:
+        "Youth Member of Parliament — Asante Akim Central Constituency, Youth Parliament of Ghana; Third-Year Nutrition student at Kwame Nkrumah University of Science and Technology.",
+
+    leadershipExperience:
+        "Youth Member of Parliament — Asante Akim Central Constituency, Youth Parliament of Ghana; Senior Girls’ Prefect — Westminster Comprehensive School; Class Representative — St. Louis Senior High School.",
+
+    professionalExperience:
+        "Third-Year Nutrition student at Kwame Nkrumah University of Science and Technology; Leadership and peer representation experience through Westminster Comprehensive School and St. Louis Senior High School.",
+
+    focusAreas:
+        "Youth empowerment • Public health • Nutrition • Education • Entrepreneurship • Agribusiness • Youth representation • Community development • Leadership",
+
+    slogan:
+        "Empowering youth through leadership, health, education and opportunity.",
+
+    image: "images/mandy.jpeg",
+
+    email: "marthamandy2005@icloud.com",
+    phone: "0539920227",
+    website: "#",
+
+    facebook: "#",
+    twitter: "Ntowaa38",
+    instagram: "ntowaa9",
+    linkedin: "#",
+    tiktok: "Martha Mandy"
+},
+
+{
+    id: "mp135",
+    name: "JOSEPH BANIBATITI ASIRA",
+    position: "Member of Parliament",
+    constituency: "Offinso South constituency",
+    region: "Ashanti",
+    parliament: "Youth Parliament Ghana",
+    status: "active",
+
+    education:
+        "BSc Cybersecurity — University of Technology and Applied Sciences (UTAS), Navrongo, Bachelor's Degree in Progress, Level 300, January 2025–Present; General Arts — St. James Seminary Senior High School, completed 2024; Basic Education Certificate — Anyankaso M/A Junior High School, completed 2021.",
+
+    profession:
+        "Cybersecurity Student / Web Developer / Graphic Designer",
+
+    experience:
+        "Youth Member of Parliament — Offinso South Constituency, Youth Parliament Ghana; Intern — Offinso Municipal Assembly (August 2026–September 2026); Intern, Graphic Design and Printing — St. Agnes Printing Press (September 2025–January 2026); General Secretary — Departmental Executive Body, UTAS; 2nd Deputy — Departmental Electoral Commission, UTAS (2026 Academic Year); Treasurer — Departmental Electoral Commission, UTAS (2nd Semester, 2025); Assistant Course Representative — Database Systems II, UTAS; Member — UTAS Parliament House; Freelance Graphic Designer and IT Support — Self-Employed.",
+
+    biography:
+        "JOSEPH BANIBATITI ASIRA is the Youth Member of Parliament for the Offinso South Constituency in Youth Parliament Ghana. Born and raised in Offinso, with Navrongo as his hometown, he is a Level 300 BSc Cybersecurity student at the University of Technology and Applied Sciences (UTAS), Navrongo. A web developer and graphic designer, Joseph designed and built a secure web-based e-voting system for his department's elections, work that earned him recognition. His leadership record at UTAS includes serving as General Secretary of the Departmental Executive Body, 2nd Deputy and former Treasurer of the Departmental Electoral Commission, Assistant Course Representative and member of the UTAS Parliament House. Beyond the classroom, he promotes cybersecurity awareness through TikTok, Facebook and written articles on his personal website. He is passionate about digital skills, cybersecurity awareness and education, and he joined Youth Parliament Ghana to gain more leadership experience and to represent the voices of the youth in his constituency.",
+
+    vision:
+        "To empower young people through cybersecurity awareness, digital skills, education and effective youth representation while contributing to the digital development of Offinso South and Ghana.",
+
+    plans:
+        "Promote cybersecurity awareness and responsible digital citizenship; encourage digital skills development among young people; support technology and education initiatives; advocate for youth participation and representation; and use technology to develop practical solutions for community and institutional needs.",
+
+    contribution:
+        "Cybersecurity awareness, digital skills, technology, education, web development, graphic design, youth representation and digital innovation.",
+
+    currentActivities:
+        "Youth Member of Parliament — Offinso South Constituency, Youth Parliament Ghana; Level 300 BSc Cybersecurity student — University of Technology and Applied Sciences (UTAS), Navrongo; Freelance Graphic Designer and IT Support — Self-Employed; Cybersecurity awareness and digital education activities.",
+
+    leadershipExperience:
+        "Youth Member of Parliament — Offinso South Constituency, Youth Parliament Ghana; General Secretary — Departmental Executive Body, UTAS; 2nd Deputy — Departmental Electoral Commission, UTAS; Treasurer — Departmental Electoral Commission, UTAS; Assistant Course Representative — Database Systems II, UTAS; Member — UTAS Parliament House.",
+
+    professionalExperience:
+        "BSc Cybersecurity student at the University of Technology and Applied Sciences; Freelance Graphic Designer and IT Support; Web developer; Intern — Offinso Municipal Assembly; Intern, Graphic Design and Printing — St. Agnes Printing Press; Designer and developer of a secure web-based e-voting system for departmental elections.",
+
+    focusAreas:
+        "Cybersecurity • Digital skills • Technology • Education • Youth empowerment • Digital citizenship • Web development • Graphic design • Youth representation • Leadership",
+
+    slogan:
+        "Empowering youth through digital skills, cybersecurity and responsible leadership.",
+
+    image: "images/asira.jpeg",
+
+    email: "asirajoseph4@gmail.com",
+    phone: "+233536764848",
+    website: "https://Joeboypng.github.io/joseph-asira/",
+
+    facebook: "https://www.facebook.com/share/1HgLXLZ5o4/",
+    twitter: "#",
+    instagram: "https://www.instagram.com/joeboi_joee",
+    linkedin: "https://www.linkedin.com/in/joseph-asira-b4a93a236/",
+    tiktok: "#"
+},
+{
+    id: "mp136",
+    name: "BONSU ERNEST",
+    position: "Member of Parliament",
+    constituency: "Akim Oda",
+    region: "Eastern",
+    parliament: "Youth Parliament Ghana",
+    status: "active",
+    education: "USTED Kumasi – BA Social Studies with Economics, Degree, 2025",
+    profession: "National service personnel",
+    experience: "NASPA Representatives Chairman, Birim Central Municipal; Project and Programs Chairman, Eastern Regional NASPA",
+    biography: "Bonsu Ernest is a Youth Member of Parliament for the Akim Oda Constituency and Deputy Representative to the President of the Republic of Ghana. He has a background in Social Studies with Economics and has demonstrated leadership through his involvement with the National Service Personnel Association (NASPA), serving as NASPA Representatives Chairman for the Birim Central Municipal and Project and Programs Chairman for the Eastern Regional NASPA.",
+    vision: "Dedicated to amplifying young voices, driving policy engagement, and championing grassroots development.",
+    plans: "To promote youth participation, policy engagement, and grassroots development.",
+    contribution: "To contribute to youth representation, community development, and policy engagement.",
+    currentActivities: "National service personnel and Youth Parliament representative for Akim Oda.",
+    leadershipExperience: "NASPA Representatives Chairman, Birim Central Municipal; Project and Programs Chairman, Eastern Regional NASPA.",
+    professionalExperience: "National service personnel.",
+    focusAreas: "Youth empowerment, policy engagement, grassroots development, and community participation.",
+    slogan: "Dedicated to amplifying young voices, driving policy engagement, and championing grassroots development.",
+    image: "images/bonsu.jpeg",
+    email: "ernestbonsu239@gmail.com",
+    phone: "0246407987",
+    website: "#",
+    facebook: "#",
+    twitter: "#",
+    instagram: "#",
+    linkedin: "#",
+    tiktok: "#"
+},
+{
+    id: "mp137",
+    name: "JAMES ODURO",
+    position: "Member of Parliament",
+    constituency: "Adansi Asokwa constituency",
+    region: "Ashanti",
+
+    parliament: "Youth Parliament Ghana",
+
+    status: "active",
+
+    education: "Akrokerri College of Education – BEd in Mathematics and ICT, Degree, Level 300",
+
+    profession: "Student",
+
+    experience: "Compound Overseer, Adansi Brofoyedru United Roman Catholic Basic School; Chaplain, Okomfo Anokye SHS; Vice Chairman for SLC, Christ Ambassador Ministry International",
+
+    biography: "James Oduro is a Youth Member of Parliament for the Adansi Asokwa Constituency. He is currently a Level 300 student at Akrokerri College of Education pursuing a BEd in Mathematics and ICT. He has gained leadership and community experience through his service as Compound Overseer at Adansi Brofoyedru United Roman Catholic Basic School, Chaplain at Okomfo Anokye SHS, and Vice Chairman for SLC at Christ Ambassador Ministry International.",
+
+    vision: "To contribute to effective youth representation, leadership development, and community engagement.",
+
+    plans: "To promote youth participation, education, leadership, and community development.",
+
+    contribution: "To contribute to youth representation and community development through leadership, education, and service.",
+
+    currentActivities: "Level 300 student at Akrokerri College of Education and Deputy General Secretary.",
+
+    leadershipExperience: "Compound Overseer at Adansi Brofoyedru United Roman Catholic Basic School; Chaplain at Okomfo Anokye SHS; Vice Chairman for SLC at Christ Ambassador Ministry International.",
+
+    professionalExperience: "Student and youth leader.",
+
+    focusAreas: "Education, youth leadership, community development, and youth representation.",
+
+    slogan: "Dedicated to effective youth representation, leadership development, and community service.",
+
+    image: "images/james1.jpeg",
+
+    email: "jamesoduronhyiraba@icloud.com",
+
+    phone: "0536978088",
+
+    website: "#",
+
+    facebook: "NHYIRABA JAMES ODURO",
+
+    twitter: "NHYIRABA JAMES ODURO",
+
+    instagram: "NHYIRABA JAMES ODURO",
+
+    linkedin: "NHYIRABA JAMES ODURO",
+
     tiktok: "#"
 },
 
