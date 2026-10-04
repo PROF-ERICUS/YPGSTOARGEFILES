@@ -23,54 +23,57 @@ const constituencyData = [
     /* =====================================================
        ASHANTI — 47
     ===================================================== */
+/* =====================================================
+   ASHANTI — 47
+===================================================== */
+{ constituency: "Adansi-Asokwa", region: "Ashanti" },
+{ constituency: "Fomena", region: "Ashanti" },
+{ constituency: "New Edubease", region: "Ashanti" },
+{ constituency: "Afigya Kwabre North", region: "Ashanti" },
+{ constituency: "Afigya Kwabre South", region: "Ashanti" },
+{ constituency: "Ahafo Ano North", region: "Ashanti" },
+{ constituency: "Ahafo Ano South East", region: "Ashanti" },
+{ constituency: "Ahafo Ano South West", region: "Ashanti" },
+{ constituency: "Akrofuom", region: "Ashanti" },
+{ constituency: "Odotobri", region: "Ashanti" },
+{ constituency: "Manso Nkwanta", region: "Ashanti" },
+{ constituency: "Manso Edubia", region: "Ashanti" },
+{ constituency: "Asante Akim Central", region: "Ashanti" },
+{ constituency: "Asante Akim North", region: "Ashanti" },
+{ constituency: "Asante Akim South", region: "Ashanti" },
+{ constituency: "Asawase", region: "Ashanti" },
+{ constituency: "Asokwa", region: "Ashanti" },
+{ constituency: "Atwima-Kwanwoma", region: "Ashanti" },
+{ constituency: "Atwima Mponua", region: "Ashanti" },
+{ constituency: "Atwima-Nwabiagya South", region: "Ashanti" },
+{ constituency: "Atwima-Nwabiagya North", region: "Ashanti" },
+{ constituency: "Bekwai", region: "Ashanti" },
+{ constituency: "Bosome-Freho", region: "Ashanti" },
+{ constituency: "Bosomtwe", region: "Ashanti" },
+{ constituency: "Ejisu", region: "Ashanti" },
+{ constituency: "Ejura-Sekyedumase", region: "Ashanti" },
+{ constituency: "Juaben", region: "Ashanti" },
+{ constituency: "Bantama", region: "Ashanti" },
+{ constituency: "Manhyia North", region: "Ashanti" },
+{ constituency: "Manhyia South", region: "Ashanti" },
+{ constituency: "Nhyiaeso", region: "Ashanti" },
+{ constituency: "Subin", region: "Ashanti" },
+{ constituency: "Kwabre East", region: "Ashanti" },
+{ constituency: "Kwadaso", region: "Ashanti" },
+{ constituency: "Mampong", region: "Ashanti" },
+{ constituency: "Obuasi East", region: "Ashanti" },
+{ constituency: "Obuasi West", region: "Ashanti" },
+{ constituency: "Offinso South", region: "Ashanti" },
+{ constituency: "Offinso North", region: "Ashanti" },
+{ constituency: "Oforikrom", region: "Ashanti" },
+{ constituency: "Old Tafo", region: "Ashanti" },
+{ constituency: "Sekyere Afram Plains", region: "Ashanti" },
+{ constituency: "Nsuta-Kwamang", region: "Ashanti" },
+{ constituency: "Afigya Sekyere East", region: "Ashanti" },
+{ constituency: "Kumawu", region: "Ashanti" },
+{ constituency: "Effiduase-Asokore", region: "Ashanti" },
+{ constituency: "Suame", region: "Ashanti" },
 
-    { constituency: "Afigya Kwabre North", region: "Ashanti" },
-    { constituency: "Afigya Kwabre South", region: "Ashanti" },
-    { constituency: "Ahafo Ano North", region: "Ashanti" },
-    { constituency: "Ahafo Ano South East", region: "Ashanti" },
-    { constituency: "Ahafo Ano South West", region: "Ashanti" },
-    { constituency: "Asante Akim Central", region: "Ashanti" },
-    { constituency: "Asante Akim North", region: "Ashanti" },
-    { constituency: "Asante Akim South", region: "Ashanti" },
-    { constituency: "Asawase", region: "Ashanti" },
-    { constituency: "Atwima Kwanwoma", region: "Ashanti" },
-    { constituency: "Atwima Mponua", region: "Ashanti" },
-    { constituency: "Atwima Nwabiagya North", region: "Ashanti" },
-    { constituency: "Atwima Nwabiagya South", region: "Ashanti" },
-    { constituency: "Bekwai", region: "Ashanti" },
-    { constituency: "Bantama", region: "Ashanti" },
-    { constituency: "Bosomtwe", region: "Ashanti" },
-    { constituency: "Ejisu", region: "Ashanti" },
-    { constituency: "Ejura Sekyedumase", region: "Ashanti" },
-    { constituency: "Juaben", region: "Ashanti" },
-    { constituency: "Kumasi Central", region: "Ashanti" },
-    { constituency: "Kumasi South", region: "Ashanti" },
-    { constituency: "Kwabre East", region: "Ashanti" },
-    { constituency: "Kwadaso", region: "Ashanti" },
-    { constituency: "Manhyia North", region: "Ashanti" },
-    { constituency: "Manhyia South", region: "Ashanti" },
-    { constituency: "Mampong", region: "Ashanti" },
-    { constituency: "Manso Adubia", region: "Ashanti" },
-    { constituency: "Manso Nkwanta", region: "Ashanti" },
-    { constituency: "New Edubiase", region: "Ashanti" },
-    { constituency: "Offinso North", region: "Ashanti" },
-    { constituency: "Offinso South", region: "Ashanti" },
-    { constituency: "Oforikrom", region: "Ashanti" },
-    { constituency: "Old Tafo", region: "Ashanti" },
-    { constituency: "Sekyere Afram Plains", region: "Ashanti" },
-    { constituency: "Sekyere Kumawu", region: "Ashanti" },
-    { constituency: "Sekyere Central", region: "Ashanti" },
-    { constituency: "Suame", region: "Ashanti" },
-    { constituency: "Subin", region: "Ashanti" },
-    { constituency: "Tafo", region: "Ashanti" },
-    { constituency: "Tano North", region: "Ashanti" },
-    { constituency: "Asokwa", region: "Ashanti" },
-    { constituency: "Bosome Freho", region: "Ashanti" },
-    { constituency: "Kumasi North", region: "Ashanti" },
-    { constituency: "Nhyiaeso", region: "Ashanti" },
-    { constituency: "Kwadaso", region: "Ashanti" },
-    { constituency: "Oforikrom", region: "Ashanti" },
-    { constituency: "Prempeh College", region: "Ashanti" },
 
 
     /* =====================================================
@@ -176,108 +179,123 @@ const constituencyData = [
     { constituency: "Yilo Krobo", region: "Eastern" },
 
 
-    /* =====================================================
-       GREATER ACCRA — 34
-    ===================================================== */
+   /* =====================================================
+   GREATER ACCRA — 34
+===================================================== */
 
-    { constituency: "Ablekuma Central", region: "Greater Accra" },
-    { constituency: "Ablekuma North", region: "Greater Accra" },
-    { constituency: "Ablekuma South", region: "Greater Accra" },
-    { constituency: "Ablekuma West", region: "Greater Accra" },
-    { constituency: "Adenta", region: "Greater Accra" },
-    { constituency: "Afram Plains", region: "Greater Accra" },
-    { constituency: "Ashaiman", region: "Greater Accra" },
-    { constituency: "Ayawaso Central", region: "Greater Accra" },
-    { constituency: "Ayawaso East", region: "Greater Accra" },
-    { constituency: "Ayawaso North", region: "Greater Accra" },
-    { constituency: "Ayawaso West Wuogon", region: "Greater Accra" },
-    { constituency: "Dade-Kotopon", region: "Greater Accra" },
-    { constituency: "Domeabra-Obom", region: "Greater Accra" },
-    { constituency: "Dome-Faase", region: "Greater Accra" },
-    { constituency: "Dome-Kwabenya", region: "Greater Accra" },
-    { constituency: "Ga Central", region: "Greater Accra" },
-    { constituency: "Ga East", region: "Greater Accra" },
-    { constituency: "Ga North", region: "Greater Accra" },
-    { constituency: "Ga South", region: "Greater Accra" },
-    { constituency: "Ga West", region: "Greater Accra" },
-    { constituency: "Kpone-Katamanso", region: "Greater Accra" },
-    { constituency: "Krowor", region: "Greater Accra" },
-    { constituency: "La-Dade Kotopon", region: "Greater Accra" },
-    { constituency: "La-Nkwantanang-Madina", region: "Greater Accra" },
-    { constituency: "Ledzokuku", region: "Greater Accra" },
-    { constituency: "Ningo-Prampram", region: "Greater Accra" },
-    { constituency: "Odododiodio", region: "Greater Accra" },
-    { constituency: "Okaikwei Central", region: "Greater Accra" },
-    { constituency: "Okaikwei North", region: "Greater Accra" },
-    { constituency: "Shai-Osudoku", region: "Greater Accra" },
-    { constituency: "Tema Central", region: "Greater Accra" },
-    { constituency: "Tema East", region: "Greater Accra" },
-    { constituency: "Tema West", region: "Greater Accra" },
-    { constituency: "Trobu", region: "Greater Accra" },
+{ constituency: "Ablekuma Central", region: "Greater Accra" },
+{ constituency: "Ablekuma North", region: "Greater Accra" },
+{ constituency: "Ablekuma South", region: "Greater Accra" },
+{ constituency: "Ablekuma West", region: "Greater Accra" },
+
+{ constituency: "Ada", region: "Greater Accra" },
+{ constituency: "Adentan", region: "Greater Accra" },
+{ constituency: "Ashaiman", region: "Greater Accra" },
+
+{ constituency: "Ayawaso Central", region: "Greater Accra" },
+{ constituency: "Ayawaso East", region: "Greater Accra" },
+{ constituency: "Ayawaso North", region: "Greater Accra" },
+{ constituency: "Ayawaso West Wuogon", region: "Greater Accra" },
+
+{ constituency: "Anyaa-Sowutuom", region: "Greater Accra" },
+
+{ constituency: "Bortianor-Ngleshie-Amanfro", region: "Greater Accra" },
+
+{ constituency: "Dade-Kotopon", region: "Greater Accra" },
+
+{ constituency: "Dome-Kwabenya", region: "Greater Accra" },
+{ constituency: "Domeabra-Obom", region: "Greater Accra" },
+
+{ constituency: "Amasaman", region: "Greater Accra" },
+
+{ constituency: "Korle Klottey", region: "Greater Accra" },
+{ constituency: "Kpone-Katamanso", region: "Greater Accra" },
+{ constituency: "Krowor", region: "Greater Accra" },
+
+{ constituency: "Madina", region: "Greater Accra" },
+{ constituency: "Ledzokuku", region: "Greater Accra" },
+
+{ constituency: "Ningo-Prampram", region: "Greater Accra" },
+
+{ constituency: "Odododiodioo", region: "Greater Accra" },
+
+{ constituency: "Okaikwei Central", region: "Greater Accra" },
+{ constituency: "Okaikwei North", region: "Greater Accra" },
+{ constituency: "Okaikwei South", region: "Greater Accra" },
+
+{ constituency: "Sege", region: "Greater Accra" },
+
+{ constituency: "Shai-Osudoku", region: "Greater Accra" },
+
+{ constituency: "Tema Central", region: "Greater Accra" },
+{ constituency: "Tema East", region: "Greater Accra" },
+{ constituency: "Tema West", region: "Greater Accra" },
+
+{ constituency: "Trobu", region: "Greater Accra" },
+
+{ constituency: "Weija-Gbawe", region: "Greater Accra" },
+
+
 
 
     /* =====================================================
        NORTH EAST — 6
     ===================================================== */
 
-    { constituency: "Bunkpurugu", region: "North East" },
-    { constituency: "Chereponi", region: "North East" },
-    { constituency: "Nalerigu-Gambaga", region: "North East" },
-    { constituency: "Nasia", region: "North East" },
-    { constituency: "Walewale", region: "North East" },
-    { constituency: "Yunyoo", region: "North East" },
+   { constituency: "Bunkpurugu", region: "North East" },
+{ constituency: "Chereponi", region: "North East" },
+{ constituency: "Nalerigu-Gambaga", region: "North East" },
+{ constituency: "Yagaba-Kubori", region: "North East" },
+{ constituency: "Walewale", region: "North East" },
+{ constituency: "Yunyoo", region: "North East" },
 
 
     /* =====================================================
        NORTHERN — 18
     ===================================================== */
-
-    { constituency: "Bimbilla", region: "Northern" },
-    { constituency: "Chereponi", region: "Northern" },
-    { constituency: "Gushegu", region: "Northern" },
-    { constituency: "Karaga", region: "Northern" },
-    { constituency: "Kpandai", region: "Northern" },
-    { constituency: "Kumbungu", region: "Northern" },
-    { constituency: "Mion", region: "Northern" },
-    { constituency: "Nanton", region: "Northern" },
-    { constituency: "Saboba", region: "Northern" },
-    { constituency: "Savelugu", region: "Northern" },
-    { constituency: "Sawla", region: "Northern" },
-    { constituency: "Tamale Central", region: "Northern" },
-    { constituency: "Tamale North", region: "Northern" },
-    { constituency: "Tamale South", region: "Northern" },
-    { constituency: "Tatale-Sanguli", region: "Northern" },
-    { constituency: "Tolon", region: "Northern" },
-    { constituency: "Wulensi", region: "Northern" },
-    { constituency: "Yunyoo", region: "Northern" },
+{ constituency: "Gushegu", region: "Northern" },
+{ constituency: "Karaga", region: "Northern" },
+{ constituency: "Kpandai", region: "Northern" },
+{ constituency: "Mion", region: "Northern" },
+{ constituency: "Nanton", region: "Northern" },
+{ constituency: "Bimbilla", region: "Northern" },
+{ constituency: "Wulensi", region: "Northern" },
+{ constituency: "Saboba", region: "Northern" },
+{ constituency: "Sagnarigu", region: "Northern" },
+{ constituency: "Savelugu", region: "Northern" },
+{ constituency: "Tamale Central", region: "Northern" },
+{ constituency: "Tamale North", region: "Northern" },
+{ constituency: "Tamale South", region: "Northern" },
+{ constituency: "Tatale-Sanguli", region: "Northern" },
+{ constituency: "Tolon", region: "Northern" },
+{ constituency: "Yendi", region: "Northern" },
+{ constituency: "Zabzugu", region: "Northern" },
+{ constituency: "Kumbungu", region: "Northern" },
 
 
     /* =====================================================
        OTI — 9
     ===================================================== */
-
-    { constituency: "Biakoye", region: "Oti" },
-    { constituency: "Buem", region: "Oti" },
-    { constituency: "Kadjebi", region: "Oti" },
-    { constituency: "Krachi East", region: "Oti" },
-    { constituency: "Krachi Nchumuru", region: "Oti" },
-    { constituency: "Krachi West", region: "Oti" },
-    { constituency: "Nkwanta North", region: "Oti" },
-    { constituency: "Nkwanta South", region: "Oti" },
-    { constituency: "Nkwanta South East", region: "Oti" },
-
+{ constituency: "Biakoye", region: "Oti" },
+{ constituency: "Buem", region: "Oti" },
+{ constituency: "Akan", region: "Oti" },
+{ constituency: "Krachi East", region: "Oti" },
+{ constituency: "Krachi Nchumuru", region: "Oti" },
+{ constituency: "Krachi West", region: "Oti" },
+{ constituency: "Nkwanta North", region: "Oti" },
+{ constituency: "Nkwanta South", region: "Oti" },
+{ constituency: "Guan", region: "Oti" },
 
     /* =====================================================
        SAVANNAH — 7
     ===================================================== */
-
-    { constituency: "Bole-Bamboi", region: "Savannah" },
-    { constituency: "Daboya-Mankarigu", region: "Savannah" },
-    { constituency: "Damongo", region: "Savannah" },
-    { constituency: "Daboya-Mankarigu", region: "Savannah" },
-    { constituency: "Salaga North", region: "Savannah" },
-    { constituency: "Salaga South", region: "Savannah" },
-    { constituency: "Sawla-Tuna-Kalba", region: "Savannah" },
+{ constituency: "Bole-Bamboi", region: "Savannah" },
+{ constituency: "Daboya-Mankarigu", region: "Savannah" },
+{ constituency: "Damongo", region: "Savannah" },
+{ constituency: "Yapei-Kusawgu", region: "Savannah" },
+{ constituency: "Salaga North", region: "Savannah" },
+{ constituency: "Salaga South", region: "Savannah" },
+{ constituency: "Sawla-Tuna-Kalba", region: "Savannah" },
 
 
     /* =====================================================
@@ -285,20 +303,20 @@ const constituencyData = [
     ===================================================== */
 
     { constituency: "Bolgatanga Central", region: "Upper East" },
-    { constituency: "Bolgatanga East", region: "Upper East" },
-    { constituency: "Bongo", region: "Upper East" },
-    { constituency: "Builsa North", region: "Upper East" },
-    { constituency: "Builsa South", region: "Upper East" },
-    { constituency: "Chiana-Paga", region: "Upper East" },
-    { constituency: "Garu", region: "Upper East" },
-    { constituency: "Kassena-Nankana East", region: "Upper East" },
-    { constituency: "Kassena-Nankana West", region: "Upper East" },
-    { constituency: "Navio", region: "Upper East" },
-    { constituency: "Nabdam", region: "Upper East" },
-    { constituency: "Pusiga", region: "Upper East" },
-    { constituency: "Tempane", region: "Upper East" },
-    { constituency: "Talensi", region: "Upper East" },
-    { constituency: "Zebilla", region: "Upper East" },
+{ constituency: "Bolgatanga East", region: "Upper East" },
+{ constituency: "Bongo", region: "Upper East" },
+{ constituency: "Builsa North", region: "Upper East" },
+{ constituency: "Builsa South", region: "Upper East" },
+{ constituency: "Chiana-Paga", region: "Upper East" },
+{ constituency: "Garu", region: "Upper East" },
+{ constituency: "Nabdam", region: "Upper East" },
+{ constituency: "Pusiga", region: "Upper East" },
+{ constituency: "Talensi", region: "Upper East" },
+{ constituency: "Tempane", region: "Upper East" },
+{ constituency: "Zebilla", region: "Upper East" },
+{ constituency: "Bawku Central", region: "Upper East" },
+{ constituency: "Binduri", region: "Upper East" },
+{ constituency: "Navrongo Central", region: "Upper East" },
 
 
     /* =====================================================
@@ -321,63 +339,62 @@ const constituencyData = [
     /* =====================================================
        VOLTA — 18
     ===================================================== */
+{ constituency: "Adaklu", region: "Volta" },
+{ constituency: "Afadjato South", region: "Volta" },
+{ constituency: "Agotime-Ziope", region: "Volta" },
+{ constituency: "Akatsi North", region: "Volta" },
+{ constituency: "Akatsi South", region: "Volta" },
+{ constituency: "Anlo", region: "Volta" },
+{ constituency: "Central Tongu", region: "Volta" },
+{ constituency: "Ho Central", region: "Volta" },
+{ constituency: "Ho West", region: "Volta" },
+{ constituency: "Hohoe", region: "Volta" },
+{ constituency: "Keta", region: "Volta" },
+{ constituency: "Ketu North", region: "Volta" },
+{ constituency: "Ketu South", region: "Volta" },
+{ constituency: "Kpando", region: "Volta" },
+{ constituency: "North Dayi", region: "Volta" },
+{ constituency: "North Tongu", region: "Volta" },
+{ constituency: "South Dayi", region: "Volta" },
+{ constituency: "South Tongu", region: "Volta" },
 
-    { constituency: "Adaklu", region: "Volta" },
-    { constituency: "Afadjato South", region: "Volta" },
-    { constituency: "Agotime-Ziope", region: "Volta" },
-    { constituency: "Anlo", region: "Volta" },
-    { constituency: "Ho Central", region: "Volta" },
-    { constituency: "Ho West", region: "Volta" },
-    { constituency: "Hohoe", region: "Volta" },
-    { constituency: "Keta", region: "Volta" },
-    { constituency: "Ketu North", region: "Volta" },
-    { constituency: "Ketu South", region: "Volta" },
-    { constituency: "Kpando", region: "Volta" },
-    { constituency: "Krachi East", region: "Volta" },
-    { constituency: "North Dayi", region: "Volta" },
-    { constituency: "South Dayi", region: "Volta" },
-    { constituency: "South Tongu", region: "Volta" },
-    { constituency: "Ketu", region: "Volta" },
-    { constituency: "Tongu", region: "Volta" },
-    { constituency: "Akatsi North", region: "Volta" },
 
 
     /* =====================================================
        WESTERN — 17
     ===================================================== */
-
-    { constituency: "Ahanta West", region: "Western" },
-    { constituency: "Amenfi Central", region: "Western" },
-    { constituency: "Amenfi East", region: "Western" },
-    { constituency: "Amenfi West", region: "Western" },
-    { constituency: "Effia", region: "Western" },
-    { constituency: "Evalue-Ajomoro-Gwira", region: "Western" },
-    { constituency: "Jomoro", region: "Western" },
-    { constituency: "Kwesimintsim", region: "Western" },
-    { constituency: "Mpohor", region: "Western" },
-    { constituency: "Prestea-Huni Valley", region: "Western" },
-    { constituency: "Sekondi", region: "Western" },
-    { constituency: "Shama", region: "Western" },
-    { constituency: "Tarkwa-Nsuaem", region: "Western" },
-    { constituency: "Takoradi", region: "Western" },
-    { constituency: "Wassa East", region: "Western" },
-    { constituency: "Wassa Amenfi", region: "Western" },
-    { constituency: "Essikado-Ketan", region: "Western" },
+{ constituency: "Ahanta West", region: "Western" },
+{ constituency: "Amenfi Central", region: "Western" },
+{ constituency: "Amenfi East", region: "Western" },
+{ constituency: "Amenfi West", region: "Western" },
+{ constituency: "Effia", region: "Western" },
+{ constituency: "Evalue-Ajomoro-Gwira", region: "Western" },
+{ constituency: "Jomoro", region: "Western" },
+{ constituency: "Kwesimintsim", region: "Western" },
+{ constituency: "Mpohor", region: "Western" },
+{ constituency: "Prestea-Huni Valley", region: "Western" },
+{ constituency: "Sekondi", region: "Western" },
+{ constituency: "Shama", region: "Western" },
+{ constituency: "Tarkwa-Nsuaem", region: "Western" },
+{ constituency: "Takoradi", region: "Western" },
+{ constituency: "Wassa East", region: "Western" },
+{ constituency: "Ellembelle", region: "Western" },
+{ constituency: "Essikado-Ketan", region: "Western" },
 
 
     /* =====================================================
        WESTERN NORTH — 9
     ===================================================== */
 
-    { constituency: "Aowin", region: "Western North" },
-    { constituency: "Bia East", region: "Western North" },
-    { constituency: "Bia West", region: "Western North" },
-    { constituency: "Bibiani-Anhwiaso-Bekwai", region: "Western North" },
-    { constituency: "Bodi", region: "Western North" },
-    { constituency: "Juaboso", region: "Western North" },
-    { constituency: "Sefwi-Akontombra", region: "Western North" },
-    { constituency: "Sefwi-Wiawso", region: "Western North" },
-    { constituency: "Suaman", region: "Western North" }
+   { constituency: "Aowin", region: "Western North" },
+{ constituency: "Bia East", region: "Western North" },
+{ constituency: "Bia West", region: "Western North" },
+{ constituency: "Bibiani-Anhwiaso-Bekwai", region: "Western North" },
+{ constituency: "Bodi", region: "Western North" },
+{ constituency: "Juaboso", region: "Western North" },
+{ constituency: "Sefwi-Akontombra", region: "Western North" },
+{ constituency: "Sefwi-Wiawso", region: "Western North" },
+{ constituency: "Suaman", region: "Western North" },
 
 ];
 
@@ -455,3 +472,348 @@ window.constituencyData =
     }
 
 })();
+
+
+window.constituencyData = constituencyData;
+/* =========================================================
+   CONSTITUENCY MATCHING & VALIDATION SYSTEM
+   ========================================================= */
+
+
+/* =========================================================
+   APPROVED CONSTITUENCY ALIASES
+   =========================================================
+
+   Only add an alias when it is an approved alternative
+   to an official constituency name.
+
+   Example:
+   "Ayawaso West" -> "Ayawaso West Wuogon"
+
+========================================================= */
+
+const constituencyAliases = {
+
+    "Ayawaso West Wuogon": [
+        "Ayawaso West Wuogon",
+        "Ayawaso West"
+    ]
+
+    // Add more approved aliases here when necessary.
+
+};
+
+
+/* =========================================================
+   NORMALIZE TEXT
+   ========================================================= */
+
+function normalizeConstituencyName(name) {
+    return String(name || "")
+        .trim()
+        .toLowerCase()
+        // Remove the word "constituency"
+        .replace(/\bconstituency\b/g, "")
+        // Treat hyphens, slashes and similar separators as spaces
+        .replace(/[-/]+/g, " ")
+        // Remove other unnecessary punctuation
+        .replace(/[^\w\s]/g, "")
+        // Normalize multiple spaces
+        .replace(/\s+/g, " ")
+        .trim();
+}
+
+
+/* =========================================================
+   NORMALIZE REGION
+   ========================================================= */
+
+function normalizeRegionName(region) {
+    return String(region || "")
+        .trim()
+        .toLowerCase()
+        .replace(/\bregion\b/g, "")
+        .replace(/\s+/g, " ")
+        .trim();
+}
+
+/* =========================================================
+   FIND OFFICIAL CONSTITUENCY
+   =========================================================
+
+   This function accepts:
+
+   1. Exact official constituency name
+   2. Approved alias
+   3. Constituency + region combination
+
+   This prevents valid MPs from being rejected when
+   the same constituency name appears in multiple regions.
+
+========================================================= */
+
+function getOfficialConstituency(inputName, inputRegion) {
+
+    const input =
+        normalizeConstituencyName(inputName);
+
+    const region =
+        normalizeRegionName(inputRegion);
+
+
+    /* =====================================================
+       EMPTY INPUT
+    ===================================================== */
+
+    if (!input) {
+
+        return null;
+
+    }
+
+
+    /* =====================================================
+       1. CHECK EXACT OFFICIAL CONSTITUENCY NAME
+    ===================================================== */
+
+    const officialMatches =
+        constituencyData.filter(function(item) {
+
+            return (
+                normalizeConstituencyName(
+                    item.constituency
+                ) === input
+            );
+
+        });
+
+
+    /* =====================================================
+       EXACT MATCH — ONE RESULT
+    ===================================================== */
+
+    if (officialMatches.length === 1) {
+
+        return officialMatches[0];
+
+    }
+
+
+    /* =====================================================
+       EXACT MATCH — MULTIPLE RESULTS
+       
+       Use the MP's region to determine the correct
+       constituency.
+    ===================================================== */
+
+    if (officialMatches.length > 1) {
+
+        /* ---------------------------------------------
+           If no region was supplied, cannot safely guess
+        --------------------------------------------- */
+
+        if (!region) {
+
+            console.warn(
+                "AMBIGUOUS CONSTITUENCY:",
+                inputName,
+                officialMatches
+            );
+
+            return null;
+
+        }
+
+
+        /* ---------------------------------------------
+           Match constituency + region
+        --------------------------------------------- */
+
+        const regionMatches =
+            officialMatches.filter(function(item) {
+
+                return (
+                    normalizeRegionName(
+                        item.region
+                    ) === region
+                );
+
+            });
+
+
+        if (regionMatches.length === 1) {
+
+            return regionMatches[0];
+
+        }
+
+
+        console.warn(
+            "AMBIGUOUS CONSTITUENCY + REGION:",
+            inputName,
+            inputRegion,
+            regionMatches
+        );
+
+        return null;
+
+    }
+
+
+    /* =====================================================
+       2. CHECK APPROVED ALIASES
+    ===================================================== */
+
+    for (
+        const officialName in constituencyAliases
+    ) {
+
+        const aliases =
+            constituencyAliases[
+                officialName
+            ];
+
+
+        const aliasMatch =
+            aliases.some(function(alias) {
+
+                return (
+                    normalizeConstituencyName(
+                        alias
+                    ) === input
+                );
+
+            });
+
+
+        if (!aliasMatch) {
+
+            continue;
+
+        }
+
+
+        /* ---------------------------------------------
+           Find official records for the alias target
+        --------------------------------------------- */
+
+        const aliasMatches =
+            constituencyData.filter(function(item) {
+
+                return (
+                    normalizeConstituencyName(
+                        item.constituency
+                    ) ===
+                    normalizeConstituencyName(
+                        officialName
+                    )
+                );
+
+            });
+
+
+        /* ---------------------------------------------
+           One official result
+        --------------------------------------------- */
+
+        if (aliasMatches.length === 1) {
+
+            return aliasMatches[0];
+
+        }
+
+
+        /* ---------------------------------------------
+           Multiple official results
+           
+           Again use region to disambiguate.
+        --------------------------------------------- */
+
+        if (
+            aliasMatches.length > 1 &&
+            region
+        ) {
+
+            const regionMatches =
+                aliasMatches.filter(function(item) {
+
+                    return (
+                        normalizeRegionName(
+                            item.region
+                        ) === region
+                    );
+
+                });
+
+
+            if (regionMatches.length === 1) {
+
+                return regionMatches[0];
+
+            }
+
+        }
+
+
+        console.warn(
+            "AMBIGUOUS ALIAS:",
+            inputName,
+            inputRegion,
+            aliasMatches
+        );
+
+        return null;
+
+    }
+
+
+    /* =====================================================
+       3. NO MATCH
+    ===================================================== */
+
+    return null;
+
+}
+
+
+/* =========================================================
+   CHECK IF CONSTITUENCY IS VALID
+   ========================================================= */
+
+function isValidConstituency(
+    name,
+    region
+) {
+
+    return (
+        getOfficialConstituency(
+            name,
+            region
+        ) !== null
+    );
+
+}
+
+
+/* =========================================================
+   GLOBAL ACCESS
+   ========================================================= */
+
+window.constituencyAliases =
+    constituencyAliases;
+
+
+window.normalizeConstituencyName =
+    normalizeConstituencyName;
+
+
+window.normalizeRegionName =
+    normalizeRegionName;
+
+
+window.getOfficialConstituency =
+    getOfficialConstituency;
+
+
+window.isValidConstituency =
+    isValidConstituency;
