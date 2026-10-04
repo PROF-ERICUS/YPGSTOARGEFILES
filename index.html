@@ -4412,6 +4412,9 @@ function vacancyCountFromUniverse(
 /* =========================================================
    BUILD POSITION LIST
 ========================================================= */
+/* =========================================================
+   BUILD POSITION LIST
+========================================================= */
 
 function buildPositionList() {
 
@@ -4420,7 +4423,9 @@ function buildPositionList() {
 
 
     /*
+     * =========================================
      * OFFICIAL 276 CONSTITUENCY LIST
+     * =========================================
      */
 
     if (
@@ -4492,50 +4497,24 @@ function buildPositionList() {
                 }
 
 
-               /*
- * =========================================
- * REVOKED
- *
- * A revoked MP must NOT appear in the
- * registered members table.
- *
- * The constituency therefore falls through
- * to the VACANT section below.
- * =========================================
- */
+                /*
+                 * =========================================
+                 * REVOKED MEMBER
+                 *
+                 * DO NOT DISPLAY THE REVOKED RECORD
+                 * IN THE MAIN TABLE.
+                 *
+                 * Returning null removes the entire row.
+                 * The revoked MP remains inside mpData
+                 * and can still appear on the revoked page.
+                 * =========================================
+                 */
 
-if (revokedMP) {
+                if (revokedMP) {
 
-    return {
+                    return null;
 
-        id:
-            "-",
-
-        constituency:
-            position.constituency,
-
-        region:
-            position.region ||
-            "-",
-
-        name:
-            "VACANT POSITION",
-
-        phone:
-            "-",
-
-        position:
-            "Member of Parliament",
-
-        status:
-            "vacant",
-
-        originalStatus:
-            "vacant"
-
-    };
-
-}
+                }
 
 
                 /*
@@ -4574,61 +4553,74 @@ if (revokedMP) {
                 };
 
             }
+
+        ).filter(
+            function(item) {
+
+                return item !== null;
+
+            }
         );
 
     }
 
 
     /*
-     * =============================================
+     * =========================================
      * FALLBACK
-     * =============================================
+     * =========================================
+     *
+     * Also hide revoked records here.
+     * This protects the table even when the
+     * official constituency list is unavailable.
      */
 
-    return allMPs.map(
-        function(mp) {
+    return allMPs
+        .filter(
+            function(mp) {
 
-            const status =
-                normalizeStatus(
+                return normalizeStatus(
                     mp.status
-                );
+                ) !== "revoked";
 
+            }
+        )
+        .map(
+            function(mp) {
 
-            return {
+                return {
 
-                id:
-                    mp.id || "-",
+                    id:
+                        mp.id || "-",
 
-                constituency:
-                    mp.constituency || "-",
+                    constituency:
+                        mp.constituency || "-",
 
-                region:
-                    mp.region || "-",
+                    region:
+                        mp.region || "-",
 
-                name:
-                    mp.name || "-",
+                    name:
+                        mp.name || "-",
 
-                phone:
-                    mp.phone ||
-                    mp.phoneNumber ||
-                    "-",
+                    phone:
+                        mp.phone ||
+                        mp.phoneNumber ||
+                        "-",
 
-                position:
-                    mp.position ||
-                    "Member of Parliament",
+                    position:
+                        mp.position ||
+                        "Member of Parliament",
 
-                status:
-                    status === "revoked"
-                        ? "revoked"
-                        : "recorded",
+                    status:
+                        "recorded",
 
-                originalStatus:
-                    status
+                    originalStatus:
+                        "active"
 
-            };
+                };
 
-        }
-    );
+            }
+        );
 
 }
 
@@ -4821,33 +4813,33 @@ function renderTable(
                 "number";
 
 
-            let mpNumber =
-                String(
-                    item.id || ""
-                )
-                .replace(
-                    /^mp/i,
-                    ""
-                )
-                .trim();
+           /* =====================================================
+   AUTOMATIC TABLE NUMBERING
+===================================================== */
 
+/*
+ * Use the current visible row position.
+ *
+ * This means:
+ *
+ * 001
+ * 002
+ * 003
+ * 004
+ *
+ * If a member is revoked and removed from the table,
+ * the remaining rows automatically move up.
+ *
+ * If that member is reinstated, the row returns to the
+ * official constituency order and the numbers are rebuilt.
+ */
 
-            if (!mpNumber) {
+const mpNumber =
+    String(index + 1)
+        .padStart(3, "0");
 
-                mpNumber =
-                    String(
-                        index + 1
-                    )
-                    .padStart(
-                        3,
-                        "0"
-                    );
-
-            }
-
-
-            numberCell.textContent =
-                mpNumber;
+numberCell.textContent =
+    mpNumber;
 
 
             row.appendChild(
