@@ -1630,7 +1630,6 @@ function normalizeConstituencyName(value) {
         /*
          * Remove constituency wording
          */
-
         .replace(
             /\b(constituency|constituencies)\b/g,
             ""
@@ -1640,7 +1639,6 @@ function normalizeConstituencyName(value) {
          * Convert hyphens and dashes
          * to spaces
          */
-
         .replace(
             /[–—−-]/g,
             " "
@@ -1649,7 +1647,6 @@ function normalizeConstituencyName(value) {
         /*
          * Remove punctuation
          */
-
         .replace(
             /[^a-z0-9\s]/g,
             " "
@@ -1658,7 +1655,6 @@ function normalizeConstituencyName(value) {
         /*
          * Remove duplicate spaces
          */
-
         .replace(
             /\s+/g,
             " "
@@ -1719,13 +1715,11 @@ function canonicalConstituency(value) {
     const normalized =
         normalizeConstituencyName(value);
 
-
     if (!normalized) {
 
         return "";
 
     }
-
 
     return (
         CONSTITUENCY_ALIASES[normalized] ||
@@ -1747,10 +1741,8 @@ function constituencyNamesMatch(
     const first =
         canonicalConstituency(name1);
 
-
     const second =
         canonicalConstituency(name2);
-
 
     if (
         !first ||
@@ -1760,7 +1752,6 @@ function constituencyNamesMatch(
         return false;
 
     }
-
 
     return first === second;
 
@@ -1906,6 +1897,7 @@ function loadMembers() {
         updateGeneratedDate();
 
     }
+
 
     catch (error) {
 
@@ -2106,20 +2098,37 @@ function buildPositionList() {
 
 
     /*
-     * ================================================
+     * =========================================================
      * OFFICIAL CONSTITUENCY UNIVERSE
-     * ================================================
+     *
+     * The order of constituency-data.js is the official
+     * numbering source:
+     *
+     * index 0   = 001
+     * index 1   = 002
+     * ...
+     * index 275 = 276
+     *
+     * These numbers NEVER change because of:
+     *
+     * - search
+     * - filtering
+     * - revocation
+     * - reinstatement
+     * =========================================================
      */
 
-    if (
-        universe.length > 0
-    ) {
+    if (universe.length > 0) {
 
         return universe.map(
-            function(position) {
+            function(position, index) {
+
+                const officialNumber =
+                    String(index + 1).padStart(3, "0");
+
 
                 /*
-                 * FIND ACTIVE
+                 * FIND ACTIVE MEMBER
                  */
 
                 const activeMP =
@@ -2129,7 +2138,7 @@ function buildPositionList() {
 
 
                 /*
-                 * FIND REVOKED
+                 * FIND REVOKED MEMBER
                  */
 
                 const revokedMP =
@@ -2139,23 +2148,23 @@ function buildPositionList() {
 
 
                 /*
-                 * ========================================
-                 * RECORDED
-                 * ========================================
+                 * =================================================
+                 * ACTIVE / RECORDED
+                 * =================================================
+                 *
+                 * If an active MP exists, display the MP normally.
                  */
 
                 if (activeMP) {
 
                     return {
 
+                        officialNumber:
+                            officialNumber,
+
                         id:
                             activeMP.id ||
                             "-",
-
-                        /*
-                         * Display the official
-                         * constituency name.
-                         */
 
                         constituency:
                             position.constituency,
@@ -2179,7 +2188,10 @@ function buildPositionList() {
                             "Member of Parliament",
 
                         status:
-                            "recorded"
+                            "recorded",
+
+                        originalStatus:
+                            "active"
 
                     };
 
@@ -2187,17 +2199,28 @@ function buildPositionList() {
 
 
                 /*
-                 * ========================================
+                 * =================================================
                  * REVOKED
-                 * ========================================
+                 * =================================================
+                 *
+                 * A revoked MP does NOT disappear.
+                 *
+                 * The constituency remains in its official
+                 * position and is displayed as:
+                 *
+                 * VACANT POSITION
+                 *
+                 * This means the official number is preserved.
                  */
 
                 if (revokedMP) {
 
                     return {
 
+                        officialNumber:
+                            officialNumber,
+
                         id:
-                            revokedMP.id ||
                             "-",
 
                         constituency:
@@ -2209,19 +2232,18 @@ function buildPositionList() {
                             "-",
 
                         name:
-                            revokedMP.name ||
-                            "-",
+                            "VACANT POSITION",
 
                         phone:
-                            revokedMP.phone ||
-                            revokedMP.phoneNumber ||
                             "-",
 
                         position:
-                            revokedMP.position ||
                             "Member of Parliament",
 
                         status:
+                            "vacant",
+
+                        originalStatus:
                             "revoked"
 
                     };
@@ -2230,12 +2252,17 @@ function buildPositionList() {
 
 
                 /*
-                 * ========================================
+                 * =================================================
                  * VACANT
-                 * ========================================
+                 * =================================================
+                 *
+                 * No active MP and no revoked MP.
                  */
 
                 return {
+
+                    officialNumber:
+                        officialNumber,
 
                     id:
                         "-",
@@ -2248,7 +2275,7 @@ function buildPositionList() {
                         "-",
 
                     name:
-                        "VACANT",
+                        "VACANT POSITION",
 
                     phone:
                         "-",
@@ -2257,6 +2284,9 @@ function buildPositionList() {
                         "Member of Parliament",
 
                     status:
+                        "vacant",
+
+                    originalStatus:
                         "vacant"
 
                 };
@@ -2268,15 +2298,22 @@ function buildPositionList() {
 
 
     /*
-     * ================================================
+     * =========================================================
      * FALLBACK
+     * =========================================================
      *
-     * SHOW ONLY mpData
-     * ================================================
+     * constituency-data.js should normally always be available.
+     *
+     * If it is unavailable, use the order of mpData as a
+     * temporary fallback.
      */
 
     return allMPs.map(
-        function(mp) {
+        function(mp, index) {
+
+            const officialNumber =
+                String(index + 1).padStart(3, "0");
+
 
             const status =
                 normalizeStatus(
@@ -2284,10 +2321,106 @@ function buildPositionList() {
                 );
 
 
+            /*
+             * REVOKED
+             */
+
+            if (status === "revoked") {
+
+                return {
+
+                    officialNumber:
+                        officialNumber,
+
+                    id:
+                        "-",
+
+                    constituency:
+                        mp.constituency ||
+                        "-",
+
+                    region:
+                        mp.region ||
+                        "-",
+
+                    name:
+                        "VACANT POSITION",
+
+                    phone:
+                        "-",
+
+                    position:
+                        mp.position ||
+                        "Member of Parliament",
+
+                    status:
+                        "vacant",
+
+                    originalStatus:
+                        "revoked"
+
+                };
+
+            }
+
+
+            /*
+             * ACTIVE
+             */
+
+            if (status === "active") {
+
+                return {
+
+                    officialNumber:
+                        officialNumber,
+
+                    id:
+                        mp.id ||
+                        "-",
+
+                    constituency:
+                        mp.constituency ||
+                        "-",
+
+                    region:
+                        mp.region ||
+                        "-",
+
+                    name:
+                        mp.name ||
+                        "-",
+
+                    phone:
+                        mp.phone ||
+                        mp.phoneNumber ||
+                        "-",
+
+                    position:
+                        mp.position ||
+                        "Member of Parliament",
+
+                    status:
+                        "recorded",
+
+                    originalStatus:
+                        "active"
+
+                };
+
+            }
+
+
+            /*
+             * UNKNOWN / VACANT
+             */
+
             return {
 
+                officialNumber:
+                    officialNumber,
+
                 id:
-                    mp.id ||
                     "-",
 
                 constituency:
@@ -2299,12 +2432,9 @@ function buildPositionList() {
                     "-",
 
                 name:
-                    mp.name ||
-                    "-",
+                    "VACANT POSITION",
 
                 phone:
-                    mp.phone ||
-                    mp.phoneNumber ||
                     "-",
 
                 position:
@@ -2312,11 +2442,10 @@ function buildPositionList() {
                     "Member of Parliament",
 
                 status:
-                    status === "active"
-                        ? "recorded"
-                        : status === "revoked"
-                            ? "revoked"
-                            : "unknown"
+                    "vacant",
+
+                originalStatus:
+                    "vacant"
 
             };
 
@@ -2324,6 +2453,7 @@ function buildPositionList() {
     );
 
 }
+
 
 /* =========================================================
    UPDATE DASHBOARD
@@ -2422,9 +2552,6 @@ function updateDashboard() {
      * Official total = 276
      *
      * Vacant = 276 - Recorded
-     *
-     * Example:
-     * 276 - 116 = 160
      */
 
     const vacantCount =
@@ -2467,6 +2594,7 @@ function updateDashboard() {
     }
 
 }
+
 
 /* =========================================================
    RENDER TABLE
@@ -2550,6 +2678,14 @@ function renderTable(
 
             /*
              * NUMBER
+             *
+             * IMPORTANT:
+             *
+             * NEVER use the filtered/search
+             * array index here.
+             *
+             * Always use the official
+             * constituency number.
              */
 
             const numberCell =
@@ -2563,12 +2699,8 @@ function renderTable(
 
 
             numberCell.textContent =
-                String(
-                    index + 1
-                ).padStart(
-                    3,
-                    "0"
-                );
+                item.officialNumber ||
+                "-";
 
 
             row.appendChild(
@@ -2850,6 +2982,13 @@ function searchMembers() {
 
     /*
      * SEARCH RESULTS
+     *
+     * IMPORTANT:
+     *
+     * Search only filters the official
+     * constituency list.
+     *
+     * It does NOT renumber results.
      */
 
     displayedPositions =
@@ -2857,6 +2996,8 @@ function searchMembers() {
             function(item) {
 
                 const text = [
+
+                    item.officialNumber,
 
                     item.constituency,
 
@@ -3094,10 +3235,6 @@ window.constituencyNamesMatch =
 
 
 /* =========================================================
-   END
-========================================================= */
-
-/* =========================================================
    NAVIGATION
 ========================================================= */
 
@@ -3123,7 +3260,9 @@ function goBack() {
 
         window.history.back();
 
-    } else {
+    }
+
+    else {
 
         window.location.href =
             "index.html";
@@ -3133,6 +3272,5 @@ function goBack() {
 }
 
 </script>
-
 </body>
 </html>
