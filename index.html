@@ -3334,7 +3334,7 @@
                 <div class="logo-wrapper">
 
                     <img
-                        src="YPG-LOGO.png"
+                        src="images/YPG-LOGO.png"
                         alt="Youth Parliament Ghana Logo"
                         class="top-logo"
                         onerror="this.style.display='none';"
@@ -4160,7 +4160,7 @@ function loadMembers() {
         if (totalMembers) {
 
             totalMembers.textContent =
-                allMPs.length;
+    activeMPs.length;
 
         }
 
@@ -4492,54 +4492,50 @@ function buildPositionList() {
                 }
 
 
-                /*
-                 * =========================================
-                 * REVOKED
-                 * =========================================
-                 */
+               /*
+ * =========================================
+ * REVOKED
+ *
+ * A revoked MP must NOT appear in the
+ * registered members table.
+ *
+ * The constituency therefore falls through
+ * to the VACANT section below.
+ * =========================================
+ */
 
-                if (revokedMP) {
+if (revokedMP) {
 
-                    return {
+    return {
 
-                        id:
-                            revokedMP.id || "-",
+        id:
+            "-",
 
-                        /*
-                         * ALWAYS DISPLAY OFFICIAL
-                         * CONSTITUENCY NAME
-                         */
+        constituency:
+            position.constituency,
 
-                        constituency:
-                            position.constituency,
+        region:
+            position.region ||
+            "-",
 
-                        region:
-                            position.region ||
-                            revokedMP.region ||
-                            "-",
+        name:
+            "VACANT POSITION",
 
-                        name:
-                            revokedMP.name ||
-                            "-",
+        phone:
+            "-",
 
-                        phone:
-                            revokedMP.phone ||
-                            revokedMP.phoneNumber ||
-                            "-",
+        position:
+            "Member of Parliament",
 
-                        position:
-                            revokedMP.position ||
-                            "Member of Parliament",
+        status:
+            "vacant",
 
-                        status:
-                            "revoked",
+        originalStatus:
+            "vacant"
 
-                        originalStatus:
-                            "revoked"
+    };
 
-                    };
-
-                }
+}
 
 
                 /*
