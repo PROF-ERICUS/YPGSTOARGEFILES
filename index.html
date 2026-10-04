@@ -3822,13 +3822,14 @@
 /* =========================================================
    YOUTH PARLIAMENT GHANA
    REGISTERED MEMBERS OF PARLIAMENT
+
    FULL JAVASCRIPT
    ========================================================= */
 
 
 /* =========================================================
    GLOBAL CONFIGURATION
-========================================================= */
+   ========================================================= */
 
 const TOTAL_MP_POSITIONS = 276;
 
@@ -3839,7 +3840,7 @@ const TOTAL_CONSTITUENCIES = 276;
 
 /* =========================================================
    GLOBAL VARIABLES
-========================================================= */
+   ========================================================= */
 
 let allMPs = [];
 
@@ -3856,7 +3857,7 @@ let currentSearchTerm = "";
 
 /* =========================================================
    NORMALIZE STATUS
-========================================================= */
+   ========================================================= */
 
 function normalizeStatus(status) {
 
@@ -3869,7 +3870,7 @@ function normalizeStatus(status) {
 
 /* =========================================================
    NORMALIZE GENERAL TEXT
-========================================================= */
+   ========================================================= */
 
 function normalizeName(value) {
 
@@ -3886,7 +3887,7 @@ function normalizeName(value) {
 
 /* =========================================================
    NORMALIZE CONSTITUENCY NAME
-========================================================= */
+   ========================================================= */
 
 function normalizeConstituencyName(value) {
 
@@ -3896,18 +3897,21 @@ function normalizeConstituencyName(value) {
         .toLowerCase()
 
         /* Remove the word constituency */
+
         .replace(
             /\b(constituency|constituencies)\b/g,
             ""
         )
 
         /* Convert punctuation to spaces */
+
         .replace(
             /[^a-z0-9\s]/g,
             " "
         )
 
         /* Remove extra spaces */
+
         .replace(
             /\s+/g,
             " "
@@ -3920,7 +3924,7 @@ function normalizeConstituencyName(value) {
 
 /* =========================================================
    CONSTITUENCY ALIASES
-========================================================= */
+   ========================================================= */
 
 /*
  * IMPORTANT
@@ -3954,7 +3958,7 @@ const CONSTITUENCY_ALIASES = {
 
 /* =========================================================
    CANONICAL CONSTITUENCY
-========================================================= */
+   ========================================================= */
 
 function canonicalConstituency(value) {
 
@@ -3977,7 +3981,7 @@ function canonicalConstituency(value) {
 
 /* =========================================================
    CONSTITUENCY MATCHING
-========================================================= */
+   ========================================================= */
 
 /*
  * This is now the ONLY matching method
@@ -4018,7 +4022,7 @@ function constituencyNamesMatch(
 
 /* =========================================================
    GET CONSTITUENCY DATA
-========================================================= */
+   ========================================================= */
 
 function getConstituencyData() {
 
@@ -4043,7 +4047,7 @@ function getConstituencyData() {
 
 /* =========================================================
    LOAD MEMBERS
-========================================================= */
+   ========================================================= */
 
 function loadMembers() {
 
@@ -4160,7 +4164,7 @@ function loadMembers() {
         if (totalMembers) {
 
             totalMembers.textContent =
-    activeMPs.length;
+                activeMPs.length;
 
         }
 
@@ -4184,7 +4188,7 @@ function loadMembers() {
 
 /* =========================================================
    GET UNIQUE RECORDED CONSTITUENCIES
-========================================================= */
+   ========================================================= */
 
 function getRecordedConstituencies() {
 
@@ -4220,7 +4224,7 @@ function getRecordedConstituencies() {
 
 /* =========================================================
    FIND ACTIVE MP
-========================================================= */
+   ========================================================= */
 
 function findActiveMP(
     constituency
@@ -4242,7 +4246,7 @@ function findActiveMP(
 
 /* =========================================================
    FIND REVOKED MP
-========================================================= */
+   ========================================================= */
 
 function findRevokedMP(
     constituency
@@ -4264,7 +4268,7 @@ function findRevokedMP(
 
 /* =========================================================
    FIND MEMBER
-========================================================= */
+   ========================================================= */
 
 function findMember(
     constituency
@@ -4302,7 +4306,7 @@ function findMember(
 
 /* =========================================================
    GET VACANT POSITIONS
-========================================================= */
+   ========================================================= */
 
 function getVacantPositions() {
 
@@ -4380,7 +4384,7 @@ function getVacantPositions() {
 
 /* =========================================================
    COUNT VACANCIES FROM OFFICIAL UNIVERSE
-========================================================= */
+   ========================================================= */
 
 function vacancyCountFromUniverse(
     constituencyList
@@ -4411,10 +4415,45 @@ function vacancyCountFromUniverse(
 
 /* =========================================================
    BUILD POSITION LIST
-========================================================= */
-/* =========================================================
-   BUILD POSITION LIST
-========================================================= */
+   ========================================================= */
+
+/*
+ * IMPORTANT:
+ *
+ * The officialNumber is based on the official
+ * constituency universe.
+ *
+ * It does NOT change when a member is revoked.
+ *
+ * Example:
+ *
+ * 001 A
+ * 002 B
+ * 003 C
+ * 004 D
+ * 005 E
+ *
+ * If C is revoked:
+ *
+ * NORMAL TABLE:
+ *
+ * 001 A
+ * 002 B
+ * 003 D
+ * 004 E
+ *
+ * SEARCHING FOR D:
+ *
+ * 004 D
+ *
+ * If C is reinstated:
+ *
+ * 001 A
+ * 002 B
+ * 003 C
+ * 004 D
+ * 005 E
+ */
 
 function buildPositionList() {
 
@@ -4433,7 +4472,19 @@ function buildPositionList() {
     ) {
 
         return constituencyList.map(
-            function(position) {
+            function(position, index) {
+
+                /*
+                 * PERMANENT OFFICIAL NUMBER
+                 *
+                 * This number belongs to the
+                 * constituency, NOT the MP.
+                 */
+
+                const officialNumber =
+                    String(index + 1)
+                        .padStart(3, "0");
+
 
                 const activeMP =
                     findActiveMP(
@@ -4457,13 +4508,15 @@ function buildPositionList() {
 
                     return {
 
+                        /*
+                         * KEEP ORIGINAL OFFICIAL NUMBER
+                         */
+
+                        officialNumber:
+                            officialNumber,
+
                         id:
                             activeMP.id || "-",
-
-                        /*
-                         * ALWAYS DISPLAY OFFICIAL
-                         * CONSTITUENCY NAME
-                         */
 
                         constituency:
                             position.constituency,
@@ -4505,6 +4558,7 @@ function buildPositionList() {
                  * IN THE MAIN TABLE.
                  *
                  * Returning null removes the entire row.
+                 *
                  * The revoked MP remains inside mpData
                  * and can still appear on the revoked page.
                  * =========================================
@@ -4524,6 +4578,13 @@ function buildPositionList() {
                  */
 
                 return {
+
+                    /*
+                     * Keep official constituency number
+                     */
+
+                    officialNumber:
+                        officialNumber,
 
                     id:
                         "-",
@@ -4571,11 +4632,13 @@ function buildPositionList() {
      * =========================================
      *
      * Also hide revoked records here.
+     *
      * This protects the table even when the
      * official constituency list is unavailable.
      */
 
     return allMPs
+
         .filter(
             function(mp) {
 
@@ -4585,10 +4648,26 @@ function buildPositionList() {
 
             }
         )
+
         .map(
-            function(mp) {
+            function(mp, index) {
+
+                /*
+                 * FALLBACK OFFICIAL NUMBER
+                 *
+                 * Used only if constituencyData
+                 * is unavailable.
+                 */
+
+                const officialNumber =
+                    String(index + 1)
+                        .padStart(3, "0");
+
 
                 return {
+
+                    officialNumber:
+                        officialNumber,
 
                     id:
                         mp.id || "-",
@@ -4620,13 +4699,15 @@ function buildPositionList() {
                 };
 
             }
+
         );
 
 }
 
+
 /* =========================================================
    UPDATE DASHBOARD
-========================================================= */
+   ========================================================= */
 
 function updateDashboard() {
 
@@ -4634,59 +4715,97 @@ function updateDashboard() {
         getRecordedConstituencies();
 
 
-    /* =====================================================
-       TOTAL MP POSITIONS
-    ===================================================== */
+    /*
+     * =====================================================
+     * TOTAL MP POSITIONS
+     * =====================================================
+     */
 
-    document.getElementById(
-        "totalMPPositions"
-    ).textContent =
-        TOTAL_MP_POSITIONS;
+    const totalMPPositions =
+        document.getElementById(
+            "totalMPPositions"
+        );
 
+    if (totalMPPositions) {
 
-    /* =====================================================
-       TOTAL REGIONS
-    ===================================================== */
+        totalMPPositions.textContent =
+            TOTAL_MP_POSITIONS;
 
-    document.getElementById(
-        "totalRegions"
-    ).textContent =
-        TOTAL_REGIONS;
-
-
-    /* =====================================================
-       TOTAL CONSTITUENCIES
-       
-       ALWAYS USE THE OFFICIAL 276 POSITIONS
-    ===================================================== */
-
-    document.getElementById(
-        "totalConstituencies"
-    ).textContent =
-        TOTAL_MP_POSITIONS;
+    }
 
 
-    /* =====================================================
-       RECORDED POSITIONS
+    /*
+     * =====================================================
+     * TOTAL REGIONS
+     * =====================================================
+     */
 
-       Only UNIQUE ACTIVE constituencies count.
-    ===================================================== */
+    const totalRegions =
+        document.getElementById(
+            "totalRegions"
+        );
+
+    if (totalRegions) {
+
+        totalRegions.textContent =
+            TOTAL_REGIONS;
+
+    }
+
+
+    /*
+     * =====================================================
+     * TOTAL CONSTITUENCIES
+     *
+     * ALWAYS USE THE OFFICIAL 276 POSITIONS
+     * =====================================================
+     */
+
+    const totalConstituencies =
+        document.getElementById(
+            "totalConstituencies"
+        );
+
+    if (totalConstituencies) {
+
+        totalConstituencies.textContent =
+            TOTAL_MP_POSITIONS;
+
+    }
+
+
+    /*
+     * =====================================================
+     * RECORDED POSITIONS
+     *
+     * Only UNIQUE ACTIVE constituencies count.
+     * =====================================================
+     */
 
     const recordedCount =
         recordedConstituencies.size;
 
 
-    document.getElementById(
-        "recordedPositions"
-    ).textContent =
-        recordedCount;
+    const recordedPositions =
+        document.getElementById(
+            "recordedPositions"
+        );
+
+    if (recordedPositions) {
+
+        recordedPositions.textContent =
+            recordedCount;
+
+    }
 
 
-    /* =====================================================
-       VACANT POSITIONS
-
-       276 - recorded constituencies
-    ===================================================== */
+    /*
+     * =====================================================
+     * VACANT POSITIONS
+     *
+     * 276 - recorded constituencies
+     * =====================================================
+     */
 
     const vacantCount =
         Math.max(
@@ -4696,26 +4815,43 @@ function updateDashboard() {
         );
 
 
-    document.getElementById(
-        "vacantPositions"
-    ).textContent =
-        vacantCount;
+    const vacantPositionsElement =
+        document.getElementById(
+            "vacantPositions"
+        );
+
+    if (vacantPositionsElement) {
+
+        vacantPositionsElement.textContent =
+            vacantCount;
+
+    }
 
 
-    /* =====================================================
-       REVOKED POSITIONS
-    ===================================================== */
+    /*
+     * =====================================================
+     * REVOKED POSITIONS
+     * =====================================================
+     */
 
-    document.getElementById(
-        "revokedPositions"
-    ).textContent =
-        revokedMPs.length;
+    const revokedPositions =
+        document.getElementById(
+            "revokedPositions"
+        );
+
+    if (revokedPositions) {
+
+        revokedPositions.textContent =
+            revokedMPs.length;
+
+    }
 
 }
 
+
 /* =========================================================
    RENDER TABLE
-========================================================= */
+   ========================================================= */
 
 function renderTable(
     positions
@@ -4801,7 +4937,9 @@ function renderTable(
 
 
             /*
+             * =========================================
              * NUMBER
+             * =========================================
              */
 
             const numberCell =
@@ -4813,33 +4951,78 @@ function renderTable(
                 "number";
 
 
-           /* =====================================================
-   AUTOMATIC TABLE NUMBERING
-===================================================== */
+            /*
+             * =====================================================
+             * SMART TABLE NUMBERING
+             * =====================================================
+             *
+             * NORMAL TABLE:
+             * Use the current visible position.
+             *
+             * SEARCH:
+             * Use the original official constituency number.
+             *
+             * Therefore:
+             *
+             * Normal table after MP 003 is revoked:
+             *
+             * 001
+             * 002
+             * 003
+             * 004
+             *
+             * But searching for the former 004 constituency:
+             *
+             * 004
+             *
+             * When MP 003 is reinstated, the normal table becomes:
+             *
+             * 001
+             * 002
+             * 003
+             * 004
+             * 005
+             */
 
-/*
- * Use the current visible row position.
- *
- * This means:
- *
- * 001
- * 002
- * 003
- * 004
- *
- * If a member is revoked and removed from the table,
- * the remaining rows automatically move up.
- *
- * If that member is reinstated, the row returns to the
- * official constituency order and the numbers are rebuilt.
- */
+            let mpNumber;
 
-const mpNumber =
-    String(index + 1)
-        .padStart(3, "0");
 
-numberCell.textContent =
-    mpNumber;
+            if (
+                currentSearchTerm &&
+                currentSearchTerm.trim() !== ""
+            ) {
+
+                /*
+                 * SEARCH MODE
+                 *
+                 * Keep the MP's original
+                 * official constituency number.
+                 */
+
+                mpNumber =
+                    item.officialNumber ||
+                    "-";
+
+            }
+
+            else {
+
+                /*
+                 * NORMAL TABLE MODE
+                 *
+                 * Renumber currently visible
+                 * records so revoked gaps close.
+                 */
+
+                mpNumber =
+                    String(index + 1)
+                        .padStart(3, "0");
+
+            }
+
+
+            numberCell.textContent =
+                mpNumber;
 
 
             row.appendChild(
@@ -4848,7 +5031,9 @@ numberCell.textContent =
 
 
             /*
+             * =========================================
              * CONSTITUENCY
+             * =========================================
              */
 
             const constituencyCell =
@@ -4871,7 +5056,9 @@ numberCell.textContent =
 
 
             /*
+             * =========================================
              * REGION
+             * =========================================
              */
 
             const regionCell =
@@ -4894,7 +5081,9 @@ numberCell.textContent =
 
 
             /*
+             * =========================================
              * NAME
+             * =========================================
              */
 
             const nameCell =
@@ -4932,7 +5121,9 @@ numberCell.textContent =
 
 
             /*
+             * =========================================
              * PHONE
+             * =========================================
              */
 
             const phoneCell =
@@ -4955,7 +5146,9 @@ numberCell.textContent =
 
 
             /*
+             * =========================================
              * POSITION
+             * =========================================
              */
 
             const positionCell =
@@ -4978,7 +5171,9 @@ numberCell.textContent =
 
 
             /*
+             * =========================================
              * STATUS
+             * =========================================
              */
 
             const statusCell =
@@ -5064,7 +5259,9 @@ numberCell.textContent =
 
 
             /*
+             * =========================================
              * ADD ROW
+             * =========================================
              */
 
             tableBody.appendChild(
@@ -5079,7 +5276,7 @@ numberCell.textContent =
 
 /* =========================================================
    SEARCH MEMBERS
-========================================================= */
+   ========================================================= */
 
 function searchMembers() {
 
@@ -5191,7 +5388,7 @@ function searchMembers() {
 
 /* =========================================================
    CLEAR SEARCH
-========================================================= */
+   ========================================================= */
 
 function clearSearch() {
 
@@ -5208,6 +5405,13 @@ function clearSearch() {
 
     }
 
+
+    /*
+     * IMPORTANT:
+     *
+     * Reset search mode so the table
+     * returns to normal visible numbering.
+     */
 
     currentSearchTerm =
         "";
@@ -5226,7 +5430,7 @@ function clearSearch() {
 
 /* =========================================================
    PRINT
-========================================================= */
+   ========================================================= */
 
 function printPDF() {
 
@@ -5237,7 +5441,7 @@ function printPDF() {
 
 /* =========================================================
    GENERATED DATE
-========================================================= */
+   ========================================================= */
 
 function updateGeneratedDate() {
 
@@ -5284,7 +5488,7 @@ function updateGeneratedDate() {
 
 /* =========================================================
    SHOW ERROR
-========================================================= */
+   ========================================================= */
 
 function showLoadingError(
     message
@@ -5330,7 +5534,7 @@ function showLoadingError(
 
 /* =========================================================
    REFRESH DASHBOARD
-========================================================= */
+   ========================================================= */
 
 function refreshMPDashboard() {
 
@@ -5341,7 +5545,7 @@ function refreshMPDashboard() {
 
 /* =========================================================
    GET DASHBOARD SUMMARY
-========================================================= */
+   ========================================================= */
 
 function getDashboardSummary() {
 
@@ -5406,7 +5610,7 @@ function getDashboardSummary() {
 
 /* =========================================================
    SEARCH EVENT
-========================================================= */
+   ========================================================= */
 
 function initializeSearch() {
 
@@ -5443,7 +5647,7 @@ function initializeSearch() {
 
 /* =========================================================
    INITIALIZE SYSTEM
-========================================================= */
+   ========================================================= */
 
 function initializeMPSystem() {
 
@@ -5456,7 +5660,7 @@ function initializeMPSystem() {
 
 /* =========================================================
    DOM READY
-========================================================= */
+   ========================================================= */
 
 if (
     document.readyState ===
@@ -5479,7 +5683,7 @@ else {
 
 /* =========================================================
    GLOBAL FUNCTIONS
-========================================================= */
+   ========================================================= */
 
 window.loadMembers =
     loadMembers;
@@ -5528,13 +5732,8 @@ window.constituencyNamesMatch =
 
 
 /* =========================================================
-   END
-========================================================= */
-
-
-/* =========================================================
    NAVIGATION
-========================================================= */
+   ========================================================= */
 
 /*
  * GO TO CONSTITUENCY PAGE
@@ -5558,7 +5757,9 @@ function goBack() {
 
         window.history.back();
 
-    } else {
+    }
+
+    else {
 
         window.location.href =
             "print-mps.html";
@@ -5566,6 +5767,7 @@ function goBack() {
     }
 
 }
+
 
 </script>
 
