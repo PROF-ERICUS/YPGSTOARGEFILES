@@ -3991,7 +3991,7 @@ parliament: "Youth Parliament Ghana",
     constituency: "Sekyere Central constituency",
     region: "Ashanti",
     parliament: "Youth Parliament Ghana",
-  status: "active",
+  status: "revoked",
 
     education:
         "University of Media, Arts and Communication (UniMAC-IJ) — Bachelor of Arts in Development Communication, 2026. UniMAC-IJ — Diploma in Communication Studies. National Film and Television Institute (NAFTI) — Diploma in Broadcast Journalism. Ongoing postgraduate programme in Development Communication.",
