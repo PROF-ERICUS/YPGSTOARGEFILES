@@ -118,7 +118,7 @@ const constituencyData = [
     { constituency: "Abura-Asebu-Kwamankese", region: "Central" },
     { constituency: "Agona East", region: "Central" },
     { constituency: "Agona West", region: "Central" },
-    { constituency: "Ajumako-Enyan-Esiam", region: "Central" },
+    { constituency: "Ajumako-Enyan-Essiam", region: "Central" },
     { constituency: "Asikuma-Odoben-Brakwa", region: "Central" },
     { constituency: "Assin Central", region: "Central" },
     { constituency: "Assin North", region: "Central" },
@@ -177,6 +177,7 @@ const constituencyData = [
 { constituency: "Upper West Akim", region: "Eastern" },
 { constituency: "Yilo Krobo", region: "Eastern" },
 
+   
    /* =====================================================
    GREATER ACCRA — 34
 ===================================================== */
