@@ -1519,15 +1519,12 @@ tbody tr:hover {
 
 </div>
 
-
-
 <!-- =========================================================
-     DATA
+     DATA FILES
 ========================================================= -->
 
-<script src="js/mp-data.js"></script>
-
 <script src="js/constituency-data.js"></script>
+<script src="js/mp-data.js"></script>
 
 
 <script>
@@ -1535,7 +1532,7 @@ tbody tr:hover {
 /* =========================================================
    YOUTH PARLIAMENT GHANA
    PARLIAMENTARY CONSTITUENCY REGISTRY
-   UPDATED FULL JAVASCRIPT
+   COMPLETE MP REGISTRY CONTROLLER
    ========================================================= */
 
 
@@ -1544,9 +1541,7 @@ tbody tr:hover {
 ========================================================= */
 
 const TOTAL_MP_POSITIONS = 276;
-
 const TOTAL_REGIONS = 16;
-
 const TOTAL_CONSTITUENCIES = 276;
 
 
@@ -1558,6 +1553,10 @@ let allMPs = [];
 
 let activeMPs = [];
 
+let validActiveMPs = [];
+
+let invalidActiveMPs = [];
+
 let revokedMPs = [];
 
 let vacantPositions = [];
@@ -1566,10 +1565,17 @@ let displayedPositions = [];
 
 
 /* =========================================================
-   GET CONSTITUENCY UNIVERSE
+   GENERAL SEARCH STATE
 ========================================================= */
 
-function getConstituencyUniverse() {
+let currentSearchTerm = "";
+
+
+/* =========================================================
+   GET OFFICIAL CONSTITUENCY DATA
+========================================================= */
+
+function getConstituencyData() {
 
     if (
         typeof window.constituencyData !== "undefined" &&
@@ -1586,18 +1592,65 @@ function getConstituencyUniverse() {
 
 
 /* =========================================================
+   GET OFFICIAL CONSTITUENCY UNIVERSE
+========================================================= */
+
+function getConstituencyUniverse() {
+
+    const data = getConstituencyData();
+
+    if (!Array.isArray(data)) {
+        return [];
+    }
+
+    return data.filter(function(item) {
+
+        return (
+            item &&
+            typeof item === "object" &&
+            item.constituency
+        );
+
+    });
+
+}
+
+
+/* =========================================================
    NORMALIZE GENERAL TEXT
 ========================================================= */
+
+/*
+ * IMPORTANT:
+ *
+ * This function is ONLY for general searching.
+ *
+ * It does NOT remove the word "constituency".
+ *
+ * Therefore:
+ *
+ * "Ayawaso West constituency"
+ *
+ * remains searchable.
+ */
 
 function normalizeName(value) {
 
     return String(value || "")
+
         .normalize("NFKD")
+
         .replace(/[\u0300-\u036f]/g, "")
+
         .trim()
+
         .toLowerCase()
+
+        .replace(/[–—−-]/g, " ")
+
         .replace(/\s+/g, " ")
-        .replace(/[–—−-]/g, " ");
+
+        .trim();
 
 }
 
@@ -1616,45 +1669,83 @@ function normalizeStatus(value) {
 
 
 /* =========================================================
-   CONSTITUENCY NORMALIZATION
+   NORMALIZE REGION
 ========================================================= */
+
+function normalizeRegion(value) {
+
+    return String(value || "")
+
+        .normalize("NFKD")
+
+        .replace(/[\u0300-\u036f]/g, "")
+
+        .toLowerCase()
+
+        .trim()
+
+        .replace(/[–—−-]/g, " ")
+
+        .replace(/[^\w\s]/g, " ")
+
+        .replace(/\s+/g, " ")
+
+        .trim();
+
+}
+
+
+/* =========================================================
+   NORMALIZE CONSTITUENCY NAME
+========================================================= */
+
+/*
+ * This is specifically for constituency comparison.
+ *
+ * Supported:
+ *
+ * Ayawaso West
+ * Ayawaso West Constituency
+ * AYAWASO WEST
+ * Ayawaso West-Wuogon
+ * Ayawaso West Wuogon
+ * Bortianor-Ngleshie Amanfro
+ * Bortianor Ngleshie Amanfro
+ *
+ * All are normalized before comparison.
+ */
 
 function normalizeConstituencyName(value) {
 
     return String(value ?? "")
+
         .normalize("NFKD")
+
         .replace(/[\u0300-\u036f]/g, "")
+
         .toLowerCase()
+
         .trim()
 
-        /*
-         * Remove constituency wording
-         */
+        /* Remove constituency wording */
         .replace(
             /\b(constituency|constituencies)\b/g,
-            ""
-        )
-
-        /*
-         * Convert hyphens and dashes
-         * to spaces
-         */
-        .replace(
-            /[–—−-]/g,
             " "
         )
 
-        /*
-         * Remove punctuation
-         */
+        /* Treat hyphens, dashes and slashes as spaces */
+        .replace(
+            /[–—−\-\/\\_]+/g,
+            " "
+        )
+
+        /* Remove punctuation */
         .replace(
             /[^a-z0-9\s]/g,
             " "
         )
 
-        /*
-         * Remove duplicate spaces
-         */
+        /* Remove duplicate spaces */
         .replace(
             /\s+/g,
             " "
@@ -1670,26 +1761,18 @@ function normalizeConstituencyName(value) {
 ========================================================= */
 
 /*
- * All names below are treated as the same
- * official constituency.
+ * These aliases are used only where an MP's commonly used
+ * constituency name differs from the official registry name.
  *
- * Example:
- *
- * Ayawaso West
- * Ayawaso West Constituency
- * Ayawaso West Wuogon
- * Ayawaso West Wuogon Constituency
- *
- * ALL become:
- *
- * ayawaso west wuogon
+ * Add more aliases here if an official registry naming
+ * variation is required later.
  */
 
 const CONSTITUENCY_ALIASES = {
 
-    /*
-     * AYAWASO WEST
-     */
+    /* ---------------------------------------------
+       AYAWASO WEST
+    --------------------------------------------- */
 
     "ayawaso west":
         "ayawaso west wuogon",
@@ -1716,9 +1799,7 @@ function canonicalConstituency(value) {
         normalizeConstituencyName(value);
 
     if (!normalized) {
-
         return "";
-
     }
 
     return (
@@ -1730,7 +1811,7 @@ function canonicalConstituency(value) {
 
 
 /* =========================================================
-   CONSTITUENCY MATCH
+   CONSTITUENCY NAME MATCH
 ========================================================= */
 
 function constituencyNamesMatch(
@@ -1759,6 +1840,228 @@ function constituencyNamesMatch(
 
 
 /* =========================================================
+   GET OFFICIAL CONSTITUENCY FOR MP
+========================================================= */
+
+/*
+ * THIS IS THE MOST IMPORTANT VALIDATION FUNCTION.
+ *
+ * An active MP is considered valid ONLY when the constituency
+ * in mp-data.js exists in constituency-data.js.
+ *
+ * mp-data.js cannot create a new constituency.
+ *
+ * constituency-data.js is the source of truth.
+ */
+
+function getOfficialConstituencyForMP(mp) {
+
+    if (!mp) {
+        return null;
+    }
+
+    const officialList =
+        getConstituencyUniverse();
+
+    if (
+        !Array.isArray(officialList) ||
+        officialList.length === 0
+    ) {
+
+        return null;
+
+    }
+
+
+    const mpConstituency =
+        canonicalConstituency(
+            mp.constituency
+        );
+
+    if (!mpConstituency) {
+        return null;
+    }
+
+
+    const mpRegion =
+        normalizeRegion(
+            mp.region
+        );
+
+
+    /*
+     * Find all official constituencies that match
+     * the normalized MP constituency.
+     */
+
+    const matches =
+        officialList.filter(
+            function(position) {
+
+                return (
+                    canonicalConstituency(
+                        position.constituency
+                    ) === mpConstituency
+                );
+
+            }
+        );
+
+
+    /*
+     * No official match.
+     *
+     * Therefore this MP is INVALID.
+     */
+
+    if (matches.length === 0) {
+
+        return null;
+
+    }
+
+
+    /*
+     * Exactly one official match.
+     */
+
+    if (matches.length === 1) {
+
+        return matches[0];
+
+    }
+
+
+    /*
+     * If there are duplicate constituency names,
+     * use region to identify the correct one.
+     */
+
+    if (mpRegion) {
+
+        const regionMatches =
+            matches.filter(
+                function(position) {
+
+                    return (
+                        normalizeRegion(
+                            position.region
+                        ) === mpRegion
+                    );
+
+                }
+            );
+
+
+        if (regionMatches.length === 1) {
+
+            return regionMatches[0];
+
+        }
+
+    }
+
+
+    /*
+     * More than one possible official constituency
+     * and we cannot safely identify the correct one.
+     *
+     * Do NOT record the MP.
+     */
+
+    return null;
+
+}
+
+
+/* =========================================================
+   VALIDATE ACTIVE MP
+========================================================= */
+
+function isValidConstituencyMP(mp) {
+
+    if (!mp) {
+        return false;
+    }
+
+
+    /*
+     * Only ACTIVE MPs can be recorded.
+     */
+
+    if (
+        normalizeStatus(mp.status) !== "active"
+    ) {
+
+        return false;
+
+    }
+
+
+    /*
+     * Constituency must exist in the official
+     * constituency registry.
+     */
+
+    const official =
+        getOfficialConstituencyForMP(mp);
+
+
+    return official !== null;
+
+}
+
+
+/* =========================================================
+   GET VALID ACTIVE MPs
+========================================================= */
+
+function getValidActiveMPs() {
+
+    return allMPs.filter(
+        function(mp) {
+
+            return isValidConstituencyMP(mp);
+
+        }
+    );
+
+}
+
+
+/* =========================================================
+   GET INVALID ACTIVE MPs
+========================================================= */
+
+/*
+ * These are MPs who are active in mp-data.js but whose
+ * constituency cannot be verified against constituency-data.js.
+ *
+ * They are:
+ *
+ * - NOT displayed
+ * - NOT recorded
+ * - NOT counted
+ * - NOT allowed to occupy a constituency
+ */
+
+function getInvalidActiveMPs() {
+
+    return allMPs.filter(
+        function(mp) {
+
+            return (
+                normalizeStatus(mp.status) === "active" &&
+                !isValidConstituencyMP(mp)
+            );
+
+        }
+    );
+
+}
+
+
+/* =========================================================
    LOAD MEMBERS
 ========================================================= */
 
@@ -1766,9 +2069,9 @@ function loadMembers() {
 
     try {
 
-        /*
-         * Check mpData
-         */
+        /* =====================================================
+           CHECK MP DATA
+        ===================================================== */
 
         if (
             typeof mpData === "undefined" ||
@@ -1782,18 +2085,38 @@ function loadMembers() {
         }
 
 
-        /*
-         * Source data
-         */
+        /* =====================================================
+           CHECK OFFICIAL CONSTITUENCY DATA
+        ===================================================== */
+
+        const officialConstituencies =
+            getConstituencyData();
+
+
+        if (
+            !Array.isArray(officialConstituencies) ||
+            officialConstituencies.length === 0
+        ) {
+
+            throw new Error(
+                "Official constituency data could not be loaded. Check js/constituency-data.js."
+            );
+
+        }
+
+
+        /* =====================================================
+           KEEP ALL MP DATA
+        ===================================================== */
 
         allMPs = [
             ...mpData
         ];
 
 
-        /*
-         * ACTIVE MEMBERS
-         */
+        /* =====================================================
+           ALL ACTIVE MP RECORDS
+        ===================================================== */
 
         activeMPs =
             allMPs.filter(
@@ -1809,9 +2132,25 @@ function loadMembers() {
             );
 
 
-        /*
-         * REVOKED MEMBERS
-         */
+        /* =====================================================
+           VALID ACTIVE MPs
+        ===================================================== */
+
+        validActiveMPs =
+            getValidActiveMPs();
+
+
+        /* =====================================================
+           INVALID ACTIVE MPs
+        ===================================================== */
+
+        invalidActiveMPs =
+            getInvalidActiveMPs();
+
+
+        /* =====================================================
+           REVOKED MPs
+        ===================================================== */
 
         revokedMPs =
             allMPs.filter(
@@ -1827,33 +2166,20 @@ function loadMembers() {
             );
 
 
-        /*
-         * CONSTITUENCY UNIVERSE
-         */
-
-        const universe =
-            getConstituencyUniverse();
-
-
-        /*
-         * RECORDED CONSTITUENCIES
-         */
+        /* =====================================================
+           RECORDED CONSTITUENCIES
+        ===================================================== */
 
         const recordedSet =
             getRecordedConstituencySet();
 
 
-        /*
-         * VACANCIES
-         *
-         * IMPORTANT:
-         *
-         * canonicalConstituency()
-         * is used here.
-         */
+        /* =====================================================
+           VACANCIES
+        ===================================================== */
 
         vacantPositions =
-            universe.filter(
+            officialConstituencies.filter(
                 function(position) {
 
                     return !recordedSet.has(
@@ -1866,38 +2192,138 @@ function loadMembers() {
             );
 
 
-        /*
-         * BUILD DISPLAY
-         */
+        /* =====================================================
+           BUILD DISPLAY
+        ===================================================== */
 
         displayedPositions =
             buildPositionList();
 
 
-        /*
-         * UPDATE DASHBOARD
-         */
+        /* =====================================================
+           UPDATE DASHBOARD
+        ===================================================== */
 
         updateDashboard();
 
 
-        /*
-         * RENDER TABLE
-         */
+        /* =====================================================
+           RENDER TABLE
+        ===================================================== */
 
         renderTable(
             displayedPositions
         );
 
 
-        /*
-         * DATE
-         */
+        /* =====================================================
+           UPDATE DATE
+        ===================================================== */
 
         updateGeneratedDate();
 
-    }
 
+        /* =====================================================
+           DEBUG INFORMATION
+        ===================================================== */
+
+        console.log(
+            "=============================================="
+        );
+
+        console.log(
+            "YPG CONSTITUENCY REGISTRY"
+        );
+
+        console.log(
+            "=============================================="
+        );
+
+        console.log(
+            "Total MP records:",
+            allMPs.length
+        );
+
+        console.log(
+            "Active MP records:",
+            activeMPs.length
+        );
+
+        console.log(
+            "Valid recorded MPs:",
+            validActiveMPs.length
+        );
+
+        console.log(
+            "Recorded constituencies:",
+            recordedSet.size
+        );
+
+        console.log(
+            "Invalid active MPs:",
+            invalidActiveMPs.length
+        );
+
+        console.log(
+            "Revoked MPs:",
+            revokedMPs.length
+        );
+
+        console.log(
+            "Vacant constituencies:",
+            vacantPositions.length
+        );
+
+        console.log(
+            "Official constituencies:",
+            officialConstituencies.length
+        );
+
+        console.log(
+            "=============================================="
+        );
+
+
+        /*
+         * Show invalid records in the console.
+         *
+         * This does NOT display them on the website.
+         */
+
+        if (
+            invalidActiveMPs.length > 0
+        ) {
+
+            console.table(
+                invalidActiveMPs.map(
+                    function(mp) {
+
+                        return {
+
+                            id:
+                                mp.id || "-",
+
+                            name:
+                                mp.name || "-",
+
+                            constituency:
+                                mp.constituency || "-",
+
+                            region:
+                                mp.region || "-",
+
+                            status:
+                                mp.status || "-"
+
+                        };
+
+                    }
+                )
+            );
+
+        }
+
+    }
 
     catch (error) {
 
@@ -1942,8 +2368,18 @@ function loadMembers() {
 
 
 /* =========================================================
-   RECORDED CONSTITUENCY SET
+   GET RECORDED CONSTITUENCY SET
 ========================================================= */
+
+/*
+ * IMPORTANT:
+ *
+ * We DO NOT simply take mp.constituency.
+ *
+ * We first verify the MP against the official registry.
+ *
+ * The official constituency name is then added to the Set.
+ */
 
 function getRecordedConstituencySet() {
 
@@ -1951,12 +2387,21 @@ function getRecordedConstituencySet() {
         new Set();
 
 
-    activeMPs.forEach(
+    validActiveMPs.forEach(
         function(mp) {
+
+            const official =
+                getOfficialConstituencyForMP(mp);
+
+
+            if (!official) {
+                return;
+            }
+
 
             const constituency =
                 canonicalConstituency(
-                    mp.constituency
+                    official.constituency
                 );
 
 
@@ -1978,11 +2423,23 @@ function getRecordedConstituencySet() {
 
 
 /* =========================================================
+   GET RECORDED CONSTITUENCIES
+========================================================= */
+
+function getRecordedConstituencies() {
+
+    return getRecordedConstituencySet();
+
+}
+
+
+/* =========================================================
    FIND ACTIVE MEMBER
 ========================================================= */
 
 function findActiveMember(
-    constituency
+    constituency,
+    region
 ) {
 
     const target =
@@ -1998,16 +2455,65 @@ function findActiveMember(
     }
 
 
-    return activeMPs.find(
-        function(mp) {
+    /*
+     * IMPORTANT:
+     *
+     * Search ONLY VALID ACTIVE MPs.
+     */
 
-            return constituencyNamesMatch(
-                mp.constituency,
-                constituency
-            );
+    const candidates =
+        validActiveMPs.filter(
+            function(mp) {
 
-        }
-    ) || null;
+                const official =
+                    getOfficialConstituencyForMP(
+                        mp
+                    );
+
+                if (!official) {
+                    return false;
+                }
+
+
+                const matchesConstituency =
+                    canonicalConstituency(
+                        official.constituency
+                    ) === target;
+
+
+                if (!matchesConstituency) {
+                    return false;
+                }
+
+
+                /*
+                 * If a region was supplied,
+                 * make sure it also matches.
+                 */
+
+                if (region) {
+
+                    return (
+                        normalizeRegion(
+                            official.region
+                        ) ===
+                        normalizeRegion(
+                            region
+                        )
+                    );
+
+                }
+
+
+                return true;
+
+            }
+        );
+
+
+    return candidates.length > 0
+        ? candidates[0]
+        : null;
 
 }
 
@@ -2017,7 +2523,8 @@ function findActiveMember(
 ========================================================= */
 
 function findRevokedMember(
-    constituency
+    constituency,
+    region
 ) {
 
     const target =
@@ -2036,10 +2543,48 @@ function findRevokedMember(
     return revokedMPs.find(
         function(mp) {
 
-            return constituencyNamesMatch(
-                mp.constituency,
-                constituency
-            );
+            const mpConstituency =
+                canonicalConstituency(
+                    mp.constituency
+                );
+
+
+            if (
+                mpConstituency !== target
+            ) {
+
+                return false;
+
+            }
+
+
+            if (region) {
+
+                const mpRegion =
+                    normalizeRegion(
+                        mp.region
+                    );
+
+                const targetRegion =
+                    normalizeRegion(
+                        region
+                    );
+
+
+                if (
+                    mpRegion &&
+                    targetRegion &&
+                    mpRegion !== targetRegion
+                ) {
+
+                    return false;
+
+                }
+
+            }
+
+
+            return true;
 
         }
     ) || null;
@@ -2052,16 +2597,18 @@ function findRevokedMember(
 ========================================================= */
 
 function findMember(
-    constituency
+    constituency,
+    region
 ) {
 
     /*
-     * ACTIVE FIRST
+     * ACTIVE VALID MEMBER FIRST
      */
 
     const activeMember =
         findActiveMember(
-            constituency
+            constituency,
+            region
         );
 
 
@@ -2073,12 +2620,15 @@ function findMember(
 
 
     /*
-     * REVOKED SECOND
+     * Revoked records can still be found
+     * internally, but they are NOT displayed
+     * in the registry table.
      */
 
     const revokedMember =
         findRevokedMember(
-            constituency
+            constituency,
+            region
         );
 
 
@@ -2086,10 +2636,19 @@ function findMember(
 
 }
 
-
 /* =========================================================
-   BUILD POSITIONS
-========================================================= */
+   BUILD POSITION LIST
+   =========================================================
+   
+   SHOW ALL 276 OFFICIAL CONSTITUENCIES
+
+   STATUS:
+   - recorded = valid active MP matched to official registry
+   - vacant   = no valid active MP matched
+
+   IMPORTANT:
+   constituency-data.js is the official source
+   ========================================================= */
 
 function buildPositionList() {
 
@@ -2097,67 +2656,75 @@ function buildPositionList() {
         getConstituencyUniverse();
 
 
+    if (
+        !Array.isArray(universe) ||
+        universe.length === 0
+    ) {
+
+        return [];
+
+    }
+
+
+    const rows = [];
+
+
     /*
-     * =========================================================
-     * OFFICIAL CONSTITUENCY UNIVERSE
-     *
-     * The order of constituency-data.js is the official
-     * numbering source:
-     *
-     * index 0   = 001
-     * index 1   = 002
-     * ...
-     * index 275 = 276
-     *
-     * These numbers NEVER change because of:
-     *
-     * - search
-     * - filtering
-     * - revocation
-     * - reinstatement
-     * =========================================================
+     * LOOP THROUGH THE OFFICIAL 276 CONSTITUENCIES
      */
 
-    if (universe.length > 0) {
+    universe.forEach(
+        function(position, index) {
 
-        return universe.map(
-            function(position, index) {
+            /*
+             * OFFICIAL NUMBER
+             *
+             * The number comes directly from the
+             * order in constituency-data.js.
+             */
 
-                const officialNumber =
-                    String(index + 1).padStart(3, "0");
+            const officialNumber =
+                String(index + 1)
+                    .padStart(3, "0");
 
 
-                /*
-                 * FIND ACTIVE MEMBER
-                 */
+            /*
+             * FIND A VALID ACTIVE MP
+             *
+             * This automatically checks:
+             *
+             * 1. MP status = active
+             * 2. constituency exists in registry
+             * 3. constituency names normalize/match
+             * 4. region matches where necessary
+             */
 
-                const activeMP =
-                    findActiveMember(
-                        position.constituency
+            const activeMP =
+                findActiveMember(
+                    position.constituency,
+                    position.region
+                );
+
+
+            /* =================================================
+               RECORDED
+            ================================================= */
+
+            if (activeMP) {
+
+                const official =
+                    getOfficialConstituencyForMP(
+                        activeMP
                     );
 
 
                 /*
-                 * FIND REVOKED MEMBER
+                 * Extra safety check.
                  */
 
-                const revokedMP =
-                    findRevokedMember(
-                        position.constituency
-                    );
+                if (official) {
 
-
-                /*
-                 * =================================================
-                 * ACTIVE / RECORDED
-                 * =================================================
-                 *
-                 * If an active MP exists, display the MP normally.
-                 */
-
-                if (activeMP) {
-
-                    return {
+                    rows.push({
 
                         officialNumber:
                             officialNumber,
@@ -2171,6 +2738,7 @@ function buildPositionList() {
 
                         region:
                             position.region ||
+                            official.region ||
                             activeMP.region ||
                             "-",
 
@@ -2193,229 +2761,29 @@ function buildPositionList() {
                         originalStatus:
                             "active"
 
-                    };
+                    });
+
+
+                    return;
 
                 }
 
-
-                /*
-                 * =================================================
-                 * REVOKED
-                 * =================================================
-                 *
-                 * A revoked MP does NOT disappear.
-                 *
-                 * The constituency remains in its official
-                 * position and is displayed as:
-                 *
-                 * VACANT POSITION
-                 *
-                 * This means the official number is preserved.
-                 */
-
-                if (revokedMP) {
-
-                    return {
-
-                        officialNumber:
-                            officialNumber,
-
-                        id:
-                            "-",
-
-                        constituency:
-                            position.constituency,
-
-                        region:
-                            position.region ||
-                            revokedMP.region ||
-                            "-",
-
-                        name:
-                            "VACANT POSITION",
-
-                        phone:
-                            "-",
-
-                        position:
-                            "Member of Parliament",
-
-                        status:
-                            "vacant",
-
-                        originalStatus:
-                            "revoked"
-
-                    };
-
-                }
-
-
-                /*
-                 * =================================================
-                 * VACANT
-                 * =================================================
-                 *
-                 * No active MP and no revoked MP.
-                 */
-
-                return {
-
-                    officialNumber:
-                        officialNumber,
-
-                    id:
-                        "-",
-
-                    constituency:
-                        position.constituency,
-
-                    region:
-                        position.region ||
-                        "-",
-
-                    name:
-                        "VACANT POSITION",
-
-                    phone:
-                        "-",
-
-                    position:
-                        "Member of Parliament",
-
-                    status:
-                        "vacant",
-
-                    originalStatus:
-                        "vacant"
-
-                };
-
-            }
-        );
-
-    }
-
-
-    /*
-     * =========================================================
-     * FALLBACK
-     * =========================================================
-     *
-     * constituency-data.js should normally always be available.
-     *
-     * If it is unavailable, use the order of mpData as a
-     * temporary fallback.
-     */
-
-    return allMPs.map(
-        function(mp, index) {
-
-            const officialNumber =
-                String(index + 1).padStart(3, "0");
-
-
-            const status =
-                normalizeStatus(
-                    mp.status
-                );
-
-
-            /*
-             * REVOKED
-             */
-
-            if (status === "revoked") {
-
-                return {
-
-                    officialNumber:
-                        officialNumber,
-
-                    id:
-                        "-",
-
-                    constituency:
-                        mp.constituency ||
-                        "-",
-
-                    region:
-                        mp.region ||
-                        "-",
-
-                    name:
-                        "VACANT POSITION",
-
-                    phone:
-                        "-",
-
-                    position:
-                        mp.position ||
-                        "Member of Parliament",
-
-                    status:
-                        "vacant",
-
-                    originalStatus:
-                        "revoked"
-
-                };
-
             }
 
 
-            /*
-             * ACTIVE
-             */
+            /* =================================================
+               VACANT
+               
+               If:
+               - there is no MP
+               - MP is revoked
+               - MP constituency is invalid
+               - MP constituency doesn't match
+               
+               the official position is VACANT.
+            ================================================= */
 
-            if (status === "active") {
-
-                return {
-
-                    officialNumber:
-                        officialNumber,
-
-                    id:
-                        mp.id ||
-                        "-",
-
-                    constituency:
-                        mp.constituency ||
-                        "-",
-
-                    region:
-                        mp.region ||
-                        "-",
-
-                    name:
-                        mp.name ||
-                        "-",
-
-                    phone:
-                        mp.phone ||
-                        mp.phoneNumber ||
-                        "-",
-
-                    position:
-                        mp.position ||
-                        "Member of Parliament",
-
-                    status:
-                        "recorded",
-
-                    originalStatus:
-                        "active"
-
-                };
-
-            }
-
-
-            /*
-             * UNKNOWN / VACANT
-             */
-
-            return {
+            rows.push({
 
                 officialNumber:
                     officialNumber,
@@ -2424,11 +2792,10 @@ function buildPositionList() {
                     "-",
 
                 constituency:
-                    mp.constituency ||
-                    "-",
+                    position.constituency,
 
                 region:
-                    mp.region ||
+                    position.region ||
                     "-",
 
                 name:
@@ -2438,7 +2805,6 @@ function buildPositionList() {
                     "-",
 
                 position:
-                    mp.position ||
                     "Member of Parliament",
 
                 status:
@@ -2447,10 +2813,110 @@ function buildPositionList() {
                 originalStatus:
                     "vacant"
 
-            };
+            });
 
         }
     );
+
+
+    return rows;
+
+}
+
+/* =========================================================
+   GET VACANT POSITIONS
+========================================================= */
+
+/*
+ * Invalid active MPs are treated as NOT occupying a seat.
+ *
+ * Revoked MPs are also treated as NOT occupying a seat.
+ */
+
+function getVacantPositions() {
+
+    const constituencyList =
+        getConstituencyUniverse();
+
+
+    const recorded =
+        getRecordedConstituencySet();
+
+
+    if (
+        !Array.isArray(
+            constituencyList
+        )
+    ) {
+
+        return [];
+
+    }
+
+
+    return constituencyList.filter(
+        function(position) {
+
+            const constituency =
+                canonicalConstituency(
+                    position.constituency
+                );
+
+
+            return (
+                constituency &&
+                !recorded.has(
+                    constituency
+                )
+            );
+
+        }
+    );
+
+}
+
+
+/* =========================================================
+   VACANCY COUNT
+========================================================= */
+
+function vacancyCountFromUniverse(
+    constituencyList
+) {
+
+    if (
+        !Array.isArray(
+            constituencyList
+        )
+    ) {
+
+        return 0;
+
+    }
+
+
+    const recorded =
+        getRecordedConstituencySet();
+
+
+    return constituencyList.filter(
+        function(position) {
+
+            const constituency =
+                canonicalConstituency(
+                    position.constituency
+                );
+
+
+            return (
+                constituency &&
+                !recorded.has(
+                    constituency
+                )
+            );
+
+        }
+    ).length;
 
 }
 
@@ -2463,6 +2929,17 @@ function updateDashboard() {
 
     const recordedSet =
         getRecordedConstituencySet();
+
+
+    /*
+     * RECORDED COUNT
+     *
+     * This is now based ONLY on official
+     * constituency matches.
+     */
+
+    const recordedCount =
+        recordedSet.size;
 
 
     /*
@@ -2503,9 +2980,6 @@ function updateDashboard() {
 
     /*
      * TOTAL CONSTITUENCIES
-     *
-     * Always use the official 276
-     * parliamentary positions.
      */
 
     const totalConstituenciesElement =
@@ -2524,18 +2998,12 @@ function updateDashboard() {
 
     /*
      * RECORDED
-     *
-     * UNIQUE canonical constituencies.
      */
 
     const recordedElement =
         document.getElementById(
             "recordedPositions"
         );
-
-
-    const recordedCount =
-        recordedSet.size;
 
 
     if (recordedElement) {
@@ -2549,9 +3017,7 @@ function updateDashboard() {
     /*
      * VACANT
      *
-     * Official total = 276
-     *
-     * Vacant = 276 - Recorded
+     * 276 - valid recorded constituencies.
      */
 
     const vacantCount =
@@ -2578,6 +3044,9 @@ function updateDashboard() {
 
     /*
      * REVOKED
+     *
+     * Revoked records are not recorded,
+     * but can still be counted separately.
      */
 
     const revokedElement =
@@ -2595,54 +3064,67 @@ function updateDashboard() {
 
 }
 
-
 /* =========================================================
    RENDER TABLE
 ========================================================= */
 
-function renderTable(
-    positions
-) {
+function renderTable(positions) {
 
     const tableBody =
-        document.getElementById(
-            "membersTableBody"
-        );
-
+        document.getElementById("membersTableBody");
 
     const emptyState =
-        document.getElementById(
-            "emptyState"
-        );
+        document.getElementById("emptyState");
 
 
     if (!tableBody) {
-
         return;
-
     }
 
 
-    tableBody.innerHTML =
-        "";
+    /* CLEAR TABLE */
+
+    tableBody.innerHTML = "";
 
 
     /*
-     * NO RECORDS
+     * SHOW BOTH:
+     *
+     * 1. RECORDED
+     * 2. VACANT
+     *
+     * The official constituency-data.js
+     * is the source of truth.
      */
 
-    if (
-        !positions ||
-        positions.length === 0
-    ) {
+    const displayPositions =
+        Array.isArray(positions)
+            ? positions.filter(function(item) {
+
+                return (
+                    item &&
+                    (
+                        item.status === "recorded" ||
+                        item.status === "vacant"
+                    )
+                );
+
+            })
+            : [];
+
+
+    /*
+     * NO POSITIONS
+     */
+
+    if (displayPositions.length === 0) {
 
         if (emptyState) {
 
-            emptyState.style.display =
-                "block";
+            emptyState.style.display = "block";
 
             emptyState.textContent =
-                "No records found.";
+                "No constituency records found.";
 
         }
 
@@ -2652,288 +3134,214 @@ function renderTable(
 
 
     /*
-     * HIDE EMPTY STATE
+     * HIDE EMPTY MESSAGE
      */
 
     if (emptyState) {
 
-        emptyState.style.display =
-            "none";
+        emptyState.style.display = "none";
 
     }
 
 
     /*
-     * CREATE ROWS
+     * CREATE ALL ROWS
      */
 
-    positions.forEach(
-        function(item, index) {
+    displayPositions.forEach(function(item) {
 
-            const row =
-                document.createElement(
-                    "tr"
-                );
+        const row =
+            document.createElement("tr");
 
 
-            /*
-             * NUMBER
-             *
-             * IMPORTANT:
-             *
-             * NEVER use the filtered/search
-             * array index here.
-             *
-             * Always use the official
-             * constituency number.
-             */
+        /* =================================================
+           NUMBER
+        ================================================= */
 
-            const numberCell =
-                document.createElement(
-                    "td"
-                );
+        const numberCell =
+            document.createElement("td");
+
+        numberCell.className = "number";
+
+        numberCell.textContent =
+            item.officialNumber || "-";
+
+        row.appendChild(numberCell);
 
 
-            numberCell.className =
-                "number";
+        /* =================================================
+           CONSTITUENCY
+        ================================================= */
+
+        const constituencyCell =
+            document.createElement("td");
+
+        constituencyCell.textContent =
+            item.constituency || "-";
+
+        row.appendChild(constituencyCell);
 
 
-            numberCell.textContent =
-                item.officialNumber ||
-                "-";
+        /* =================================================
+           REGION
+        ================================================= */
+
+        const regionCell =
+            document.createElement("td");
+
+        regionCell.textContent =
+            item.region || "-";
+
+        row.appendChild(regionCell);
 
 
-            row.appendChild(
-                numberCell
+        /* =================================================
+           MP / MEMBER
+        ================================================= */
+
+        const nameCell =
+            document.createElement("td");
+
+        nameCell.className = "name";
+
+        if (item.status === "vacant") {
+
+            nameCell.textContent =
+                "VACANT POSITION";
+
+        } else {
+
+            nameCell.textContent =
+                String(
+                    item.name || "-"
+                ).toUpperCase();
+
+        }
+
+        row.appendChild(nameCell);
+
+
+        /* =================================================
+           PHONE
+        ================================================= */
+
+        const phoneCell =
+            document.createElement("td");
+
+        phoneCell.className = "phone";
+
+        phoneCell.textContent =
+            item.status === "vacant"
+                ? "-"
+                : (item.phone || "-");
+
+        row.appendChild(phoneCell);
+
+
+        /* =================================================
+           POSITION
+        ================================================= */
+
+        const positionCell =
+            document.createElement("td");
+
+        positionCell.className = "position";
+
+        positionCell.textContent =
+            item.position ||
+            "Member of Parliament";
+
+        row.appendChild(positionCell);
+
+
+        /* =================================================
+           STATUS
+        ================================================= */
+
+        const statusCell =
+            document.createElement("td");
+
+
+        const badge =
+            document.createElement("span");
+
+
+        badge.className = "status";
+
+
+        if (item.status === "recorded") {
+
+            badge.classList.add(
+                "status-recorded"
             );
 
+            badge.textContent =
+                "RECORDED";
 
-            /*
-             * CONSTITUENCY
-             */
+        }
 
-            const constituencyCell =
-                document.createElement(
-                    "td"
-                );
+        else if (item.status === "vacant") {
 
-
-            constituencyCell.textContent =
-                item.constituency ||
-                "-";
-
-
-            row.appendChild(
-                constituencyCell
+            badge.classList.add(
+                "status-vacant"
             );
 
+            badge.textContent =
+                "VACANT";
 
-            /*
-             * REGION
-             */
+        }
 
-            const regionCell =
-                document.createElement(
-                    "td"
-                );
+        else {
 
-
-            regionCell.textContent =
-                item.region ||
-                "-";
-
-
-            row.appendChild(
-                regionCell
+            badge.classList.add(
+                "status-revoked"
             );
-
-
-            /*
-             * NAME
-             */
-
-            const nameCell =
-                document.createElement(
-                    "td"
-                );
-
-
-            nameCell.className =
-                "name";
-
-
-            if (
-                item.status === "vacant"
-            ) {
-
-                nameCell.textContent =
-                    "VACANT POSITION";
-
-            }
-
-            else {
-
-                nameCell.textContent =
-                    String(
-                        item.name ||
-                        "-"
-                    ).toUpperCase();
-
-            }
-
-
-            row.appendChild(
-                nameCell
-            );
-
-
-            /*
-             * PHONE
-             */
-
-            const phoneCell =
-                document.createElement(
-                    "td"
-                );
-
-
-            phoneCell.className =
-                "phone";
-
-
-            phoneCell.textContent =
-                item.phone ||
-                "-";
-
-
-            row.appendChild(
-                phoneCell
-            );
-
-
-            /*
-             * POSITION
-             */
-
-            const positionCell =
-                document.createElement(
-                    "td"
-                );
-
-
-            positionCell.className =
-                "position";
-
-
-            positionCell.textContent =
-                item.position ||
-                "-";
-
-
-            row.appendChild(
-                positionCell
-            );
-
-
-            /*
-             * STATUS
-             */
-
-            const statusCell =
-                document.createElement(
-                    "td"
-                );
-
-
-            const badge =
-                document.createElement(
-                    "span"
-                );
-
-
-            badge.className =
-                "status";
-
 
             badge.textContent =
                 String(
-                    item.status ||
-                    "unknown"
+                    item.status || "UNKNOWN"
                 ).toUpperCase();
 
-
-            /*
-             * RECORDED
-             */
-
-            if (
-                item.status === "recorded"
-            ) {
-
-                badge.classList.add(
-                    "status-recorded"
-                );
-
-            }
-
-
-            /*
-             * VACANT
-             */
-
-            else if (
-                item.status === "vacant"
-            ) {
-
-                badge.classList.add(
-                    "status-vacant"
-                );
-
-            }
-
-
-            /*
-             * REVOKED
-             */
-
-            else if (
-                item.status === "revoked"
-            ) {
-
-                badge.classList.add(
-                    "status-revoked"
-                );
-
-            }
-
-
-            statusCell.appendChild(
-                badge
-            );
-
-
-            row.appendChild(
-                statusCell
-            );
-
-
-            /*
-             * ADD ROW
-             */
-
-            tableBody.appendChild(
-                row
-            );
-
         }
+
+
+        statusCell.appendChild(badge);
+
+        row.appendChild(statusCell);
+
+
+        /* =================================================
+           ADD ROW TO TABLE
+        ================================================= */
+
+        tableBody.appendChild(row);
+
+    });
+
+
+    /*
+     * SAFETY CHECK
+     *
+     * The table should contain the same number
+     * of rows as the filtered official positions.
+     */
+
+    console.log(
+        "Displayed constituency rows:",
+        displayPositions.length
     );
 
 }
-
-
 /* =========================================================
    SEARCH
 ========================================================= */
+
+/*
+ * Search works ONLY on recorded MPs.
+ *
+ * The word "constituency" by itself is treated as a
+ * generic search word and does not remove all records.
+ */
 
 function searchMembers() {
 
@@ -2956,12 +3364,20 @@ function searchMembers() {
         );
 
 
+    currentSearchTerm =
+        searchTerm;
+
+
+    /*
+     * Always rebuild from validated records.
+     */
+
     const allPositions =
         buildPositionList();
 
 
     /*
-     * NO SEARCH
+     * EMPTY SEARCH
      */
 
     if (!searchTerm) {
@@ -2981,14 +3397,38 @@ function searchMembers() {
 
 
     /*
-     * SEARCH RESULTS
+     * If user types only:
      *
-     * IMPORTANT:
+     * constituency
      *
-     * Search only filters the official
-     * constituency list.
+     * or:
      *
-     * It does NOT renumber results.
+     * constituencies
+     *
+     * don't hide all records.
+     */
+
+    if (
+        searchTerm === "constituency" ||
+        searchTerm === "constituencies"
+    ) {
+
+        displayedPositions =
+            allPositions;
+
+
+        renderTable(
+            displayedPositions
+        );
+
+
+        return;
+
+    }
+
+
+    /*
+     * NORMAL SEARCH
      */
 
     displayedPositions =
@@ -3012,6 +3452,7 @@ function searchMembers() {
                     item.status
 
                 ]
+
                 .map(
                     function(value) {
 
@@ -3021,12 +3462,12 @@ function searchMembers() {
 
                     }
                 )
+
                 .join(" ");
 
 
                 /*
-                 * Also allow searching
-                 * using an alias.
+                 * Constituency-specific canonical search.
                  */
 
                 const canonicalItem =
@@ -3042,18 +3483,56 @@ function searchMembers() {
 
 
                 return (
+
                     text.includes(
                         searchTerm
-                    ) ||
+                    )
+
+                    ||
+
                     (
                         canonicalSearch &&
                         canonicalItem ===
                         canonicalSearch
                     )
+
                 );
 
             }
         );
+
+
+    renderTable(
+        displayedPositions
+    );
+
+}
+
+
+/* =========================================================
+   CLEAR SEARCH
+========================================================= */
+
+function clearSearch() {
+
+    const input =
+        document.getElementById(
+            "searchInput"
+        );
+
+
+    if (input) {
+
+        input.value = "";
+
+    }
+
+
+    currentSearchTerm = "";
+
+
+    displayedPositions =
+        buildPositionList();
 
 
     renderTable(
@@ -3155,7 +3634,7 @@ function initializeSearch() {
 
 
 /* =========================================================
-   INITIALIZE
+   INITIALIZE SYSTEM
 ========================================================= */
 
 function initializeMPSystem() {
@@ -3200,6 +3679,9 @@ window.loadMembers =
 window.searchMembers =
     searchMembers;
 
+window.clearSearch =
+    clearSearch;
+
 window.printPDF =
     printPDF;
 
@@ -3224,6 +3706,18 @@ window.findRevokedMember =
 window.getRecordedConstituencySet =
     getRecordedConstituencySet;
 
+window.getRecordedConstituencies =
+    getRecordedConstituencies;
+
+window.getVacantPositions =
+    getVacantPositions;
+
+window.isValidConstituencyMP =
+    isValidConstituencyMP;
+
+window.getOfficialConstituencyForMP =
+    getOfficialConstituencyForMP;
+
 window.normalizeConstituencyName =
     normalizeConstituencyName;
 
@@ -3238,10 +3732,6 @@ window.constituencyNamesMatch =
    NAVIGATION
 ========================================================= */
 
-/*
- * GO TO CONSTITUENCY PAGE
- */
-
 function goToConstituencyPage() {
 
     window.location.href =
@@ -3250,13 +3740,11 @@ function goToConstituencyPage() {
 }
 
 
-/*
- * GO BACK
- */
-
 function goBack() {
 
-    if (window.history.length > 1) {
+    if (
+        window.history.length > 1
+    ) {
 
         window.history.back();
 
@@ -3270,6 +3758,18 @@ function goBack() {
     }
 
 }
+
+
+window.goToConstituencyPage =
+    goToConstituencyPage;
+
+window.goBack =
+    goBack;
+
+
+/* =========================================================
+   END
+========================================================= */
 
 </script>
 </body>
