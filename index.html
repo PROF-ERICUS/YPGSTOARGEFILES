@@ -1,1504 +1,6294 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description"
-          content="Member Profile | Youth Parliament Ghana">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-    <title>Member Profile | Youth Parliament Ghana</title>
+    <title>
+        Registered MPs - Youth Parliament Ghana
+    </title>
 
-    <!-- Bootstrap -->
-    <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-        rel="stylesheet">
-
-    <!-- Bootstrap Icons -->
-    <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="css/style.css">
 
     <style>
-        /* ========================================
-   PAGE TOP & DOWN BUTTONS
-======================================== */
 
-.page-navigation {
-    position: fixed;
-    right: 25px;
-    bottom: 30px;
-    z-index: 9999;
+        /* =========================================================
+           RESET
+        ========================================================= */
 
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.page-navigation button {
-    width: 45px;
-    height: 45px;
-
-    border: none;
-    border-radius: 50%;
-
-    background: #b08d57;
-    color: #ffffff;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    font-size: 20px;
-
-    cursor: pointer;
-
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-
-    transition: all 0.3s ease;
-}
-
-.page-navigation button:hover {
-    background: #8f713f;
-    transform: translateY(-3px);
-}
-
-.page-navigation button:active {
-    transform: scale(0.95);
-}
-
-        /* =========================
-           PROFILE HEADER
-        ========================= */
-
-        .profile-header {
-            background:
-                linear-gradient(
-                    135deg,
-                    rgba(7, 27, 53, 0.98),
-                    rgba(13, 43, 80, 0.96)
-                );
-
-            padding: 80px 0 100px;
-
-            color: white;
-        }
-
-        .back-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-
-            color: rgba(255,255,255,0.75);
-
-            font-size: 14px;
-
-            margin-bottom: 35px;
-
-            transition: 0.3s ease;
-        }
-
-        .back-link:hover {
-            color: var(--gold-light);
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
 
 
-        /* =========================
-           PROFILE CARD
-        ========================= */
+        /* =========================================================
+           ROOT
+        ========================================================= */
 
-        .profile-card {
-            background: white;
-
-            border-radius: 18px;
-
-            border: 1px solid var(--border);
-
-            margin-top: -70px;
-
-            position: relative;
-
-            z-index: 5;
-
-            overflow: hidden;
-
-            box-shadow:
-                0 20px 50px rgba(7, 27, 53, 0.10);
+        :root {
+            --primary: #0b5d3b;
+            --secondary: #d4af37;
+            --dark: #17221c;
+            --light: #f5f7f6;
+            --border: #dcdcdc;
+            --text: #222;
+            --muted: #666;
         }
 
 
-        /* =========================
-           PROFILE TOP
-        ========================= */
+        /* =========================================================
+           BODY
+        ========================================================= */
 
-        .profile-top {
-            padding: 40px;
+        body {
 
-            display: flex;
-
-            align-items: center;
-
-            gap: 35px;
-
-            border-bottom: 1px solid var(--border);
-        }
-
-
-        /* PROFILE IMAGE */
-
-        .profile-photo {
-            width: 180px;
-            height: 210px;
-
-            flex-shrink: 0;
-
-            border-radius: 14px;
-
-            overflow: hidden;
-
-            background: var(--light);
-
-            border: 4px solid white;
-
-            box-shadow:
-                0 8px 25px rgba(7, 27, 53, 0.12);
-        }
-
-        .profile-photo img {
-            width: 100%;
-            height: 100%;
-
-            object-fit: cover;
-        }
-
-
-        /* PLACEHOLDER */
-
-        .profile-placeholder {
-            width: 100%;
-            height: 100%;
-
-            display: flex;
-
-            justify-content: center;
-            align-items: center;
-
-            color: #a67c0d;
-
-            font-size: 70px;
-        }
-
-
-        /* PROFILE DETAILS */
-
-        .profile-main {
-            flex: 1;
-        }
-
-        .profile-label {
-            display: inline-block;
-
-            color: #9a7410;
-
-            font-size: 12px;
-
-            font-weight: 800;
-
-            letter-spacing: 1.5px;
-
-            text-transform: uppercase;
-
-            margin-bottom: 8px;
-        }
-
-        .profile-main h1 {
-            color: var(--navy);
-
-            font-size: 38px;
-
-            font-weight: 800;
-
-            margin-bottom: 8px;
-        }
-
-        .profile-position {
-            color: var(--muted);
-
-            font-size: 16px;
-
-            margin-bottom: 20px;
-        }
-
-
-        /* PROFILE META */
-
-        .profile-meta {
-            display: flex;
-
-            flex-wrap: wrap;
-
-            gap: 12px;
-        }
-
-        .meta-item {
-            display: inline-flex;
-
-            align-items: center;
-
-            gap: 7px;
+            font-family:
+                Arial,
+                Helvetica,
+                sans-serif;
 
             background: var(--light);
 
             color: var(--text);
 
-            padding: 9px 13px;
-
-            border-radius: 7px;
-
-            font-size: 13px;
-        }
-
-        .meta-item i {
-            color: var(--gold);
-        }
-
-        @media (max-width: 576px) {
-    .page-navigation {
-        right: 15px;
-        bottom: 20px;
-    }
-
-    .page-navigation button {
-        width: 40px;
-        height: 40px;
-        font-size: 17px;
-    }
-}
-
-
-        /* =========================
-           PROFILE CONTENT
-        ========================= */
-
-        .profile-content {
-            padding: 45px;
-        }
-
-        .profile-section {
-            margin-bottom: 45px;
-        }
-
-        .profile-section:last-child {
-            margin-bottom: 0;
-        }
-
-        .profile-section h2 {
-            color: var(--navy);
-
-            font-size: 23px;
-
-            font-weight: 800;
-
-            margin-bottom: 18px;
-
-            padding-bottom: 12px;
-
-            border-bottom: 1px solid var(--border);
-        }
-
-        .profile-section p {
-            color: var(--muted);
-
-            line-height: 1.9;
-
-            margin-bottom: 12px;
+            padding: 30px;
         }
 
 
-        /* =========================
-           INFORMATION LIST
-        ========================= */
+        /* =========================================================
+           PAGE CONTAINER
+        ========================================================= */
 
-        .info-list {
-            list-style: none;
+        .page-container {
 
-            padding: 0;
+            position: relative;
 
-            margin: 0;
-        }
+            overflow: hidden;
 
-        .info-list li {
-            display: flex;
+            max-width: 1400px;
 
-            justify-content: space-between;
+            margin: auto;
 
-            gap: 25px;
+            background: #ffffff;
 
-            padding: 14px 0;
-
-            border-bottom: 1px solid var(--border);
-
-            color: var(--muted);
-
-            font-size: 14px;
-        }
-
-        .info-list li:last-child {
-            border-bottom: none;
-        }
-
-        .info-list strong {
-            color: var(--navy);
-        }
-
-
-        /* =========================
-           CONTACT
-        ========================= */
-
-        .contact-box {
-            background: var(--light);
+            padding: 30px;
 
             border-radius: 12px;
 
-            padding: 25px;
+            box-shadow:
+                0 5px 25px rgba(0, 0, 0, 0.08);
         }
 
-        .contact-item {
+
+        /* =========================================================
+           REAL WATERMARK
+           
+           IMPORTANT:
+           This is an actual image, not a background-image.
+           It is therefore much more reliable when printing.
+        ========================================================= */
+
+        .watermark-logo {
+
+            position: absolute;
+
+            top: 50%;
+
+            left: 50%;
+
+            width: 560px;
+
+            height: 560px;
+
+            transform:
+                translate(-50%, -50%);
+
+            object-fit: contain;
+
+            opacity: 0.075;
+
+            pointer-events: none;
+
+            user-select: none;
+
+            z-index: 0;
+        }
+
+
+        /* =========================================================
+           PAGE CONTENT ABOVE WATERMARK
+        ========================================================= */
+
+        .page-content {
+
+            position: relative;
+
+            z-index: 2;
+        }
+
+
+        /* =========================================================
+           HEADER
+        ========================================================= */
+
+        .header {
+
             display: flex;
+
+            flex-direction: column;
 
             align-items: center;
-
-            gap: 12px;
-
-            margin-bottom: 15px;
-
-            color: var(--muted);
-
-            font-size: 14px;
-        }
-
-        .contact-item:last-child {
-            margin-bottom: 0;
-        }
-
-        .contact-item i {
-            width: 35px;
-            height: 35px;
-
-            display: flex;
 
             justify-content: center;
-            align-items: center;
 
-            background: rgba(215,169,40,0.15);
+            text-align: center;
 
-            color: #9a7410;
+            border-bottom:
+                3px solid var(--primary);
 
-            border-radius: 8px;
+            padding-bottom: 20px;
+
+            margin-bottom: 25px;
         }
 
 
-        /* =========================
-           SOCIAL LINKS
-        ========================= */
+        /* =========================================================
+           TOP LOGO
+        ========================================================= */
 
-        .profile-socials {
+        .top-logo {
+
+            width: 100px;
+
+            height: 100px;
+
+            object-fit: contain;
+
+            display: block;
+
+            margin:
+                0 auto 10px auto;
+        }
+
+
+        /* =========================================================
+           HEADER TEXT
+        ========================================================= */
+
+        .header-text {
+
+            text-align: center;
+        }
+
+
+        .header-text h1 {
+
+            font-size: 28px;
+
+            color: var(--primary);
+
+            margin-bottom: 5px;
+
+            text-transform: uppercase;
+
+            font-weight: 800;
+        }
+
+
+        .header-text h2 {
+
+            font-size: 18px;
+
+            color: var(--dark);
+
+            font-weight: 600;
+        }
+
+
+        .header-text p {
+
+            margin-top: 5px;
+
+            font-size: 13px;
+
+            color: var(--muted);
+        }
+
+
+        /* =========================================================
+           CONTROLS
+        ========================================================= */
+
+        .controls {
+
+            display: flex;
+
+            justify-content:
+                space-between;
+
+            align-items: center;
+
+            gap: 15px;
+
+            margin-bottom: 20px;
+
+            flex-wrap: wrap;
+        }
+
+
+        .search-box {
+
+            flex: 1;
+
+            min-width: 280px;
+        }
+
+
+        .search-box input {
+
+            width: 100%;
+
+            padding:
+                12px 15px;
+
+            border:
+                1px solid var(--border);
+
+            border-radius: 7px;
+
+            font-size: 14px;
+
+            outline: none;
+        }
+
+
+        .search-box input:focus {
+
+            border-color:
+                var(--primary);
+        }
+
+
+        .buttons {
+
             display: flex;
 
             gap: 10px;
-
-            margin-top: 20px;
         }
 
-        .profile-socials a {
-            width: 40px;
-            height: 40px;
+
+        button {
+
+            border: none;
+
+            padding:
+                12px 18px;
+
+            border-radius: 7px;
+
+            cursor: pointer;
+
+            font-size: 14px;
+
+            font-weight: 600;
+        }
+
+
+        .print-btn {
+
+            background:
+                var(--primary);
+
+            color: white;
+        }
+
+
+        .print-btn:hover {
+
+            opacity: 0.9;
+        }
+
+
+        .refresh-btn {
+
+            background: #eeeeee;
+
+            color: #333;
+        }
+
+
+        .refresh-btn:hover {
+
+            background: #dddddd;
+        }
+
+
+        /* =========================================================
+           SUMMARY
+        ========================================================= */
+
+        .summary {
 
             display: flex;
 
-            justify-content: center;
+            justify-content:
+                space-between;
+
             align-items: center;
 
-            border-radius: 50%;
+            margin-bottom: 15px;
 
-            border: 1px solid var(--border);
+            padding:
+                12px 15px;
 
-            color: var(--navy);
+            background:
+                #f3f7f5;
 
-            transition: 0.3s ease;
-        }
+            border-left:
+                4px solid var(--primary);
 
-        .profile-socials a:hover {
-            background: var(--gold);
-
-            border-color: var(--gold);
-
-            color: var(--navy);
+            border-radius: 5px;
         }
 
 
-        /* =========================
+        .summary strong {
+
+            color:
+                var(--primary);
+        }
+
+
+        .date {
+
+            font-size: 13px;
+
+            color:
+                var(--muted);
+        }
+
+
+        /* =========================================================
+           TABLE
+        ========================================================= */
+
+        .table-container {
+
+            width: 100%;
+
+            overflow-x: auto;
+        }
+
+
+        table {
+
+            width: 100%;
+
+            border-collapse:
+                collapse;
+
+            min-width: 1100px;
+        }
+
+
+        thead th {
+
+            background:
+                var(--primary);
+
+            color: white;
+
+            padding:
+                12px 10px;
+
+            font-size: 13px;
+
+            text-align: left;
+
+            border:
+                1px solid #08462e;
+
+            white-space:
+                nowrap;
+        }
+
+
+        tbody td {
+
+            padding: 10px;
+
+            border:
+                1px solid var(--border);
+
+            font-size: 13px;
+
+            vertical-align:
+                middle;
+        }
+
+
+        tbody tr:nth-child(even) {
+
+            background:
+                #f8faf9;
+        }
+
+
+        tbody tr:hover {
+
+            background:
+                #eef5f1;
+        }
+
+
+        /* =========================================================
+           COLUMNS
+        ========================================================= */
+
+        .number {
+
+            text-align: center;
+
+            font-weight: bold;
+
+            width: 70px;
+        }
+
+
+        .name {
+
+            font-weight: 700;
+
+            color:
+                var(--primary);
+
+            min-width: 220px;
+        }
+
+
+        .phone {
+
+            white-space:
+                nowrap;
+
+            min-width: 130px;
+        }
+
+
+        .position {
+
+            min-width: 180px;
+        }
+
+
+        /* =========================================================
+           STATUS
+        ========================================================= */
+
+        .status {
+
+            text-align: center;
+
+            font-weight: 700;
+
+            text-transform:
+                uppercase;
+
+            white-space:
+                nowrap;
+
+            padding:
+                6px 10px;
+        }
+
+
+        .status-active {
+
+            color:
+                #0b5d3b;
+
+            background:
+                #e9f6ef;
+        }
+
+
+        .status-revoked {
+
+            color:
+                #b00020;
+
+            background:
+                #fdebed;
+        }
+
+
+        .status-unknown {
+
+            color:
+                #777;
+
+            background:
+                #f1f1f1;
+        }
+
+
+        /* =========================================================
+           EMPTY
+        ========================================================= */
+
+        .empty {
+
+            text-align: center;
+
+            padding: 40px;
+
+            color:
+                var(--muted);
+
+            display: none;
+        }
+
+
+        /* =========================================================
+           FOOTER
+        ========================================================= */
+
+        .footer {
+
+            margin-top: 25px;
+
+            padding-top: 15px;
+
+            border-top:
+                1px solid var(--border);
+
+            text-align: center;
+
+            color:
+                var(--muted);
+
+            font-size: 12px;
+        }
+
+
+        /* =========================================================
            MOBILE
-        ========================= */
+        ========================================================= */
 
-        @media (max-width: 767px) {
+        @media (max-width: 768px) {
 
-            .profile-header {
-                padding: 60px 0 80px;
+            body {
+
+                padding: 10px;
             }
 
-            .profile-card {
-                margin-top: -50px;
+
+            .page-container {
+
+                padding: 15px;
+
+                border-radius: 8px;
             }
 
-            .profile-top {
-                padding: 25px;
 
-                flex-direction: column;
+            .watermark-logo {
 
-                align-items: flex-start;
+                width: 350px;
 
-                gap: 25px;
+                height: 350px;
+
+                opacity: 0.06;
             }
 
-            .profile-photo {
-                width: 150px;
-                height: 180px;
+
+            .top-logo {
+
+                width: 80px;
+
+                height: 80px;
             }
 
-            .profile-main h1 {
-                font-size: 30px;
+
+            .header-text h1 {
+
+                font-size: 21px;
             }
 
-            .profile-content {
-                padding: 28px 25px;
+
+            .header-text h2 {
+
+                font-size: 15px;
             }
 
-            .profile-section h2 {
-                font-size: 20px;
+
+            .controls {
+
+                flex-direction:
+                    column;
+
+                align-items:
+                    stretch;
             }
 
-            .info-list li {
-                flex-direction: column;
+
+            .search-box {
+
+                min-width: 100%;
+            }
+
+
+            .buttons {
+
+                width: 100%;
+            }
+
+
+            .buttons button {
+
+                flex: 1;
+            }
+
+
+            .summary {
+
+                flex-direction:
+                    column;
+
+                align-items:
+                    flex-start;
 
                 gap: 5px;
             }
-            .profile-list {
-    margin: 0;
-    padding-left: 22px;
-}
-
-.profile-list li {
-    margin-bottom: 10px;
-    line-height: 1.7;
-    color: #555;
-}
-
-.profile-list li::marker {
-    color: #b08d57;
-    font-weight: bold;
-}
 
         }
-        /* ========================================
-   REVOKED PROFILE ACCESS
-======================================== */
 
-.revoked-profile {
-    max-width: 800px;
-    margin: 70px auto;
-    padding: 50px 30px;
-    text-align: center;
-    background: #ffffff;
-    border: 1px solid #eadede;
-    border-radius: 18px;
-    box-shadow: 0 20px 50px rgba(7, 27, 53, 0.10);
+        /* =========================================================
+   RESPONSIVE SCREEN DESIGN
+========================================================= */
+
+/* Large screens */
+@media (min-width: 1200px) {
+
+    body {
+        padding: 30px;
+    }
+
+    .page-container {
+        max-width: 1400px;
+        padding: 30px;
+    }
+
+    .header-text h1 {
+        font-size: 28px;
+    }
+
+    .header-text h2 {
+        font-size: 18px;
+    }
+
+    .watermark-logo,
+    .page-container::before {
+        width: 560px;
+        height: 560px;
+    }
 }
 
-.revoked-profile .revoked-icon {
-    width: 80px;
-    height: 80px;
-    margin: 0 auto 25px;
-    border-radius: 50%;
+
+/* Desktop / Laptop */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    body {
+        padding: 20px;
+    }
+
+    .page-container {
+        max-width: 1100px;
+        padding: 25px;
+    }
+
+    .header-text h1 {
+        font-size: 26px;
+    }
+
+    .header-text h2 {
+        font-size: 17px;
+    }
+
+    table {
+        font-size: 13px;
+    }
+
+    th,
+    td {
+        padding: 9px 8px;
+    }
+}
+
+
+/* Tablets */
+@media (min-width: 769px) and (max-width: 991px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .page-container {
+        width: 100%;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .header {
+        gap: 15px;
+    }
+
+    .top-logo {
+        width: 85px;
+        height: 85px;
+    }
+
+    .header-text h1 {
+        font-size: 23px;
+    }
+
+    .header-text h2 {
+        font-size: 16px;
+    }
+
+    .header-text p {
+        font-size: 12px;
+    }
+
+    .controls {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .search-box {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .buttons {
+        width: 100%;
+        display: flex;
+    }
+
+    .buttons button {
+        flex: 1;
+    }
+
+    .summary {
+        flex-wrap: wrap;
+    }
+
+    .table-container {
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    table {
+        min-width: 800px;
+    }
+
+    .watermark-logo,
+    .page-container::before {
+        width: 430px;
+        height: 430px;
+    }
+}
+
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    body {
+        padding: 8px;
+        overflow-x: hidden;
+    }
+
+    .page-container {
+        width: 100%;
+        max-width: 100%;
+        padding: 15px;
+        margin: 0;
+        border-radius: 8px;
+    }
+
+    .header {
+        flex-direction: column;
+        text-align: center;
+        gap: 8px;
+        padding-bottom: 15px;
+        margin-bottom: 18px;
+    }
+
+    .top-logo,
+    .logo {
+        width: 75px;
+        height: 75px;
+    }
+
+    .header-text {
+        width: 100%;
+    }
+
+    .header-text h1 {
+        font-size: clamp(19px, 5vw, 24px);
+        line-height: 1.2;
+    }
+
+    .header-text h2 {
+        font-size: clamp(14px, 4vw, 17px);
+        line-height: 1.3;
+    }
+
+    .header-text p {
+        font-size: 11px;
+        line-height: 1.4;
+    }
+
+    .controls {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+
+    .search-box {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .search-box input {
+        width: 100%;
+        min-height: 45px;
+        font-size: 14px;
+    }
+
+    .buttons {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .buttons button {
+        width: 100%;
+        min-height: 44px;
+    }
+
+    .summary {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .table-container {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        border-radius: 6px;
+    }
+
+    table {
+        width: 100%;
+        min-width: 850px;
+        border-collapse: collapse;
+    }
+
+    th,
+    td {
+        font-size: 11px;
+        padding: 7px 6px;
+        white-space: nowrap;
+    }
+
+    .number {
+        width: 45px;
+        min-width: 45px;
+    }
+
+    .name {
+        min-width: 180px;
+    }
+
+    .phone {
+        min-width: 120px;
+    }
+
+    .position {
+        min-width: 160px;
+    }
+
+    .footer {
+        font-size: 10px;
+        margin-top: 15px;
+        padding-top: 10px;
+    }
+
+    .watermark-logo,
+    .page-container::before {
+        width: 330px;
+        height: 330px;
+    }
+}
+
+
+/* Small phones */
+@media (max-width: 480px) {
+
+    body {
+        padding: 5px;
+    }
+
+    .page-container {
+        padding: 10px;
+        border-radius: 6px;
+    }
+
+    .top-logo,
+    .logo {
+        width: 65px;
+        height: 65px;
+    }
+
+    .header {
+        padding-bottom: 12px;
+        margin-bottom: 15px;
+    }
+
+    .header-text h1 {
+        font-size: 19px;
+    }
+
+    .header-text h2 {
+        font-size: 14px;
+    }
+
+    .header-text p {
+        font-size: 10px;
+    }
+
+    .search-box input {
+        font-size: 13px;
+        padding: 10px;
+    }
+
+    .buttons button {
+        font-size: 13px;
+        min-height: 42px;
+    }
+
+    .summary {
+        font-size: 11px;
+        padding: 8px;
+    }
+
+    table {
+        min-width: 800px;
+    }
+
+    th,
+    td {
+        font-size: 10px;
+        padding: 6px 5px;
+    }
+
+    .watermark-logo,
+    .page-container::before {
+        width: 270px;
+        height: 270px;
+    }
+}
+
+
+/* Very small phones */
+@media (max-width: 360px) {
+
+    body {
+        padding: 3px;
+    }
+
+    .page-container {
+        padding: 8px;
+    }
+
+    .top-logo,
+    .logo {
+        width: 55px;
+        height: 55px;
+    }
+
+    .header-text h1 {
+        font-size: 17px;
+    }
+
+    .header-text h2 {
+        font-size: 13px;
+    }
+
+    .header-text p {
+        font-size: 9px;
+    }
+
+    .buttons button {
+        font-size: 12px;
+    }
+
+    .watermark-logo,
+    .page-container::before {
+        width: 230px;
+        height: 230px;
+    }
+}
+
+
+/* =========================================================
+   PRINT / SAVE AS PDF
+========================================================= */
+
+@media print {
+
+    @page {
+        size: A4 landscape;
+        margin: 8mm;
+    }
+
+    html,
+    body {
+        width: 100%;
+        min-width: 0;
+        margin: 0 !important;
+        padding: 0 !important;
+        background: #ffffff !important;
+        color: #000000 !important;
+    }
+
+    body {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
+
+    .page-container {
+        position: relative !important;
+        width: 100% !important;
+        max-width: none !important;
+        min-width: 0 !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+
+        background: #ffffff !important;
+        border: none !important;
+        border-radius: 0 !important;
+        box-shadow: none !important;
+
+        overflow: visible !important;
+    }
+
+    /* Hide everything that should not appear on paper */
+    .controls,
+    .refresh-btn,
+    .print-btn,
+    button {
+        display: none !important;
+    }
+
+    /* Header */
+    .header {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+
+        margin-bottom: 8px !important;
+        padding-bottom: 8px !important;
+
+        border-bottom: 2px solid #0b5d3b !important;
+
+        page-break-after: avoid !important;
+        break-after: avoid !important;
+    }
+
+    .top-logo,
+    .logo {
+        width: 70px !important;
+        height: 70px !important;
+        margin: 0 auto 5px auto !important;
+    }
+
+    .header-text h1 {
+        font-size: 20px !important;
+        margin-bottom: 3px !important;
+    }
+
+    .header-text h2 {
+        font-size: 13px !important;
+    }
+
+    .header-text p {
+        font-size: 9px !important;
+        margin-top: 3px !important;
+    }
+
+    /* Summary */
+    .summary {
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+
+        padding: 5px 8px !important;
+        margin-bottom: 6px !important;
+
+        font-size: 9px !important;
+
+        page-break-after: avoid !important;
+        break-after: avoid !important;
+    }
+
+    /* Table */
+    .table-container {
+        width: 100% !important;
+        max-width: none !important;
+
+        overflow: visible !important;
+
+        page-break-inside: auto !important;
+        break-inside: auto !important;
+    }
+
+    table {
+        width: 100% !important;
+        min-width: 0 !important;
+
+        border-collapse: collapse !important;
+        table-layout: auto !important;
+
+        page-break-inside: auto !important;
+        break-inside: auto !important;
+    }
+
+    thead {
+        display: table-header-group !important;
+    }
+
+    tbody {
+        display: table-row-group !important;
+    }
+
+    tr {
+        page-break-inside: avoid !important;
+        break-inside: avoid !important;
+        page-break-after: auto !important;
+    }
+
+    th {
+        padding: 5px 4px !important;
+        font-size: 8px !important;
+
+        white-space: nowrap !important;
+
+        background: #0b5d3b !important;
+        color: #ffffff !important;
+
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
+
+    td {
+        padding: 4px !important;
+        font-size: 7.5px !important;
+
+        white-space: normal !important;
+        word-break: normal !important;
+    }
+
+    .number {
+        width: 35px !important;
+        min-width: 35px !important;
+    }
+
+    .name {
+        min-width: 0 !important;
+        width: 23% !important;
+    }
+
+    .phone {
+        min-width: 0 !important;
+        width: 13% !important;
+    }
+
+    .position {
+        min-width: 0 !important;
+        width: 17% !important;
+    }
+
+    /* Footer */
+    .footer {
+        margin-top: 7px !important;
+        padding-top: 5px !important;
+        font-size: 7px !important;
+
+        page-break-before: avoid !important;
+    }
+
+    /* =====================================================
+       PRINT WATERMARK
+    ===================================================== */
+
+    .page-container::before {
+        content: "" !important;
+
+        position: fixed !important;
+
+        top: 50% !important;
+        left: 50% !important;
+
+        width: 430px !important;
+        height: 430px !important;
+
+        transform: translate(-50%, -50%) !important;
+
+        background-image: url("images/logo.png") !important;
+        background-repeat: no-repeat !important;
+        background-position: center !important;
+        background-size: contain !important;
+
+        opacity: 0.065 !important;
+
+        pointer-events: none !important;
+
+        z-index: 0 !important;
+
+        display: block !important;
+        visibility: visible !important;
+    }
+
+    .page-container > * {
+        position: relative !important;
+        z-index: 2 !important;
+    }
+
+    /* Prevent blank horizontal overflow */
+    * {
+        max-width: 100%;
+    }
+}
+
+
+        /* =========================================================
+           PRINT / PDF
+        ========================================================= */
+
+        @media print {
+
+            @page {
+
+                size: A4 landscape;
+
+                margin: 10mm;
+            }
+
+
+            html,
+            body {
+
+                width: 100%;
+
+                background: #ffffff !important;
+
+                padding: 0;
+
+                margin: 0;
+            }
+
+
+            .page-container {
+
+                width: 100%;
+
+                max-width: none;
+
+                padding: 0;
+
+                margin: 0;
+
+                background:
+                    #ffffff !important;
+
+                box-shadow: none;
+
+                border-radius: 0;
+
+                overflow: visible;
+            }
+
+
+            /* =====================================================
+               WATERMARK IN PDF
+
+               REAL IMAGE - NOT CSS BACKGROUND
+            ===================================================== */
+
+            .watermark-logo {
+
+                display: block !important;
+
+                position: absolute !important;
+
+                top: 50% !important;
+
+                left: 50% !important;
+
+                width: 500px !important;
+
+                height: 500px !important;
+
+                transform:
+                    translate(-50%, -50%) !important;
+
+                object-fit: contain !important;
+
+                opacity: 0.10 !important;
+
+                z-index: 0 !important;
+
+                visibility: visible !important;
+            }
+
+
+            .page-content {
+
+                position: relative;
+
+                z-index: 2;
+            }
+
+
+            /* =====================================================
+               HIDE CONTROLS
+            ===================================================== */
+
+            .controls {
+
+                display: none !important;
+            }
+
+
+            /* =====================================================
+               HEADER
+            ===================================================== */
+
+            .header {
+
+                margin-bottom: 12px;
+
+                padding-bottom: 10px;
+            }
+
+
+            .top-logo {
+
+                width: 85px;
+
+                height: 85px;
+
+                margin-bottom: 6px;
+            }
+
+
+            .header-text h1 {
+
+                font-size: 22px;
+            }
+
+
+            .header-text h2 {
+
+                font-size: 15px;
+            }
+
+
+            .header-text p {
+
+                font-size: 10px;
+            }
+
+
+            /* =====================================================
+               SUMMARY
+            ===================================================== */
+
+            .summary {
+
+                padding:
+                    6px 10px;
+
+                margin-bottom: 8px;
+
+                font-size: 11px;
+
+                background:
+                    #f3f7f5 !important;
+            }
+
+
+            .date {
+
+                font-size: 10px;
+            }
+
+   /* =========================================================
+   PARLIAMENTARY STATISTICS
+========================================================= */
+
+.stats-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.stat-card {
+    min-width: 0;
+    background: #ffffff;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 18px 12px;
+    text-align: center;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+    border-top: 4px solid var(--primary);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.stat-title {
+    font-size: 12px;
+    color: var(--muted);
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    line-height: 1.3;
+}
+
+.stat-number {
+    font-size: 30px;
+    font-weight: 800;
+    color: var(--primary);
+    line-height: 1;
+    margin-bottom: 8px;
+}
+
+.stat-label {
+    font-size: 11px;
+    color: var(--muted);
+    line-height: 1.4;
+}
+
+
+/* =========================================================
+   CARD COLORS
+========================================================= */
+
+/* Recorded */
+.recorded-card {
+    border-top-color: #0b5d3b;
+}
+
+.recorded-card .stat-number {
+    color: #0b5d3b;
+}
+
+/* Vacant */
+.vacant-card {
+    border-top-color: #d89b00;
+}
+
+.vacant-card .stat-number {
+    color: #b87900;
+}
+
+/* Revoked */
+.revoked-card {
+    border-top-color: #b00020;
+}
+
+.revoked-card .stat-number {
+    color: #b00020;
+}
+
+
+/* =========================================================
+   GENERAL STAT CARD COLORS
+========================================================= */
+
+.stats-grid .stat-card:nth-child(1) {
+    border-top-color: var(--primary);
+}
+
+.stats-grid .stat-card:nth-child(1) .stat-number {
+    color: var(--primary);
+}
+
+.stats-grid .stat-card:nth-child(2) {
+    border-top-color: #2563eb;
+}
+
+.stats-grid .stat-card:nth-child(2) .stat-number {
+    color: #2563eb;
+}
+
+.stats-grid .stat-card:nth-child(3) {
+    border-top-color: #7c3aed;
+}
+
+.stats-grid .stat-card:nth-child(3) .stat-number {
+    color: #7c3aed;
+}
+
+
+/* =========================================================
+   STATUS BADGES
+========================================================= */
+
+.status {
+    display: inline-block;
+    text-align: center;
+    font-weight: 800;
+    text-transform: uppercase;
+    white-space: nowrap;
+    padding: 7px 10px;
+    border-radius: 5px;
+    font-size: 11px;
+    line-height: 1.2;
+}
+
+.status-recorded {
+    color: #0b5d3b;
+    background: #e9f6ef;
+}
+
+.status-vacant {
+    color: #9a6800;
+    background: #fff4d6;
+}
+
+.status-revoked {
+    color: #b00020;
+    background: #fdebed;
+}
+
+
+/* =========================================================
+   LARGE TABLET
+========================================================= */
+
+@media (max-width: 1200px) {
+
+    .stats-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+
+}
+
+
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .stats-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+    }
+
+    .stat-card {
+        padding: 14px 10px;
+        border-radius: 9px;
+    }
+
+    .stat-number {
+        font-size: 25px;
+    }
+
+    .stat-title {
+        font-size: 10px;
+    }
+
+    .stat-label {
+        font-size: 10px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .stats-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 8px;
+    }
+
+    .stat-card {
+        padding: 12px 7px;
+        border-radius: 8px;
+    }
+
+    .stat-number {
+        font-size: 22px;
+    }
+
+    .stat-title {
+        font-size: 9px;
+        margin-bottom: 6px;
+    }
+
+    .stat-label {
+        font-size: 9px;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES
+========================================================= */
+
+@media (max-width: 340px) {
+
+    .stats-grid {
+        gap: 6px;
+    }
+
+    .stat-card {
+        padding: 10px 5px;
+    }
+
+    .stat-number {
+        font-size: 20px;
+    }
+
+    .stat-title {
+        font-size: 8px;
+    }
+
+    .stat-label {
+        font-size: 8px;
+    }
+
+}
+
+
+            /* =====================================================
+               TABLE
+            ===================================================== */
+
+            table {
+
+                min-width: 0;
+
+                width: 100%;
+
+                page-break-inside:
+                    auto;
+            }
+
+
+            thead {
+
+                display:
+                    table-header-group;
+            }
+
+
+            tbody tr {
+
+                page-break-inside:
+                    avoid;
+
+                page-break-after:
+                    auto;
+            }
+
+
+            thead th {
+
+                padding:
+                    7px 6px;
+
+                font-size: 9px;
+            }
+
+
+            tbody td {
+
+                padding: 6px;
+
+                font-size: 8.5px;
+
+                background:
+                    rgba(255,255,255,0.88);
+            }
+
+
+            .number {
+
+                width: 45px;
+            }
+
+
+            .name {
+
+                min-width: 0;
+            }
+
+
+            .phone {
+
+                min-width: 0;
+            }
+
+
+            .position {
+
+                min-width: 0;
+            }
+
+
+            .status {
+
+                min-width: 60px;
+            }
+
+
+            .footer {
+
+                margin-top: 10px;
+
+                padding-top: 5px;
+
+                font-size: 9px;
+            }
+
+        }
+        /* =========================================================
+   PROFESSIONAL YPG PARLIAMENTARY DASHBOARD
+========================================================= */
+
+
+/* =========================================================
+   PAGE CONTAINER
+========================================================= */
+
+.page-container {
+    position: relative;
+    overflow: hidden;
+
+    width: 100%;
+    max-width: 1500px;
+
+    margin: 0 auto;
+
+    padding: 32px;
+
+    background: #ffffff;
+
+    border: 1px solid #e4e8ed;
+    border-radius: 16px;
+
+    box-shadow:
+        0 8px 35px rgba(0, 0, 0, 0.06);
+}
+
+
+/* =========================================================
+   WATERMARK
+========================================================= */
+
+.watermark-logo {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    width: 600px;
+    height: 600px;
+
+    transform: translate(-50%, -50%);
+
+    object-fit: contain;
+
+    opacity: 0.045;
+
+    pointer-events: none;
+    user-select: none;
+
+    z-index: 0;
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.page-content {
+    position: relative;
+
+    z-index: 2;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.header {
     display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 30px;
+
+    padding: 0 0 25px;
+
+    margin-bottom: 24px;
+
+    border-bottom: 2px solid #e7ece9;
+}
+
+
+/* =========================================================
+   BRAND
+========================================================= */
+
+.header-brand {
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+}
+
+.logo-wrapper {
+    width: 82px;
+    height: 82px;
+
+    display: flex;
+
     align-items: center;
     justify-content: center;
-    background: rgba(180, 40, 40, 0.10);
-    color: #b42828;
-    font-size: 38px;
+
+    flex-shrink: 0;
+
+    background: #f6faf8;
+
+    border: 1px solid #e1ebe5;
+
+    border-radius: 14px;
 }
 
-.revoked-profile h2 {
-    color: var(--navy);
-    font-size: 28px;
+.top-logo {
+    width: 68px;
+    height: 68px;
+
+    object-fit: contain;
+}
+
+
+/* =========================================================
+   HEADER TEXT
+========================================================= */
+
+.header-text {
+    text-align: left;
+}
+
+.header-eyebrow {
+    margin-bottom: 5px;
+
+    color: #0b5d3b;
+
+    font-size: 10px;
+    font-weight: 850;
+
+    letter-spacing: 0.12em;
+}
+
+.header-text h1 {
+    margin: 0;
+
+    color: #17221c;
+
+    font-size: 26px;
+    font-weight: 850;
+
+    line-height: 1.2;
+}
+
+.header-text p {
+    margin: 7px 0 0;
+
+    color: #7b857f;
+
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   HEADER META
+========================================================= */
+
+.header-meta {
+    display: flex;
+
+    align-items: flex-end;
+
+    flex-direction: column;
+
+    gap: 9px;
+
+    flex-shrink: 0;
+}
+
+.registry-status {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    padding: 7px 12px;
+
+    border: 1px solid #d9ebdf;
+
+    border-radius: 20px;
+
+    background: #f1faf4;
+
+    color: #0b7045;
+
+    font-size: 9px;
+    font-weight: 850;
+
+    letter-spacing: 0.05em;
+}
+
+.status-dot {
+    width: 7px;
+    height: 7px;
+
+    border-radius: 50%;
+
+    background: #0b8f52;
+
+    box-shadow:
+        0 0 0 3px rgba(11, 143, 82, 0.12);
+}
+
+.header-divider {
+    width: 100%;
+    height: 1px;
+
+    background: #edf0f2;
+}
+
+.header-description {
+    color: #8a948e;
+
+    font-size: 10px;
+}
+
+
+/* =========================================================
+   CONTROLS
+========================================================= */
+
+.registry-controls {
+    display: flex;
+
+    align-items: flex-end;
+    justify-content: space-between;
+
+    gap: 20px;
+
+    margin-bottom: 24px;
+
+    padding: 18px;
+
+    background: #f8faf9;
+
+    border: 1px solid #e4ebe7;
+    border-radius: 12px;
+}
+
+.search-section {
+    flex: 1;
+
+    min-width: 0;
+}
+
+.search-label {
+    margin-bottom: 7px;
+
+    color: #526059;
+
+    font-size: 10px;
     font-weight: 800;
-    margin-bottom: 15px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.05em;
 }
 
-.revoked-profile p {
+.search-box {
+    position: relative;
+
+    width: 100%;
+}
+
+.search-box input {
+    width: 100%;
+
+    height: 44px;
+
+    padding: 0 15px 0 42px;
+
+    border: 1px solid #d9e0dc;
+
+    border-radius: 8px;
+
+    outline: none;
+
+    background: #ffffff;
+
+    color: #26322c;
+
+    font-size: 12px;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.search-box input:focus {
+    border-color: #0b5d3b;
+
+    box-shadow:
+        0 0 0 3px rgba(11, 93, 59, 0.08);
+}
+
+.search-icon {
+    position: absolute;
+
+    left: 15px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    color: #829088;
+
+    font-size: 14px;
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+.action-buttons {
+    display: flex;
+
+    gap: 9px;
+
+    flex-shrink: 0;
+}
+
+.refresh-btn,
+.print-btn {
+    height: 44px;
+
+    padding: 0 16px;
+
+    border-radius: 8px;
+
+    font-size: 11px;
+    font-weight: 750;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        background 0.2s ease;
+}
+
+.refresh-btn {
+    border: 1px solid #cddbd3;
+
+    background: #ffffff;
+
+    color: #0b5d3b;
+}
+
+.print-btn {
+    border: 1px solid #0b5d3b;
+
+    background: #0b5d3b;
+
+    color: #ffffff;
+}
+
+.refresh-btn:hover,
+.print-btn:hover {
+    transform: translateY(-1px);
+
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.refresh-btn span,
+.print-btn span {
+    margin-right: 5px;
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   DASHBOARD INTRO
+========================================================= */
+
+.dashboard-intro {
+    display: flex;
+
+    align-items: flex-end;
+    justify-content: space-between;
+
+    gap: 20px;
+
+    margin-bottom: 14px;
+}
+
+.section-label {
+    margin-bottom: 5px;
+
+    color: #0b7045;
+
+    font-size: 9px;
+    font-weight: 850;
+
+    letter-spacing: 0.1em;
+}
+
+.dashboard-intro h2,
+.registry-header h2 {
+    margin: 0;
+
+    color: #17221c;
+
+    font-size: 20px;
+    font-weight: 850;
+}
+
+.dashboard-intro p,
+.registry-header p {
+    margin: 6px 0 0;
+
+    color: #7d8882;
+
+    font-size: 11px;
+}
+
+.generated-information {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-end;
+
+    gap: 3px;
+
+    flex-shrink: 0;
+}
+
+.generated-information span {
+    color: #929c96;
+
+    font-size: 9px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.05em;
+}
+
+.generated-information strong {
+    color: #3d4b44;
+
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   STATISTICS
+========================================================= */
+
+.stats-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(6, minmax(0, 1fr));
+
+    gap: 12px;
+
+    margin-bottom: 28px;
+}
+
+
+/* =========================================================
+   STAT CARD
+========================================================= */
+
+.stat-card {
+    position: relative;
+
+    min-width: 0;
+
+    padding: 17px;
+
+    background: #ffffff;
+
+    border: 1px solid #e4e9e6;
+
+    border-radius: 11px;
+
+    box-shadow:
+        0 3px 14px rgba(0, 0, 0, 0.035);
+
+    overflow: hidden;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.stat-card::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 3px;
+
+    background: #0b5d3b;
+}
+
+.stat-card:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 7px 20px rgba(0, 0, 0, 0.07);
+}
+
+
+/* =========================================================
+   STAT TOP
+========================================================= */
+
+.stat-card-top {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    margin-bottom: 13px;
+}
+
+.stat-title {
+    color: #69756e;
+
+    font-size: 9px;
+    font-weight: 800;
+
+    letter-spacing: 0.045em;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   STAT ICONS
+========================================================= */
+
+.stat-icon {
+    width: 27px;
+    height: 27px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 7px;
+
+    font-size: 8px;
+    font-weight: 900;
+}
+
+.seats-icon {
+    background: #edf7f1;
+    color: #0b7045;
+}
+
+.region-icon {
+    background: #eef4fc;
+    color: #2563a6;
+}
+
+.constituency-icon {
+    background: #f4effb;
+    color: #7043a6;
+}
+
+.recorded-icon {
+    background: #eaf7ef;
+    color: #0b8f52;
+
+    font-size: 14px;
+}
+
+.vacant-icon {
+    background: #fff5dc;
+    color: #b87900;
+
+    font-size: 14px;
+}
+
+.revoked-icon {
+    background: #fdecef;
+    color: #b00020;
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   STAT NUMBERS
+========================================================= */
+
+.stat-number {
+    margin-bottom: 6px;
+
+    color: #17221c;
+
+    font-size: 29px;
+    font-weight: 850;
+
+    line-height: 1;
+}
+
+.stat-label {
+    color: #98a19c;
+
+    font-size: 9px;
+
+    line-height: 1.4;
+}
+
+
+/* =========================================================
+   STAT COLORS
+========================================================= */
+
+.stat-card:nth-child(1)::before {
+    background: #0b5d3b;
+}
+
+.stat-card:nth-child(1) .stat-number {
+    color: #0b5d3b;
+}
+
+.stat-card:nth-child(2)::before {
+    background: #2563a6;
+}
+
+.stat-card:nth-child(2) .stat-number {
+    color: #2563a6;
+}
+
+.stat-card:nth-child(3)::before {
+    background: #7043a6;
+}
+
+.stat-card:nth-child(3) .stat-number {
+    color: #7043a6;
+}
+
+.recorded-card::before {
+    background: #0b8f52 !important;
+}
+
+.recorded-card .stat-number {
+    color: #0b8f52;
+}
+
+.vacant-card::before {
+    background: #d89b00 !important;
+}
+
+.vacant-card .stat-number {
+    color: #b87900;
+}
+
+.revoked-card::before {
+    background: #b00020 !important;
+}
+
+.revoked-card .stat-number {
+    color: #b00020;
+}
+
+
+/* =========================================================
+   REGISTRY SECTION
+========================================================= */
+
+.registry-section {
+    width: 100%;
+
+    background: #ffffff;
+
+    border: 1px solid #e2e8e4;
+
+    border-radius: 13px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 4px 18px rgba(0, 0, 0, 0.04);
+}
+
+
+/* =========================================================
+   REGISTRY HEADER
+========================================================= */
+
+.registry-header {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+
+    padding: 20px;
+
+    border-bottom: 1px solid #edf0ee;
+}
+
+.record-count {
+    display: flex;
+
+    align-items: flex-end;
+
+    flex-direction: column;
+
+    gap: 3px;
+
+    padding-left: 20px;
+
+    border-left: 1px solid #e4e9e6;
+}
+
+.record-count span {
+    color: #909b94;
+
+    font-size: 8px;
+    font-weight: 800;
+
+    letter-spacing: 0.08em;
+}
+
+.record-count strong {
+    color: #0b5d3b;
+
+    font-size: 22px;
+    font-weight: 850;
+}
+
+
+/* =========================================================
+   TABLE
+========================================================= */
+
+.table-container {
+    width: 100%;
+
+    overflow: hidden;
+
+    background: #ffffff;
+}
+
+.table-scroll {
+    width: 100%;
+
+    overflow-x: auto;
+
+    -webkit-overflow-scrolling: touch;
+}
+
+.table-container table {
+    width: 100%;
+
+    min-width: 1050px;
+
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+
+/* =========================================================
+   TABLE HEADER
+========================================================= */
+
+.table-container thead {
+    background: #f6f8f7;
+}
+
+.table-container th {
+    padding: 13px 15px;
+
+    color: #64716a;
+
+    border-bottom: 1px solid #e2e7e4;
+
+    font-size: 9px;
+    font-weight: 850;
+
+    letter-spacing: 0.05em;
+
+    text-align: left;
+
+    text-transform: uppercase;
+
+    white-space: nowrap;
+}
+
+.number-column {
+    width: 55px;
+
+    text-align: center !important;
+}
+
+
+/* =========================================================
+   TABLE BODY
+========================================================= */
+
+.table-container td {
+    padding: 14px 15px;
+
+    color: #29362f;
+
+    border-bottom: 1px solid #edf0ee;
+
+    font-size: 12px;
+
+    vertical-align: middle;
+}
+
+.table-container tbody tr {
+    transition:
+        background 0.2s ease;
+}
+
+.table-container tbody tr:hover {
+    background: #f8fbf9;
+}
+
+.table-container tbody tr:last-child td {
+    border-bottom: none;
+}
+
+
+/* =========================================================
+   REGION GROUP
+========================================================= */
+
+.region-group-row td {
+    padding: 11px 15px;
+
+    background: #f1f6f3;
+
+    border-bottom: 1px solid #dfe9e3;
+
+    color: #0b5d3b;
+
+    font-size: 9px;
+    font-weight: 850;
+
+    letter-spacing: 0.08em;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   STATUS BADGES
+========================================================= */
+
+.status {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 6px;
+
+    min-width: 82px;
+
+    padding: 6px 10px;
+
+    border-radius: 20px;
+
+    font-size: 8px;
+    font-weight: 850;
+
+    text-transform: uppercase;
+
+    white-space: nowrap;
+}
+
+.status::before {
+    content: "";
+
+    width: 6px;
+    height: 6px;
+
+    border-radius: 50%;
+}
+
+.status-recorded {
+    color: #087443;
+    background: #eaf7ef;
+}
+
+.status-recorded::before {
+    background: #0b8f52;
+}
+
+.status-vacant {
+    color: #986800;
+    background: #fff5dc;
+}
+
+.status-vacant::before {
+    background: #d89b00;
+}
+
+.status-revoked {
+    color: #b00020;
+    background: #fdebed;
+}
+
+.status-revoked::before {
+    background: #c00020;
+}
+
+
+/* =========================================================
+   EMPTY
+========================================================= */
+
+.empty {
+    display: none;
+
+    padding: 55px 20px;
+
+    color: #89948d;
+
+    font-size: 13px;
+
+    text-align: center;
+}
+
+.empty.show {
+    display: block;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.footer {
+    margin-top: 25px;
+
+    padding-top: 18px;
+
+    border-top: 1px solid #e5e9e7;
+
+    text-align: center;
+}
+
+.footer-main {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    color: #526059;
+
+    font-size: 10px;
+}
+
+.footer-main strong {
+    color: #0b5d3b;
+
+    font-weight: 850;
+}
+
+.footer-note {
+    margin-top: 5px;
+
+    color: #98a19c;
+
+    font-size: 9px;
+}
+
+
+/* =========================================================
+   RESPONSIVE — 1200px
+========================================================= */
+
+@media (max-width: 1200px) {
+
+    .stats-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE — 900px
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .page-container {
+        padding: 22px;
+    }
+
+    .header {
+        align-items: flex-start;
+
+        flex-direction: column;
+    }
+
+    .header-meta {
+        align-items: flex-start;
+    }
+
+    .registry-controls {
+        align-items: stretch;
+
+        flex-direction: column;
+    }
+
+    .action-buttons {
+        width: 100%;
+    }
+
+    .refresh-btn,
+    .print-btn {
+        flex: 1;
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE — 700px
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .page-container {
+        padding: 15px;
+
+        border-radius: 10px;
+    }
+
+    .header-brand {
+        align-items: flex-start;
+    }
+
+    .logo-wrapper {
+        width: 65px;
+        height: 65px;
+    }
+
+    .top-logo {
+        width: 54px;
+        height: 54px;
+    }
+
+    .header-text h1 {
+        font-size: 20px;
+    }
+
+    .header-text p {
+        font-size: 10px;
+    }
+
+    .dashboard-intro {
+        align-items: flex-start;
+
+        flex-direction: column;
+    }
+
+    .generated-information {
+        align-items: flex-start;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        gap: 9px;
+    }
+
+    .stat-card {
+        padding: 14px 11px;
+    }
+
+    .stat-number {
+        font-size: 24px;
+    }
+
+    .registry-header {
+        align-items: flex-start;
+
+        flex-direction: column;
+    }
+
+    .record-count {
+        align-items: flex-start;
+
+        width: 100%;
+
+        padding: 10px 0 0;
+
+        border-left: none;
+        border-top: 1px solid #e4e9e6;
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE — 450px
+========================================================= */
+
+@media (max-width: 450px) {
+
+    .page-container {
+        padding: 10px;
+    }
+
+    .header-brand {
+        gap: 10px;
+    }
+
+    .logo-wrapper {
+        width: 55px;
+        height: 55px;
+    }
+
+    .top-logo {
+        width: 45px;
+        height: 45px;
+    }
+
+    .header-text h1 {
+        font-size: 16px;
+    }
+
+    .header-eyebrow {
+        font-size: 8px;
+    }
+
+    .header-text p {
+        font-size: 9px;
+    }
+
+    .stats-grid {
+        gap: 7px;
+    }
+
+    .stat-card {
+        padding: 12px 8px;
+    }
+
+    .stat-card-top {
+        gap: 5px;
+    }
+
+    .stat-icon {
+        width: 23px;
+        height: 23px;
+
+        font-size: 7px;
+    }
+
+    .stat-title {
+        font-size: 8px;
+    }
+
+    .stat-number {
+        font-size: 21px;
+    }
+
+    .stat-label {
+        font-size: 8px;
+    }
+
+    .registry-controls {
+        padding: 12px;
+    }
+
+    .action-buttons {
+        flex-direction: column;
+    }
+
+    .refresh-btn,
+    .print-btn {
+        width: 100%;
+    }
+
+    .dashboard-intro h2,
+    .registry-header h2 {
+        font-size: 17px;
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE — 330px
+========================================================= */
+
+@media (max-width: 330px) {
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .header-text h1 {
+        font-size: 14px;
+    }
+
+}
+/* =========================================================
+   CONSTITUENCY REGISTRY LINKS / STAT CARDS
+========================================================= */
+
+.stat-card {
+    display: block;
+    width: 100%;
+
+    text-decoration: none;
+    color: inherit;
+
+    appearance: none;
+    border: 1px solid var(--border);
+    background: var(--white);
+
+    border-radius: var(--radius);
+
+    padding: 18px;
+
+    box-shadow: var(--shadow-sm);
+
+    cursor: pointer;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
+
+    text-align: left;
+}
+
+
+/* Remove normal link styling */
+
+.stat-card:link,
+.stat-card:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/* Hover */
+
+.stat-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 10px 25px rgba(16, 24, 40, 0.10);
+
+    text-decoration: none;
+}
+
+
+/* Active */
+
+.stat-card:active {
+    transform: translateY(-1px);
+}
+
+
+/* Keyboard accessibility */
+
+.stat-card:focus-visible {
+    outline: 3px solid rgba(11, 93, 59, 0.20);
+    outline-offset: 3px;
+}
+
+
+/* =========================================================
+   INDIVIDUAL CARD COLORS
+========================================================= */
+
+.stat-all {
+    border-top: 4px solid var(--blue);
+}
+
+.stat-all:hover {
+    border-color: var(--blue);
+}
+
+
+.stat-recorded {
+    border-top: 4px solid var(--ypg-green);
+}
+
+.stat-recorded:hover {
+    border-color: var(--ypg-green);
+}
+
+
+.stat-vacant {
+    border-top: 4px solid var(--orange);
+}
+
+.stat-vacant:hover {
+    border-color: var(--orange);
+}
+
+
+.stat-revoked {
+    border-top: 4px solid var(--red);
+}
+
+.stat-revoked:hover {
+    border-color: var(--red);
+}
+
+
+.stat-regions {
+    border-top: 4px solid var(--purple);
+}
+
+.stat-regions:hover {
+    border-color: var(--purple);
+}
+
+
+.stat-recorded-total {
+    border-top: 4px solid #344054;
+}
+
+.stat-recorded-total:hover {
+    border-color: #344054;
+}
+
+
+/* =========================================================
+   STAT CONTENT
+========================================================= */
+
+.stat-label {
+    display: block;
+
+    font-size: 12px;
+
     color: var(--muted);
-    line-height: 1.8;
-    max-width: 600px;
-    margin: 0 auto 10px;
-}
 
-.revoked-profile .member-name {
-    color: #b42828;
-    font-weight: 800;
-}
+    font-weight: 700;
 
-.revoked-profile .admin-message {
-    margin-top: 20px;
-    padding: 15px 20px;
-    background: #faf7ef;
-    border: 1px solid rgba(215,169,40,0.25);
-    border-radius: 10px;
-    color: #7d641c;
-    font-weight: 600;
+    margin-bottom: 8px;
 }
 
 
+.stat-number {
+    display: block;
 
+    font-size: 29px;
+
+    line-height: 1;
+
+    font-weight: 850;
+
+    color: var(--dark);
+}
+
+
+.stat-note {
+    display: block;
+
+    margin-top: 9px;
+
+    font-size: 11px;
+
+    color: var(--muted);
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .stat-card {
+        padding: 14px;
+    }
+
+    .stat-number {
+        font-size: 24px;
+    }
+
+    .stat-label {
+        font-size: 11px;
+    }
+
+    .stat-note {
+        font-size: 10px;
+    }
+
+}
+/* =========================================================
+   NAVIGATION BUTTONS
+========================================================= */
+
+.constituency-btn,
+.back-btn {
+
+    height: 44px;
+
+    padding: 0 16px;
+
+    border-radius: 8px;
+
+    font-size: 11px;
+
+    font-weight: 750;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        background 0.2s ease;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 5px;
+}
+
+
+/* CONSTITUENCY BUTTON */
+
+.constituency-btn {
+
+    border: 1px solid #7043a6;
+
+    background: #f5effb;
+
+    color: #7043a6;
+}
+
+
+/* BACK BUTTON */
+
+.back-btn {
+
+    border: 1px solid #d5dcd8;
+
+    background: #ffffff;
+
+    color: #526059;
+}
+
+
+/* HOVER */
+
+.constituency-btn:hover,
+.back-btn:hover {
+
+    transform: translateY(-1px);
+
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.08);
+
+}
+
+
+/* ICON */
+
+.constituency-btn span,
+.back-btn span {
+
+    font-size: 14px;
+
+    margin-right: 2px;
+
+}
 
     </style>
+
 </head>
 
 
 <body>
+<div class="page-container">
 
+    <!-- =====================================================
+         YPG WATERMARK
+    ====================================================== -->
 
-<!-- =========================
-     NAVBAR
-========================= -->
+    <img
+        src="YPG-LOGO.png"
+        alt=""
+        class="watermark-logo"
+        aria-hidden="true"
+    >
 
-<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
 
-    <div class="container">
+    <!-- =====================================================
+         ALL PAGE CONTENT
+    ====================================================== -->
 
-        <a class="navbar-brand d-flex align-items-center"
-           href="index.html">
+    <div class="page-content">
 
-            <img
-                src="YPG-LOGO.png"
-                alt="Youth Parliament Ghana Logo"
-                class="site-logo">
 
-            <span class="brand-text">
+        <!-- =================================================
+             PROFESSIONAL HEADER
+        ================================================== -->
 
-                <strong>
-                    Youth Parliament Ghana
-                </strong>
+        <header class="header">
 
-                <small>
-                    Empowering Young Voices
-                </small>
+            <div class="header-brand">
 
-            </span>
-
-        </a>
-
-
-        <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#mainNavbar">
-
-            <span class="navbar-toggler-icon"></span>
-
-        </button>
-
-
-        <div
-            class="collapse navbar-collapse"
-            id="mainNavbar">
-
-            <ul class="navbar-nav ms-auto align-items-lg-center">
-
-                <li class="nav-item">
-                    <a class="nav-link"
-                       href="index.html">
-                        Home
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link active"
-                       href="mps.html">
-                        MPs
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link"
-                       href="appointees.html">
-                        Appointees
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link"
-                       href="ministries.html">
-                        Ministries
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link"
-                       href="news.html">
-                        News
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link"
-                       href="about.html">
-                        About
-                    </a>
-                </li>
-
-                <li class="nav-item ms-lg-3">
-
-                    <a href="mps.html"
-                       class="btn btn-gold">
-
-                        Explore Directory
-
-                    </a>
-
-                </li>
-
-            </ul>
-
-        </div>
-
-    </div>
-
-</nav>
-
-
-
-<!-- =========================
-     PROFILE HEADER
-========================= -->
-
-<section class="profile-header">
-
-    <div class="container">
-
-        <a
-            href="mps.html"
-            class="back-link">
-
-            <i class="bi bi-arrow-left"></i>
-
-            Back to MPs Directory
-
-        </a>
-
-
-        <span class="profile-label text-white">
-
-            Parliamentary Profile
-
-        </span>
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================
-     PROFILE CARD
-========================= -->
-
-<section>
-
-    <div class="container">
-
-        <div class="profile-card">
-
-
-            <!-- PROFILE TOP -->
-
-            <div class="profile-top">
-
-
-                <!-- PHOTO -->
-
-                <div class="profile-photo">
-
-                    <div class="profile-placeholder">
-
-                        <i class="bi bi-person"></i>
-
-                    </div>
-
-                </div>
-
-
-                <!-- MAIN INFORMATION -->
-
-                <div class="profile-main">
-
-                    <span class="profile-label">
-
-                        Member of Parliament
-
-                    </span>
-
-
-                    <h1>
-                        Sample Member
-                    </h1>
-
-
-                    <div class="profile-position">
-
-                        Member of Parliament
-
-                    </div>
-
-
-                    <div class="profile-meta">
-
-                        <span class="meta-item">
-
-                            <i class="bi bi-geo-alt"></i>
-
-                            Sample Constituency
-
-                        </span>
-
-
-                        <span class="meta-item">
-
-                            <i class="bi bi-map"></i>
-
-                            Greater Accra Region
-
-                        </span>
-
-
-                        <span class="meta-item">
-
-                            <i class="bi bi-building"></i>
-
-                            Parliament of Ghana
-
-                        </span>
-
-                    </div>
-
-                </div>
-
-            </div>
-            <!-- PAGE NAVIGATION BUTTONS -->
-<div class="page-navigation">
-    <button id="scrollTopBtn" title="Go to top">
-        <i class="bi bi-chevron-up"></i>
-    </button>
-
-    <button id="scrollDownBtn" title="Go down">
-        <i class="bi bi-chevron-down"></i>
-    </button>
-</div>
-
-
-
-            <!-- PROFILE CONTENT -->
-
-            <div class="profile-content">
-
-
-                <!-- BIOGRAPHY -->
-
-                <div class="profile-section">
-
-                    <h2>
-                        Biography
-                    </h2>
-
-                    <p>
-                        This section contains a brief biography
-                        of the member. It can include information
-                        about their background, public service,
-                        leadership experience and other relevant
-                        professional information.
-                    </p>
-
-                    <p>
-                       
-                    </p>
-
-                </div>
-
-
-
-                <!-- PARLIAMENTARY INFORMATION -->
-
-                <div class="profile-section">
-
-                    <h2>
-                        Parliamentary Information
-                    </h2>
-
-
-                    <ul class="info-list">
-
-                        <li>
-
-                            <strong>
-                                Constituency
-                            </strong>
-
-                            <span>
-                                Sample Constituency
-                            </span>
-
-                        </li>
-
-
-                        <li>
-
-                            <strong>
-                                Region
-                            </strong>
-
-                            <span>
-                                Greater Accra
-                            </span>
-
-                        </li>
-
-
-                        <li>
-
-                            <strong>
-                                Position
-                            </strong>
-
-                            <span>
-                                Member of Parliament
-                            </span>
-
-                        </li>
-
-
-                        <li>
-
-                            <strong>
-                                Parliament
-                            </strong>
-
-                            <span>
-                                Parliament of Ghana
-                            </span>
-
-                        </li>
-
-
-                        <li>
-
-                            <strong>
-                                Parliamentary Committee
-                            </strong>
-
-                            <span>
-                                Information to be updated
-                            </span>
-
-                        </li>
-
-                    </ul>
-
-                </div>
-
-
-
-                <!-- EDUCATION -->
-
-                <div class="profile-section">
-
-                    <h2>
-                        Education & Professional Background
-                    </h2>
-
-                    <p>
-                        
-                    </p>
-
-                    <ul class="info-list">
-
-                        <li>
-
-                            <strong>
-                                Education
-                            </strong>
-
-                            <span>
-                                Information to be updated
-                            </span>
-
-                        </li>
-
-
-                        <li>
-
-                            <strong>
-                                Profession
-                            </strong>
-
-                            <span>
-                                Information to be updated
-                            </span>
-
-                        </li>
-
-
-                        <li>
-
-                            <strong>
-                                Previous Experience
-                            </strong>
-
-                            <span>
-                                Information to be updated
-                            </span>
-
-                        </li>
-
-                    </ul>
-
-                </div>
-
-
-
-                <!-- CONTACT -->
-
-                <div class="profile-section">
-
-                    <h2>
-                        Public Contact
-                    </h2>
-
-
-                    <div class="contact-box">
-
-                        <div class="contact-item">
-
-                            <i class="bi bi-envelope"></i>
-
-                            <span>
-                                Official email to be added
-                            </span>
-
-                        </div>
-
-
-                        <div class="contact-item">
-
-                            <i class="bi bi-telephone"></i>
-
-                            <span>
-                                Official contact to be added
-                            </span>
-
-                        </div>
-
-
-                        <div class="contact-item">
-
-                            <i class="bi bi-globe"></i>
-
-                            <span>
-                                Official website to be added
-                            </span>
-
-                        </div>
-
-
-                        <div class="profile-socials">
-
-                            <a href="#">
-                                <i class="bi bi-facebook"></i>
-                            </a>
-
-                            <a href="#">
-                                <i class="bi bi-twitter-x"></i>
-                            </a>
-
-                            <a href="#">
-                                <i class="bi bi-instagram"></i>
-                            </a>
-
-                            <a href="#">
-                                <i class="bi bi-linkedin"></i>
-                            </a>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================
-     FOOTER
-========================= -->
-
-<footer class="footer">
-
-    <div class="container">
-
-        <div class="row g-5">
-
-
-            <div class="col-lg-5">
-
-                <div class="footer-brand">
+                <div class="logo-wrapper">
 
                     <img
-                        src="images/YPG-LOGO.png"
+                        src="YPG-LOGO.png"
                         alt="Youth Parliament Ghana Logo"
-                        class="site-logo">
-
-                    <div>
-
-                        <strong>
-                            Youth Parliament Ghana
-                        </strong>
-
-                        <small>
-                            Empowering Young Voices
-                        </small>
-
-                    </div>
+                        class="top-logo"
+                        onerror="this.style.display='none';"
+                    >
 
                 </div>
 
 
+                <div class="header-text">
+
+                    <div class="header-eyebrow">
+                        YOUTH PARLIAMENT GHANA
+                    </div>
+
+                    <h1>
+                        REGISTERED MEMBERS OF PARLIAMENT
+                    </h1>
+
+                    <p>
+                        Official Parliamentary Registry
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="header-meta">
+
+                <div class="registry-status">
+                    <span class="status-dot"></span>
+                    LIVE REGISTRY
+                </div>
+
+                <div class="header-divider"></div>
+
+                <div class="header-description">
+                    Member, constituency and regional records
+                </div>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- =================================================
+             CONTROLS
+        ================================================== -->
+
+        <section class="registry-controls">
+
+            <div class="search-section">
+
+                <div class="search-label">
+                    Parliamentary Registry
+                </div>
+
+                <div class="search-box">
+
+                    <span class="search-icon">
+                        🔍
+                    </span>
+
+                    <input
+                        type="text"
+                        id="searchInput"
+                        placeholder="Search member, constituency, region, phone, position or status..."
+                        autocomplete="off"
+                    >
+
+                </div>
+
+            </div>
+
+
+            <div class="action-buttons">
+
+    <!-- CONSTITUENCY PAGE -->
+    <button
+        type="button"
+        class="constituency-btn"
+        onclick="goToConstituencyPage()"
+    >
+        <span>▦</span>
+        Constituencies
+    </button>
+
+
+    <!-- REFRESH -->
+    <button
+        type="button"
+        class="refresh-btn"
+        onclick="loadMembers()"
+    >
+        <span>↻</span>
+        Refresh
+    </button>
+
+
+    <!-- PRINT -->
+    <button
+        type="button"
+        class="print-btn"
+        onclick="printPDF()"
+    >
+        <span>▣</span>
+        Print / Save PDF
+    </button>
+
+</div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             DASHBOARD INTRO
+        ================================================== -->
+
+        <section class="dashboard-intro">
+
+            <div>
+
+                <div class="section-label">
+                    NATIONAL REPRESENTATION
+                </div>
+
+                <h2>
+                    Parliamentary Overview
+                </h2>
+
                 <p>
-                    A platform dedicated to promoting youth
-                    participation, civic leadership and public
-                    service.
+                    Overview of parliamentary seats, regions,
+                    constituencies and registered YPG member records.
                 </p>
 
             </div>
 
 
+            <div class="generated-information">
 
-            <div class="col-lg-2 col-md-4">
+                <span>
+                    Last generated
+                </span>
 
-                <h5>
-                    Directory
-                </h5>
-
-                <a href="mps.html">
-                    MPs
-                </a>
-
-                <a href="appointees.html">
-                    Appointees
-                </a>
-
-                <a href="ministries.html">
-                    Ministries
-                </a>
+                <strong id="generatedDate">
+                    —
+                </strong>
 
             </div>
 
+        </section>
 
 
-            <div class="col-lg-2 col-md-4">
 
-                <h5>
-                    Explore
-                </h5>
+        <!-- =================================================
+             PARLIAMENTARY SUMMARY DASHBOARD
+        ================================================== -->
 
-                <a href="news.html">
-                    News
-                </a>
+        <section class="stats-grid">
 
-                <a href="about.html">
-                    About Us
-                </a>
 
-                <a href="#">
-                    Contact
-                </a>
+            <!-- TOTAL MP POSITIONS -->
 
-            </div>
+            <div class="stat-card">
 
+                <div class="stat-card-top">
 
+                    <div class="stat-icon seats-icon">
+                        MP
+                    </div>
 
-            <div class="col-lg-3 col-md-4">
-
-                <h5>
-                    Connect
-                </h5>
-
-                <div class="social-links">
-
-                    <a href="#">
-                        <i class="bi bi-facebook"></i>
-                    </a>
-
-                    <a href="#">
-                        <i class="bi bi-twitter-x"></i>
-                    </a>
-
-                    <a href="#">
-                        <i class="bi bi-instagram"></i>
-                    </a>
-
-                    <a href="#">
-                        <i class="bi bi-linkedin"></i>
-                    </a>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <hr>
-
-
-        <div class="footer-bottom">
-
-            <span>
-                © 2026 Youth Parliament Ghana.
-                All rights reserved.
-            </span>
-
-            <span>
-                Civic Leadership • Youth Participation • Public Service
-            </span>
-
-        </div>
-
-    </div>
-
-</footer>
-
-
-
-<!-- Bootstrap JS -->
-
-<script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
-</script>
-
-<script src="js/mp-data.js"></script>
-
-<<script>
-
-    const params = new URLSearchParams(window.location.search);
-
-    const mpId = params.get("id");
-
-    const member = mpData.find(mp => mp.id === mpId);
-
-
-    if (member) {
-
-        /*
-        ========================================
-        PROFILE ACCESS CONTROL
-        ========================================
-        */
-
-        const memberStatus =
-            String(member.status || "active")
-                .toLowerCase()
-                .trim();
-
-
-        /*
-        ========================================
-        REVOKED MEMBER
-        ========================================
-        */
-
-        if (memberStatus === "revoked") {
-
-            document.title =
-                "Profile Access Revoked | Youth Parliament Ghana";
-
-
-            // Hide the normal profile card
-            const profileCard =
-                document.querySelector(".profile-card");
-
-            if (profileCard) {
-                profileCard.style.display = "none";
-            }
-
-
-            // Change profile header label
-            const profileLabel =
-                document.querySelector(".profile-header .profile-label");
-
-            if (profileLabel) {
-                profileLabel.textContent =
-                    "Profile Access Restricted";
-            }
-
-
-            // Create revoked message
-            const revokedSection =
-                document.createElement("section");
-
-            revokedSection.innerHTML = `
-
-                <div class="container">
-
-                    <div class="revoked-profile">
-
-                        <div class="revoked-icon">
-                            <i class="bi bi-lock-fill"></i>
-                        </div>
-
-                        <h2>
-                            PROFILE ACCESS REVOKED
-                        </h2>
-
-                        <p>
-                            Access to the profile of
-                            <span class="member-name">
-                                ${member.name}
-                            </span>
-                            is currently unavailable.
-                        </p>
-
-                        <p>
-                            This member's profile access has been
-                            temporarily revoked.
-                        </p>
-
-                        <div class="admin-message">
-
-                            <i class="bi bi-info-circle"></i>
-
-                            Please contact the Administrator
-                            for assistance.
-
-                        </div>
-
-                        <a
-                            href="mps.html"
-                            class="btn btn-gold mt-4">
-
-                            <i class="bi bi-arrow-left"></i>
-                            Back to MPs Directory
-
-                        </a>
-
+                    <div class="stat-title">
+                        Total MP Positions
                     </div>
 
                 </div>
 
-            `;
+                <div
+                    class="stat-number"
+                    id="totalMPPositions"
+                >
+                    276
+                </div>
+
+                <div class="stat-label">
+                    National Parliamentary Seats
+                </div>
+
+            </div>
 
 
-            // Insert warning after profile header
-            const profileHeader =
-                document.querySelector(".profile-header");
 
-            if (profileHeader) {
+            <!-- REGIONS -->
 
-                profileHeader.insertAdjacentElement(
-                    "afterend",
-                    revokedSection
+            <div class="stat-card">
+
+                <div class="stat-card-top">
+
+                    <div class="stat-icon region-icon">
+                        RG
+                    </div>
+
+                    <div class="stat-title">
+                        Regions
+                    </div>
+
+                </div>
+
+                <div
+                    class="stat-number"
+                    id="totalRegions"
+                >
+                    16
+                </div>
+
+                <div class="stat-label">
+                    Administrative Regions
+                </div>
+
+            </div>
+
+
+
+            <!-- CONSTITUENCIES -->
+
+            <div class="stat-card">
+
+                <div class="stat-card-top">
+
+                    <div class="stat-icon constituency-icon">
+                        CT
+                    </div>
+
+                    <div class="stat-title">
+                        Constituencies
+                    </div>
+
+                </div>
+
+                <div
+                    class="stat-number"
+                    id="totalConstituencies"
+                >
+                    276
+                </div>
+
+                <div class="stat-label">
+                    Parliamentary Constituencies
+                </div>
+
+            </div>
+
+
+
+            <!-- RECORDED -->
+
+            <a
+    href="constituency-registry.html?status=recorded"
+    class="stat-card"
+>
+    <span class="stat-label">
+        Recorded
+    </span>
+
+    <span
+        class="stat-number"
+        id="recordedPositions"
+    >
+        0
+    </span>
+
+    <span class="stat-note">
+        Recorded constituencies
+    </span>
+</a>
+
+            <!-- VACANT -->
+
+           <a
+    href="constituency-registry.html?status=vacant"
+    class="stat-card"
+>
+    <span class="stat-label">
+        Vacant
+    </span>
+
+    <span
+        class="stat-number"
+        id="vacantPositions"
+    >
+        0
+    </span>
+
+    <span class="stat-note">
+        Vacant constituencies
+    </span>
+</a>
+
+
+            <!-- REVOKED -->
+
+            <a
+    href="constituency-registry.html?status=revoked"
+    class="stat-card"
+>
+    <span class="stat-label">
+        Revoked
+    </span>
+
+    <span
+        class="stat-number"
+        id="revokedPositions"
+    >
+        0
+    </span>
+
+    <span class="stat-note">
+        Revoked records
+    </span>
+</a>
+        </section>
+
+
+
+        <!-- =================================================
+             REGISTRY SECTION
+        ================================================== -->
+
+        <section class="registry-section">
+
+
+            <!-- REGISTRY HEADER -->
+
+            <div class="registry-header">
+
+                <div>
+
+                    <div class="section-label">
+                        MEMBER DATABASE
+                    </div>
+
+                    <h2>
+                        Parliamentary Records
+                    </h2>
+
+                    <p>
+                        Registered members and constituency positions
+                        arranged by parliamentary region.
+                    </p>
+
+                </div>
+
+
+                <div class="record-count">
+
+                    <span>
+                        TOTAL RECORDS
+                    </span>
+
+                    <strong id="totalMembers">
+                        0
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 TABLE
+            ================================================== -->
+
+            <div class="table-container">
+
+                <div class="table-scroll">
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+
+                                <th class="number-column">
+                                    No.
+                                </th>
+
+                                <th>
+                                    Constituency
+                                </th>
+
+                                <th>
+                                    Region
+                                </th>
+
+                                <th>
+                                    MP / Recorded Member
+                                </th>
+
+                                <th>
+                                    Phone Number
+                                </th>
+
+                                <th>
+                                    Position
+                                </th>
+
+                                <th>
+                                    Status
+                                </th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody id="membersTableBody"></tbody>
+
+                    </table>
+
+                </div>
+
+
+                <div
+                    class="empty"
+                    id="emptyState"
+                >
+                    No records found.
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             FOOTER
+        ================================================== -->
+
+        <footer class="footer">
+
+            <div class="footer-main">
+
+                <strong>
+                    YOUTH PARLIAMENT GHANA
+                </strong>
+
+                <span>
+                    Official Members Directory
+                </span>
+
+            </div>
+
+
+            <div class="footer-note">
+
+                This registry contains parliamentary records
+                maintained by Youth Parliament Ghana.
+
+            </div>
+
+        </footer>
+
+
+    </div>
+
+</div>
+
+<!-- =========================================================
+     MP DATA
+========================================================== -->
+
+<script src="js/mp-data.js"></script>
+
+<!-- =========================================================
+     OFFICIAL 276 CONSTITUENCY DATA
+========================================================== -->
+
+<script src="js/constituency-data.js"></script>
+    
+
+
+<script>
+
+/* =========================================================
+   YOUTH PARLIAMENT GHANA
+   REGISTERED MEMBERS OF PARLIAMENT
+
+   OFFICIAL CONSTITUENCY VALIDATION SYSTEM
+   ========================================================= */
+
+
+/* =========================================================
+   GLOBAL CONFIGURATION
+   ========================================================= */
+
+const TOTAL_MP_POSITIONS = 276;
+
+const TOTAL_REGIONS = 16;
+
+const TOTAL_CONSTITUENCIES = 276;
+
+
+/* =========================================================
+   GLOBAL VARIABLES
+   ========================================================= */
+
+let allMPs = [];
+
+let activeMPs = [];
+
+let revokedMPs = [];
+
+let invalidActiveMPs = [];
+
+let vacantPositions = [];
+
+let displayedPositions = [];
+
+let currentSearchTerm = "";
+
+
+/* =========================================================
+   NORMALIZE STATUS
+   ========================================================= */
+
+function normalizeStatus(status) {
+
+    return String(status || "")
+        .trim()
+        .toLowerCase();
+
+}
+
+
+/* =========================================================
+   NORMALIZE GENERAL TEXT
+   ========================================================= */
+
+/*
+ * IMPORTANT:
+ *
+ * DO NOT use constituency normalization
+ * for the general search box.
+ *
+ * This prevents a search such as:
+ *
+ * "constituency"
+ *
+ * from causing records to disappear.
+ */
+
+function normalizeName(value) {
+
+    return String(value || "")
+        .normalize("NFKD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .trim()
+        .toLowerCase()
+        .replace(/\s+/g, " ")
+        .replace(/[–—]/g, "-");
+
+}
+
+
+/* =========================================================
+   NORMALIZE REGION
+   ========================================================= */
+
+function normalizeRegion(value) {
+
+    return String(value || "")
+        .normalize("NFKD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .trim()
+        .toLowerCase()
+        .replace(/\s+/g, " ");
+
+}
+
+
+/* =========================================================
+   NORMALIZE CONSTITUENCY NAME
+   ========================================================= */
+
+/*
+ * This normalization handles:
+ *
+ * Ayawaso West
+ * Ayawaso West Constituency
+ * Ayawaso West Wuogon
+ * AYAWASO WEST
+ * ayawaso west
+ * Bortianor-Ngleshie Amanfro
+ * Bortianor / Ngleshie Amanfro
+ *
+ * etc.
+ */
+
+function normalizeConstituencyName(value) {
+
+    return String(value || "")
+        .normalize("NFKD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .trim()
+        .toLowerCase()
+
+        /*
+         * Remove the word constituency.
+         */
+
+        .replace(
+            /\b(constituency|constituencies)\b/g,
+            " "
+        )
+
+        /*
+         * Treat hyphens, slashes and similar
+         * separators as spaces.
+         */
+
+        .replace(
+            /[-_/]+/g,
+            " "
+        )
+
+        /*
+         * Remove punctuation.
+         */
+
+        .replace(
+            /[^a-z0-9\s]/g,
+            " "
+        )
+
+        /*
+         * Normalize spaces.
+         */
+
+        .replace(
+            /\s+/g,
+            " "
+        )
+
+        .trim();
+
+}
+
+
+/* =========================================================
+   CONSTITUENCY ALIASES
+   ========================================================= */
+
+/*
+ * These are accepted variations of official
+ * constituency names.
+ */
+
+const CONSTITUENCY_ALIASES = {
+
+    /*
+     * AYAWASO WEST
+     */
+
+    "ayawaso west":
+        "ayawaso west wuogon",
+
+    "ayawaso west constituency":
+        "ayawaso west wuogon",
+
+    "ayawaso west wuogon":
+        "ayawaso west wuogon",
+
+    "ayawaso west wuogon constituency":
+        "ayawaso west wuogon"
+
+};
+
+
+/* =========================================================
+   CANONICAL CONSTITUENCY
+   ========================================================= */
+
+function canonicalConstituency(value) {
+
+    const normalized =
+        normalizeConstituencyName(value);
+
+    if (!normalized) {
+
+        return "";
+
+    }
+
+    return (
+        CONSTITUENCY_ALIASES[normalized] ||
+        normalized
+    );
+
+}
+
+
+/* =========================================================
+   CONSTITUENCY MATCHING
+   ========================================================= */
+
+function constituencyNamesMatch(
+    name1,
+    name2
+) {
+
+    const a =
+        canonicalConstituency(name1);
+
+    const b =
+        canonicalConstituency(name2);
+
+    if (!a || !b) {
+
+        return false;
+
+    }
+
+    return a === b;
+
+}
+
+
+/* =========================================================
+   GET OFFICIAL CONSTITUENCY DATA
+   ========================================================= */
+
+/*
+ * constituencyData MUST come from:
+ *
+ * js/constituency-data.js
+ *
+ * It is the official source of truth.
+ */
+
+function getConstituencyData() {
+
+    if (
+        typeof constituencyData === "undefined"
+    ) {
+
+        console.error(
+            "constituencyData is not loaded."
+        );
+
+        return [];
+
+    }
+
+    if (
+        !Array.isArray(constituencyData)
+    ) {
+
+        console.error(
+            "constituencyData is not an array."
+        );
+
+        return [];
+
+    }
+
+    return constituencyData;
+
+}
+
+
+/* =========================================================
+   GET OFFICIAL CONSTITUENCY FOR MP
+   ========================================================= */
+
+/*
+ * This is the most important validation function.
+ *
+ * The MP is NOT considered registered merely because:
+ *
+ * status = active
+ *
+ * The MP must also have a constituency that exists
+ * in the official constituencyData registry.
+ *
+ * Example:
+ *
+ * mpData:
+ *
+ * {
+ *     name: "EMMANUEL AWORTWI",
+ *     status: "active",
+ *     constituency: "Some Wrong Constituency"
+ * }
+ *
+ * If "Some Wrong Constituency" does not exist in
+ * constituency-data.js:
+ *
+ * RESULT = null
+ *
+ * Therefore the MP is NOT recorded.
+ */
+
+function getOfficialConstituencyForMP(mp) {
+
+    if (!mp) {
+
+        return null;
+
+    }
+
+
+    const officialList =
+        getConstituencyData();
+
+
+    /*
+     * No official registry means that
+     * validation cannot be completed.
+     */
+
+    if (
+        !Array.isArray(officialList) ||
+        officialList.length === 0
+    ) {
+
+        return null;
+
+    }
+
+
+    /*
+     * Normalize MP constituency.
+     */
+
+    const mpConstituency =
+        canonicalConstituency(
+            mp.constituency
+        );
+
+
+    if (!mpConstituency) {
+
+        return null;
+
+    }
+
+
+    /*
+     * Normalize MP region when available.
+     */
+
+    const mpRegion =
+        normalizeRegion(
+            mp.region
+        );
+
+
+    /*
+     * Find official constituency matches.
+     */
+
+    const matches =
+        officialList.filter(
+            function(item) {
+
+                if (!item) {
+
+                    return false;
+
+                }
+
+
+                const officialConstituency =
+                    canonicalConstituency(
+                        item.constituency
+                    );
+
+
+                return (
+                    officialConstituency ===
+                    mpConstituency
                 );
 
             }
+        );
 
-            // Stop loading the private profile information
-            throw new Error("Profile access revoked.");
+
+    /*
+     * No official match.
+     */
+
+    if (
+        matches.length === 0
+    ) {
+
+        return null;
+
+    }
+
+
+    /*
+     * One official match.
+     */
+
+    if (
+        matches.length === 1
+    ) {
+
+        return matches[0];
+
+    }
+
+
+    /*
+     * If there are duplicate names in the
+     * official registry, use the region to
+     * resolve the correct constituency.
+     */
+
+    if (mpRegion) {
+
+        const regionMatches =
+            matches.filter(
+                function(item) {
+
+                    return (
+                        normalizeRegion(
+                            item.region
+                        ) === mpRegion
+                    );
+
+                }
+            );
+
+
+        if (
+            regionMatches.length === 1
+        ) {
+
+            return regionMatches[0];
+
+        }
+
+    }
+
+
+    /*
+     * Ambiguous match.
+     *
+     * Do not guess.
+     */
+
+    return null;
+
+}
+
+
+/* =========================================================
+   CHECK WHETHER MP HAS A VALID CONSTITUENCY
+   ========================================================= */
+
+function isValidConstituencyMP(mp) {
+
+    if (!mp) {
+
+        return false;
+
+    }
+
+
+    /*
+     * Only active MPs can be recorded.
+     */
+
+    if (
+        normalizeStatus(mp.status) !==
+        "active"
+    ) {
+
+        return false;
+
+    }
+
+
+    /*
+     * Constituency MUST exist in the
+     * official registry.
+     */
+
+    const official =
+        getOfficialConstituencyForMP(mp);
+
+
+    return official !== null;
+
+}
+
+
+/* =========================================================
+   LOAD MEMBERS
+   ========================================================= */
+
+function loadMembers() {
+
+    try {
+
+        /*
+         * =====================================================
+         * CHECK MP DATA
+         * =====================================================
+         */
+
+        if (
+            typeof mpData === "undefined" ||
+            !Array.isArray(mpData)
+        ) {
+
+            throw new Error(
+                "mpData was not found or is not an array."
+            );
 
         }
 
 
         /*
-        ========================================
-        ACTIVE MEMBER
-        ========================================
-        */
+         * =====================================================
+         * CHECK OFFICIAL CONSTITUENCY DATA
+         * =====================================================
+         */
 
-        document.title =
-            member.name +
-            " | Youth Parliament Ghana";
-
-
-        // Name
-        document.querySelector(".profile-main h1").textContent =
-            member.name;
+        const officialConstituencies =
+            getConstituencyData();
 
 
-        // Position
-        document.querySelector(".profile-position").textContent =
-            member.position;
+        if (
+            !Array.isArray(
+                officialConstituencies
+            ) ||
+            officialConstituencies.length === 0
+        ) {
+
+            throw new Error(
+                "Official constituency data could not be loaded. Please check js/constituency-data.js."
+            );
+
+        }
 
 
-        // Constituency / Region / Parliament
-        const metaItems =
-            document.querySelectorAll(".meta-item");
+        /*
+         * =====================================================
+         * KEEP ALL MP DATA
+         * =====================================================
+         */
+
+        allMPs = [
+            ...mpData
+        ];
 
 
-        metaItems[0].innerHTML =
-            `<i class="bi bi-geo-alt"></i>
-             ${member.constituency}`;
+        /*
+         * =====================================================
+         * VALID ACTIVE MPs ONLY
+         * =====================================================
+         *
+         * An MP must:
+         *
+         * 1. Have status = active
+         * 2. Have a constituency
+         * 3. Match a constituency in constituencyData
+         *
+         */
+
+        activeMPs =
+            allMPs.filter(
+                function(mp) {
+
+                    return isValidConstituencyMP(
+                        mp
+                    );
+
+                }
+            );
 
 
-        metaItems[1].innerHTML =
-            `<i class="bi bi-map"></i>
-             ${member.region}`;
+        /*
+         * =====================================================
+         * INVALID ACTIVE MPs
+         * =====================================================
+         *
+         * These records remain inside mpData,
+         * but they are NOT recorded in the registry.
+         *
+         * This is useful for debugging.
+         */
+
+        invalidActiveMPs =
+            allMPs.filter(
+                function(mp) {
+
+                    return (
+                        normalizeStatus(
+                            mp.status
+                        ) === "active" &&
+                        !isValidConstituencyMP(
+                            mp
+                        )
+                    );
+
+                }
+            );
 
 
-        metaItems[2].innerHTML =
-            `<i class="bi bi-building"></i>
-             ${member.parliament}`;
+        /*
+         * Make available globally for debugging.
+         */
+
+        window.invalidActiveMPs =
+            invalidActiveMPs;
 
 
-        // Biography
-        const biography =
-            document.querySelector(".profile-section p");
+        /*
+         * =====================================================
+         * REVOKED MEMBERS
+         * =====================================================
+         */
+
+        revokedMPs =
+            allMPs.filter(
+                function(mp) {
+
+                    return (
+                        normalizeStatus(
+                            mp.status
+                        ) === "revoked"
+                    );
+
+                }
+            );
 
 
-        biography.textContent =
-            member.biography;
+        /*
+         * =====================================================
+         * BUILD VACANCIES
+         * =====================================================
+         */
+
+        vacantPositions =
+            getVacantPositions();
 
 
-        // Parliamentary information
-        const infoItems =
-            document.querySelectorAll(".info-list")[0]
-                .querySelectorAll("li");
+        /*
+         * =====================================================
+         * BUILD DISPLAY DATA
+         * =====================================================
+         */
+
+        displayedPositions =
+            buildPositionList();
 
 
-        infoItems[0].querySelector("span").textContent =
-            member.constituency;
+        /*
+         * =====================================================
+         * UPDATE DASHBOARD
+         * =====================================================
+         */
+
+        updateDashboard();
 
 
-        infoItems[1].querySelector("span").textContent =
-            member.region;
+        /*
+         * =====================================================
+         * RENDER TABLE
+         * =====================================================
+         */
+
+        renderTable(
+            displayedPositions
+        );
 
 
-        infoItems[2].querySelector("span").textContent =
-            member.position;
+        /*
+         * =====================================================
+         * UPDATE DATE
+         * =====================================================
+         */
+
+        updateGeneratedDate();
 
 
-        infoItems[3].querySelector("span").textContent =
-            member.parliament;
+        /*
+         * =====================================================
+         * UPDATE TOTAL MEMBERS
+         * =====================================================
+         */
+
+        const totalMembers =
+            document.getElementById(
+                "totalMembers"
+            );
 
 
-        infoItems[4].querySelector("span").textContent =
-            member.committee;
+        if (totalMembers) {
+
+            totalMembers.textContent =
+                activeMPs.length;
+
+        }
 
 
-        // Education / professional information
-        const backgroundItems =
-            document.querySelectorAll(".info-list")[1]
-                .querySelectorAll("li");
+        /*
+         * =====================================================
+         * DEBUG INFORMATION
+         * =====================================================
+         */
+
+        console.log(
+            "YPG MP SYSTEM LOADED"
+        );
+
+        console.log(
+            "Total mpData records:",
+            allMPs.length
+        );
+
+        console.log(
+            "Valid active MPs:",
+            activeMPs.length
+        );
+
+        console.log(
+            "Invalid active MPs:",
+            invalidActiveMPs.length
+        );
+
+        console.log(
+            "Revoked MPs:",
+            revokedMPs.length
+        );
+
+        console.log(
+            "Official constituencies:",
+            officialConstituencies.length
+        );
 
 
-        backgroundItems[0].querySelector("span").textContent =
-            member.education;
+        /*
+         * Show invalid records in console.
+         */
 
+        if (
+            invalidActiveMPs.length > 0
+        ) {
 
-        backgroundItems[1].querySelector("span").textContent =
-            member.profession;
+            console.warn(
+                "These active MP records are NOT recorded because their constituency does not match the official constituency registry:"
+            );
 
+            console.table(
+                invalidActiveMPs.map(
+                    function(mp) {
 
-        backgroundItems[2].querySelector("span").textContent =
-            member.experience;
+                        return {
 
+                            id:
+                                mp.id || "-",
 
-        // Contact
-        const contactItems =
-            document.querySelectorAll(".contact-item");
+                            name:
+                                mp.name || "-",
 
+                            mpConstituency:
+                                mp.constituency || "-",
 
-        contactItems[0].querySelector("span").textContent =
-            member.email;
+                            region:
+                                mp.region || "-",
 
+                            status:
+                                mp.status || "-"
 
-        contactItems[1].querySelector("span").textContent =
-            member.phone;
+                        };
 
+                    }
+                )
+            );
 
-        const website =
-            contactItems[2].querySelector("span");
-
-
-        website.innerHTML =
-            `<a href="${member.website}" target="_blank">
-                Official website
-             </a>`;
-
-
-        // Profile photo
-        const photoContainer =
-            document.querySelector(".profile-photo");
-
-
-        photoContainer.innerHTML =
-            `<img
-                src="${member.image}"
-                alt="${member.name}"
-            >`;
-
-
-
-    } else {
-
-        document.title =
-            "Member Not Found | Youth Parliament Ghana";
-
-
-        document.querySelector(".profile-main h1").textContent =
-            "Member Not Found";
+        }
 
     }
 
-</script>
+    catch (error) {
 
-<script>
-    const scrollTopBtn = document.getElementById("scrollTopBtn");
-    const scrollDownBtn = document.getElementById("scrollDownBtn");
+        console.error(
+            "Error loading parliamentary data:",
+            error
+        );
 
-    // Go to top
-    scrollTopBtn.addEventListener("click", function () {
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
+        showLoadingError(
+            error.message
+        );
+
+    }
+
+}
+
+
+/* =========================================================
+   GET UNIQUE RECORDED CONSTITUENCIES
+   ========================================================= */
+
+/*
+ * IMPORTANT:
+ *
+ * Only official constituencies matched by a valid
+ * active MP are recorded.
+ */
+
+function getRecordedConstituencies() {
+
+    const recorded =
+        new Set();
+
+
+    activeMPs.forEach(
+        function(mp) {
+
+            /*
+             * Safety check.
+             */
+
+            if (
+                !isValidConstituencyMP(mp)
+            ) {
+
+                return;
+
+            }
+
+
+            /*
+             * Get the actual official registry record.
+             */
+
+            const official =
+                getOfficialConstituencyForMP(
+                    mp
+                );
+
+
+            if (!official) {
+
+                return;
+
+            }
+
+
+            /*
+             * Record the OFFICIAL constituency,
+             * not whatever spelling the MP entered.
+             */
+
+            const constituency =
+                canonicalConstituency(
+                    official.constituency
+                );
+
+
+            if (constituency) {
+
+                recorded.add(
+                    constituency
+                );
+
+            }
+
+        }
+    );
+
+
+    return recorded;
+
+}
+
+
+/* =========================================================
+   FIND ACTIVE MP
+   ========================================================= */
+
+/*
+ * Only MPs that have successfully passed
+ * official constituency validation can be returned.
+ */
+
+function findActiveMP(
+    constituency,
+    region
+) {
+
+    const targetConstituency =
+        canonicalConstituency(
+            constituency
+        );
+
+
+    if (!targetConstituency) {
+
+        return undefined;
+
+    }
+
+
+    const targetRegion =
+        region
+            ? normalizeRegion(region)
+            : "";
+
+
+    return activeMPs.find(
+        function(mp) {
+
+            /*
+             * Safety validation.
+             */
+
+            if (
+                !isValidConstituencyMP(mp)
+            ) {
+
+                return false;
+
+            }
+
+
+            /*
+             * Get official registry record.
+             */
+
+            const official =
+                getOfficialConstituencyForMP(
+                    mp
+                );
+
+
+            if (!official) {
+
+                return false;
+
+            }
+
+
+            /*
+             * Compare official canonical
+             * constituency names.
+             */
+
+            const officialConstituency =
+                canonicalConstituency(
+                    official.constituency
+                );
+
+
+            if (
+                officialConstituency !==
+                targetConstituency
+            ) {
+
+                return false;
+
+            }
+
+
+            /*
+             * Optional region check.
+             */
+
+            if (targetRegion) {
+
+                return (
+                    normalizeRegion(
+                        official.region
+                    ) === targetRegion
+                );
+
+            }
+
+
+            return true;
+
+        }
+    );
+
+}
+
+
+/* =========================================================
+   FIND REVOKED MP
+   ========================================================= */
+
+function findRevokedMP(
+    constituency,
+    region
+) {
+
+    const targetConstituency =
+        canonicalConstituency(
+            constituency
+        );
+
+
+    if (!targetConstituency) {
+
+        return undefined;
+
+    }
+
+
+    const targetRegion =
+        region
+            ? normalizeRegion(region)
+            : "";
+
+
+    return revokedMPs.find(
+        function(mp) {
+
+            const mpConstituency =
+                canonicalConstituency(
+                    mp.constituency
+                );
+
+
+            if (
+                !mpConstituency ||
+                mpConstituency !==
+                targetConstituency
+            ) {
+
+                return false;
+
+            }
+
+
+            /*
+             * Optional region check.
+             */
+
+            if (targetRegion) {
+
+                return (
+                    normalizeRegion(
+                        mp.region
+                    ) === targetRegion
+                );
+
+            }
+
+
+            return true;
+
+        }
+    );
+
+}
+
+
+/* =========================================================
+   FIND MEMBER
+   ========================================================= */
+
+function findMember(
+    constituency,
+    region
+) {
+
+    /*
+     * ACTIVE MEMBER FIRST
+     */
+
+    const activeMember =
+        findActiveMP(
+            constituency,
+            region
+        );
+
+
+    if (activeMember) {
+
+        return activeMember;
+
+    }
+
+
+    /*
+     * REVOKED MEMBER SECOND
+     */
+
+    const revokedMember =
+        findRevokedMP(
+            constituency,
+            region
+        );
+
+
+    return revokedMember || null;
+
+}
+
+
+/* =========================================================
+   GET VACANT POSITIONS
+   ========================================================= */
+
+/*
+ * Vacancy is calculated against the official
+ * constituency universe.
+ *
+ * Invalid MP records do NOT occupy a seat.
+ */
+
+function getVacantPositions() {
+
+    const constituencyList =
+        getConstituencyData();
+
+
+    const recorded =
+        getRecordedConstituencies();
+
+
+    /*
+     * =====================================================
+     * OFFICIAL CONSTITUENCY LIST
+     * =====================================================
+     */
+
+    if (
+        constituencyList.length > 0
+    ) {
+
+        return constituencyList.filter(
+            function(position) {
+
+                const constituency =
+                    canonicalConstituency(
+                        position.constituency
+                    );
+
+
+                return (
+                    constituency &&
+                    !recorded.has(
+                        constituency
+                    )
+                );
+
+            }
+        );
+
+    }
+
+
+    /*
+     * =====================================================
+     * NO OFFICIAL DATA
+     * =====================================================
+     *
+     * Do not fabricate constituency records.
+     */
+
+    return [];
+
+}
+
+
+/* =========================================================
+   COUNT VACANCIES FROM OFFICIAL UNIVERSE
+   ========================================================= */
+
+function vacancyCountFromUniverse(
+    constituencyList
+) {
+
+    if (
+        !Array.isArray(
+            constituencyList
+        )
+    ) {
+
+        return 0;
+
+    }
+
+
+    const recorded =
+        getRecordedConstituencies();
+
+
+    return constituencyList.filter(
+        function(position) {
+
+            const constituency =
+                canonicalConstituency(
+                    position.constituency
+                );
+
+
+            return (
+                constituency &&
+                !recorded.has(
+                    constituency
+                )
+            );
+
+        }
+    ).length;
+
+}
+
+
+/* =========================================================
+   BUILD POSITION LIST
+   ========================================================= */
+
+/*
+ * IMPORTANT:
+ *
+ * The official constituency registry controls
+ * the table.
+ *
+ * mpData does NOT create new constituencies.
+ *
+ * If an MP has a constituency that is not in
+ * constituency-data.js:
+ *
+ * - MP is hidden
+ * - MP is not counted
+ * - constituency remains vacant
+ */
+
+/* =========================================================
+   BUILD POSITION LIST
+   ---------------------------------------------------------
+   ONLY VALID RECORDED MPs ARE DISPLAYED.
+
+   Rules:
+   1. MP must exist in mpData.
+   2. MP status must be active.
+   3. MP constituency must match constituency-data.js.
+   4. Matching is normalized.
+   5. Invalid active MPs are completely hidden.
+   6. Revoked MPs are completely hidden.
+   7. Vacant constituencies are NOT displayed.
+   8. Official constituency order is preserved.
+   ========================================================= */
+
+function buildPositionList() {
+
+    const constituencyList = getConstituencyData();
+
+    if (
+        !Array.isArray(constituencyList) ||
+        constituencyList.length === 0
+    ) {
+        console.error(
+            "Cannot build MP table because constituencyData is unavailable."
+        );
+
+        return [];
+    }
+
+    const rows = [];
+
+    /*
+     * Go through the official constituency registry.
+     * This makes constituency-data.js the source of truth.
+     */
+    constituencyList.forEach(function (position, index) {
+
+        if (!position || !position.constituency) {
+            return;
+        }
+
+        /*
+         * Find an ACTIVE MP whose constituency:
+         *
+         * mp-data.js constituency
+         *          ↓
+         * normalize
+         *          ↓
+         * official constituency-data.js
+         *
+         * If there is no valid match, nothing is added.
+         */
+        const activeMP = findActiveMP(
+            position.constituency,
+            position.region
+        );
+
+        /*
+         * IMPORTANT:
+         *
+         * No MP found = vacant / invalid / revoked.
+         *
+         * We do NOT create a vacant row.
+         * We simply skip it.
+         */
+        if (!activeMP) {
+            return;
+        }
+
+        /*
+         * Only valid recorded MPs reach this point.
+         */
+        rows.push({
+
+            /*
+             * Official constituency number.
+             *
+             * Example:
+             * 001
+             * 002
+             * 003
+             */
+            officialNumber: String(index + 1).padStart(3, "0"),
+
+            /*
+             * MP information
+             */
+            id: activeMP.id || "-",
+
+            name: activeMP.name || "-",
+
+            phone:
+                activeMP.phone ||
+                activeMP.phoneNumber ||
+                "-",
+
+            position:
+                activeMP.position ||
+                "Member of Parliament",
+
+            /*
+             * IMPORTANT:
+             * Use the official spelling from constituency-data.js,
+             * not the spelling supplied by mp-data.js.
+             */
+            constituency: position.constituency,
+
+            region:
+                position.region ||
+                activeMP.region ||
+                "-",
+
+            /*
+             * Table status.
+             *
+             * Since only valid active MPs reach this point,
+             * every returned row is recorded.
+             */
+            status: "recorded",
+
+            originalStatus: "active"
         });
     });
 
-    // Go down
-    scrollDownBtn.addEventListener("click", function () {
-        window.scrollBy({
-            top: window.innerHeight * 0.8,
-            behavior: "smooth"
-        });
-    });
+    return rows;
+}
+
+
+/* =========================================================
+   UPDATE DASHBOARD
+   ========================================================= */
+
+function updateDashboard() {
+
+    const recordedConstituencies =
+        getRecordedConstituencies();
+
+
+    /*
+     * =====================================================
+     * TOTAL MP POSITIONS
+     * =====================================================
+     */
+
+    const totalMPPositions =
+        document.getElementById(
+            "totalMPPositions"
+        );
+
+
+    if (totalMPPositions) {
+
+        totalMPPositions.textContent =
+            TOTAL_MP_POSITIONS;
+
+    }
+
+
+    /*
+     * =====================================================
+     * TOTAL REGIONS
+     * =====================================================
+     */
+
+    const totalRegions =
+        document.getElementById(
+            "totalRegions"
+        );
+
+
+    if (totalRegions) {
+
+        totalRegions.textContent =
+            TOTAL_REGIONS;
+
+    }
+
+
+    /*
+     * =====================================================
+     * TOTAL CONSTITUENCIES
+     * =====================================================
+     */
+
+    const totalConstituencies =
+        document.getElementById(
+            "totalConstituencies"
+        );
+
+
+    if (totalConstituencies) {
+
+        totalConstituencies.textContent =
+            TOTAL_CONSTITUENCIES;
+
+    }
+
+
+    /*
+     * =====================================================
+     * RECORDED POSITIONS
+     * =====================================================
+     */
+
+    const recordedCount =
+        recordedConstituencies.size;
+
+
+    const recordedPositions =
+        document.getElementById(
+            "recordedPositions"
+        );
+
+
+    if (recordedPositions) {
+
+        recordedPositions.textContent =
+            recordedCount;
+
+    }
+
+
+    /*
+     * =====================================================
+     * VACANT POSITIONS
+     * =====================================================
+     */
+
+    const constituencyList =
+        getConstituencyData();
+
+
+    let vacantCount = 0;
+
+
+    if (
+        constituencyList.length > 0
+    ) {
+
+        vacantCount =
+            vacancyCountFromUniverse(
+                constituencyList
+            );
+
+    }
+
+
+    const vacantPositionsElement =
+        document.getElementById(
+            "vacantPositions"
+        );
+
+
+    if (vacantPositionsElement) {
+
+        vacantPositionsElement.textContent =
+            vacantCount;
+
+    }
+
+
+    /*
+     * =====================================================
+     * REVOKED POSITIONS
+     * =====================================================
+     */
+
+    const revokedPositions =
+        document.getElementById(
+            "revokedPositions"
+        );
+
+
+    if (revokedPositions) {
+
+        revokedPositions.textContent =
+            revokedMPs.length;
+
+    }
+
+}
+
+
+/* =========================================================
+   RENDER TABLE
+   ========================================================= */
+
+function renderTable(
+    positions
+) {
+
+    const tableBody =
+        document.getElementById(
+            "membersTableBody"
+        );
+
+
+    const emptyState =
+        document.getElementById(
+            "emptyState"
+        );
+
+
+    if (!tableBody) {
+
+        console.error(
+            "membersTableBody was not found."
+        );
+
+        return;
+
+    }
+
+
+    /*
+     * CLEAR TABLE
+     */
+
+    tableBody.innerHTML = "";
+
+
+    /*
+     * NO RECORDS
+     */
+
+    if (
+        !positions ||
+        positions.length === 0
+    ) {
+
+        if (emptyState) {
+
+            emptyState.style.display =
+                "block";
+
+            emptyState.textContent =
+                "No records found.";
+
+        }
+
+        return;
+
+    }
+
+
+    /*
+     * HIDE EMPTY STATE
+     */
+
+    if (emptyState) {
+
+        emptyState.style.display =
+            "none";
+
+    }
+
+
+    /*
+     * CREATE ROWS
+     */
+
+    positions.forEach(
+        function(item, index) {
+
+            const row =
+                document.createElement(
+                    "tr"
+                );
+
+
+            /*
+             * =================================================
+             * NUMBER
+             * =================================================
+             */
+
+            const numberCell =
+                document.createElement(
+                    "td"
+                );
+
+            numberCell.className =
+                "number";
+
+
+            let mpNumber;
+
+
+            /*
+             * SEARCH MODE
+             *
+             * Keep official constituency number.
+             */
+
+            if (
+                currentSearchTerm &&
+                currentSearchTerm.trim() !== ""
+            ) {
+
+                mpNumber =
+                    item.officialNumber ||
+                    "-";
+
+            }
+
+            else {
+
+                /*
+                 * NORMAL TABLE MODE
+                 *
+                 * Renumber visible rows.
+                 */
+
+                mpNumber =
+                    String(index + 1)
+                        .padStart(3, "0");
+
+            }
+
+
+            numberCell.textContent =
+                mpNumber;
+
+
+            row.appendChild(
+                numberCell
+            );
+
+
+            /*
+             * =================================================
+             * CONSTITUENCY
+             * =================================================
+             */
+
+            const constituencyCell =
+                document.createElement(
+                    "td"
+                );
+
+            constituencyCell.className =
+                "constituency";
+
+
+            constituencyCell.textContent =
+                item.constituency ||
+                "-";
+
+
+            row.appendChild(
+                constituencyCell
+            );
+
+
+            /*
+             * =================================================
+             * REGION
+             * =================================================
+             */
+
+            const regionCell =
+                document.createElement(
+                    "td"
+                );
+
+            regionCell.className =
+                "region";
+
+
+            regionCell.textContent =
+                item.region ||
+                "-";
+
+
+            row.appendChild(
+                regionCell
+            );
+
+
+            /*
+             * =================================================
+             * NAME
+             * =================================================
+             */
+
+            const nameCell =
+                document.createElement(
+                    "td"
+                );
+
+            nameCell.className =
+                "name";
+
+
+            if (
+                item.status === "vacant"
+            ) {
+
+                nameCell.textContent =
+                    "VACANT POSITION";
+
+            }
+
+            else {
+
+                nameCell.textContent =
+                    String(
+                        item.name ||
+                        "-"
+                    ).toUpperCase();
+
+            }
+
+
+            row.appendChild(
+                nameCell
+            );
+
+
+            /*
+             * =================================================
+             * PHONE
+             * =================================================
+             */
+
+            const phoneCell =
+                document.createElement(
+                    "td"
+                );
+
+            phoneCell.className =
+                "phone";
+
+
+            phoneCell.textContent =
+                item.phone ||
+                "-";
+
+
+            row.appendChild(
+                phoneCell
+            );
+
+
+            /*
+             * =================================================
+             * POSITION
+             * =================================================
+             */
+
+            const positionCell =
+                document.createElement(
+                    "td"
+                );
+
+            positionCell.className =
+                "position";
+
+
+            positionCell.textContent =
+                item.position ||
+                "Member of Parliament";
+
+
+            row.appendChild(
+                positionCell
+            );
+
+
+            /*
+             * =================================================
+             * STATUS
+             * =================================================
+             */
+
+            const statusCell =
+                document.createElement(
+                    "td"
+                );
+
+            statusCell.className =
+                "status";
+
+
+            const status =
+                normalizeStatus(
+                    item.status
+                );
+
+
+            statusCell.textContent =
+                status.toUpperCase();
+
+
+            /*
+             * RECORDED
+             */
+
+            if (
+                status === "recorded"
+            ) {
+
+                statusCell.classList.add(
+                    "status-recorded"
+                );
+
+            }
+
+
+            /*
+             * VACANT
+             */
+
+            else if (
+                status === "vacant"
+            ) {
+
+                statusCell.classList.add(
+                    "status-vacant"
+                );
+
+            }
+
+
+            /*
+             * REVOKED
+             */
+
+            else if (
+                status === "revoked"
+            ) {
+
+                statusCell.classList.add(
+                    "status-revoked"
+                );
+
+            }
+
+
+            /*
+             * UNKNOWN
+             */
+
+            else {
+
+                statusCell.classList.add(
+                    "status-unknown"
+                );
+
+            }
+
+
+            row.appendChild(
+                statusCell
+            );
+
+
+            /*
+             * =================================================
+             * ADD ROW
+             * =================================================
+             */
+
+            tableBody.appendChild(
+                row
+            );
+
+        }
+    );
+
+}
+
+
+/* =========================================================
+   SEARCH MEMBERS
+   ========================================================= */
+
+/*
+ * IMPORTANT:
+ *
+ * Search uses normalizeName().
+ *
+ * It does NOT use normalizeConstituencyName().
+ *
+ * Therefore:
+ *
+ * typing "constituency"
+ *
+ * does not destroy or alter the search term.
+ */
+
+function searchMembers() {
+
+    const searchInput =
+        document.getElementById(
+            "searchInput"
+        );
+
+
+    if (!searchInput) {
+
+        return;
+
+    }
+
+
+    /*
+     * SEARCH TERM
+     */
+
+    currentSearchTerm =
+        normalizeName(
+            searchInput.value
+        );
+
+
+    /*
+     * REBUILD POSITIONS
+     */
+
+    const allPositions =
+        buildPositionList();
+
+
+    /*
+     * NO SEARCH
+     */
+
+    if (!currentSearchTerm) {
+
+        displayedPositions =
+            allPositions;
+
+
+        renderTable(
+            displayedPositions
+        );
+
+        return;
+
+    }
+
+
+    /*
+     * FILTER
+     */
+
+    displayedPositions =
+        allPositions.filter(
+            function(item) {
+
+                const searchableText = [
+
+                    item.id,
+
+                    item.name,
+
+                    item.phone,
+
+                    item.constituency,
+
+                    item.region,
+
+                    item.position,
+
+                    item.status
+
+                ]
+
+                .map(
+                    function(value) {
+
+                        return normalizeName(
+                            value
+                        );
+
+                    }
+                )
+
+                .join(" ");
+
+
+                return searchableText.includes(
+                    currentSearchTerm
+                );
+
+            }
+        );
+
+
+    /*
+     * RENDER
+     */
+
+    renderTable(
+        displayedPositions
+    );
+
+}
+
+
+/* =========================================================
+   CLEAR SEARCH
+   ========================================================= */
+
+function clearSearch() {
+
+    const searchInput =
+        document.getElementById(
+            "searchInput"
+        );
+
+
+    if (searchInput) {
+
+        searchInput.value =
+            "";
+
+    }
+
+
+    /*
+     * Reset search mode.
+     */
+
+    currentSearchTerm =
+        "";
+
+
+    displayedPositions =
+        buildPositionList();
+
+
+    renderTable(
+        displayedPositions
+    );
+
+}
+
+
+/* =========================================================
+   PRINT
+   ========================================================= */
+
+function printPDF() {
+
+    window.print();
+
+}
+
+
+/* =========================================================
+   GENERATED DATE
+   ========================================================= */
+
+function updateGeneratedDate() {
+
+    const generatedDate =
+        document.getElementById(
+            "generatedDate"
+        );
+
+
+    if (!generatedDate) {
+
+        return;
+
+    }
+
+
+    const now =
+        new Date();
+
+
+    const formattedDate =
+        now.toLocaleDateString(
+            "en-GH",
+            {
+
+                day:
+                    "2-digit",
+
+                month:
+                    "long",
+
+                year:
+                    "numeric"
+
+            }
+        );
+
+
+    generatedDate.textContent =
+        formattedDate;
+
+}
+
+
+/* =========================================================
+   SHOW ERROR
+   ========================================================= */
+
+function showLoadingError(
+    message
+) {
+
+    const tableBody =
+        document.getElementById(
+            "membersTableBody"
+        );
+
+
+    const emptyState =
+        document.getElementById(
+            "emptyState"
+        );
+
+
+    if (tableBody) {
+
+        tableBody.innerHTML =
+            "";
+
+    }
+
+
+    if (emptyState) {
+
+        emptyState.style.display =
+            "block";
+
+        emptyState.textContent =
+            "Unable to load parliamentary data.";
+
+    }
+
+
+    console.error(
+        message
+    );
+
+}
+
+
+/* =========================================================
+   REFRESH DASHBOARD
+   ========================================================= */
+
+function refreshMPDashboard() {
+
+    loadMembers();
+
+}
+
+
+/* =========================================================
+   GET DASHBOARD SUMMARY
+   ========================================================= */
+
+function getDashboardSummary() {
+
+    const recorded =
+        getRecordedConstituencies();
+
+
+    const constituencyList =
+        getConstituencyData();
+
+
+    let vacant = 0;
+
+
+    if (
+        constituencyList.length > 0
+    ) {
+
+        vacant =
+            vacancyCountFromUniverse(
+                constituencyList
+            );
+
+    }
+
+
+    return {
+
+        totalPositions:
+            TOTAL_MP_POSITIONS,
+
+        totalRegions:
+            TOTAL_REGIONS,
+
+        totalConstituencies:
+            TOTAL_CONSTITUENCIES,
+
+        recorded:
+            recorded.size,
+
+        vacant:
+            vacant,
+
+        revoked:
+            revokedMPs.length,
+
+        invalidActive:
+            invalidActiveMPs.length
+
+    };
+
+}
+
+
+/* =========================================================
+   SEARCH EVENT
+   ========================================================= */
+
+function initializeSearch() {
+
+    const searchInput =
+        document.getElementById(
+            "searchInput"
+        );
+
+
+    if (!searchInput) {
+
+        return;
+
+    }
+
+
+    /*
+     * Prevent duplicate listeners.
+     */
+
+    searchInput.removeEventListener(
+        "input",
+        searchMembers
+    );
+
+
+    searchInput.addEventListener(
+        "input",
+        searchMembers
+    );
+
+}
+
+
+/* =========================================================
+   INITIALIZE SYSTEM
+   ========================================================= */
+
+function initializeMPSystem() {
+
+    initializeSearch();
+
+    loadMembers();
+
+}
+
+
+/* =========================================================
+   DOM READY
+   ========================================================= */
+
+if (
+    document.readyState ===
+    "loading"
+) {
+
+    document.addEventListener(
+        "DOMContentLoaded",
+        initializeMPSystem
+    );
+
+}
+
+else {
+
+    initializeMPSystem();
+
+}
+
+
+/* =========================================================
+   GLOBAL FUNCTIONS
+   ========================================================= */
+
+window.loadMembers =
+    loadMembers;
+
+
+window.refreshMPDashboard =
+    refreshMPDashboard;
+
+
+window.searchMembers =
+    searchMembers;
+
+
+window.clearSearch =
+    clearSearch;
+
+
+window.printPDF =
+    printPDF;
+
+
+window.updateDashboard =
+    updateDashboard;
+
+
+window.buildPositionList =
+    buildPositionList;
+
+
+window.renderTable =
+    renderTable;
+
+
+window.getDashboardSummary =
+    getDashboardSummary;
+
+
+window.findActiveMP =
+    findActiveMP;
+
+
+window.findRevokedMP =
+    findRevokedMP;
+
+
+window.findMember =
+    findMember;
+
+
+window.getRecordedConstituencies =
+    getRecordedConstituencies;
+
+
+window.canonicalConstituency =
+    canonicalConstituency;
+
+
+window.constituencyNamesMatch =
+    constituencyNamesMatch;
+
+
+window.normalizeConstituencyName =
+    normalizeConstituencyName;
+
+
+window.getOfficialConstituencyForMP =
+    getOfficialConstituencyForMP;
+
+
+window.isValidConstituencyMP =
+    isValidConstituencyMP;
+
+
+window.invalidActiveMPs =
+    invalidActiveMPs;
+
+
+/* =========================================================
+   NAVIGATION
+   ========================================================= */
+
+/*
+ * GO TO CONSTITUENCY PAGE
+ */
+
+function goToConstituencyPage() {
+
+    window.location.href =
+        "constituency-registry.html";
+
+}
+
+
+/*
+ * GO BACK
+ */
+
+function goBack() {
+
+    if (
+        window.history.length > 1
+    ) {
+
+        window.history.back();
+
+    }
+
+    else {
+
+        window.location.href =
+            "constituency-registry.html";
+
+    }
+
+}
+
+
+/* =========================================================
+   END OF MP SYSTEM
+   ========================================================= */
+
 </script>
+
 </body>
+
 </html>
