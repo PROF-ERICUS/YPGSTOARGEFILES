@@ -517,6 +517,7 @@ function normalizeConstituencyName(name) {
         .replace(/[-/]+/g, " ")
         // Remove other unnecessary punctuation
         .replace(/[^\w\s]/g, "")
+
         // Normalize multiple spaces
         .replace(/\s+/g, " ")
         .trim();
