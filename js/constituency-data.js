@@ -188,7 +188,7 @@ const constituencyData = [
 { constituency: "Ablekuma West", region: "Greater Accra" },
 
 { constituency: "Ada", region: "Greater Accra" },
-{ constituency: "Adentan", region: "Greater Accra" },
+{ constituency: "Adenta", region: "Greater Accra" },
 { constituency: "Ashaiman", region: "Greater Accra" },
 
 { constituency: "Ayawaso Central", region: "Greater Accra" },
