@@ -8356,6 +8356,61 @@ parliament: "Youth Parliament Ghana",
     linkedin: "#",
     tiktok: "Albert Ayoreko"
 },
+  {
+    id: "mp153",
+    name: "NANA OWUSU ODOM NKWANTABISA",
+    position: "Member of Parliament",
+    constituency: "Atiwa West",
+    region: "Eastern",
+    parliament: "Youth Parliament Ghana",
+    status: "active",
+
+    education:
+        "Kumasi Technical University (KsTU) — Secretaryship and Management Studies, Higher National Diploma / Degree; Prempeh College — West African Senior School Certificate Examination (WASSCE); Pentecost Preparatory School — Basic Education Certificate Examination (BECE); IPMC College of Technology — Database Management and Microsoft Office Suite, Certificate.",
+
+    profession:
+        "Operations and Partnerships Specialist",
+
+    experience:
+        "Chief Executive Officer, PGM Models (2023–Present); Mapping and Survey Coordinator, Electricity Company of Ghana (ECG) (2025–2026); Brand / Project Ambassador, Students Loan Trust Fund (SLTF), KsTU Branch (2022–2026); Operations Coordinator, Entrepreneurship Hub (2022–2023); Planning Assistant, SRC Entertainment Committee, Students' Representative Council (2024–2025); Faculty Organizer, Faculty of Business, Kumasi Technical University (2023–2024); Department Organizer, Department Student Executive Council, KsTU (2021–2023); House Prefect, Prempeh College (2020–2021).",
+
+    biography:
+        "Nana Owusu Odom Nkwantabisa is an Operations and Partnerships Specialist with experience in operations management, strategic partnerships, stakeholder engagement, event coordination, brand development and project execution. He is the Chief Executive Officer of PGM Models, where he leads brand strategy, client acquisition, commercial partnerships, talent management, event logistics and campaign execution. He previously served as an Operations Coordinator at the Entrepreneurship Hub, coordinating administrative operations and working with corporate partners, startup mentors and industry leaders. He also served as a Mapping and Survey Coordinator with the Electricity Company of Ghana, supporting field data collection, customer mapping and spatial surveys. From 2022 to 2026, he served as a Brand and Project Ambassador for the Students Loan Trust Fund, KsTU Branch, facilitating stakeholder engagement and student outreach. His leadership experience includes roles within the Students' Representative Council, Faculty of Business, Department Student Executive Council and Prempeh College.",
+
+    vision:
+        "To promote effective youth leadership, entrepreneurship, partnerships and meaningful opportunities for young people.",
+
+    plans:
+        "To support youth development through entrepreneurship, professional development, stakeholder engagement, skills development and community-focused initiatives.",
+
+    contribution:
+        "Youth leadership, entrepreneurship, stakeholder engagement, event management, partnerships, communications and organizational development.",
+
+    currentActivities:
+        "Serving as Youth Member of Parliament for Atwima West while leading PGM Models as Chief Executive Officer.",
+
+    leadershipExperience:
+        "Youth Member of Parliament, Atwima West; Chief Executive Officer, PGM Models; Planning Assistant, SRC Entertainment Committee; Faculty Organizer, Faculty of Business, KsTU; Department Organizer, Department Student Executive Council, KsTU; House Prefect, Prempeh College.",
+
+    professionalExperience:
+        "Operations and Partnerships Specialist with experience in brand development, commercial partnerships, client acquisition, talent management, event logistics, stakeholder engagement, field data collection and project coordination.",
+
+    focusAreas:
+        "Youth development, entrepreneurship, operations management, strategic partnerships, stakeholder engagement, event management, communications and project execution.",
+
+    slogan:
+        "Leadership, partnerships and opportunity for youth development.",
+
+    image: "images/nana.jpeg",
+    email: "qhwantygh@gmail.com",
+    phone: "+233 25 645 5880",
+    website: "#",
+    facebook: "qhwantygh / Nana Owusu",
+    twitter: "#",
+    instagram: "#",
+    linkedin: "https://linkedin.com/in/nana-owusu-odom-nkwantabisa",
+    tiktok: "#"
+},
 
 
 ];
