@@ -8686,5 +8686,115 @@ parliament: "Youth Parliament Ghana",
     linkedin: "#",
     tiktok: "#"
 },
+  {
+    id: "mp159",
+    name: "KYEREMEH EMMANUEL",
+    position: "Member of Parliament",
+    constituency: "Berekum East",
+    region: "Bono",
+    parliament: "Youth Parliament Ghana",
+    status: "active",
+
+    education:
+        "College of Health-Yamfo — Bachelor of Science in Community Health Nutrition, 2025; Dormaa Senior High School; St Augustine Primary School — House Leader, 2016/2017 year group",
+
+    profession: "Community Health Nutrition / Public Health Professional",
+
+    experience:
+        "Teaching Assistant, College of Health-Yamfo; Vice President, National Service Personnel Association (NASPA), Tano North Municipality; Electoral Commission Chairperson, Bono-Ahafo Regional NASPA; Organiser, Ghana Methodist Students' Association (GHAMSU), 2024–2025; Sport and Entertainment President, GHAMSU; Member, SRC Planning Committee, College of Health-Yamfo; Compound Development Officer, Dormass; Field Enumerator and Data Collector on WFP-supported Food Systems and Food Security Data Collection Projects; Enumerator and Community Team Leader, Ghana College of Physicians and Surgeons STOP-NCD CARE Ghana project",
+
+    biography:
+        "Kyeremeh Emmanuel is a young leader from the Berekum East Constituency in the Bono Region of Ghana and a Youth Member of Parliament under Youth Parliament Ghana. He holds a Bachelor of Science in Community Health Nutrition from the College of Health-Yamfo, where he graduated in 2025. During his time at the College, he served as a member of the SRC Planning Committee and later served in leadership roles within the Ghana Methodist Students' Association. He currently serves as a Teaching Assistant at the College of Health-Yamfo and has experience in community health, nutrition, data collection, public health programmes and youth leadership. He has participated in community-based health and non-communicable disease prevention activities and contributed to food security and community data collection projects. He is passionate about youth development, public health, community service and empowering young people to contribute meaningfully to Ghana's development.",
+
+    vision:
+        "To empower young people, strengthen communities and promote accessible public health and community development.",
+
+    plans:
+        "To support youth development, public health awareness, community service, nutrition education and initiatives that improve the wellbeing of young people and communities.",
+
+    contribution:
+        "Public health, community nutrition, youth leadership, community service and youth development.",
+
+    currentActivities:
+        "Serving as Youth Member of Parliament for Berekum East and working as a Teaching Assistant at the College of Health-Yamfo.",
+
+    leadershipExperience:
+        "Vice President, National Service Personnel Association (NASPA), Tano North Municipality; Electoral Commission Chairperson, Bono-Ahafo Regional NASPA; Organiser, Ghana Methodist Students' Association; Sport and Entertainment President, GHAMSU; Member, SRC Planning Committee, College of Health-Yamfo; House Leader, St Augustine Primary School.",
+
+    professionalExperience:
+        "Teaching Assistant and Public Health and Community Nutrition Professional with experience in community health, nutrition, data collection, public health programmes and community-based research.",
+
+    focusAreas:
+        "Youth development, public health, community nutrition, financial and social wellbeing, community service, leadership and youth empowerment.",
+
+    slogan:
+        "Empowering young people, strengthening communities, serving with purpose.",
+
+    image: "images/kyeremeh-emmanuel.jpeg",
+
+    email: "kyeremehfuture680@gmail.com",
+    phone: "0556656266",
+    website: "#",
+    facebook: "KYEREMEH EMMANUEL",
+    twitter: "KYEREMEH EMMANUEL",
+    instagram: "KYEREMEH EMMANUEL",
+    linkedin: "KYEREMEH EMMANUEL",
+    tiktok: "#"
+},
+{
+    id: "mp160",
+    name: "JONATHAN ELIKPLIM AGBEKE",
+    position: "Member of Parliament",
+    constituency: "Ablekuma South",
+    region: "Greater Accra",
+    parliament: "Youth Parliament Ghana",
+    status: "active",
+
+    education:
+        "University of Professional Studies, Accra (UPSA) — Bachelor of Science in Marketing, Degree; Achimota Senior High School",
+
+    profession: "Security Officer",
+
+    experience:
+        "Vice President, Association of Marketing Students (AMS), UPSA; Secretary, AMS Sponsorship Committee, UPSA; Member, UPSA Parliament House; Internal Security Officer, National Lottery Authority (NLA); Assistant Supervisor, National Lottery Authority (NLA); Student Representative, Achimota Senior High School; Public Relations Officer, Train G8",
+
+    biography:
+        "Jonathan Elikplim Agbeke is a Ghanaian student leader, marketing professional, public speaker and youth and community advocate with interests in leadership, public service, marketing, youth development and community impact. He studied at Achimota Senior High School before proceeding to the University of Professional Studies, Accra (UPSA), where he pursued a Bachelor of Science in Marketing. He has gained experience in student governance through the UPSA Parliament House and leadership within the Association of Marketing Students. He currently serves as Vice President of the Association of Marketing Students and also works as an Internal Security Officer at the National Lottery Authority. His leadership interests include youth development, education, entrepreneurship, marketing, leadership development, public communication and community advancement.",
+
+    vision:
+        "To promote growth, unity and real impact through responsible leadership, youth development and institutional advancement.",
+
+    plans:
+        "To support youth empowerment, education, entrepreneurship, leadership development, public communication and community-focused initiatives within Ablekuma South.",
+
+    contribution:
+        "Youth leadership, student governance, marketing, public communication, professional service and community engagement.",
+
+    currentActivities:
+        "Serving as Member of Parliament for Ablekuma South under Youth Parliament Ghana, Vice President of the Association of Marketing Students at UPSA and Internal Security Officer at the National Lottery Authority.",
+
+    leadershipExperience:
+        "Vice President, Association of Marketing Students (AMS), UPSA; Secretary, AMS Sponsorship Committee; Member, UPSA Parliament House; Student Representative, Achimota Senior High School; Public Relations Officer, Train G8.",
+
+    professionalExperience:
+        "Internal Security Officer at the National Lottery Authority with previous experience as Assistant Supervisor, alongside experience in marketing, sponsorship coordination, public relations, stakeholder engagement and student governance.",
+
+    focusAreas:
+        "Youth development, leadership, marketing, strategic communication, public relations, entrepreneurship, student governance, institutional development and community advancement.",
+
+    slogan:
+        "Growth, unity and real impact.",
+
+    image: "images/jonathan.jpeg",
+
+    email: "agbekejonathan0@gmail.com",
+    phone: "0531761424",
+    website: "#",
+    facebook: "#",
+    twitter: "AJ_BRAND_",
+    instagram: "1mr.jayy",
+    linkedin: "#",
+    tiktok: "#"
+},
 
 ];
