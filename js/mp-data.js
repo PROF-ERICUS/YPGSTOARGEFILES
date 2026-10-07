@@ -8796,5 +8796,116 @@ parliament: "Youth Parliament Ghana",
     linkedin: "#",
     tiktok: "#"
 },
+  
+{
+    id: "mp161",
+    name: "SANGURU RICHMOND NAGMESOMA",
+    position: "Member of Parliament",
+    constituency: "Nkoranza South",
+    region: "Bono East",
+    parliament: "Youth Parliament Ghana",
+    status: "active",
+
+    education:
+        "University of Energy and Natural Resources — Bachelor of Science in Petroleum Engineering, Level 300",
+
+    profession: "Petroleum Engineering Student",
+
+    experience:
+        "Deputy Media Committee Head, Ghana Institution of Engineering (GhIE), UENR Chapter; Deputy Head, Petroleum Engineering Student Association (PESA) Public Relations Committee; PENSA President, Techiman Senior High School; S.U President, Salimbouku A Junior High School; NCCE President, Salimbouku A Junior High School; President, Adolescent Reproductive Health Club, Salimbouku A Junior High School; Senior Boys Prefect, Zongo D/A Primary School",
+
+    biography:
+        "Sanguru Richmond Nagmesoma is a young Ghanaian student leader and youth advocate born on 17th July 2003 in Nwoasi, a village in Nkoranza under Donkro Nkwanta. His early life began in Bunkpurugu in the North East Region. He started his primary education at Zongo D/A Primary School, where he served as Senior Boys Prefect in his sixth grade. He continued his Junior High School education at Salimbouku A Junior High School in Bunkpurugu, where he served as S.U President, NCCE President and President of the Adolescent Reproductive Health Club. He later gained admission to Techiman Senior High School to study General Science, where he served as PENSA President. He is currently pursuing a Bachelor of Science in Petroleum Engineering at the University of Energy and Natural Resources and serves in leadership within the Petroleum Engineering Student Association.",
+
+    vision:
+        "To promote youth leadership, academic development, responsible citizenship and meaningful participation in community and national development.",
+
+    plans:
+        "To support youth development, education, leadership initiatives and opportunities that empower young people to contribute positively to society.",
+
+    contribution:
+        "Youth leadership, student representation, academic development and community engagement.",
+
+    currentActivities:
+        "Serving as Member of Parliament for Nkoranza South under Youth Parliament Ghana and Deputy Head of the Petroleum Engineering Student Association Public Relations Committee.",
+
+    leadershipExperience:
+        "Deputy Media Committee Head, Ghana Institution of Engineering (GhIE), UENR Chapter; Deputy Head, Petroleum Engineering Student Association (PESA) Public Relations Committee; PENSA President, Techiman Senior High School; S.U President, NCCE President and Adolescent Reproductive Health Club President, Salimbouku A Junior High School; Senior Boys Prefect, Zongo D/A Primary School.",
+
+    professionalExperience:
+        "Level 300 Petroleum Engineering student at the University of Energy and Natural Resources with experience in student leadership, public relations, media coordination and youth engagement.",
+
+    focusAreas:
+        "Youth development, education, petroleum engineering, student leadership, public relations, community development and civic participation.",
+
+    slogan:
+        "Leadership, impact and service.",
+
+    image: "images/sanguru-richmond-nagmesoma.jpeg",
+
+    email: "richmondssanguru@gmail.com",
+    phone: "0245425159",
+    website: "#",
+    facebook: "#",
+    twitter: "#",
+    instagram: "#",
+    linkedin: "Sanguru Richmond Nagmesoma",
+    tiktok: "#"
+},
+{
+    id: "mp162",
+    name: "MATHIAS ATADENA ANYOKA",
+    position: "Member of Parliament",
+    constituency: "Chiana-Paga",
+    region: "Upper East",
+    parliament: "Youth Parliament Ghana",
+    status: "active",
+
+    education:
+        "University of Cape Coast (UCC) — Bachelor of Science in Geography and Regional Planning, Level 400; St. John Bosco's College of Education, Navrongo; Gowrie Senior High School",
+
+    profession: "Teacher",
+
+    experience:
+        "Student Leader; School Sports Teacher; Circuit Sports Organizer; BONABOTO National Representative, UCC Chapter; President, BONABOTO, UCC Chapter; Professional Teacher",
+
+    biography:
+        "Mathias Atadena Anyoka is a Ghanaian teacher, student leader and community development advocate from Sirigu in the Kasena/Nankana West District of the Upper East Region. He completed his basic education in his hometown before proceeding to Gowrie Senior High School and St. John Bosco's College of Education in Navrongo. He is currently a Level 400 student at the University of Cape Coast pursuing a Bachelor of Science in Geography and Regional Planning. He has served in various leadership positions spanning student and teacher leadership and has worked as a professional teacher for the past eight years. He is also actively involved in community projects, development initiatives and donations supporting community development and people in need within his community and beyond.",
+
+    vision:
+        "To promote youth development, education, community participation and inclusive development within the Chiana-Paga constituency.",
+
+    plans:
+        "To support initiatives in education, youth development, sports, community development and opportunities that empower young people.",
+
+    contribution:
+        "Education, youth leadership, sports development, community service and community development.",
+
+    currentActivities:
+        "Serving as Youth Member of Parliament for Chiana-Paga while pursuing a Bachelor of Science in Geography and Regional Planning at the University of Cape Coast.",
+
+    leadershipExperience:
+        "Student Leader; School Sports Teacher; Circuit Sports Organizer; BONABOTO National Representative, UCC Chapter; President, BONABOTO, UCC Chapter.",
+
+    professionalExperience:
+        "Professional teacher with eight years of teaching experience and a Level 400 student of Geography and Regional Planning at the University of Cape Coast.",
+
+    focusAreas:
+        "Youth development, education, sports, community development, leadership and social support.",
+
+    slogan:
+        "Education, leadership and community development.",
+
+    image: "images/mathias-atadena-anyoka.jpeg",
+
+    email: "mathiasatadena4@gmail.com",
+    phone: "0243867665",
+    website: "#",
+    facebook: "#",
+    twitter: "#",
+    instagram: "#",
+    linkedin: "#",
+    tiktok: "#"
+},
 
 ];
