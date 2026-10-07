@@ -8521,5 +8521,170 @@ parliament: "Youth Parliament Ghana",
     linkedin: "#",
     tiktok: "#"
 },
+  {
+    id: "mp156",
+    name: "ALEXANDER AMANKWAH",
+    position: "Member of Parliament",
+    constituency: "Afigya Kwabre North",
+    region: "Ashanti",
+    parliament: "Youth Parliament Ghana",
+    status: "active",
+
+    education:
+        "Kumasi Technical University — Computer Science, Degree, 2026",
+
+    profession: "Student",
+
+    experience:
+        "Active involvement in FASTSA and GNUTS activities; Student governance and leadership",
+
+    biography:
+        "Alexander Amankwah is known for his discipline, integrity and ability to unite people for a common goal. He has been actively involved in FASTSA and GNUTS activities and has a deep understanding of student governance. His vision is to foster transparent leadership, academic excellence and inclusive development for all students.",
+
+    vision:
+        "To foster transparent leadership, academic excellence and inclusive development for all students.",
+
+    plans:
+        "To promote effective student leadership, academic excellence, unity and inclusive development.",
+
+    contribution:
+        "Student governance, leadership, unity and inclusive development.",
+
+    currentActivities:
+        "Serving as Youth Member of Parliament for Afigya Kwabre North.",
+
+    leadershipExperience:
+        "Active involvement in FASTSA and GNUTS activities with experience in student governance.",
+
+    professionalExperience:
+        "Computer Science graduate from Kumasi Technical University.",
+
+    focusAreas:
+        "Transparent leadership, academic excellence, student governance, unity and inclusive development.",
+
+    slogan:
+        "Integrity, unity and inclusive leadership.",
+
+    image: "images/alexander.jpeg",
+
+    email: "alexanderamankwah119gmail.com",
+    phone: "0551748776",
+    website: "fastsastudybank.com",
+    facebook: "#",
+    twitter: "#",
+    instagram: "#",
+    linkedin: "#",
+    tiktok: "#"
+},
+{
+    id: "mp157",
+    name: "GARIBA WIENAAH MUBARAK",
+    position: "Member of Parliament",
+    constituency: "Jirapa",
+    region: "Upper West",
+    parliament: "Youth Parliament Ghana",
+    status: "active",
+
+    education:
+        "University for Development Studies (UDS) — Bachelor of Science in Banking and Finance, Undergraduate, 2028",
+
+    profession: "Banking and Finance Student / Youth Leader",
+
+    experience:
+        "Organizer, Financial Literacy and Awareness Association; President, Financial Literacy and Awareness Association; Member of Parliament, Jirapa Constituency, Youth Parliament Ghana",
+
+    biography:
+        "Hon. Gariba Wienaah Mubarak is a young Ghanaian leader, student of Banking and Finance, and youth advocate with a growing interest in financial literacy, leadership, public service and community development. He serves as the Member of Parliament for the Jirapa Constituency in the Youth Parliament Ghana, where he represents the interests and aspirations of young people within his constituency and contributes to youth-focused discussions on national development, governance and social and economic empowerment. He also serves as the President of the Financial Literacy and Awareness Association, having previously served as the Organizer of the Association. Through his involvement in the Association, he has contributed to initiatives aimed at promoting financial awareness, responsible financial decision-making and greater financial literacy among young people.",
+
+    vision:
+        "To promote financial literacy, youth empowerment, accountable leadership and meaningful participation of young people in governance and community development.",
+
+    plans:
+        "To support financial literacy initiatives, youth leadership development, responsible financial decision-making and constructive youth participation in governance.",
+
+    contribution:
+        "Financial literacy, youth leadership, public service, community development and youth empowerment.",
+
+    currentActivities:
+        "Serving as Member of Parliament for Jirapa Constituency in Youth Parliament Ghana and President of the Financial Literacy and Awareness Association.",
+
+    leadershipExperience:
+        "Organizer, Financial Literacy and Awareness Association; President, Financial Literacy and Awareness Association; Member of Parliament, Jirapa Constituency, Youth Parliament Ghana.",
+
+    professionalExperience:
+        "Banking and Finance student with interests in banking, finance, investment, financial markets, financial technology and economic development.",
+
+    focusAreas:
+        "Financial literacy and inclusion, banking and finance, youth leadership and empowerment, public service and governance, investment and financial markets, entrepreneurship and community development.",
+
+    slogan:
+        "Financial literacy, responsible leadership and youth empowerment.",
+
+    image: "images/mubarak.jpeg",
+
+    email: "pphrince@gmail.com",
+    phone: "0533256383",
+    website: "#",
+    facebook: "https://www.facebook.com/share/19hPVnBtDN/?mibextid=wwXIfr",
+    twitter: "https://x.com/pphrincephresh?s=11",
+    instagram: "https://www.instagram.com/garibahwienaah?stkn=YndkaTN4anM4b3E0&utm_source=qr",
+    linkedin: "https://www.linkedin.com/in/gariba-mubarak-3a96023b6",
+    tiktok: "#"
+},
+{
+    id: "mp158",
+    name: "NSIAH KOFI ROCKSON",
+    position: "Member of Parliament",
+    constituency: "Atwima Nwabiagya North",
+    region: "Ashanti",
+    parliament: "Youth Parliament Ghana",
+    status: "active",
+
+    education:
+        "Kwadaso Agricultural College — HND in General Agriculture, 2028",
+
+    profession: "Student",
+
+    experience:
+        "TESCON Communications Officer; PENSA Schools Coordinator",
+
+    biography:
+        "Nsiah Kofi Rockson is a student of Kwadaso Agricultural College pursuing an HND in General Agriculture. He resides in Atwima Koforidua and has demonstrated leadership through his roles as TESCON Communications Officer and PENSA Schools Coordinator. He serves as the Youth Member of Parliament for Atwima Nwabiagya North under Youth Parliament Ghana.",
+
+    vision:
+        "To promote youth participation, leadership development, education and agricultural development within the constituency.",
+
+    plans:
+        "To support youth engagement, education, agricultural development and community-focused initiatives within Atwima Nwabiagya North.",
+
+    contribution:
+        "Youth leadership, student representation, agriculture and community development.",
+
+    currentActivities:
+        "Serving as Youth Member of Parliament for Atwima Nwabiagya North while pursuing an HND in General Agriculture.",
+
+    leadershipExperience:
+        "TESCON Communications Officer; PENSA Schools Coordinator.",
+
+    professionalExperience:
+        "Student pursuing an HND in General Agriculture at Kwadaso Agricultural College.",
+
+    focusAreas:
+        "Youth development, education, agriculture, student leadership and community engagement.",
+
+    slogan:
+        "Leadership, service and agricultural development.",
+
+    image: "images/nsiah.jpeg",
+
+    email: "nsiahkofirockson963@gmail.com",
+    phone: "0535444913",
+    website: "#",
+    facebook: "#",
+    twitter: "#",
+    instagram: "#",
+    linkedin: "#",
+    tiktok: "#"
+},
 
 ];
