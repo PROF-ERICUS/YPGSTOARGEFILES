@@ -9017,5 +9017,60 @@ parliament: "Youth Parliament Ghana",
     linkedin: "#",
     tiktok: "#"
 },
+  {
+    id: "mp165",
+    name: "ASANTE RICHARD",
+    position: "Member of Parliament",
+    constituency: "Mpraeso",
+    region: "Eastern ",
+    parliament: "Youth Parliament Ghana",
+    status: "active",
+
+    education:
+        "Senior High School — General Arts, WASSCE, 2026; Junior High School, Kwahu South — Basic Education, BECE, 2023",
+
+    profession: "Student / Aspiring Lawyer",
+
+    experience:
+        "Youth Member, NPP Youth, Kwahu South Constituency; Student Leader, General Arts Students Association, Senior High School; Youth Volunteer, Community Development and Education Support in Mpraeso",
+
+    biography:
+        "Asante Richard is a Ghanaian youth leader and native of Kwahu South in the Eastern Region. He completed the West African Senior School Certificate Examination (WASSCE) in 2026 with a background in General Arts and has a strong ambition to pursue a career in law and public service. Inspired by parliamentary leadership and youth development, he is passionate about youth justice, education and leadership. As Youth Member of Parliament for Mpraeso, he focuses on issues including youth unemployment in Kwahu, educational support for BECE and WASSCE students, and creating opportunities for young people during Kwahu Easter and beyond. He believes in servant leadership and seeks to use the Youth Parliament platform to develop his understanding of parliamentary procedure while representing the interests and aspirations of young people in Mpraeso.",
+
+    vision:
+        "To promote youth empowerment, educational development, leadership and opportunities for young people in Mpraeso.",
+
+    plans:
+        "To support educational initiatives, address youth unemployment, encourage youth participation and create opportunities for young people within the constituency.",
+
+    contribution:
+        "Youth leadership, education, community development, youth advocacy and student representation.",
+
+    currentActivities:
+        "Serving as Youth Member of Parliament for Mpraeso Constituency under the 3rd Parliament of Youth Parliament Ghana.",
+
+    leadershipExperience:
+        "Youth Member, NPP Youth, Kwahu South Constituency; Student Leader, General Arts Students Association, Senior High School; Youth Volunteer, Community Development and Education Support in Mpraeso.",
+
+    professionalExperience:
+        "Student and aspiring lawyer with interests in law, youth justice, leadership, education and public service.",
+
+    focusAreas:
+        "Youth justice, education, youth unemployment, leadership, community development, entrepreneurship and youth empowerment.",
+
+    slogan:
+        "Servant leadership, education and opportunity.",
+
+    image: "images/richard.jpeg",
+
+    email: "hon.asanterichard.mpraeso@gmail.com",
+    phone: "0553688914",
+    website: "#",
+    facebook: "Asante Richard",
+    twitter: "@AsanteRichard_Mpraeso",
+    instagram: "@asante.richard.mpraeso",
+    linkedin: "Asante Richard",
+    tiktok: "#"
+},
 
 ];
