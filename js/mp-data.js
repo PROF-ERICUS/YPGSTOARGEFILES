@@ -9072,5 +9072,303 @@ parliament: "Youth Parliament Ghana",
     linkedin: "Asante Richard",
     tiktok: "#"
 },
+  {
+    id: "mp166",
+    name: "GRACE PATIENCE ACKAH",
+    position: "Member of Parliament",
+    constituency: "Hoho",
+    region: "Volta",
+    parliament: "Youth Parliament Ghana",
+    status: "active",
+
+    education:
+        "University of Cape Coast (UCC) — Bachelor of Science in Laboratory Technology, 2026",
+
+    profession: "Laboratory Technology Professional",
+
+    experience:
+        "Youth Member of Parliament, Youth Parliament Ghana — Hohoe Constituency; Secretary, Rotaract Club of the University of Cape Coast, 2025/2026; Financial Secretary, CANSSAG, 2024/2025; Executive Member, Rotaract Club of Cape Coast (Under Formation); Member, Donorcom UCC; Lab Prefect, EPC Mawuko Girls SHS, 2019/2020; Organizer, EPSU, Mawuko Chapter, 2019",
+
+    biography:
+        "Grace Patience Ackah is a youth leader and science professional with a background from the University of Cape Coast. She serves as the Youth Member of Parliament for the Hohoe Constituency under Youth Parliament Ghana, representing the interests of young people and contributing to constituency engagement, youth development and public discussions. She has served in student and youth leadership roles and is committed to inclusive participation, teamwork and creating opportunities for young people to contribute meaningfully to community and national development.",
+
+    vision:
+        "To promote inclusive youth participation, teamwork and opportunities for young people to contribute meaningfully to community and national development.",
+
+    plans:
+        "To support youth development, constituency engagement, inclusive participation and initiatives that create opportunities for young people.",
+
+    contribution:
+        "Youth leadership, student representation, laboratory science, community engagement and youth development.",
+
+    currentActivities:
+        "Serving as Youth Member of Parliament for Hohoe Constituency and working as a Teaching Assistant.",
+
+    leadershipExperience:
+        "Secretary, Rotaract Club of the University of Cape Coast; Financial Secretary, CANSSAG; Executive Member, Rotaract Club of Cape Coast; Lab Prefect, EPC Mawuko Girls SHS; Organizer, EPSU, Mawuko Chapter.",
+
+    professionalExperience:
+        "Laboratory Technology professional and Teaching Assistant with experience in student leadership, youth engagement and organizational activities.",
+
+    focusAreas:
+        "Youth development, inclusive participation, education, science, community engagement, teamwork and leadership.",
+
+    slogan:
+        "Inclusive leadership, teamwork and youth development.",
+
+    image: "images/grace.jpeg",
+
+    email: "patienceackah555@gmail.com",
+    phone: "0502091894 / 0598424834",
+    website: "#",
+    facebook: "#",
+    twitter: "#",
+    instagram: "#",
+    linkedin: "Grace Ackah",
+    tiktok: "#"
+},
+
+{
+    id: "mp167",
+    name: "MENSAH LAWER DANIEL TEYE",
+    position: "Youth Member of Parliament",
+    constituency: "Atiwa East",
+    region: "Eastern",
+    parliament: "Youth Parliament Ghana",
+    status: "active",
+
+    education:
+        "University for Development Studies — Diploma in Biotechnology and Molecular Biology; Bachelor of Science (BSc) in Biological Sciences, 2026",
+
+    profession: "Business and Researcher",
+
+    experience:
+        "Researcher — Food and Agriculture; Project Coordinator; Youth Member of Parliament, Atiwa East",
+
+    biography:
+        "Mensah Lawer Daniel Teye is a dedicated public servant, scientist and youth advocate from Atiwa East in the Eastern Region of Ghana. He holds a background in Biological Sciences and has demonstrated a strong commitment to evidence-based policy, community development and public service. Driven by a vision to empower young people and enhance socioeconomic development within Atiwa and beyond, he actively engages in public leadership, grassroots organizing and academic research. His leadership focuses on sustainable youth empowerment, educational growth and strengthening local infrastructure.",
+
+    vision:
+        "To empower young people and contribute to sustainable socioeconomic development, educational growth and improved local infrastructure.",
+
+    plans:
+        "To support youth empowerment, educational development, evidence-based initiatives, community development and grassroots engagement within Atiwa East.",
+
+    contribution:
+        "Youth leadership, scientific research, food and agriculture, community development and public service.",
+
+    currentActivities:
+        "Serving as Youth Member of Parliament for Atiwa East while engaging in business, research and community-focused activities.",
+
+    leadershipExperience:
+        "Youth Member of Parliament, Atiwa East; Project Coordinator; Researcher in Food and Agriculture.",
+
+    professionalExperience:
+        "Business and researcher with a background in Biological Sciences, Biotechnology and Molecular Biology, Food and Agriculture research and project coordination.",
+
+    focusAreas:
+        "Youth empowerment, education, biological sciences, research, food and agriculture, community development, public service and evidence-based policy.",
+
+    slogan:
+        "Empowering youth through knowledge, leadership and service.",
+
+    image: "images/teye1.jpeg",
+
+    email: "Mensahlawerteyed@gmail.com / dmensahlawerteye@gmail.com",
+    phone: "0545258473",
+    website: "#",
+    facebook: "Nhyiraba Stunnerwan",
+    twitter: "Stunnerwan",
+    instagram: "Stunnerwan",
+    linkedin: "#",
+    tiktok: "Stunnerwan"
+},
+{
+    id: "mp168",
+    name: "JONATHAN AMARTEIFIO",
+    position: "Member of Parliament",
+    constituency: "Okaikwei Sout",
+    region: "Greater Accra Region",
+    parliament: "Youth Parliament Ghana",
+    status: "active",
+
+    education:
+        "Kwame Nkrumah University of Science and Technology (KNUST) — Political Science, Degree, 2026",
+
+    profession: "Political Science Graduate",
+
+    experience:
+        "POSSA / PASA President; Faculty of Social Science Majority Leader",
+
+    biography:
+        "Jonathan Amarteifio is a young Ghanaian leader and Political Science graduate from Kwame Nkrumah University of Science and Technology (KNUST). He has demonstrated leadership through his service as POSSA/PASA President and Faculty of Social Science Majority Leader. He is committed to teamwork, honesty and responsible leadership and serves as Member of Parliament for the Okaikwei South Constituency under Youth Parliament Ghana.",
+
+    vision:
+        "To promote honest, responsible and inclusive leadership while strengthening youth participation and representation.",
+
+    plans:
+        "To support youth development, effective representation, teamwork and initiatives that contribute to community and student development.",
+
+    contribution:
+        "Youth leadership, student representation, teamwork, governance and community engagement.",
+
+    currentActivities:
+        "Serving as Member of Parliament for Okaikwei South Constituency under Youth Parliament Ghana.",
+
+    leadershipExperience:
+        "POSSA / PASA President; Faculty of Social Science Majority Leader.",
+
+    professionalExperience:
+        "Political Science graduate from Kwame Nkrumah University of Science and Technology with experience in student leadership and representation.",
+
+    focusAreas:
+        "Youth leadership, governance, teamwork, honesty, student representation and community development.",
+
+    slogan:
+        "Teamwork, honesty and responsible leadership.",
+
+    image: "images/amarteifio.jpeg",
+
+    email: "jonathanamarteifio17@gmail.com",
+    phone: "0591556638",
+    website: "#",
+    facebook: "Jonathan Thomas Amarteifio",
+    twitter: "Jonathan Amarteifio",
+    instagram: "Jonathan Amarteifio",
+    linkedin: "Jonathan Amarteifio",
+    tiktok: "#"
+},
+{
+    id: "mp169",
+    name: "QUAR SAM JUSTUS JECIUS",
+    position: "Member of Parliament",
+    constituency: "Upper Denkyira Eas",
+    region: "Central",
+    parliament: "Parliament of Ghana",
+    status: "active",
+
+    education: "University of Energy and Natural Resources (UENR), BSc Medical Laboratory Science, Degree, Level 400, commenced January 2024. Kumasi Academy, General Science. Springs of Life International School.",
+    
+    profession: "Student / Unemployed",
+    experience: "1st Deputy Chairperson, Legal and Disciplinary Committee, TEIN-UENR; Majority Leader, 13th Parliamentary Council, UENR, August 2025 to date; Chairperson, Business Committee, 13th Parliamentary Council, August 2025 to date; Member, Vetting Committee, 13th Parliamentary Council, August 2025 to date; Member of Parliament, MELSSA-UENR, August 2025 to date; FG-MELSA Audit Committee Member, September 2025 to date; Public Relations Officer (PRO), DISC-UENR, February 2025 to 2026.",
+    
+    biography: "Quarm Sam Justus Jecius is a Ghanaian student leader and Medical Laboratory Science student at the University of Energy and Natural Resources (UENR). He is currently pursuing a Bachelor of Science in Medical Laboratory Science. His leadership experience spans university, church, secondary school, and basic school settings. At UENR, he has served as Majority Leader of the 13th Parliamentary Council, Chairperson of the Business Committee, a member of the Vetting Committee, and Member of Parliament for MELSSA-UENR. He has also served on the FG-MELSA Audit Committee and previously worked as the Public Relations Officer of DISC-UENR. Beyond the university, he serves as Deputy Chairperson of the Media Team at Gethsemane Methodist Church. Through The Quarm Foundation, he has participated in community service activities including donations to Denkyirah Nyinawusu DA School and health screening activities. He has also supported Springs of Life Organization (SOLO) as an advocate for annual fundraising activities for orphanage support. His achievements include being part of the FG-MELSA Northern Zone B Zonal Quiz Championship team in 2026, placing first runner-up in the NAHSAG BA Zonal Quiz Competition, and being recognised as Most Popular Student of the Year by MELSSA-UENR. He describes himself as passionate about leadership, advocacy, and student development, with interests in reading, gaming, team sports, and advocacy. He speaks English and Asante Twi.",
+    
+    vision: "To promote effective student representation, collaboration, advocacy, and an academic environment where students' voices are heard.",
+    
+    plans: "To encourage collaboration, strengthen student representation, support student development, and contribute to community-focused initiatives.",
+    
+    contribution: "Community service and volunteer activities through The Quarm Foundation, including support for Denkyirah Nyinawusu DA School, health screening activities, and advocacy for orphanage support through Springs of Life Organization.",
+    
+    currentActivities: "Member of Parliament for Upper Denkyira East; Majority Leader of the 13th Parliamentary Council, UENR; Chairperson of the Business Committee, 13th Parliamentary Council; Member of the Vetting Committee, 13th Parliamentary Council; Member of Parliament, MELSSA-UENR; FG-MELSA Audit Committee Member.",
+    
+    leadershipExperience: "Majority Leader, 13th Parliamentary Council, UENR; Chairperson, Business Committee; Member, Vetting Committee; Member of Parliament, MELSSA-UENR; 1st Deputy Chairperson, Legal and Disciplinary Committee, TEIN-UENR; Public Relations Officer, DISC-UENR; Deputy Chairperson of the Media Team, Gethsemane Methodist Church.",
+    
+    professionalExperience: "Medical Laboratory Science student at UENR with experience in student governance, public relations, committee work, advocacy, community service, and volunteer activities.",
+    
+    focusAreas: "Leadership, advocacy, student development, education, community service, youth development, collaboration, and student representation.",
+    
+    slogan: "Leadership, advocacy and student development.",
+    
+    image: "images/quar-sam.jpeg",
+    
+    email: "justusjecius@gmail.com",
+    phone: "+233509180005 / 0595760986",
+    website: "#",
+    facebook: "jecius_justus",
+    twitter: "@JustusJecius",
+    instagram: "jecius_justus",
+    linkedin: "https://www.linkedin.com/in/quarm-sam-justus-jecius-048754375?utm_source=share_via&utm_content=profile&utm_medium=member_ios",
+    tiktok: "#"
+},
+{
+    id: "mp170",
+    name: "SPECIAL BLESSING SESHIE",
+    position: "Youth MP and Secretary to the President",
+    constituency: "Ketu South",
+    region: "Volta",
+    parliament: "Youth Parliament Ghana",
+    status: "active",
+
+    education: "University of Cape Coast, Bachelor of Commerce (Human Resource Management), undergraduate; Sogakope Senior High School; Aflao Border Basic School; Amazing Love School.",
+
+    profession: "Beautician (Braiding, Lashes and Nails) and Mini Importer",
+
+    experience: "Infirmarian in school; Organizer for NCCE at Sogakope Senior High School; Prayer Secretary in the Ushering Team and AGCM; Organizer for Scripture Union at Sogasco; Provost at Sogakope Senior High School; Member of the Kwame Nkrumah Hall Parliamentary Council.",
+
+    biography: "Special Blessing Seshie is a native of Ketu South Constituency and was born and raised in Aflao. She completed her primary education at Amazing Love School, her Junior High School education at Aflao Border Basic School, and her Senior High School education at Sogakope Senior High School. She is currently pursuing a Bachelor of Commerce in Human Resource Management at the University of Cape Coast. Her leadership experience includes serving as an infirmarian, Organizer for NCCE at Sogakope Senior High School, Prayer Secretary in the Ushering Team and AGCM, Organizer for Scripture Union at Sogasco, and Provost at Sogakope Senior High School. She also became a member of the Kwame Nkrumah Hall Parliamentary Council. She is also a beautician specialising in braiding, lashes and nails, as well as a mini importer.",
+
+    vision: "To promote youth leadership, representation, collaboration and development within Ketu South.",
+
+    plans: "To support youth participation, leadership development, advocacy and opportunities for young people within the constituency.",
+
+    contribution: "Student leadership, youth participation, community involvement and advocacy.",
+
+    currentActivities: "Youth MP for Ketu South Constituency and Secretary to the President, Youth Parliament Ghana; Bachelor of Commerce (Human Resource Management) student at the University of Cape Coast.",
+
+    leadershipExperience: "Organizer for NCCE at Sogakope Senior High School; Prayer Secretary in the Ushering Team and AGCM; Organizer for Scripture Union at Sogasco; Provost at Sogakope Senior High School; Member of the Kwame Nkrumah Hall Parliamentary Council.",
+
+    professionalExperience: "Beautician specialising in braiding, lashes and nails, and mini importer.",
+
+    focusAreas: "Youth leadership, advocacy, student development, human resource management, entrepreneurship and community development.",
+
+    slogan: "Youth leadership, representation and development.",
+
+    image: "images/special.jpeg",
+
+    email: "blessingseshie03@gmail.com",
+    phone: "0536972341 / 0548697635",
+    website: "#",
+    facebook: "Blessing Seshie",
+    twitter: "#",
+    instagram: "Special Seshie",
+    linkedin: "#",
+    tiktok: "Xclusive"
+},
+{
+    id: "mp171",
+    name: "BENJAMIN SENYASU",
+    position: "Member of Parliament",
+    constituency: "Kade",
+    region: "Eastern",
+    parliament: "Youth Parliament Ghana",
+    status: "active",
+
+    education: "Ghana Communication Technology University, BSc Information Technology, 2023.",
+
+    profession: "Frontend Developer",
+
+    experience: "SRC Treasurer, Student Representative Council (SRC); TEIN Deputy Organizer, Tertiary Education Institutions Network (TEIN).",
+
+    biography: "Benjamin Senyasu is a young Ghanaian leader from Kade in the Eastern Region with a strong interest in finance, leadership, technology and public service. He is a member of Youth Parliament Ghana, representing the Kade Constituency. His leadership experience includes serving as an SRC Treasurer, where he gained practical experience in financial administration, accountability, budgeting and resource management. He has also served as a TEIN Deputy Organizer, contributing to organizational coordination and youth engagement. As a BSc Information Technology graduate from Ghana Communication Technology University, Hon. Senyasu combines technology with leadership and financial interests. His leadership approach emphasizes accountability, responsible management of resources, teamwork and practical solutions to challenges affecting young people.",
+
+    vision: "To promote accountable leadership, responsible resource management, technology and youth development.",
+
+    plans: "To support youth development through technology, responsible leadership, financial accountability and practical solutions to challenges affecting young people.",
+
+    contribution: "Student leadership, financial administration, organizational coordination, youth engagement and technology-related activities.",
+
+    currentActivities: "Member of Parliament for Kade Constituency, Youth Parliament Ghana; Frontend Developer.",
+
+    leadershipExperience: "SRC Treasurer, Student Representative Council; TEIN Deputy Organizer, Tertiary Education Institutions Network.",
+
+    professionalExperience: "Frontend Developer and BSc Information Technology graduate with experience in student leadership, financial administration, organizational coordination and youth engagement.",
+
+    focusAreas: "Finance, youth leadership, technology, public service, accountability and responsible resource management.",
+
+    slogan: "Accountability, responsible leadership and practical solutions.",
+
+    image: "images/senyasu.jpeg",
+
+    email: "senyasu400@gmail.com",
+    phone: "0257173153",
+    website: "#",
+    facebook: "#",
+    twitter: "#",
+    instagram: "mrben_jamin8",
+    linkedin: "Benjamin Senyasu",
+    tiktok: "#"
+},
+
 
 ];
