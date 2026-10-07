@@ -8411,6 +8411,60 @@ parliament: "Youth Parliament Ghana",
     linkedin: "https://linkedin.com/in/nana-owusu-odom-nkwantabisa",
     tiktok: "#"
 },
+  {
+    id: "mp154",
+    name: "RILWAANU ABDULAI",
+    position: "Member of Parliament",
+    constituency: "Bawku Central",
+    region: "Upper East",
+    parliament: "Youth Parliament Ghana",
+    status: "active",
 
+    education:
+        "University for Development Studies — Food Science and Technology, Degree, 2026; Bawku Senior High Technical School; Oxford International School — BECE, 2016; Al Haq International School.",
+
+    profession:
+        "Youth Advocate",
+
+    experience:
+        "Youth Member of Parliament, Bawku Central; Course Representative and General Prefect, Bawku Senior High Technical School; Course Representative, University for Development Studies; Deputy JBC; Deputy GA Speaker, IAAS; Sports Committee Chairman, FOSSAG; President, IAAS, University for Development Studies.",
+
+    biography:
+        "Rilwaanu Abdulai was born at Bawku Presbyterian Hospital and began his basic education at Al Haq International School in 2003 before moving to Oxford International School, where he completed his BECE in 2016. He attended Bawku Senior High Technical School, where he served as a Course Representative from his first year to second year and was elected General Prefect for the 2018/2019 academic year. He later pursued a degree in Food Science and Technology at the University for Development Studies. At the university, he served in various leadership positions, including IAAS President for the 2025/2026 academic year, and was elected Youth Member of Parliament for Bawku Central in August 2026.",
+
+    vision:
+        "To promote youth participation, leadership and development within Bawku Central and beyond.",
+
+    plans:
+        "To support youth development, student leadership, education and initiatives that create meaningful opportunities for young people.",
+
+    contribution:
+        "Youth advocacy, student leadership, youth representation and community development.",
+
+    currentActivities:
+        "Serving as Youth Member of Parliament for Bawku Central and engaging in youth advocacy.",
+
+    leadershipExperience:
+        "Youth Member of Parliament, Bawku Central; General Prefect, Bawku Senior High Technical School; IAAS President, University for Development Studies; Deputy JBC; Deputy GA Speaker, IAAS; Sports Committee Chairman, FOSSAG; Course Representative.",
+
+    professionalExperience:
+        "Youth advocate and student leader with experience in student representation, organizational leadership and youth development.",
+
+    focusAreas:
+        "Youth development, education, student leadership, youth advocacy and community development.",
+
+    slogan:
+        "Youth leadership, representation and service.",
+
+    image: "images/rilwaanu.jpeg",
+    email: "abdulairilwaanu@gmail.com",
+    phone: "0247540006",
+    website: "#",
+    facebook: "Ridwan Abdulai",
+    twitter: "#",
+    instagram: "#",
+    linkedin: "#",
+    tiktok: "#"
+},
 
 ];
