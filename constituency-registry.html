@@ -7,7 +7,6 @@
 <title>Registry Book - Youth Parliament Ghana</title>
 
 <style>
-
 /* =========================================================
    ROOT
 ========================================================= */
@@ -121,6 +120,7 @@ body {
 
 .page-content {
     position: relative;
+
     z-index: 2;
 
     padding: 35px;
@@ -130,19 +130,24 @@ body {
 /* =========================================================
    HEADER
 ========================================================= */
+/* =========================================================
+   CENTER HEADER
+========================================================= */
 
 .header {
+    position: relative;
+
     display: flex;
-
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 
-    gap: 25px;
+    width: 100%;
+
+    text-align: center;
 
     padding-bottom: 25px;
 
-    border-bottom:
-        3px solid var(--ypg-green);
+    border-bottom: 3px solid var(--ypg-green);
 
     margin-bottom: 25px;
 }
@@ -150,8 +155,13 @@ body {
 
 .header-left {
     display: flex;
+
     align-items: center;
+    justify-content: center;
+
     gap: 18px;
+
+    text-align: left;
 }
 
 
@@ -192,16 +202,68 @@ body {
 
     font-size: 13px;
 }
+@media (max-width: 600px) {
 
+    .header {
+        justify-content: center;
+
+        text-align: center;
+
+        padding-bottom: 18px;
+
+        margin-bottom: 18px;
+    }
+
+    .header-left {
+        flex-direction: column;
+
+        justify-content: center;
+
+        align-items: center;
+
+        gap: 8px;
+
+        text-align: center;
+
+        width: 100%;
+    }
+
+    .top-logo {
+        width: 70px;
+        height: 70px;
+    }
+
+    .header-text {
+        text-align: center;
+    }
+
+    .header-text h1 {
+        font-size: 20px;
+    }
+
+    .header-text h2 {
+        font-size: 14px;
+    }
+
+    .header-text p {
+        font-size: 11px;
+    }
+
+}
 
 /* =========================================================
    LIVE BADGE
 ========================================================= */
 
 .live-badge {
-    display: inline-flex;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
 
+    display: inline-flex;
     align-items: center;
+    justify-content: center;
 
     gap: 7px;
 
@@ -214,20 +276,56 @@ body {
     color: var(--ypg-green);
 
     font-size: 11px;
-
     font-weight: 800;
 
     white-space: nowrap;
+
+    z-index: 5;
 }
 
+
+/* =========================================================
+   LIVE DOT
+========================================================= */
 
 .live-dot {
     width: 8px;
     height: 8px;
 
+    flex-shrink: 0;
+
     border-radius: 50%;
 
     background: #16a34a;
+
+    box-shadow: 0 0 0 3px rgba(22, 163, 74, 0.12);
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .live-badge {
+        position: static;
+
+        transform: none;
+
+        margin-top: 10px;
+
+        padding: 6px 10px;
+
+        font-size: 9px;
+
+        gap: 5px;
+    }
+
+    .live-dot {
+        width: 7px;
+        height: 7px;
+    }
 }
 
 
@@ -361,9 +459,52 @@ body {
     font-size: 13px;
 }
 
+/* =========================================================
+   LAST GENERATED — SMALL RIGHT SIDE
+========================================================= */
+
+.last-generated {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 7px;
+
+    width: 100%;
+
+    margin-bottom: 12px;
+
+    text-align: right;
+}
+
+.last-generated-label {
+    display: inline-block;
+
+    color: #9ca3af;
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.8px;
+
+    margin: 0;
+}
+
+.last-generated-date {
+    display: inline-block;
+
+    color: #4b5563;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    margin: 0;
+}
+
 
 /* =========================================================
-   STATS GRID
+   DASHBOARD STATS GRID
 ========================================================= */
 
 .stats-grid {
@@ -387,6 +528,8 @@ body {
 
     width: 100%;
 
+    min-height: 150px;
+
     text-decoration: none;
 
     color: inherit;
@@ -398,18 +541,17 @@ body {
 
     background: var(--white);
 
-    border-radius: var(--radius);
+    border-radius: 0;
 
     padding: 18px;
 
-    box-shadow: var(--shadow-sm);
+    box-shadow: none;
 
     cursor: pointer;
 
     transition:
-        transform 0.25s ease,
-        box-shadow 0.25s ease,
-        border-color 0.25s ease;
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
 
     text-align: left;
 }
@@ -425,18 +567,18 @@ body {
 
 .stat-card:hover {
     transform:
-        translateY(-4px);
+        translateY(-2px);
 
     box-shadow:
-        var(--shadow-md);
+        0 5px 15px
+        rgba(16, 24, 40, 0.08);
 
     text-decoration: none;
 }
 
 
 .stat-card:active {
-    transform:
-        translateY(-1px);
+    transform: translateY(0);
 }
 
 
@@ -449,11 +591,25 @@ body {
 }
 
 
-/* TOP BORDERS */
+/* =========================================================
+   CARD TOP BORDERS
+========================================================= */
 
 .stat-all {
     border-top:
-        4px solid var(--blue);
+        4px solid var(--ypg-green);
+}
+
+
+.stat-regions {
+    border-top:
+        4px solid #1677b9;
+}
+
+
+.stat-total {
+    border-top:
+        4px solid var(--purple);
 }
 
 
@@ -471,60 +627,129 @@ body {
 
 .stat-revoked {
     border-top:
-        4px solid var(--red);
+        4px solid var(--ypg-green);
 }
 
 
-.stat-regions {
-    border-top:
-        4px solid var(--purple);
+/* =========================================================
+   STAT ICON
+========================================================= */
+
+.stat-icon {
+    width: 54px;
+    height: 54px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 12px;
+
+    font-size: 14px;
+
+    font-weight: 800;
+
+    margin-bottom: 12px;
 }
 
 
-.stat-total {
-    border-top:
-        4px solid #344054;
+.stat-all .stat-icon {
+    background: #e8f7f0;
+
+    color: var(--ypg-green);
 }
 
 
-/* STAT TEXT */
+.stat-regions .stat-icon {
+    background: #edf6fc;
+
+    color: #1677b9;
+}
+
+
+.stat-total .stat-icon {
+    background: #f4ecfb;
+
+    color: var(--purple);
+}
+
+
+.stat-recorded .stat-icon {
+    background: #e8f7f0;
+
+    color: var(--ypg-green);
+}
+
+
+.stat-vacant .stat-icon {
+    background: #fff7e8;
+
+    color: #b45309;
+}
+
+
+.stat-revoked .stat-icon {
+    background: #f1f3f5;
+
+    color: #344054;
+}
+
+
+/* =========================================================
+   STAT LABEL
+========================================================= */
 
 .stat-label {
     display: block;
 
-    font-size: 11px;
+    font-size: 13px;
 
-    color: var(--muted);
+    color: #4b5563;
 
-    font-weight: 700;
+    font-weight: 800;
 
-    margin-bottom: 8px;
+    margin-bottom: 12px;
 
     text-transform: uppercase;
+
+    letter-spacing: 0.2px;
 }
 
+
+/* =========================================================
+   STAT NUMBER
+========================================================= */
 
 .stat-number {
     display: block;
 
-    font-size: 29px;
+    font-size: 42px;
 
     line-height: 1;
 
     font-weight: 850;
 
     color: var(--dark);
+
+    margin-bottom: 12px;
 }
 
+
+/* =========================================================
+   STAT NOTE
+========================================================= */
 
 .stat-note {
     display: block;
 
-    margin-top: 9px;
+    margin-top: 0;
 
-    font-size: 10px;
+    font-size: 13px;
 
-    color: var(--muted);
+    color: #667085;
+
+    line-height: 1.4;
 }
 
 
@@ -590,7 +815,8 @@ body {
 
     font-weight: 700;
 
-    transition: all 0.2s ease;
+    transition:
+        all 0.2s ease;
 }
 
 
@@ -664,7 +890,7 @@ thead th {
 
     border-right:
         1px solid
-        rgba(255,255,255,0.12);
+        rgba(255, 255, 255, 0.12);
 }
 
 
@@ -800,7 +1026,7 @@ tbody tr:hover {
 
 
 /* =========================================================
-   MOBILE
+   RESPONSIVE
 ========================================================= */
 
 @media (max-width: 1200px) {
@@ -812,6 +1038,10 @@ tbody tr:hover {
 
 }
 
+
+/* =========================================================
+   TABLET
+========================================================= */
 
 @media (max-width: 800px) {
 
@@ -846,6 +1076,7 @@ tbody tr:hover {
 
     .top-logo {
         width: 80px;
+
         height: 80px;
     }
 
@@ -877,7 +1108,9 @@ tbody tr:hover {
     }
 
 
-    .action-btn {
+    .action-btn,
+    .back-btn,
+    .constituency-btn {
         flex: 1;
     }
 
@@ -896,33 +1129,128 @@ tbody tr:hover {
 }
 
 
+/* =========================================================
+   MOBILE
+========================================================= */
+
 @media (max-width: 600px) {
 
+    .page-content {
+        padding: 18px 10px;
+    }
+
+
+    /* ================================================
+       LAST GENERATED
+    ================================================ */
+
+    .last-generated {
+        margin-bottom: 18px;
+    }
+
+
+    .last-generated-label {
+        font-size: 11px;
+
+        letter-spacing: 0.9px;
+    }
+
+
+    .last-generated-date {
+        font-size: 19px;
+    }
+
+
+    /* ================================================
+       TWO COLUMN DASHBOARD
+       KEEP TWO COLUMNS ON MOBILE
+    ================================================ */
+
     .stats-grid {
+        display: grid;
+
         grid-template-columns:
             repeat(2, minmax(0, 1fr));
 
         gap: 10px;
+
+        margin-bottom: 22px;
     }
 
+
+    /* ================================================
+       STAT CARD
+    ================================================ */
 
     .stat-card {
-        padding: 14px;
+        min-height: 205px;
+
+        padding: 16px 14px;
+
+        border-radius: 0;
     }
 
 
-    .stat-number {
-        font-size: 24px;
+    /* ================================================
+       ICON
+    ================================================ */
+
+    .stat-icon {
+        width: 48px;
+
+        height: 48px;
+
+        font-size: 12px;
+
+        border-radius: 11px;
+
+        margin-bottom: 12px;
     }
 
+
+    /* ================================================
+       LABEL
+    ================================================ */
 
     .stat-label {
-        font-size: 10px;
+        font-size: 11px;
+
+        line-height: 1.25;
+
+        margin-bottom: 14px;
     }
 
 
+    /* ================================================
+       NUMBER
+    ================================================ */
+
+    .stat-number {
+        font-size: 38px;
+
+        line-height: 1;
+
+        margin-bottom: 13px;
+    }
+
+
+    /* ================================================
+       NOTE
+    ================================================ */
+
     .stat-note {
-        font-size: 9px;
+        font-size: 12px;
+
+        line-height: 1.35;
+    }
+
+
+    /* ================================================
+       INTRO
+    ================================================ */
+
+    .dashboard-intro {
+        margin-bottom: 15px;
     }
 
 
@@ -930,13 +1258,168 @@ tbody tr:hover {
         font-size: 17px;
     }
 
+
+    .dashboard-intro p {
+        font-size: 12px;
+
+        line-height: 1.5;
+    }
+
+
+    /* ================================================
+       HEADER
+    ================================================ */
+
+    .header {
+        padding-bottom: 18px;
+
+        margin-bottom: 18px;
+    }
+
+
+    /* ================================================
+       SEARCH
+    ================================================ */
+
+    .search-box input {
+        padding: 13px;
+
+        font-size: 13px;
+    }
+
+
+    /* ================================================
+       BUTTONS
+    ================================================ */
+
+    .buttons {
+        display: grid;
+
+        grid-template-columns:
+            repeat(3, 1fr);
+
+        gap: 7px;
+    }
+
+
+    .action-btn,
+    .back-btn,
+    .constituency-btn {
+        width: 100%;
+
+        padding: 11px 7px;
+
+        font-size: 11px;
+    }
+
+
+    /* ================================================
+       REGISTRY HEADER
+    ================================================ */
+
+    .registry-header {
+        margin-bottom: 10px;
+    }
+
+
+    .registry-title h3 {
+        font-size: 16px;
+    }
+
+
+    .registry-title p {
+        font-size: 11px;
+
+        line-height: 1.4;
+    }
+
+
+    /* ================================================
+       TABLE
+    ================================================ */
+
+    .table-container {
+        border-radius: 6px;
+    }
+
 }
 
 
+/* =========================================================
+   VERY SMALL PHONES
+========================================================= */
+
 @media (max-width: 400px) {
 
+    /*
+       IMPORTANT:
+       KEEP TWO COLUMNS.
+       Do NOT change this to 1fr.
+    */
+
     .stats-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: 8px;
+    }
+
+
+    .stat-card {
+        min-height: 185px;
+
+        padding: 13px 11px;
+    }
+
+
+    .stat-icon {
+        width: 42px;
+
+        height: 42px;
+
+        font-size: 11px;
+
+        margin-bottom: 10px;
+    }
+
+
+    .stat-label {
+        font-size: 9px;
+
+        line-height: 1.2;
+
+        margin-bottom: 11px;
+    }
+
+
+    .stat-number {
+        font-size: 31px;
+
+        margin-bottom: 10px;
+    }
+
+
+    .stat-note {
+        font-size: 10px;
+
+        line-height: 1.3;
+    }
+
+
+    .last-generated-label {
+        font-size: 10px;
+    }
+
+
+    .last-generated-date {
+        font-size: 18px;
+    }
+
+
+    .page-content {
+        padding-left: 8px;
+
+        padding-right: 8px;
     }
 
 }
@@ -950,18 +1433,21 @@ tbody tr:hover {
 
     @page {
         size: landscape;
+
         margin: 10mm;
     }
 
 
     body {
         background: white;
+
         padding: 0;
     }
 
 
     .page-container {
         width: 100%;
+
         max-width: none;
 
         box-shadow: none;
@@ -991,18 +1477,23 @@ tbody tr:hover {
 
 
     thead th {
-        background: var(--ypg-green) !important;
+        background:
+            var(--ypg-green) !important;
 
         color: white !important;
 
         print-color-adjust: exact;
-        -webkit-print-color-adjust: exact;
+
+        -webkit-print-color-adjust:
+            exact;
     }
 
 
     .status {
         print-color-adjust: exact;
-        -webkit-print-color-adjust: exact;
+
+        -webkit-print-color-adjust:
+            exact;
     }
 
 
@@ -1011,6 +1502,7 @@ tbody tr:hover {
     }
 
 }
+
 
 /* =========================================================
    NAVIGATION BUTTONS
@@ -1046,11 +1538,14 @@ tbody tr:hover {
 }
 
 
-/* CONSTITUENCY BUTTON */
+/* =========================================================
+   CONSTITUENCY BUTTON
+========================================================= */
 
 .constituency-btn {
 
-    border: 1px solid #7043a6;
+    border:
+        1px solid #7043a6;
 
     background: #f5effb;
 
@@ -1058,11 +1553,14 @@ tbody tr:hover {
 }
 
 
-/* BACK BUTTON */
+/* =========================================================
+   BACK BUTTON
+========================================================= */
 
 .back-btn {
 
-    border: 1px solid #d5dcd8;
+    border:
+        1px solid #d5dcd8;
 
     background: #ffffff;
 
@@ -1070,20 +1568,25 @@ tbody tr:hover {
 }
 
 
-/* HOVER */
+/* =========================================================
+   NAVIGATION HOVER
+========================================================= */
 
 .constituency-btn:hover,
 .back-btn:hover {
 
-    transform: translateY(-1px);
+    transform:
+        translateY(-1px);
 
     box-shadow:
-        0 4px 12px rgba(0, 0, 0, 0.08);
-
+        0 4px 12px
+        rgba(0, 0, 0, 0.08);
 }
 
 
-/* ICON */
+/* =========================================================
+   NAVIGATION ICON
+========================================================= */
 
 .constituency-btn span,
 .back-btn span {
@@ -1091,7 +1594,6 @@ tbody tr:hover {
     font-size: 14px;
 
     margin-right: 2px;
-
 }
 
 </style>
@@ -1099,7 +1601,6 @@ tbody tr:hover {
 
 
 <body>
-
 
 <div class="page-container">
 
@@ -1180,15 +1681,20 @@ tbody tr:hover {
 
 
             <div class="buttons">
-                  <!-- BACK -->
-    <button
-        type="button"
-        class="back-btn"
-        onclick="goBack()"
-    >
-        <span>←</span>
-        Back
-    </button>
+
+                <!-- BACK -->
+
+                <button
+                    type="button"
+                    class="back-btn"
+                    onclick="goBack()"
+                >
+                    <span>←</span>
+                    Back
+                </button>
+
+
+                <!-- REFRESH -->
 
                 <button
                     type="button"
@@ -1198,6 +1704,8 @@ tbody tr:hover {
                     Refresh
                 </button>
 
+
+                <!-- PRINT -->
 
                 <button
                     type="button"
@@ -1233,22 +1741,51 @@ tbody tr:hover {
 
 
         <!-- =====================================================
+             LAST GENERATED
+        ====================================================== -->
+
+        <div class="last-generated">
+
+            <span class="last-generated-label">
+                LAST GENERATED
+            </span>
+
+            <span
+                class="last-generated-date"
+                id="mobileGeneratedDate"
+            >
+                -
+            </span>
+
+        </div>
+
+
+
+        <!-- =====================================================
              DASHBOARD CARDS
         ====================================================== -->
 
         <div class="stats-grid">
 
 
-            <!-- ALL -->
+            <!-- =================================================
+                 TOTAL MP POSITIONS
+            ================================================== -->
 
             <a
                 href="print-mps.html"
                 class="stat-card stat-all"
             >
 
+                <span class="stat-icon">
+                    MP
+                </span>
+
+
                 <span class="stat-label">
                     Total MP Positions
                 </span>
+
 
                 <span
                     class="stat-number"
@@ -1256,6 +1793,7 @@ tbody tr:hover {
                 >
                     276
                 </span>
+
 
                 <span class="stat-note">
                     National Parliamentary Seats
@@ -1265,16 +1803,24 @@ tbody tr:hover {
 
 
 
-            <!-- REGIONS -->
+            <!-- =================================================
+                 REGIONS
+            ================================================== -->
 
             <a
                 href="print-mps.html"
                 class="stat-card stat-regions"
             >
 
+                <span class="stat-icon">
+                    RG
+                </span>
+
+
                 <span class="stat-label">
                     Regions
                 </span>
+
 
                 <span
                     class="stat-number"
@@ -1282,6 +1828,7 @@ tbody tr:hover {
                 >
                     16
                 </span>
+
 
                 <span class="stat-note">
                     Administrative Regions
@@ -1291,16 +1838,24 @@ tbody tr:hover {
 
 
 
-            <!-- CONSTITUENCIES -->
+            <!-- =================================================
+                 CONSTITUENCIES
+            ================================================== -->
 
             <a
                 href="constituency-registry.html"
                 class="stat-card stat-total"
             >
 
+                <span class="stat-icon">
+                    CT
+                </span>
+
+
                 <span class="stat-label">
                     Constituencies
                 </span>
+
 
                 <span
                     class="stat-number"
@@ -1308,6 +1863,7 @@ tbody tr:hover {
                 >
                     276
                 </span>
+
 
                 <span class="stat-note">
                     Parliamentary Constituencies
@@ -1317,16 +1873,24 @@ tbody tr:hover {
 
 
 
-            <!-- RECORDED -->
+            <!-- =================================================
+                 RECORDED
+            ================================================== -->
 
             <a
                 href="constituency-registry.html?status=recorded"
                 class="stat-card stat-recorded"
             >
 
+                <span class="stat-icon">
+                    ✓
+                </span>
+
+
                 <span class="stat-label">
                     Recorded
                 </span>
+
 
                 <span
                     class="stat-number"
@@ -1334,6 +1898,7 @@ tbody tr:hover {
                 >
                     0
                 </span>
+
 
                 <span class="stat-note">
                     Registered YPG MPs
@@ -1343,16 +1908,24 @@ tbody tr:hover {
 
 
 
-            <!-- VACANT -->
+            <!-- =================================================
+                 VACANT
+            ================================================== -->
 
             <a
                 href="constituency-registry.html?status=vacant"
                 class="stat-card stat-vacant"
             >
 
+                <span class="stat-icon">
+                    VC
+                </span>
+
+
                 <span class="stat-label">
                     Vacant
                 </span>
+
 
                 <span
                     class="stat-number"
@@ -1360,6 +1933,7 @@ tbody tr:hover {
                 >
                     0
                 </span>
+
 
                 <span class="stat-note">
                     Positions Awaiting Registration
@@ -1369,16 +1943,24 @@ tbody tr:hover {
 
 
 
-            <!-- REVOKED -->
+            <!-- =================================================
+                 REVOKED
+            ================================================== -->
 
             <a
                 href="constituency-registry.html?status=revoked"
                 class="stat-card stat-revoked"
             >
 
+                <span class="stat-icon">
+                    RV
+                </span>
+
+
                 <span class="stat-label">
                     Revoked
                 </span>
+
 
                 <span
                     class="stat-number"
@@ -1386,6 +1968,7 @@ tbody tr:hover {
                 >
                     0
                 </span>
+
 
                 <span class="stat-note">
                     Revoked MP Records
@@ -3540,49 +4123,36 @@ function printPDF() {
 /* =========================================================
    GENERATED DATE
 ========================================================= */
-
 function updateGeneratedDate() {
 
+    const now = new Date();
+
+    const formatted = now.toLocaleDateString(
+        "en-GH",
+        {
+            day: "2-digit",
+            month: "long",
+            year: "numeric"
+        }
+    );
+
+
     const generatedDate =
-        document.getElementById(
-            "generatedDate"
-        );
+        document.getElementById("generatedDate");
 
-
-    if (!generatedDate) {
-
-        return;
-
+    if (generatedDate) {
+        generatedDate.textContent = formatted;
     }
 
 
-    const now =
-        new Date();
+    const mobileGeneratedDate =
+        document.getElementById("mobileGeneratedDate");
 
-
-    const formatted =
-        now.toLocaleDateString(
-            "en-GH",
-            {
-
-                day:
-                    "2-digit",
-
-                month:
-                    "long",
-
-                year:
-                    "numeric"
-
-            }
-        );
-
-
-    generatedDate.textContent =
-        formatted;
+    if (mobileGeneratedDate) {
+        mobileGeneratedDate.textContent = formatted;
+    }
 
 }
-
 
 /* =========================================================
    LOAD MEMBERS
