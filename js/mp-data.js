@@ -7952,5 +7952,410 @@ parliament: "Youth Parliament Ghana",
     linkedin: "https://www.linkedin.com/in/eric-awine-mba-850236347",
     tiktok: "#"
 },
+  {
+    id: "mp145",
+    name: "JUSTINE BOOGU-NYOO TANIBE",
+    position: "Member of Parliament",
+    constituency: "Sawla-Tuna-Kalba Constituency",
+    region: "Savannah",
+    parliament: "Youth Parliament Ghana",
+    status: "active",
+
+    education:
+        "University of Cape Coast — Bachelor of Education (Arts), English and French, 2026; Wenchi Senior High School — Senior High School Education, 2022; Wa Methodist School for the Blind — Basic Education, 2019; Nadowli RC Day Nursery — Early Childhood Education, 2008",
+
+    profession:
+        "Educator",
+
+    experience:
+        "Speaker, Sixth Valco Hall Parliamentary Council, University of Cape Coast; Deputy Majority Leader, Fifth Valco Hall Parliamentary Council, University of Cape Coast; President, Association of Students with Special Needs, University of Cape Coast; Public Relations Officer, Association of Students with Special Needs, University of Cape Coast; Savannah Regional Secretary, Better Dreams Foundation Ghana; Member, Plan Ghana Youth Advisory Board; Senior Prefect, Wa Methodist School for the Blind; Clerk, Youth Parliament, Wa Methodist School for the Blind; Students' Chaplain, Wa Methodist School for the Blind; President, Birifo Students Union; Secretary, Civic Club, Wa Methodist School for the Blind; Facilitator, Reading Club, Wa Methodist School for the Blind; Organiser, Scripture Union, Wa Methodist School for the Blind; Assistant Protocol Prefect, Wenchi Senior High School",
+
+    biography:
+        "Justine Boogu-nyoo Tanibe is a Ghanaian educator, youth leader, disability advocate, communicator and emerging writer with a strong passion for inclusive development, youth empowerment, education and responsible leadership. He holds a Bachelor of Education (Arts) from the University of Cape Coast, with English and French as his subject combination, completed in 2026. His leadership journey includes serving as Speaker of the Sixth Valco Hall Parliamentary Council and Deputy Majority Leader of the Fifth Valco Hall Parliamentary Council at the University of Cape Coast. He also served as President and Public Relations Officer of the Association of Students with Special Needs, where he championed academic welfare, inclusion and participation of students with disabilities. Beyond the university environment, he served as a member of the Plan Ghana Youth Advisory Board and Savannah Regional Secretary of the Better Dreams Foundation Ghana. As Youth Member of Parliament for the Sawla-Tuna-Kalba Constituency, he is committed to amplifying the voices of young people and promoting meaningful youth participation in decision-making and national development. His areas of interest include youth development, education, women's empowerment, disability inclusion, innovation, entrepreneurship and sustainable development. His commitment to excellence has been recognised through awards including the Presidential Award as the Best Male Visually Impaired Student in 2020, the Inter-Schools Reading Competition, the Braille Cup, the 65th Independence Day Quiz Competition, and Best Communicator at Wenchi Senior High School.",
+
+    vision:
+        "To contribute to a Ghana where young people, persons with disabilities and other marginalised groups are empowered to participate fully in society, with education, inclusive leadership and active citizenship serving as instruments for social transformation.",
+
+    plans:
+        "Promote youth participation in decision-making, support inclusive education, advocate for persons with disabilities, and encourage innovation, entrepreneurship and sustainable development.",
+
+    contribution:
+        "Advocacy for students and persons with disabilities, youth leadership, education, inclusive development and community engagement.",
+
+    currentActivities:
+        "Youth Member of Parliament for Sawla-Tuna-Kalba Constituency; youth leadership and disability advocacy.",
+
+    leadershipExperience:
+        "Speaker, Sixth Valco Hall Parliamentary Council; Deputy Majority Leader, Fifth Valco Hall Parliamentary Council; President, Association of Students with Special Needs; Savannah Regional Secretary, Better Dreams Foundation Ghana; Member, Plan Ghana Youth Advisory Board; Senior Prefect and Clerk of the Youth Parliament at Wa Methodist School for the Blind.",
+
+    professionalExperience:
+        "Educator, youth leader, communicator and disability advocate with experience in student leadership, parliamentary engagement, youth development and inclusive advocacy.",
+
+    focusAreas:
+        "Youth development, education, women's empowerment, disability inclusion, innovation, entrepreneurship and sustainable development",
+
+    slogan:
+        "Inclusive leadership, empowered youth and active citizenship",
+
+    image: "images/justine-boogu-nyoo-tanibe.jpeg",
+
+    email: "justinebtanibe777@gmail.com",
+    phone: "0552479359",
+    website: "#",
+
+    facebook: "#",
+    twitter: "#",
+    instagram: "#",
+    linkedin: "#"
+},
+{
+    id: "mp146",
+    name: "JOHN OWUSU-MENSAH",
+    position: "Member of Parliament",
+    constituency: "Fanteakwa North",
+    region: "Eastern",
+    parliament: "Youth Parliament Ghana",
+    status: "active",
+
+    education:
+        "University of Cape Coast — Pre-Bar, LLB, 2026",
+
+    profession:
+        "N/A",
+
+    experience:
+        "President, Law Students' Union, University of Cape Coast; Chief Justice, Atlantic Hall; Senior Justice, UCC SRC; Judicial Intern, Nkawkaw District Court; Volunteer, Pan African Centre for Climate Policy, Accra",
+
+    biography:
+        "John Owusu-Mensah is a Bachelor of Laws graduate of the University of Cape Coast and President of its Law Students' Union. He has also served as Justice of the SRC Court and Chief Justice of Atlantic Hall. His practical experience includes a judicial internship at the Nkawkaw District Court, where he supported case file management and observed court proceedings. He currently volunteers with the Pan African Centre for Climate Policy in Accra, working on research and outreach that connect climate policy with legal and governance frameworks. John is skilled in legal research, drafting and public speaking, with interests in climate and governance law.",
+
+    vision:
+        "To promote responsible youth leadership, access to justice and meaningful youth participation in governance.",
+
+    plans:
+        "Promote legal awareness, youth participation, responsible leadership and engagement on governance and climate-related issues.",
+
+    contribution:
+        "Legal research, youth leadership, public speaking, student representation and climate-policy outreach.",
+
+    currentActivities:
+        "Student and Youth Member of Parliament for Fanteakwa North Constituency.",
+
+    leadershipExperience:
+        "President, Law Students' Union; Chief Justice, Atlantic Hall; Senior Justice, UCC SRC.",
+
+    professionalExperience:
+        "Judicial internship at Nkawkaw District Court and volunteer research and outreach work with the Pan African Centre for Climate Policy in Accra.",
+
+    focusAreas:
+        "Law, governance, youth leadership, climate policy, legal research and public speaking",
+
+    slogan:
+        "Law, leadership and responsible youth representation",
+
+    image: "images/john.jpeg",
+
+    email: "johnowusumensah32@gmail.com",
+    phone: "0597466067",
+    website: "#",
+
+    facebook: "archimedes John",
+    twitter: "@jomjnr",
+    instagram: "@jomjnr",
+    linkedin: "john Owusu Mensah"
+},
+{
+    id: "mp147",
+    name: "AKANZIGE TANGA JOSHUA",
+    position: "Member of Parliament",
+    constituency: "Dormaa West",
+    region: "Bono",
+    parliament: "Youth Parliament Ghana",
+    status: "active",
+
+    education:
+        "University of Energy and Natural Resources, Sunyani — BSc Agricultural Engineering, First Degree, 2027",
+
+    profession:
+        "Student | President and Founder of Young Achievers Network",
+
+    experience:
+        "General Secretary, Ghana Institution of Engineering (GhIE) — UENR; General Secretary, BONABOTO — UENR; Sponsorship Chairperson, Northern Students Union — UENR; Clerk, 5th YGI UNYA Parliament",
+
+    biography:
+        "A Ghanaian youth leader, entrepreneur, community development advocate, and Agricultural Engineering professional-in-training with a strong passion for youth empowerment, leadership development, agriculture, and social impact. He is the Founder and President of Young Achievers Network (YAN), a youth-focused initiative committed to leadership development, mentorship, skills training, community service, and opportunities for personal and professional growth. He also serves as Clerk of the 5th YGI UNYA Parliament, with responsibilities including minutes, reports, documentation, and preservation of parliamentary proceedings. His work spans youth leadership, community service, educational outreach, mentorship, skills development, agriculture, entrepreneurship, and civic engagement.",
+
+    vision:
+        "To empower young people to learn, lead, serve and create lasting positive change in their communities.",
+
+    plans:
+        "To promote youth empowerment, leadership development, agricultural innovation, entrepreneurship, mentorship and community development.",
+
+    contribution:
+        "Youth empowerment, leadership development, agriculture, entrepreneurship, mentorship, community service and civic engagement.",
+
+    currentActivities:
+        "Student of Agricultural Engineering at the University of Energy and Natural Resources; President and Founder of Young Achievers Network; Clerk of the 5th YGI UNYA Parliament.",
+
+    leadershipExperience:
+        "General Secretary, Ghana Institution of Engineering (GhIE) — UENR; General Secretary, BONABOTO — UENR; Sponsorship Chairperson, Northern Students Union — UENR; Clerk, 5th YGI UNYA Parliament; President and Founder, Young Achievers Network.",
+
+    professionalExperience:
+        "Agricultural Engineering student and youth development advocate with experience in entrepreneurship, community development, parliamentary administration, mentorship, educational outreach and skills-development activities.",
+
+    focusAreas:
+        "Youth empowerment, leadership development, agriculture, agribusiness, entrepreneurship, community development, mentorship and social impact.",
+
+    slogan:
+        "Learn. Lead. Serve. Create Change.",
+
+    image: "images/akanzige.jpeg",
+
+    email: "akanzigetangajoshua@gmail.com",
+    phone: "0544546153",
+    website: "#",
+
+    facebook: "Akanzige Tanga Joshua",
+    twitter: "#",
+    instagram: "Akanzige De writer",
+    linkedin: "Akanzige Tanga Joshua",
+    tiktok: "#"
+},
+{
+    id: "mp148",
+    name: "HARUNA ACHEAMPONG",
+    position: "Youth Member of Parliament",
+    constituency: "Juaben",
+    region: "Ashanti",
+    parliament: "Youth Parliament of Ghana",
+    status: "active",
+
+    education:
+        "Sunyani Technical University — BTech Welding and Metallurgical Engineering, currently studying; Dadease Agric Senior High School — General Arts, WASSCE Certificate, 2020; Owusu Forkuo R/C Basic School, Juaben — Basic Education, BECE Certificate",
+
+    profession:
+        "Student",
+
+    experience:
+        "Youth Leader — Community Youth Development, Juaben; Student Leader — Weekend Coordinator; Youth Advocate — Juaben Constituency",
+
+    biography:
+        "A dedicated and passionate youth leader from Juaben in the Ashanti Region of Ghana. He is a student and advocate for youth empowerment, quality education, sanitation and community development. He studied General Arts at Dadease Agric Senior High School and is currently pursuing Welding and Metallurgical Engineering at Sunyani Technical University. As the Youth Member of Parliament for Juaben Constituency, he is committed to representing the voice of the youth, promoting good leadership, financial accountability and inclusive development.",
+
+    vision:
+        "To empower young people through quality education, responsible leadership, accountability and inclusive community development.",
+
+    plans:
+        "To promote youth empowerment, education, sanitation, community development and meaningful youth participation within Juaben Constituency.",
+
+    contribution:
+        "Youth empowerment, education advocacy, sanitation, community development and youth leadership.",
+
+    currentActivities:
+        "Youth Member of Parliament for Juaben Constituency and student of Welding and Metallurgical Engineering at Sunyani Technical University.",
+
+    leadershipExperience:
+        "Youth Leader, Community Youth Development, Juaben; Student Leader, Weekend Coordinator; Youth Advocate, Juaben Constituency.",
+
+    professionalExperience:
+        "Welding and Metallurgical Engineering student with experience in youth leadership, community advocacy and youth development.",
+
+    focusAreas:
+        "Youth empowerment, quality education, sanitation, community development, financial accountability and inclusive leadership.",
+
+    slogan:
+        "Empowering Youth. Building Communities.",
+
+    image: "images/haruna.jpeg",
+
+    email: "acheampongharuna25@gmail.com",
+    phone: "0557102719 / 0206708774",
+    website: "#",
+
+    facebook: "Haruna Acheampong",
+    twitter: "Haruna Acheampong",
+    instagram: "#",
+    linkedin: "#",
+    tiktok: "Hon. Haruna Acheampong"
+},
+{
+    id: "mp149",
+    name: "AMABEA MONICA",
+    position: "Youth Member of Parliament for Akuapem South Constituency",
+    constituency: "Akuapem South",
+    region: "Eastern",
+    parliament: "Youth Parliament Ghana",
+    status: "active",
+
+    education:
+        "University of Ghana — BSc Administration, Level 200",
+
+    profession:
+        "Student",
+
+    experience:
+        "Girls' Prefect, Kwabenya School; Girls' Prefect, Presbyterian Senior High Technical, Aburi; Course Representative, UGBS 101, UGBS 102, UGBS 105 and UGBS 108; Board Member, UG Business Journal; Peer Tutor; Volunteer Teaching Assistant; French Teacher and Tutor",
+
+    biography:
+        "AMABEA MONICA is a young Ghanaian leader, student, educator and youth advocate with a strong passion for leadership, service, education and national development. She is a Level 200 student pursuing a Bachelor of Science in Administration at the University of Ghana Business School. She has demonstrated leadership and representation at the University of Ghana through her service as a Course Representative for UGBS 101, UGBS 102, UGBS 105 and UGBS 108, serving as a liaison between students and lecturers. She is also a Board Member of the UG Business Journal and has participated in student service initiatives, including coordinating contributions towards the UGBS Dean's Food Bank. Beyond the university, she has experience as a French teacher, tutor, Peer Tutor and Volunteer Teaching Assistant. She previously served as Girls' Prefect at Presbyterian Senior High Technical, Aburi. As a member of Youth Parliament Ghana representing the Akuapem South Constituency, she is passionate about youth participation, leadership, education, representation and national development.",
+
+    vision:
+        "To empower young people through education, servant leadership, effective representation and meaningful participation in national development.",
+
+    plans:
+        "To promote youth empowerment, education, leadership development, effective administration and opportunities for young people to contribute to Ghana's development.",
+
+    contribution:
+        "Youth leadership, education, student representation, mentorship, administration and community service.",
+
+    currentActivities:
+        "Youth Member of Parliament for Akuapem South Constituency; Level 200 BSc Administration student at the University of Ghana Business School; Board Member of the UG Business Journal.",
+
+    leadershipExperience:
+        "Girls' Prefect, Kwabenya School; Girls' Prefect, Presbyterian Senior High Technical, Aburi; Course Representative for UGBS 101, UGBS 102, UGBS 105 and UGBS 108; Board Member, UG Business Journal.",
+
+    professionalExperience:
+        "Student, educator and youth advocate with experience in French teaching, tutoring, volunteer teaching assistance, student representation and educational mentorship.",
+
+    focusAreas:
+        "Youth empowerment, education, leadership, student representation, effective administration, mentorship and community service.",
+
+    slogan:
+        "Leadership to Serve. Courage to Represent. Humility to Learn.",
+
+    image: "images/monica.jpeg",
+
+    email: "amabeamoni1@gmail.com",
+    phone: "0552238050",
+    website: "#",
+
+    facebook: "#",
+    twitter: "#",
+    instagram: "#",
+    linkedin: "#",
+    tiktok: "#"
+},
+{
+    id: "mp150",
+    name: "AMANKWAH PHIDAUX",
+    position: "Member of Parliament",
+    constituency: "Sekyere Afram Plains",
+    region: "Ashanti",
+    parliament: "Youth Parliament Ghana",
+    status: "active",
+    education:
+        "Offinso State A J.H.S — General, B.E.C.E, 3 years; Prempeh College — General Arts, WASSCE, 3 years; Christian Service University — BSc Nursing, Bachelor's Degree, 4 years",
+    profession: "Nurse",
+    experience:
+        "Founder, Phidaux Foundation; Organizer, TEIN; Community outreach and charitable activities through the Phidaux Foundation",
+    biography:
+        "Hon. Amankwah Phidaux is a dedicated youth leader and healthcare professional serving as a Member of Parliament of the Youth Parliament Ghana for Sekyere Afram Plains. He completed his secondary education at Prempeh College, where he studied General Arts and completed in 2019. He further pursued a Bachelor's degree in Nursing at Christian Service University. Hon. Phidaux is the Founder of the Phidaux Foundation, a community-based initiative committed to youth empowerment, health awareness, and social support. Through the Foundation, he has led several community outreach programmes and charitable activities, impacting lives in his community and beyond. Driven by a passion for service, leadership, and youth development, Hon. Phidaux continues to advocate for accessible healthcare and youth inclusion in national development.",
+    vision:
+        "To promote accessible healthcare, youth empowerment and inclusive participation in national development.",
+    plans:
+        "To support youth development, health awareness and community-based initiatives.",
+    contribution:
+        "Community outreach, charitable activities, youth empowerment and health awareness through the Phidaux Foundation.",
+    currentActivities:
+        "Serving as a Member of Parliament of the Youth Parliament Ghana and working as a nurse.",
+    leadershipExperience:
+        "Founder, Phidaux Foundation; Organizer, TEIN.",
+    professionalExperience:
+        "Nurse and healthcare professional.",
+    focusAreas:
+        "Healthcare, youth empowerment, health awareness, social support and community development.",
+    slogan:
+        "Service, leadership and youth development.",
+    image: "images/amankwah.jpeg",
+    email: "amankwahphidaux@gmail.com",
+    phone: "0248909983",
+    website: "#",
+    facebook: "#",
+    twitter: "#",
+    instagram: "phidauxfoundation",
+    linkedin: "phidauxamankwah"
+},
+{
+    id: "mp151",
+    name: "MOHAMMED ABDULLAH",
+    position: "Member of Parliament",
+    constituency: "Wenchi",
+    region: "Bono",
+    parliament: "Youth Parliament Ghana",
+    status: "active",
+    education:
+        "Sunyani Technical University — Bachelor of Technology (B-Tech) in Pharmacy Technician, Bachelor of Technology (B-Tech), Final Year; Kwame Nkrumah University of Science and Technology Senior High School (KNUST SHS) — WASSCE, year to be confirmed",
+    profession: "Electrician / Pharmacy Technician Trainee",
+    experience:
+        "Welfare Commissioner — Pharmaceutical Sciences Department / PHARMSSAG; Chair, Welfare Committee — Students’ Representative Council (SRC), Sunyani Technical University; Electrician — Professional/Technical Experience; Aawarncharn Electrical Co. Ltd. — Professional/Apprenticeship Experience; Volta River Authority (VRA) — Professional/Technical Experience; MS Prosper Co. Ltd. — Professional Experience; Youth Leadership & Community Engagement — Wenchi Constituency; Student Leadership & Welfare Advocacy — Sunyani Technical University",
+    biography:
+        "Hon. Mohammed Abdullah is a youth leader, student, entrepreneur and community advocate serving as a Youth Member of Parliament for the Wenchi Constituency in Youth Parliament Ghana. He is a final-year student at Sunyani Technical University, pursuing a Bachelor of Technology (B-Tech) in Pharmacy Technician. Prior to his tertiary education, Hon. Abdullah attended Kwame Nkrumah University of Science and Technology Senior High School (KNUST SHS), where he demonstrated academic excellence and leadership qualities. His leadership experience includes serving as Welfare Commissioner of the Pharmaceutical Sciences Department/PHARMSSAG and Chair of the Welfare Committee of the Students’ Representative Council (SRC), Sunyani Technical University. Through these roles, he has been involved in student welfare, advocacy, communication, conflict resolution and initiatives aimed at improving the student experience. Hon. Abdullah also has practical professional experience across technical and corporate environments, including work and apprenticeship engagements with Aawarncharn Electrical Co. Ltd., the Volta River Authority (VRA), and MS Prosper Co. Ltd., alongside his professional experience as an electrician. As a Youth Member of Parliament, Hon. Abdullah is committed to promoting meaningful youth participation in governance, representing the concerns and aspirations of young people, and contributing to initiatives that promote youth development, community advancement and responsible citizenship. His leadership philosophy is centred on accessibility, service, unity, accountability and practical solutions to challenges affecting young people and their communities.",
+    vision:
+        "To promote meaningful youth participation in governance, youth development, community advancement and responsible citizenship.",
+    plans:
+        "To represent the concerns and aspirations of young people and contribute to practical initiatives that promote youth development and community advancement.",
+    contribution:
+        "Student welfare, advocacy, communication, conflict resolution and youth leadership initiatives.",
+    currentActivities:
+        "Serving as a Youth Member of Parliament for the Wenchi Constituency and pursuing a Bachelor of Technology in Pharmacy Technician.",
+    leadershipExperience:
+        "Welfare Commissioner — Pharmaceutical Sciences Department / PHARMSSAG; Chair, Welfare Committee — Students’ Representative Council (SRC), Sunyani Technical University.",
+    professionalExperience:
+        "Electrician with professional and apprenticeship experience at Aawarncharn Electrical Co. Ltd., Volta River Authority (VRA) and MS Prosper Co. Ltd.",
+    focusAreas:
+        "Youth participation, youth development, community advancement, student welfare, advocacy and responsible citizenship.",
+    slogan:
+        "Accessibility, service, unity and accountability.",
+    image: "images/abdullah.jpeg",
+    email: "hon.AbdullahBanda@gmail.com",
+    phone: "0548695885",
+    website: "#",
+    facebook: "Hon. Abdullah Banda",
+    twitter: "@hon.AbdullahBanda",
+    instagram: "@hon.AbdullahBanda",
+    linkedin: "hon. Abdullah Banda"
+},
+{
+    id: "mp152",
+    name: "ALBERT AYOREKO",
+    position: "Member of Parliament",
+    constituency: "Bolga Central",
+    region: "Upper East",
+    parliament: "Youth Parliament Ghana",
+    status: "active",
+    education:
+        "University for Development Studies (UDS) — Social Change Communication, BSc, 2021–2026; Regentrophen University College — Broadcast Journalism, Certificate, 2021; Navrongo Senior High School (NAVASCO), 2018–2021; Bolga Preparatory Nursery, Primary and JHS, Zaare, 2006–2018",
+    profession: "Communicator",
+    experience:
+        "Communication Officer, Links Reign Construction; Radio Presenter, Radio Grin; Public Relations Officer, Upper East Students Union, UDS Chapter; Public Relations Officer, UDS SRC (2025/26); Student Journalist of the Year (2021); Presenter, Garin FM; Guest Speaker at student programmes",
+    biography:
+        "Albert Ayoreko is a Ghanaian communicator, broadcast journalist and student activist from Zaare, Bolgatanga. He began his early education at Bolga Preparatory Nursery, Primary and JHS, Zaare, from 2006 to 2018, and continued to Navrongo Senior High School (NAVASCO) from 2018 to 2021. For tertiary education, he acquired a Certificate in Broadcast Journalism from Regentrophen University College in 2021 and proceeded to the University for Development Studies (UDS), where he studied Social Change Communication from 2021 to 2026. During his time at UDS, Albert distinguished himself as a student leader and media personality. He won Student Journalist of the Year in 2021, hosted several programmes on Garin FM, the campus radio station, and served as a guest speaker at student programmes. He served as Public Relations Officer for the Upper East Region Students for the 2024/25 academic year and as Student Representative Council (SRC) PRO for the 2025/26 academic year. Albert is an experienced communicator and currently serves as Communication Officer for Links Reign Construction. He is passionate about youth development and uses communication as a tool for social change and student advocacy.",
+    vision:
+        "To use effective communication and youth participation to promote social change, student advocacy and youth development.",
+    plans:
+        "To promote youth engagement, communication, advocacy and initiatives that support social change and community development.",
+    contribution:
+        "Communication, student advocacy, youth leadership, media engagement and social change initiatives.",
+    currentActivities:
+        "Youth Member of Parliament for Bolga Central Constituency and Communication Officer for Links Reign Construction.",
+    leadershipExperience:
+        "Public Relations Officer, Upper East Students Union, UDS Chapter; Public Relations Officer, UDS SRC (2025/26); student leadership and media engagement at UDS.",
+    professionalExperience:
+        "Communication Officer, Links Reign Construction; Radio Presenter, Radio Grin; broadcast journalism and media presentation.",
+    focusAreas:
+        "Youth development, communication, social change, student advocacy, media and community engagement.",
+    slogan:
+        "Communication for social change and youth development.",
+    image: "images/albert.jpeg",
+    email: "ayorekoalbert434@gmail.com",
+    phone: "0241955904",
+    website: "#",
+    facebook: "Albert Ayoreko",
+    twitter: "#",
+    instagram: "#",
+    linkedin: "#",
+    tiktok: "Albert Ayoreko"
+},
+
 
 ];
