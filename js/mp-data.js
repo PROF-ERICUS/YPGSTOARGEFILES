@@ -8466,5 +8466,60 @@ parliament: "Youth Parliament Ghana",
     linkedin: "#",
     tiktok: "#"
 },
+  {
+    id: "mp155",
+    name: "BUADU OKYERE NANA KOFI",
+    position: "Youth Member of Parliament",
+    constituency: "Achiase",
+    region: "Eastern",
+    parliament: "Youth Parliament Ghana",
+    status: "active",
+
+    education:
+        "Takoradi Technical University — Bachelor of Technology in Electrical and Electronic Engineering",
+
+    profession: "Student",
+
+    experience:
+        "Protocol Prefect, Kibi Senior High Technical School; Public Relations Officer (PRO), Electrical and Electronic Engineering Department, Takoradi Technical University",
+
+    biography:
+        "Buadu Okyere Nana Kofi is a student of Takoradi Technical University pursuing a Bachelor of Technology in Electrical and Electronic Engineering. He previously served as Protocol Prefect at Kibi Senior High Technical School and currently serves as the Public Relations Officer for his department.",
+
+    vision:
+        "To promote youth participation, leadership and development within the Achiase constituency.",
+
+    plans:
+        "To support youth engagement, education, leadership development and community initiatives within the constituency.",
+
+    contribution:
+        "Youth leadership, student representation and community development.",
+
+    currentActivities:
+        "Serving as Youth Member of Parliament for Achiase while pursuing a Bachelor of Technology in Electrical and Electronic Engineering.",
+
+    leadershipExperience:
+        "Protocol Prefect, Kibi Senior High Technical School; Public Relations Officer, Electrical and Electronic Engineering Department, Takoradi Technical University.",
+
+    professionalExperience:
+        "Student pursuing Electrical and Electronic Engineering with experience in student leadership and protocol duties.",
+
+    focusAreas:
+        "Youth development, education, student leadership, technology and community engagement.",
+
+    slogan:
+        "Leadership, service and youth development.",
+
+    image: "images/buadu.jpeg",
+
+    email: "#",
+    phone: "0594418799",
+    website: "#",
+    facebook: "#",
+    twitter: "#",
+    instagram: "#",
+    linkedin: "#",
+    tiktok: "#"
+},
 
 ];
