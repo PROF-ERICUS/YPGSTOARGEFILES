@@ -8907,5 +8907,115 @@ parliament: "Youth Parliament Ghana",
     linkedin: "#",
     tiktok: "#"
 },
+  {
+    id: "mp163",
+    name: "BENJAMIN TWUM",
+    position: "Member of Parliament",
+    constituency: "Upper West Akim",
+    region: "Eastern",
+    parliament: "Youth Parliament Ghana",
+    status: "active",
+
+    education:
+        "University of Cape Coast (UCC) — Master of Commerce (Finance), Student; St. Paul's Senior High School — Business, 2018–2021",
+
+    profession: "Student",
+
+    experience:
+        "Program Representative — Finance, University of Cape Coast; Leadership/Executive Role — KNOLTA, Our Lady Seat of Wisdom Catholic Chaplaincy, UCC; PAX Romana — University of Cape Coast Local; Youth and student leadership activities — University of Cape Coast; Finance student leadership and class activities — University of Cape Coast; Youth/community evangelization and outreach activities",
+
+    biography:
+        "Benjamin Twum is a young Ghanaian student and emerging leader from Adieso in the Eastern Region. He is currently pursuing a Master of Commerce (Finance) at the University of Cape Coast. He is passionate about youth leadership, education, public service and community development, with a strong interest in contributing to Ghana's socioeconomic development.",
+
+    vision:
+        "To promote youth leadership, education, public service and community development while contributing to Ghana's socioeconomic development.",
+
+    plans:
+        "To support initiatives that promote education, youth development, leadership, community engagement and socioeconomic advancement.",
+
+    contribution:
+        "Youth leadership, education, finance, student representation, community engagement and public service.",
+
+    currentActivities:
+        "Serving as Member of Parliament for Upper West Akim under the 1st Parliament of Youth Parliament Ghana while pursuing a Master of Commerce in Finance at the University of Cape Coast.",
+
+    leadershipExperience:
+        "Program Representative — Finance, University of Cape Coast; Leadership/Executive Role — KNOLTA, Our Lady Seat of Wisdom Catholic Chaplaincy, UCC; PAX Romana — University of Cape Coast Local; youth and student leadership activities.",
+
+    professionalExperience:
+        "Master of Commerce (Finance) student at the University of Cape Coast with experience in finance student leadership, youth activities and community outreach.",
+
+    focusAreas:
+        "Youth leadership, education, finance, public service, community development and socioeconomic development.",
+
+    slogan:
+        "Leadership, education and service for development.",
+
+    image: "images/twum.jpeg",
+
+    email: "benjamintwum979@gmail.com",
+    phone: "0544846844",
+    website: "#",
+    facebook: "#",
+    twitter: "#",
+    instagram: "#",
+    linkedin: "#",
+    tiktok: "#"
+},
+{
+    id: "mp164",
+    name: "OFOSUHENE DANSO JOSHUA",
+    position: "Youth Member of Parliament",
+    constituency: "Amasaman",
+    region: "Greater Accra Region",
+    parliament: "Youth Parliament Ghana",
+    status: "active",
+
+    education:
+        "University of Cape Coast (UCC) — Bachelor of Education in Mathematics (BEd Mathematics), Student; Asamankese Senior High School; VRA Complex No. 2",
+
+    profession: "Student",
+
+    experience:
+        "School Prefect, Asamankese Senior High School; Youth Member of Parliament, Amasaman Constituency",
+
+    biography:
+        "Hon. Ofosuhene Danso Joshua is a young Ghanaian leader, student and passionate advocate for youth development and community service. He began his basic education at VRA Complex No. 2 before attending Asamankese Senior High School, where he demonstrated leadership qualities and served as School Prefect. He is currently pursuing a Bachelor of Education in Mathematics at the University of Cape Coast. Beyond academics, he is committed to youth empowerment, leadership, education and community development. He currently serves as the Youth Member of Parliament for the Amasaman Constituency, where he seeks to represent the interests and aspirations of young people and contribute meaningfully to their development.",
+
+    vision:
+        "To empower young people through education, leadership, entrepreneurship and meaningful participation in community development.",
+
+    plans:
+        "To promote youth development, educational opportunities, leadership, entrepreneurship and community-focused initiatives within Amasaman.",
+
+    contribution:
+        "Youth leadership, education, community service, youth empowerment and community development.",
+
+    currentActivities:
+        "Serving as Youth Member of Parliament for Amasaman while pursuing a Bachelor of Education in Mathematics at the University of Cape Coast.",
+
+    leadershipExperience:
+        "School Prefect, Asamankese Senior High School; Youth Member of Parliament, Amasaman Constituency.",
+
+    professionalExperience:
+        "Student pursuing a Bachelor of Education in Mathematics with interests in education, leadership, communication and community development.",
+
+    focusAreas:
+        "Youth development, education, leadership, entrepreneurship, community service and youth empowerment.",
+
+    slogan:
+        "Service, leadership and youth empowerment.",
+
+    image: "images/ofosuhene.jpeg",
+
+    email: "#",
+    phone: "#",
+    website: "#",
+    facebook: "#",
+    twitter: "#",
+    instagram: "#",
+    linkedin: "#",
+    tiktok: "#"
+},
 
 ];
