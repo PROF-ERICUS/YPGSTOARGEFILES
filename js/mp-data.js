@@ -9501,6 +9501,94 @@ parliament: "Youth Parliament Ghana",
     linkedin: "Luckmanul-Hakim",
     tiktok: "#"
 },
+  {
+    id: "mp175",
+    name: "JESSICA OWUSUWAA PEPRAH BOAKYE",
+    position: "Youth Member of Parliament",
+    constituency: "Bosomtwe",
+    region: "Ashanti",
+    parliament: "Youth Parliament Ghana",
+    status: "active",
+
+    education: "University of Cape Coast, Bachelor of Education Social Science (Economics), Undergraduate, Level 300.",
+
+    profession: "Student",
+
+    experience: "No previous leadership or professional experience provided.",
+
+    biography: "Jessica Owusuwaa Peprah Boakye is a Ghanaian student and Youth Member of Parliament for the Bosomtwe Constituency in the Ashanti Region under Youth Parliament Ghana. She is currently a Level 300 student at the University of Cape Coast, pursuing a Bachelor of Education Social Science in Economics.",
+
+    vision: "To contribute to meaningful youth representation and development within the Bosomtwe Constituency.",
+
+    plans: "To represent the interests of young people and contribute to youth development and participation.",
+
+    contribution: "Youth representation and student leadership.",
+
+    currentActivities: "Youth Member of Parliament for Bosomtwe Constituency and Level 300 Bachelor of Education Social Science (Economics) student at the University of Cape Coast.",
+
+    leadershipExperience: "No previous leadership experience provided.",
+
+    professionalExperience: "Student at the University of Cape Coast.",
+
+    focusAreas: "Youth development, education, economics, student development and youth representation.",
+
+    slogan: "#",
+
+    image: "images/jessica.jpeg",
+
+    email: "boakyejessica067@gmail.com",
+    phone: "0544522906",
+    website: "#",
+    facebook: "Jessica Boakye",
+    twitter: "#",
+    instagram: "Lady___jhess",
+    linkedin: "#",
+    tiktok: "#"
+},
+{
+    id: "mp176",
+    name: "ABDUL MAJEED ADAMU",
+    position: "Member of Parliament",
+    constituency: "Tempane",
+    region: "Upper East Region",
+    parliament: "Youth Parliament Ghana",
+    status: "active",
+
+    education: "University for Development Studies (UDS), Bachelor's Degree in Political Science and Sociology, 2026; Tamale Senior High School, WASSCE, 2022; Foase Junior High School, BECE, 2019; Zansiribuliga Primary School, Primary Certificate, 2016.",
+
+    profession: "Graduate (Political Science and Sociology)",
+
+    experience: "Local NUGS Secretary, University for Development Studies; House Prefect, Tamale Senior High School; Compound Prefect, Foase Junior High School.",
+
+    biography: "Abdul Majeed Adamu is a Member of Parliament of Youth Parliament Ghana, representing the Tempane Constituency in the Upper East Region. He had his primary education at Zansiribuliga Primary School and his JHS education at Foase Junior High School, completing in 2019. He completed his Senior High School education at Tamale Senior High School in 2022. He holds a Bachelor's Degree in Political Science and Sociology from the University for Development Studies (UDS), completed in 2026, and is currently undertaking his National Service. His leadership experience includes serving as Compound Prefect at JHS level, House Prefect at SHS level and Local NUGS Secretary at UDS. As a Youth Parliamentarian, his focus is on youth empowerment, education, civic engagement, youth employment, entrepreneurship and community development.",
+
+    vision: "To promote youth empowerment, education, civic engagement, employment, entrepreneurship and community development.",
+
+    plans: "To contribute to youth development through education, civic participation, employment opportunities, entrepreneurship and community-focused initiatives.",
+
+    contribution: "Student leadership, youth representation, civic engagement and community development.",
+
+    currentActivities: "Member of Parliament for Tempane Constituency, Youth Parliament Ghana; National Service Personnel.",
+
+    leadershipExperience: "Local NUGS Secretary, University for Development Studies; House Prefect, Tamale Senior High School; Compound Prefect, Foase Junior High School.",
+
+    professionalExperience: "Political Science and Sociology graduate currently undertaking National Service, with experience in student leadership and youth representation.",
+
+    focusAreas: "Youth empowerment, education, civic engagement, youth employment, entrepreneurship and community development.",
+
+    slogan: "#",
+
+    image: "images/adamu.jpeg",
+
+    email: "#",
+    phone: "0592471943",
+    website: "#",
+    facebook: "#",
+    twitter: "#",
+    instagram: "#",
+    linkedin: "#",
+    tiktok: "#"
+},
 
 
 ];
