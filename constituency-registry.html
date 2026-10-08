@@ -1629,6 +1629,56 @@ tbody tr:hover {
     margin-right: 2px;
 }
 
+  /*-------------------------*/ 
+.registry-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.registry-action-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    padding: 11px 16px;
+
+    border: 1px solid #0b5d3b;
+    border-radius: 8px;
+
+    background: #0b5d3b;
+    color: #ffffff;
+
+    font-size: 12px;
+    font-weight: 800;
+
+    cursor: pointer;
+    transition: .2s ease;
+}
+
+.registry-action-btn:hover {
+    background: #08462e;
+    transform: translateY(-1px);
+}
+
+.registry-action-btn span {
+    font-size: 15px;
+}
+
+@media (max-width: 600px) {
+
+    .registry-actions {
+        width: 100%;
+    }
+
+    .registry-action-btn {
+        width: 100%;
+    }
+}
+
+
 </style>
 </head>
 
@@ -1692,6 +1742,18 @@ tbody tr:hover {
             </div>
 
         </header>
+             <div class="registry-actions">
+
+    <button
+        type="button"
+        class="registry-action-btn"
+        onclick="openVacancyPage()"
+    >
+        <span>▣</span>
+        Vacant Constituencies
+    </button>
+
+</div>
 
 
 
@@ -4845,7 +4907,10 @@ window.goBack =
 /* =========================================================
    END OF YPG REGISTRY CONTROLLER
 ========================================================= */
-
+   
+function openVacancyPage() {
+    window.location.href = "vacant-constituencies.html";
+}
 
 </script>
 </body>
