@@ -9457,6 +9457,50 @@ parliament: "Youth Parliament Ghana",
     linkedin: "https://www.linkedin.com/in/vincent-kekeli-kwasi-akaho-6a0b603a4/",
     tiktok: "#"
 },
+  {
+    id: "mp174",
+    name: "LUCKMANUL-HAKIM MUSAH",
+    position: "Member of Parliament",
+    constituency: "Nkawkaw",
+    region: "Eastern",
+    parliament: "Youth Parliament Ghana",
+    status: "active",
+
+    education: "University of Ghana, Bachelor of Arts in Political Science and Philosophy, Level 300, degree in progress; New Generation Senior High School, Nkawkaw, West African Senior School Certificate Examination (WASSCE).",
+
+    profession: "Politician / Public Affairs and Political Communications Professional",
+
+    experience: "Other Youth Representative, National Democratic Congress (NDC), Nkawkaw Constituency; Acting Branch Organizer, NDC Nazarene Branch, Nkawkaw Constituency; TEIN Scholarship Committee Member, University of Ghana, 2025–2026; Member and Parliamentary Debater, University of Ghana Parliament House; Deputy Secretary, TEIN, University of Ghana Accra City Campus; Deputy Chief of Staff, 25th UGACC JCR Administration; Political Office Assistant, Office of the Municipal Chief Executive, Kwahu West Municipal Assembly; Media Relations Director, Office of the Municipal Chief Executive, Kwahu West Municipal Assembly; Political Mobilization and Communications Volunteer; Youth Leadership and Grassroots Mobilization roles, Nkawkaw Constituency.",
+
+    biography: "Luckmanul-Hakim Musah is a Ghanaian youth leader, political organizer, public affairs professional, student leader and community advocate with experience spanning youth representation, grassroots political organization, public administration, student governance and political communication. He serves as a Youth Member of Parliament for the Nkawkaw Constituency under the Ghana Youth Parliament. He also serves as an Other Youth Representative of the National Democratic Congress (NDC), Nkawkaw Constituency, contributing to youth engagement, grassroots organization, constituency activities and communication with young people and other stakeholders. He previously served as Acting Branch Organizer of the NDC Nazarene Branch, Nkawkaw Constituency, gaining experience in grassroots mobilization, political organization, community engagement, political education and branch coordination. At the University of Ghana, he is a Member and Parliamentary Debater of the University of Ghana Parliament House and has served as Deputy Secretary of TEIN at the University of Ghana Accra City Campus. He has also served as a TEIN Scholarship Committee Member and Deputy Chief of Staff of the 25th UGACC JCR Administration. Professionally, he has served as a Political Office Assistant and Media Relations Director at the Office of the Municipal Chief Executive of the Kwahu West Municipal Assembly, supporting official communications, reports, public statements, stakeholder correspondence, official programmes and community engagements. He is currently pursuing a Bachelor of Arts degree in Political Science and Philosophy at the University of Ghana. His areas of interest include youth development, governance and public policy, grassroots mobilization, political communication and community development. He communicates in English, Twi and Hausa.",
+
+    vision: "To promote meaningful youth representation, grassroots participation, accountable leadership and community development.",
+
+    plans: "To strengthen youth participation, support grassroots engagement, encourage effective representation and contribute to initiatives focused on youth development, governance, education and community advancement.",
+
+    contribution: "Youth representation, grassroots mobilization, student governance, political communication, public administration, community engagement and youth advocacy.",
+
+    currentActivities: "Youth Member of Parliament for Nkawkaw Constituency, Ghana Youth Parliament; Other Youth Representative, NDC Nkawkaw Constituency; Member and Parliamentary Debater, University of Ghana Parliament House; Deputy Secretary, TEIN, University of Ghana Accra City Campus; Deputy Chief of Staff, 25th UGACC JCR Administration; Bachelor of Arts Political Science and Philosophy student at the University of Ghana.",
+
+    leadershipExperience: "Youth Member of Parliament, Ghana Youth Parliament; Other Youth Representative, NDC Nkawkaw Constituency; Acting Branch Organizer, NDC Nazarene Branch; Member and Parliamentary Debater, University of Ghana Parliament House; Deputy Secretary, TEIN UGACC; Deputy Chief of Staff, 25th UGACC JCR Administration; TEIN Scholarship Committee Member; Youth leadership and grassroots mobilization roles.",
+
+    professionalExperience: "Public Affairs and Political Communications Professional with experience as Political Office Assistant and Media Relations Director at the Office of the Municipal Chief Executive, Kwahu West Municipal Assembly. Experienced in public communication, political writing, speech preparation, stakeholder communication, reports, public statements, official programmes, community engagement and digital media.",
+
+    focusAreas: "Youth representation, leadership, community development, governance, grassroots engagement, public policy, political communication, youth development and public administration.",
+
+    slogan: "Service, accountability, teamwork and meaningful representation.",
+
+    image: "images/luckmanul.jpeg",
+
+    email: "musahlukcman@gmail.com",
+    phone: "0594331905",
+    website: "https://youth-parliament-ghana-site.vercel.app/",
+    facebook: "Luckmanul Hakim",
+    twitter: "@luk_i_m",
+    instagram: "@luk_i_m",
+    linkedin: "Luckmanul-Hakim",
+    tiktok: "#"
+},
 
 
 ];
