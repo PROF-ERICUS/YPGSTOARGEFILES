@@ -329,7 +329,7 @@ website: "#"
     parliament: "Youth Parliament Ghana",
     committee: "Information to be updated",
      // Profile access status
-    status: "revoked",
+    status: "active",
      revocationReason: "Administrative decision",
 
     education:
