@@ -9589,6 +9589,50 @@ parliament: "Youth Parliament Ghana",
     linkedin: "#",
     tiktok: "#"
 },
+  {
+    id: "mp177",
+    name: "ERIC ANDOH",
+    position: "Member of Parliament",
+    constituency: "Ayawaso West",
+    region: "Greater Accra",
+    parliament: "Youth Parliament Ghana",
+    status: "active",
+
+    education: "Ghana Communication Technology University, Bachelor of Science in Information Technology, expected 2027; Kikam Technical Institute, Electricals and Electronics Engineering Technology, NABPTEX, June 2017; Emmanuel Preparatory School, Abura, Western Region, Basic Education Certificate Examination, June 2014. Certifications: Networking Engineering, Honors Diploma, Soul Food ICT College, June 2021; Digital Security, Honors Diploma, Soul Food ICT College, September 2021; Tech Accelerate 2024, Certificate of Completion, Lady Margaret Foundation; Effective Presentation, HP LIFE Online Course, 2025.",
+
+    profession: "IT Student / Front-End Developer / Graphic Designer",
+
+    experience: "Graphic Designer, Ericsvault Hub, Accra, January 2025–Present; Computer Teacher, Antah Academy, Accra-Abeka, January 2021–January 2025; Course Representative, Ghana Communication Technology University, 2023–Present; Public Relations Officer, Concerned Youth of Enmokanwo, 2024–Present; Committee Chair, Entrepreneurship Club, GCTU, 2024–2025; Vice President, GNAAS, Kikam Technical Institute, 2016–2017.",
+
+    biography: "Eric Andoh is an Information Technology student, front-end developer and graphic designer with a background in Electrical and Electronics Engineering. He combines technical knowledge in electronics and electrical systems with practical experience in web development, UI/UX design, graphic design, digital instruction and technical support. He has professional experience as a Graphic Designer at Ericsvault Hub and as a Computer Teacher at Antah Academy. He has developed practical digital solutions including a Multi-Semester GPA and CWA Calculator and a Church Attendance and Management System. His work demonstrates an interest in creating practical, responsive and user-focused digital solutions. He has also demonstrated leadership through his roles as Course Representative at Ghana Communication Technology University, Public Relations Officer of Concerned Youth of Enmokanwo, Committee Chair of the GCTU Entrepreneurship Club and Vice President of GNAAS at Kikam Technical Institute. His achievements include being named Best Graphic Designer of the Year at the Ghana Talent and Achievement Awards in 2022. He has also completed professional training in Networking Engineering, Digital Security, Effective Presentation and Tech Accelerate 2024. He is passionate about leveraging technology, engineering knowledge, creativity and leadership to develop innovative solutions and improve user experiences.",
+
+    vision: "To leverage technology, creativity and leadership to develop practical digital solutions and contribute to the development of young people and the community.",
+
+    plans: "To support digital development, technology education, youth participation, innovation, entrepreneurship and practical technology solutions within the constituency.",
+
+    contribution: "Web development, graphic design, computer education, UI/UX design, digital communication, technical support, student leadership and development of practical technology solutions.",
+
+    currentActivities: "Member of Parliament for Ayawaso West; Bachelor of Science in Information Technology student at Ghana Communication Technology University; Graphic Designer at Ericsvault Hub; Course Representative at GCTU; Public Relations Officer of Concerned Youth of Enmokanwo.",
+
+    leadershipExperience: "Course Representative, Ghana Communication Technology University; Public Relations Officer, Concerned Youth of Enmokanwo; Committee Chair, Entrepreneurship Club, GCTU; Vice President, GNAAS, Kikam Technical Institute.",
+
+    professionalExperience: "Front-end development, graphic design, computer education, UI/UX design, digital communication, technical support and development of responsive web-based systems. Developed the Multi-Semester GPA and CWA Calculator and a Church Attendance and Management System.",
+
+    focusAreas: "Information technology, web development, UI/UX design, graphic design, digital education, youth development, entrepreneurship, innovation and community development.",
+
+    slogan: "Technology, creativity and service.",
+
+    image: "images/defence.jpeg",
+
+    email: "1700148287@live.gctu.edu.gh",
+    phone: "0542044490",
+    website: "https://prof-ericus.github.io/MULTISCH-GPA/",
+    facebook: "#",
+    twitter: "#",
+    instagram: "#",
+    linkedin: "https://linkedin.com/in/eric-andoh49ab01335",
+    tiktok: "#"
+},
 
 
 ];
