@@ -9413,6 +9413,50 @@ parliament: "Youth Parliament Ghana",
     linkedin: "#",
     tiktok: "#"
 },
+  {
+    id: "mp173",
+    name: "VINCENT KEKELI KWASI AKAHO",
+    position: "Member of Parliament",
+    constituency: "North Tongu",
+    region: "Volta",
+    parliament: "Youth Parliament Ghana",
+    status: "active",
+
+    education: "Amoah International School, Tutu-Akuapem, Pre-school, 2009–2011; Holy Trinity Academy, Amanokrom-Akuapem, Pre-school, 2011–2014; Tutu Methodist Basic School, Tutu-Akuapem, Basic Education, 2015–2019; Mepe Holy Christ D/A Global Evangelical Basic School, Mepe, Volta Region, Basic Education, 2019–2022, BECE Certificate; St. Paul’s Senior High School and Minor Seminary (SPACO), Denu, Volta Region, Secondary Education, 2023–2025, WASSCE Certificate; University of Cape Coast (UCC), BSc Molecular Biology and Biotechnology, 2025–Present, Undergraduate.",
+
+    profession: "Student / Youth Leader",
+
+    experience: "Assistant School Prefect (Boys), Tutu Methodist Basic School, 2019/20 Academic Year; Assistant School Prefect (Boys), Mepe Holy Christ D/A Global Evangelical Basic School, 2022/23 Academic Year; Assistant Team Leader, NSMQ Team, St. Paul’s Senior High School and Minor Seminary (SPACO), 2025; Member, Planning and Organization Committee, Local NUGS-UCC, 2026; Projects and Outreach Coordinator, Biological Sciences Students’ Association of Ghana (BIOSSTAG-UCC), 2026–Present; Youth Member of Parliament-elect, Youth Parliament Ghana, North Tongu Constituency; Vice Chairperson, Appointment Committee, Youth Parliament Ghana.",
+
+    biography: "Vincent Kekeli Kwasi Akaho is a Ghanaian student leader, youth advocate and emerging public servant who serves as the Youth Member of Parliament-elect for the North Tongu Constituency under Youth Parliament Ghana (YPG). He hails from Mepe in the Volta Region and was born in Battor, in the North Tongu area. He spent his early childhood around Tutu and Mampong Akuapem before returning to the Volta Region to continue his education. His leadership journey began at an early age through class prefect responsibilities and later school leadership positions. He served as Assistant School Prefect (Boys) at Tutu Methodist Basic School and Mepe Holy Christ D/A Global Evangelical Basic School. At St. Paul’s Senior High School and Minor Seminary (SPACO), Denu, he was actively involved in the National Science and Maths Quiz team as a Quiz Boy and later Assistant Team Leader. He is currently pursuing a Bachelor of Science in Molecular Biology and Biotechnology at the University of Cape Coast. At UCC, he has served as Course Representative for numerous courses, participated in the Local NUGS-UCC Planning and Organization Committee, and currently serves as Projects and Outreach Coordinator of the Biological Sciences Students’ Association of Ghana (BIOSSTAG-UCC). Through Youth Parliament Ghana, he seeks to represent the interests and aspirations of young people in North Tongu, contribute to youth discourse and promote greater youth participation in leadership and decision-making. His leadership journey is shaped by purpose, preparation, service, responsibility and representation.",
+
+    vision: "To represent the interests and aspirations of young people in North Tongu and promote meaningful youth participation in leadership and decision-making.",
+
+    plans: "To contribute to youth discourse, support student-focused initiatives, promote youth engagement and create opportunities for young people through leadership, outreach and community development.",
+
+    contribution: "Student leadership, youth advocacy, science and intellectual development, student-focused projects, outreach initiatives and youth participation in governance.",
+
+    currentActivities: "Youth Member of Parliament-elect for North Tongu Constituency, Youth Parliament Ghana; Projects and Outreach Coordinator, Biological Sciences Students’ Association of Ghana (BIOSSTAG-UCC); BSc Molecular Biology and Biotechnology student at the University of Cape Coast.",
+
+    leadershipExperience: "Assistant School Prefect (Boys), Tutu Methodist Basic School; Assistant School Prefect (Boys), Mepe Holy Christ D/A Global Evangelical Basic School; Assistant Team Leader, NSMQ Team, SPACO; Member, Local NUGS-UCC Planning and Organization Committee; Projects and Outreach Coordinator, BIOSSTAG-UCC; Vice Chairperson, Appointment Committee, Youth Parliament Ghana.",
+
+    professionalExperience: "Student leader and youth advocate with experience in school leadership, student representation, science and mathematics quiz activities, university organization, project coordination and youth engagement.",
+
+    focusAreas: "Youth development, youth participation in governance, education, science and technology, student development, leadership, community outreach and public service.",
+
+    slogan: "Leadership is responsibility, representation and service.",
+
+    image: "images/vincent.jpeg",
+
+    email: "kekelivince@gmail.com",
+    phone: "0536846663",
+    website: "https://vincentkkakaho.netlify.app/",
+    facebook: "https://www.facebook.com/share/1CRYGp1NHF/?mibextid=wwXIfr",
+    twitter: "https://x.com/vincent_kekeli?s=11",
+    instagram: "https://www.instagram.com/vincent__kekeli/",
+    linkedin: "https://www.linkedin.com/in/vincent-kekeli-kwasi-akaho-6a0b603a4/",
+    tiktok: "#"
+},
 
 
 ];
