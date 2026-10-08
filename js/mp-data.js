@@ -9369,6 +9369,50 @@ parliament: "Youth Parliament Ghana",
     linkedin: "Benjamin Senyasu",
     tiktok: "#"
 },
+  {
+    id: "mp172",
+    name: "ENOCK TABOL",
+    position: "Member of Parliament",
+    constituency: "Krachi Nchumuru",
+    region: "Oti",
+    parliament: "Youth Parliament Ghana",
+    status: "active",
+
+    education: "University for Development Studies, Doctor of Pharmacy (PharmD), in progress; HND Dispensing Technology, 2023.",
+
+    profession: "Licensed Pharmacy Technician / Pharmacy Student",
+
+    experience: "Public Relations Officer, Pharmaceutical Science Students of Ghana (PHARMSSAG); Electoral Commission Chairperson, PHARMSAG.",
+
+    biography: "Enock Tabol is a licensed Pharmacy Technician and is further pursuing a Doctor of Pharmacy (PharmD) at the University for Development Studies (UDS). As a health professional, youth advocate and public speaker, his leadership and community activities focus on youth development, advocacy, drug-abuse prevention and awareness, entrepreneurship, education, youth skill development, digital skills and educational support. His vision is to bridge the gap between opinion leaders and the youth and advocate for the inclusion of young people in the corridors of power. He seeks to contribute to building a better Krachi Nchumuru by providing avenues for youth engagement, skill development, entrepreneurship and educational opportunities. He believes nation building is driven by the grooming of the youth and must start now.",
+
+    vision: "To bridge the gap between opinion leaders and the youth and advocate for the inclusion of young people in the corridors of power.",
+
+    plans: "To create avenues for youth engagement, skill development, entrepreneurship and educational opportunities within Krachi Nchumuru.",
+
+    contribution: "Youth advocacy, health awareness, drug-abuse prevention, education, youth skills development, digital skills and community engagement.",
+
+    currentActivities: "Member of Parliament for Krachi Nchumuru Constituency and Doctor of Pharmacy (PharmD) student at the University for Development Studies.",
+
+    leadershipExperience: "Public Relations Officer, Pharmaceutical Science Students of Ghana (PHARMSSAG); Electoral Commission Chairperson, PHARMSAG; youth advocacy and community engagement.",
+
+    professionalExperience: "Licensed Pharmacy Technician and Doctor of Pharmacy student with interests in health advocacy, youth development, public speaking and community development.",
+
+    focusAreas: "Youth development, health advocacy, drug-abuse prevention, education, entrepreneurship, youth skills development, digital skills and educational support.",
+
+    slogan: "Nation building is driven by the grooming of the youth and must start now.",
+
+    image: "images/enock.jpeg",
+
+    email: "enocktabol0@gmail.com",
+    phone: "0592727890 / 0257083779",
+    website: "#",
+    facebook: "#",
+    twitter: "#",
+    instagram: "#",
+    linkedin: "#",
+    tiktok: "#"
+},
 
 
 ];
