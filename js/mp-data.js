@@ -9446,7 +9446,7 @@ parliament: "Youth Parliament Ghana",
 
     slogan: "Leadership is responsibility, representation and service.",
 
-    image: "images/vincent.jpeg",
+    image: "images/vicent.jpeg",
 
     email: "kekelivince@gmail.com",
     phone: "0536846663",
