@@ -9677,6 +9677,50 @@ parliament: "Youth Parliament Ghana",
     linkedin: "Elton Arthur",
     tiktok: "#"
 },
+  {
+    id: "mp179",
+    name: "AJAAB DANIEL AWENBOTMI",
+    position: "Member of Parliament",
+    constituency: "Builsa North",
+    region: "Upper East",
+    parliament: "Youth Parliament Ghana",
+    status: "active",
+
+    education: "Ayita Primary School, Basic Education, 2001–2006; Afoko Junior High School, Sandema, Junior High School Education, 2006–2009; Tamale Polytechnic (now Tamale Technical University), Intermediate Programme, Intermediate Certificate, 2010–2013.",
+
+    profession: "Entrepreneur / Self-Employed",
+
+    experience: "Entrepreneur, Self-Employed; Youth Advocate, Builsa North Community; Community Volunteer, Local Youth Development Initiatives.",
+
+    biography: "Hon. Ajaab Daniel Awenbotmi is a dedicated youth leader and self-employed entrepreneur from the Builsa North Constituency in the Upper East Region of Ghana. Born on 4th January 1990, he is committed to youth empowerment and grassroots development. He began his basic education at Ayita Primary School from 2001 to 2006 and proceeded to Afoko Junior High School at Sandema. He later attended Tamale Polytechnic from 2010 to 2013, where he pursued an Intermediate Programme and gained technical and vocational knowledge that shaped his entrepreneurial journey. As a self-employed professional, he understands the challenges and aspirations of young people in the informal sector. His personal journey of resilience and self-reliance has shaped his passion for youth employment, skills development and inclusive representation. He was appointed on 2nd October 2026 as the Youth Member of Parliament for Builsa North Constituency under Youth Parliament Ghana, where he serves as a representative of young people and focuses on education, entrepreneurship and social development.",
+
+    vision: "To promote youth empowerment, entrepreneurship, skills development and inclusive representation within Builsa North.",
+
+    plans: "To support initiatives focused on youth employment, entrepreneurship, education, skills development and grassroots community development.",
+
+    contribution: "Youth advocacy, entrepreneurship, community volunteering, youth empowerment and grassroots development.",
+
+    currentActivities: "Youth Member of Parliament for Builsa North Constituency, Youth Parliament Ghana; Entrepreneur and Self-Employed Professional.",
+
+    leadershipExperience: "Youth Member of Parliament, Builsa North Constituency; Youth Advocate, Builsa North Community; Community Volunteer, Local Youth Development Initiatives.",
+
+    professionalExperience: "Self-employed entrepreneur with an interest in youth employment, skills development, entrepreneurship and inclusive community development.",
+
+    focusAreas: "Youth empowerment, entrepreneurship, youth employment, skills development, education, social development, grassroots development and inclusive representation.",
+
+    slogan: "Youth empowerment through entrepreneurship, skills and inclusive development.",
+
+    image: "images/ajaab.jpeg",
+
+    email: "#",
+    phone: "0205977723",
+    website: "www.youthparliamentgh.org",
+    facebook: "#",
+    twitter: "#",
+    instagram: "#",
+    linkedin: "#",
+    tiktok: "#"
+},
 
 
 ];
