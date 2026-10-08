@@ -9633,6 +9633,50 @@ parliament: "Youth Parliament Ghana",
     linkedin: "https://linkedin.com/in/eric-andoh49ab01335",
     tiktok: "#"
 },
+  {
+    id: "mp178",
+    name: "ELTON ARTHUR",
+    position: "Member of Parliament",
+    constituency: "Obuasi West",
+    region: "Ashanti",
+    parliament: "Youth Parliament Ghana",
+    status: "active",
+
+    education: "Sunyani Technical University, Bachelor of Technology in Welding and Metallurgical Engineering, currently pursuing; engaged in Metallurgy and Design studies.",
+
+    profession: "Student",
+
+    experience: "Youth Member of Parliament for Obuasi West Constituency, Youth Parliament Ghana; Human Resources Manager, Joey Foundation; Vice President, Materials Engineering Student Association, Sunyani Technical University.",
+
+    biography: "Elton Arthur, also known as Ridwan Amed, is a young Ghanaian leader, youth empowerment advocate, student leader and community development organizer. He is currently pursuing a Bachelor of Technology in Welding and Metallurgical Engineering at Sunyani Technical University, where he is engaged in metallurgy and design studies. He also serves as the Youth Member of Parliament for the Obuasi West Constituency under Youth Parliament Ghana. He is passionate about youth leadership, education, civic participation, governance and community development. His interests include connecting young people with leadership opportunities, job opportunities, apprenticeships and education while strengthening youth representation. He has also served as Human Resources Manager for the Joey Foundation and Vice President of the Materials Engineering Student Association at Sunyani Technical University.",
+
+    vision: "To strengthen youth representation and create opportunities for young people in leadership, education, employment and community development.",
+
+    plans: "To support youth leadership, education, civic participation, apprenticeships, job opportunities and community development initiatives.",
+
+    contribution: "Youth empowerment, student leadership, community development, youth representation and support for education and employment opportunities.",
+
+    currentActivities: "Youth Member of Parliament for Obuasi West Constituency, Youth Parliament Ghana; Bachelor of Technology in Welding and Metallurgical Engineering student at Sunyani Technical University; Human Resources Manager, Joey Foundation; Vice President, Materials Engineering Student Association.",
+
+    leadershipExperience: "Youth Member of Parliament, Obuasi West Constituency; Human Resources Manager, Joey Foundation; Vice President, Materials Engineering Student Association, Sunyani Technical University.",
+
+    professionalExperience: "Student of Welding and Metallurgical Engineering with experience in youth leadership, human resource management, student association leadership and community development.",
+
+    focusAreas: "Youth leadership, youth empowerment, education, civic participation, governance, employment, apprenticeships, metallurgy, student development and community development.",
+
+    slogan: "Connecting young people to leadership and opportunities.",
+
+    image: "images/elton.jpeg",
+
+    email: "eltonarthur100@gmail.com",
+    phone: "0531845897",
+    website: "#",
+    facebook: "Mr. Rid Arthur",
+    twitter: "Mr. Rid Arthur",
+    instagram: "Mr. Rid Arthur",
+    linkedin: "Elton Arthur",
+    tiktok: "#"
+},
 
 
 ];
