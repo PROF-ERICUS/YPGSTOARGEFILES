@@ -7027,7 +7027,7 @@ parliament: "Youth Parliament Ghana",
     constituency: "Asante-Akim North Constituency",
     region: "Ashanti",
     parliament: "Youth Parliament Ghana",
-    status: "revoke",
+    status: "revoked",
 
     education:
         "Doctor of Medical Laboratory Science — University for Development Studies (UDS), currently pursuing, Year Two.",
