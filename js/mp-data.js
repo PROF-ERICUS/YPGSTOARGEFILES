@@ -972,7 +972,7 @@ website: "#"
         "#"
 },
 {
-      id: "mp021",
+     id: "mp021",
     name: "DAVID ERNUU DORGARA",
     position: "Member of Parliament",
     constituency: "Tano South Constituency",
@@ -1010,7 +1010,7 @@ website: "#"
 
     image: "images/david.jpeg",
 
-    email: " dorgaradavid@gmail.com",
+    email: "dorgaradavid@gmail.com",
 
     phone: "+233547411539",
 
@@ -2468,7 +2468,7 @@ parliament: "Youth Parliament Ghana",
     id: "mp048",
     name: "EUGENE WALKER OPPONG",
     position: "Member of Parliament",
-    constituency: "ODOTOBIRI Constituency",
+    constituency: "Odotobri Constituency",
     region: "Ashanti",
     parliament: "Youth Parliament Ghana",
   status: "active",
@@ -4284,7 +4284,7 @@ parliament: "Youth Parliament Ghana",
     slogan:
         "Education • Leadership • Service",
 
-    image: "images/Noah Gyamesi.png",
+    image: "images/gyamesi.jpeg",
 
     email: "gyamesinoah@gmail.com",
     phone: "0546652425 / 0539700297",
@@ -4971,7 +4971,7 @@ parliament: "Youth Parliament Ghana",
     slogan:
         "Technology • Leadership • Impact",
 
-    image: "images/prof.jpeg",
+    image: "images/prof1.jpeg",
 
     email: "agyemangkwamep@gmail.com",
     phone: "0268705994",
@@ -7309,59 +7309,42 @@ parliament: "Youth Parliament Ghana",
 {
     id: "mp133",
     name: "SAEED HAWAWU",
-    position: "Member of Parliament",
-    constituency: "Suame Constituency",
+    position: "Youth Member of Parliament",
+    constituency: "Suame",
     region: "Ashanti",
     parliament: "Youth Parliament Ghana",
     status: "active",
-
     education:
-        "Bachelor of Laws (LLB) — Central University, Kumasi Campus, 2026; Bachelor of Science (BSc) in Business Administration (Logistics & Supply Chain Management) — Kwame Nkrumah University of Science and Technology (KNUST), 2020.",
-
-    profession:
-        "Supply Chain Specialist & Legal Practitioner in Training",
-
+        "Central University, Kumasi Campus — Law, Bachelor of Laws (LLB), still in school; Kwame Nkrumah University of Science and Technology (KNUST) — Business Administration (Logistics & Supply Chain Management), BSc in Business Administration, 2020; OpenLabs — Software Development & Digital Marketing, Practical Certificate, 2022; Women's Haven — Mobile Application Development, Certificate of Recognition / Award, 2023; Women's Haven — Digital Marketing, Certificate of Recognition / Award, 2021",
+    profession: "Local Governance (Assembly Member), Entrepreneur, Supply Chain Specialist & Social Media Manager",
     experience:
-        "Member of Parliament — Suame Constituency, Youth Parliament Ghana; Chief Development Officer — Global Youth Connect Foundation; 2nd Deputy Speaker — Tafo Youth Parliament; Procurement Intern — Electricity Company of Ghana (ECG); Stores & Accounts Intern — National Health Insurance Scheme (NHIS); Sales Intern — MTN Ghana; Sales & Accounts Intern — Seisal Motors; Social Media Manager — CastingAfrica Inc.; Dining Hall Prefect — Tweneboa Kodua Senior High School; Youth Representative for Unemployed Youth — National Youth Parliament.",
-
+        "Chief Development Officer — Global Youth Connect Foundation; 2nd Deputy Speaker — Tafo Youth Parliament; Youth Representative for Unemployed Youth — National Youth Parliament; Class Representative — Central University; Dining Hall Prefect — Tweneboa Kodua Senior High School; Procurement Intern — Electricity Company of Ghana (ECG); Stores & Accounts Intern — National Health Insurance Scheme (NHIS); Sales Intern — MTN Ghana; Sales & Accounts Intern — Seisal Motors; Social Media Manager — CastingAfrica Inc.",
     biography:
-        "SAEED HAWAWU is a Ghanaian civic leader, legal scholar and advocate dedicated to grassroots governance, youth empowerment and economic development in the Ashanti Region. Born on 14th May 1996, he has built a multifaceted career bridging public administration, legal advocacy, business operations and youth development in Ghana. He holds a Bachelor of Laws (LLB) from Central University, Kumasi Campus, and a Bachelor of Science in Business Administration with a specialization in Logistics and Supply Chain Management from Kwame Nkrumah University of Science and Technology (KNUST). He has also received practical training and certifications in software development, digital marketing and mobile application development. Professionally, Saeed serves as Chief Development Officer of Global Youth Connect Foundation, where he contributes to institutional growth, strategic partnerships and youth empowerment programmes. His corporate and administrative experience includes roles in sales, procurement, accounting and inventory management with organizations including Seisal Motors, MTN Ghana, the National Health Insurance Scheme and the Electricity Company of Ghana. He is also active in agricultural entrepreneurship and software development and has received recognition from Women’s Haven for mobile application innovation. Within Youth Parliament Ghana, he serves as the Member of Parliament for the Suame Constituency and as a youth liaison to local government authorities. His leadership experience also includes serving as a Youth Representative for Unemployed Youth under the National Youth Parliament and as 2nd Deputy Speaker of the Tafo Youth Parliament. He has coordinated grassroots development initiatives submitted to the Suame Municipal Assembly, including IP CCTV technical skills training, backyard aquaculture models, voluntary blood donation drives and public health education. He is also involved in youth and civic engagement through Enactus KNUST, Youth Connect and the Mohkari Foundation. Through educational outreach across Senior High Schools, he mentors young people in civic responsibility, leadership and the arts.",
-
+        "Saeed Hawawu is a Ghanaian civic leader, local governance advocate, entrepreneur, and supply chain specialist dedicated to local governance, youth empowerment, and economic development in the Ashanti Region. He currently serves as the Youth Member of Parliament for the Suame Constituency under the Youth Parliament of Ghana and as the Chief Development Officer for the Global Youth Connect Foundation. Over the years, Hawawu has established a strong record in grassroots development, community organizing, and youth representation. His initiatives span practical digital skills training, IP CCTV installation workshops, backyard aquaculture starter models, voluntary blood donation drives, public health education, and educational outreach to Senior High Schools across Suame, Abirem, and surrounding areas.",
     vision:
-        "To strengthen grassroots governance, empower young people, promote economic development and create practical opportunities that contribute to the advancement of the Suame Constituency and the wider Ashanti Region.",
-
+        "To promote youth empowerment, effective local governance, community development and economic opportunities for young people.",
     plans:
-        "Promote youth empowerment and civic participation; support practical skills development and entrepreneurship; encourage grassroots development initiatives; promote public health education and community engagement; support technology-driven solutions; and strengthen collaboration between young people, local authorities and development organisations.",
-
+        "To support youth participation in governance, practical skills development, community initiatives and economic empowerment.",
     contribution:
-        "Youth empowerment, grassroots governance, economic development, civic education, entrepreneurship, technology, public health education, community development, legal advocacy and leadership.",
-
+        "Grassroots development, youth representation, digital skills training, IP CCTV installation workshops, backyard aquaculture initiatives, blood donation drives, public health education and educational outreach.",
     currentActivities:
-        "Member of Parliament — Suame Constituency, Youth Parliament Ghana; Chief Development Officer — Global Youth Connect Foundation; Legal Practitioner in Training; Youth empowerment, civic engagement and grassroots development initiatives.",
-
+        "Chief Development Officer — Global Youth Connect Foundation; Youth Member of Parliament for Suame Constituency — Youth Parliament of Ghana.",
     leadershipExperience:
-        "Member of Parliament — Suame Constituency, Youth Parliament Ghana; Youth Representative for Unemployed Youth — National Youth Parliament; 2nd Deputy Speaker — Tafo Youth Parliament; Chief Development Officer — Global Youth Connect Foundation; Class Representative — KNUST; Dining Hall Prefect — Tweneboa Kodua Senior High School; Youth and civic leadership activities through Enactus KNUST, Youth Connect and the Mohkari Foundation.",
-
+        "2nd Deputy Speaker — Tafo Youth Parliament; Youth Representative for Unemployed Youth — National Youth Parliament; Class Representative — Central University; Dining Hall Prefect — Tweneboa Kodua Senior High School.",
     professionalExperience:
-        "Chief Development Officer at Global Youth Connect Foundation; Procurement Intern at Electricity Company of Ghana (ECG); Stores and Accounts Intern at National Health Insurance Scheme (NHIS); Sales Intern at MTN Ghana; Sales and Accounts Intern at Seisal Motors; Social Media Manager at CastingAfrica Inc.; Supply chain and business administration experience; Legal training at Central University.",
-
+        "Supply chain, local governance, entrepreneurship, social media management and professional internships with ECG, NHIS, MTN Ghana and Seisal Motors.",
     focusAreas:
-        "Grassroots governance • Youth empowerment • Economic development • Civic participation • Entrepreneurship • Technology • Public health • Community development • Legal advocacy • Supply chain management • Leadership",
-
+        "Local governance, youth empowerment, economic development, community development, digital skills, public health and youth representation.",
     slogan:
-        "Empowering youth, strengthening communities and advancing grassroots development.",
-
+        "Youth empowerment, community development and responsible leadership.",
     image: "images/hawawu.jpeg",
-
     email: "saeedhawawu@gmail.com",
     phone: "0541652506 / 0501598398",
     website: "#",
-
     facebook: "https://www.facebook.com/share/1DS4z25kTL/?mibextid=wwXIfr",
-    twitter: "https://x.com/khookilyonz?s=11",
+    twitter: "#",
     instagram: "#",
-    linkedin: "#",
-    tiktok: "#"
+    linkedin: "http://www.linkedin.com/in/hawawu-saeed-a83016215"
 },
 {
     id: "mp134",
@@ -8980,7 +8963,7 @@ parliament: "Youth Parliament Ghana",
         "School Prefect, Asamankese Senior High School; Youth Member of Parliament, Amasaman Constituency",
 
     biography:
-        "Hon. Ofosuhene Danso Joshua is a young Ghanaian leader, student and passionate advocate for youth development and community service. He began his basic education at VRA Complex No. 2 before attending Asamankese Senior High School, where he demonstrated leadership qualities and served as School Prefect. He is currently pursuing a Bachelor of Education in Mathematics at the University of Cape Coast. Beyond academics, he is committed to youth empowerment, leadership, education and community development. He currently serves as the Youth Member of Parliament for the Amasaman Constituency, where he seeks to represent the interests and aspirations of young people and contribute meaningfully to their development.",
+        "Ofosuhene Danso Joshua is a young Ghanaian leader, student and passionate advocate for youth development and community service. He began his basic education at VRA Complex No. 2 before attending Asamankese Senior High School, where he demonstrated leadership qualities and served as School Prefect. He is currently pursuing a Bachelor of Education in Mathematics at the University of Cape Coast. Beyond academics, he is committed to youth empowerment, leadership, education and community development. He currently serves as the Youth Member of Parliament for the Amasaman Constituency, where he seeks to represent the interests and aspirations of young people and contribute meaningfully to their development.",
 
     vision:
         "To empower young people through education, leadership, entrepreneurship and meaningful participation in community development.",
@@ -9238,7 +9221,7 @@ parliament: "Youth Parliament Ghana",
     linkedin: "Jonathan Amarteifio",
     tiktok: "#"
 },
-{
+  {
     id: "mp169",
     name: "QUAR SAM JUSTUS JECIUS",
     position: "Member of Parliament",
@@ -9622,7 +9605,7 @@ parliament: "Youth Parliament Ghana",
 
     slogan: "Technology, creativity and service.",
 
-    image: "images/defence.jpeg",
+    image: "images/profericus2.png",
 
     email: "1700148287@live.gctu.edu.gh",
     phone: "0542044490",
@@ -9666,7 +9649,7 @@ parliament: "Youth Parliament Ghana",
 
     slogan: "Connecting young people to leadership and opportunities.",
 
-    image: "images/elton.jpeg",
+    image: "images/elton1.jpeg",
 
     email: "eltonarthur100@gmail.com",
     phone: "0531845897",
@@ -9786,7 +9769,7 @@ parliament: "Youth Parliament Ghana",
     name: "NANA ADJOA SERWAA BOATEMAA",
     position: "Member of Parliament",
     constituency: "La Dade-Kotopon",
-    region: "Greater Accra",
+    region: "Greater",
     parliament: "Youth Parliament Ghana",
     status: "active",
     education: "Kwame Nkrumah University of Science and Technology (KNUST), Bachelor of Arts in Communication Design, final year; St. Louis Senior High School; Junior High School in Teshie; Tiny Towers and Bethel Hill Academy, Cantonments.",
@@ -9810,7 +9793,7 @@ parliament: "Youth Parliament Ghana",
     instagram: "#",
     linkedin: "#",
     tiktok: "#"
-}, 
+},
   {
     id: "mp183",
     name: "ABRAHAM BIGRINI",
@@ -9822,7 +9805,7 @@ parliament: "Youth Parliament Ghana",
     education: "E.P. Primary School, Saboba; E.P. Junior High School, Saboba; St. Paul's Senior High School; currently pursuing a degree in Pharmacy at Sunyani Technical University",
     profession: "Pharmacy Student and Youth Leader",
     experience: "Member of Parliament representing Saboba Constituency in the Youth Parliament of Ghana since 2026. Engaged in youth leadership, advocacy, community engagement, and promoting youth participation in governance.",
-    biography: "Hon. Abraham Bigrini is a youth leader representing the Saboba Constituency in the Youth Parliament of Ghana. He is passionate about youth empowerment, leadership development, good governance, community participation, and constructive dialogue on issues affecting young people. He is currently pursuing a degree in Pharmacy at Sunyani Technical University. Through his leadership, he seeks to promote unity, improve educational opportunities, advocate for better road infrastructure, and encourage young people to participate actively in decision-making. He believes in integrity, accountability, transparency, collaboration, and service to the people.",
+    biography: "Abraham Bigrini is a youth leader representing the Saboba Constituency in the Youth Parliament of Ghana. He is passionate about youth empowerment, leadership development, good governance, community participation, and constructive dialogue on issues affecting young people. He is currently pursuing a degree in Pharmacy at Sunyani Technical University. Through his leadership, he seeks to promote unity, improve educational opportunities, advocate for better road infrastructure, and encourage young people to participate actively in decision-making. He believes in integrity, accountability, transparency, collaboration, and service to the people.",
     vision: "To build a united and empowered youth population that actively participates in governance and contributes to the sustainable development of Saboba Constituency and Ghana.",
     plans: "Promote youth empowerment and leadership development, advocate for improved educational opportunities and road infrastructure, strengthen community participation, and engage stakeholders to address challenges affecting young people.",
     contribution: "Amplifying the voices of young people, encouraging responsible citizenship, promoting constructive dialogue, and advocating practical solutions to community challenges.",
@@ -9871,7 +9854,7 @@ parliament: "Youth Parliament Ghana",
     linkedin: "#",
     tiktok: "#"
 },
-{
+  {
     id: "mp185",
     name: "ABDULAI RAHINA",
     position: "Member of Parliament",
@@ -9901,7 +9884,7 @@ parliament: "Youth Parliament Ghana",
     linkedin: "#",
     tiktok: "#"
 },
-{
+  {
     id: "mp186",
     name: "OBENG YEBOAH BLESSING",
     position: "Member of Parliament",
