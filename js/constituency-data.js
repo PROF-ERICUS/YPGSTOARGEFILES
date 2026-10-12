@@ -114,8 +114,7 @@ const constituencyData = [
     /* =====================================================
        CENTRAL — 23
     ===================================================== */
-
-    { constituency: "Abura-Asebu-Kwamankese", region: "Central" },
+ { constituency: "Abura-Asebu-Kwamankese", region: "Central" },
     { constituency: "Agona East", region: "Central" },
     { constituency: "Agona West", region: "Central" },
     { constituency: "Ajumako-Enyan-Essiam", region: "Central" },
@@ -132,12 +131,12 @@ const constituencyData = [
     { constituency: "Gomoa East", region: "Central" },
     { constituency: "Gomoa West", region: "Central" },
     { constituency: "Komenda-Edina-Eguafo-Abirem", region: "Central" },
-    { constituency: "Mfantsiman", region: "Central" },
-    { constituency: "Rural Abura", region: "Central" },
+    { constituency: "Mfantseman", region: "Central" },
+    { constituency: "Effutu", region: "Central" },
     { constituency: "Upper Denkyira East", region: "Central" },
     { constituency: "Upper Denkyira West", region: "Central" },
     { constituency: "Twifo Atti-Morkwa", region: "Central" },
-    { constituency: "Hemang Lower Denkyira", region: "Central" },
+    { constituency: "Twifo Hemang Lower Denkyira", region: "Central" },
 
 
     /* =====================================================
